@@ -119,16 +119,12 @@
                                 titolo = rawDisplay.replace(`[${artista}]`, '').trim();
                             }
 
-                            const giaEsistente = basi.some(b => b.copiaTesto.toLowerCase() === copiaTesto.toLowerCase());
-
-                            if (!giaEsistente) {
-                                basi.push({
-                                    titolo: titolo,
-                                    artista: artista,
-                                    copiaTesto: copiaTesto,
-                                    data: dataStringa
-                                });
-                            }
+                            basi.push({
+                                titolo: titolo,
+                                artista: artista,
+                                copiaTesto: copiaTesto,
+                                data: dataStringa
+                            });
                         }
                     }
                 }
@@ -158,7 +154,6 @@
             list.innerHTML = "";
             const today = new Date();
             
-            // MODIFICA: Pulizia degli spazi
             const queryPulita = query.trim().replace(/\s+/g, ' ').toLowerCase();
             
             const basiFiltrate = basi.filter(b => 
@@ -290,5 +285,8 @@
             }
         });
     </script>
+    
+    <script data-goatcounter="https://scorpioedition.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
