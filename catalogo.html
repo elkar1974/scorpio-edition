@@ -8,7 +8,6 @@
         body { margin: 0; padding: 0; font-family: 'Arial', sans-serif; background-image: url('logo_scorpio.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-color: #000; color: #fff; min-height: 100vh; }
         body::before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.92); z-index: -1; }
         
-        /* MODIFICATO: Altezza fissa, no-wrap per evitare che vada a capo, scroll laterale touch */
         .navbar-fissa { position: sticky; top: 0; height: 60px; background: rgba(13, 13, 13, 0.98); z-index: 1000; border-bottom: 2px solid #ffcc00; box-shadow: 0 4px 10px rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 15px; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
         .navbar-fissa::-webkit-scrollbar { display: none; }
         
@@ -24,7 +23,6 @@
         .pagina li { margin-bottom: 10px; color: #ddd; }
         .pagina p { line-height: 1.6; color: #eee; }
         
-        /* MODIFICATO: top calcolato in base all'altezza della navbar (60px + 2px di bordo) */
         .sticky-header { position: sticky; top: 62px; background: rgba(0, 0, 0, 0.95); z-index: 990; padding: 15px 0; border-bottom: 2px solid #ffcc00; margin-bottom: 20px; }
         .search-box { width: 100%; padding: 15px; border-radius: 5px; border: 1px solid #444; background: #1a1a1a; color: white; font-size: 1.1em; box-sizing: border-box; margin-top: 10px; }
         
@@ -45,11 +43,9 @@
         
         .messaggio-errore { color: #ff4444; text-align: center; font-weight: bold; padding: 20px; border: 1px solid #ff4444; border-radius: 5px; background: rgba(255, 0, 0, 0.1); margin-top: 20px; }
         
-        /* ADATTAMENTO MOBILE CORRETTO */
         @media (max-width: 600px) {
             .navbar-fissa { height: 55px; justify-content: flex-start; padding: 0 10px; }
             .navbar-fissa button { font-size: 0.85em; padding: 8px 5px; }
-            /* MODIFICATO: Ripristinato lo sticky su mobile con il calcolo esatto dell'altezza (55px + 2px di bordo) */
             .sticky-header { top: 57px; padding: 10px 0; margin-bottom: 10px; } 
             .search-box { padding: 12px; margin-top: 5px; }
             .track-item { grid-template-columns: 1fr; text-align: center; gap: 10px; }
@@ -162,10 +158,13 @@
             list.innerHTML = "";
             const today = new Date();
             
+            // MODIFICA: Pulizia degli spazi
+            const queryPulita = query.trim().replace(/\s+/g, ' ').toLowerCase();
+            
             const basiFiltrate = basi.filter(b => 
-                b.titolo.toLowerCase().includes(query.toLowerCase()) || 
-                b.artista.toLowerCase().includes(query.toLowerCase()) ||
-                b.copiaTesto.toLowerCase().includes(query.toLowerCase())
+                b.titolo.toLowerCase().includes(queryPulita) || 
+                b.artista.toLowerCase().includes(queryPulita) ||
+                b.copiaTesto.toLowerCase().includes(queryPulita)
             );
 
             const params = new URLSearchParams(window.location.search);
@@ -215,7 +214,7 @@
                 c_title: "Archivio Ufficiale", search_ph: "Cerca brano o artista...", count_testo: "Totale basi: ",
                 m_content: `<h2>MAU•SCORPIO•EDITION: La voce merita rispetto.</h2><blockquote>"Cantare su una base di qualità valorizza il canto. La tua voce merita rispetto."</blockquote><p>Questo è il principio su cui ho fondato <strong>MAU•SCORPIO•EDITION</strong>. Non mi limito a fornire file audio; metto a disposizione uno strumento di lavoro che eleva la performance artistica, garantendo la dignità tecnica che ogni cantante cerca.</p><h3>L’Eccellenza è la mia scelta</h3><p>Il panorama musicale è vasto, ma la qualità per me è una scelta imprescindibile. Copro l'intero spettro musicale, dai grandi classici alle hit contemporanee, con un unico comun denominatore: la perfezione sonora.</p><p>Seleziono e processo ogni singola base presente nel mio catalogo seguendo criteri rigorosi:</p><ul><li><strong>Qualità Studio:</strong> Non accetto compromessi. Ogni traccia che metto a disposizione è ottimizzata per offrire una dinamica chiara, definita e pronta per l'uso professionale.</li><li><strong>Precisione e Sincronizzazione:</strong> Il rispetto del tempo per me è sacro. La mia sincronizzazione è millimetrica, pensata per chi, come me, non accetta sbavature durante l'esecuzione live.</li><li><strong>Strumentazione Reale:</strong> La fedeltà all'originale non è un'opzione. Propongo solo basi che mantengono intatta la struttura timbrica originale, utilizzando suoni di strumenti reali che danno spessore e veridicità alla performance.</li></ul><h3>Un viaggio di sola andata verso la Qualità</h3><p>So bene che la differenza si sente fin dalla prima nota. È per questo che ho trasformato l'esperienza di chi usa le mie basi in un punto di non ritorno: chi sceglie <strong>MAU•SCORPIO•EDITION</strong> per le proprie esibizioni, non torna più indietro. Quando si prova la certezza di una base che non tradisce mai, che esalta ogni sfumatura della propria voce e che accompagna la performance con precisione assoluta, la ricerca di alternative diventa superflua.</p><h3>Il Valore del Passaparola</h3><p>Credo fermamente che un prodotto di qualità superiore non abbia bisogno di spinte forzate. <strong>MAU•SCORPIO•EDITION</strong> è un progetto che vive dell'esperienza diretta dei professionisti e degli appassionati. È la soddisfazione di chi trova finalmente la base perfetta, la sicurezza di chi sale sul palco sapendo di avere alle spalle un suono impeccabile, a generare quel passaparola naturale che guida altri cantanti verso il mio catalogo.</p><p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Perché la tua voce è il tuo strumento più prezioso. Trattala come tale.</em></p><blockquote>"Non chiedo di credermi sulla parola. Chiedo di provare una mia base. Sarà la tua voce a convincerti, e il tuo palco a raccontare la differenza."</blockquote>`,
                 g_title: "Guida al catalogo basi", 
-                g_text: "<p>Questo catalogo è lo specchio ufficiale del mio lavoro su <strong>StarMaker</strong>. È progettato per essere il tuo punto di riferimento costante: ogni base che carico sulla piattaforma viene sincronizzata qui in tempo reale, garantendoti un accesso sempre aggiornato al mio intero repertorio.</p><h3>1. Come trovare la tua base</h3><p>Puoi effettuare la ricerca in modo immediato utilizzando la barra in alto. Il sistema è flessibile: puoi cercare digitando il <strong>titolo del brano</strong> o il nome dell'<strong>artista</strong>. I risultati si aggiorneranno istantaneamente mentre scrivi.</p><h3>2. Il Workflow: Dal catalogo a StarMaker</h3><p>Ho reso il passaggio tra la ricerca e l'esecuzione su StarMaker più rapido possibile. Segui questi tre passaggi:</p><ul><li><strong>Trova</strong> il brano che vuoi cantare nel catalogo.</li><li>Premi il tasto <strong>COPIA</strong>: il sistema memorizzerà automaticamente il riferimento corretto.</li><li>Apri <strong>StarMaker</strong>, vai nella barra di ricerca brani e premi <strong>INCOLLA</strong>.</li></ul><p>In questo modo non perderai tempo a digitare e avrai la certezza di trovare esattamente la base che ho curato per te.</p><h3>3. Identificare le novità</h3><p>Vuoi sapere quali basi ho appena caricato? Cerca l'etichetta <span class=\"news-tag\">NEWS</span> accanto al titolo. Questo tag indica le mie ultime pubblicazioni e rimane attivo per i primi 5 giorni, permettendoti di restare sempre aggiornato sugli ultimi arrivi nel mio archivio.</p>",
+                g_text: "<p>Questo catalogo è lo specchio ufficiale del mio lavoro su <strong>StarMaker</strong>. È progettato per essere il tuo punto di riferimento costante: ogni base che carico sulla piattaforma viene sincronizzata qui in tempo reale, garantendoti un accesso sempre aggiornato al mio intero repertorio.</p><h3>1. Come trovare la tua base</h3><p>Puoi effettuare la ricerca in modo immediato utilizzando la barra in alto. Il sistema è flessibile: puoi cercare digitando il <strong>titolo del brano</strong> o il nome dell'<strong>artista</strong>. I risultati si aggiorneranno istantaneamente mentre scrivi.</p><h3>2. Il Workflow: Dal catalogo a StarMaker</h3><p>Ho reso il passaggio tra la ricerca e l'esecuzione su StarMaker più rapido possibile. Segui questi tre passaggi:</p><ul><li><strong>Trova</strong> il brano che vuoi cantare nel catalogo.</li><li>Premi il tasto <strong>COPIA</strong>: il sistema memorizzerà automaticamente la riferimento corretto.</li><li>Apri <strong>StarMaker</strong>, vai nella barra di ricerca brani e premi <strong>INCOLLA</strong>.</li></ul><p>In questo modo non perderai tempo a digitare e avrai la certezza di trovare esattamente la base che ho curato per te.</p><h3>3. Identificare le novità</h3><p>Vuoi sapere quali basi ho appena caricato? Cerca l'etichetta <span class=\"news-tag\">NEWS</span> accanto al titolo. Questo tag indica le mie ultime pubblicazioni e rimane attivo per i primi 5 giorni, permettendoti di restare sempre aggiornato sugli ultimi arrivi nel mio archivio.</p>",
                 m4_text: "<h2>Contatti</h2><p>Puoi richiedere una base personalizzata o contattarmi direttamente per qualsiasi necessità musicale. Clicca qui sotto per inviare un'email.</p>",
                 m4_btn: "Invia una richiesta email"
             },
