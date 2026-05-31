@@ -125,7 +125,14 @@
         <button id="btn4" onclick="window.cambiaPagina('menu4', this)">Sound Check</button>
     </div>
 
-    <div id="menu1" class="pagina"><div id="manifesto-content"></div></div>
+    <div id="menu1" class="pagina">
+        <div id="manifesto-content"></div>
+        <div class="vetrina-container" id="vetrina-novita" style="display:none;">
+            <div class="vetrina-title" id="vetrinaTitleText">🔥 Ultimi Arrivi in Studio</div>
+            <div id="vetrina-list"></div>
+        </div>
+    </div>
+    
     <div id="menu2" class="pagina"><div id="guida-content"></div></div>
     
     <div id="catalogo" class="pagina attiva">
@@ -481,6 +488,9 @@
                     return a.titolo.localeCompare(b.titolo);
                 });
 
+                // AGGIUNTA P.6: Inizializza la vetrina Novità nel Menu 1
+                renderVetrina();
+
                 const params = new URLSearchParams(window.location.search);
                 const searchParam = params.get('search') || '';
                 if (searchParam) {
@@ -499,14 +509,51 @@
             }
         }
 
-        window.setFilter = function(isNews) {
-            isNewsFilterActive = isNews;
-            if(isNews) {
-                document.getElementById('btnFilterNews').classList.add('active');
-                document.getElementById('btnFilterAll').classList.remove('active');
+        // AGGIUNTA P.6: Funzione per renderizzare la Vetrina Dinamica
+        function renderVetrina() {
+            const list = document.getElementById('vetrina-list');
+            list.innerHTML = "";
+            const vetrinaContainer = document.getElementById('vetrina-novita');
+            
+            // Ordina una copia per data (le 3 più recenti)
+            const basiRecenti = [...basi].sort((a, b) => new Date(b.data) - new Date(a.data)).slice(0, 3);
+            
+            if(basiRecenti.length > 0) {
+                vetrinaContainer.style.display = 'block';
+                const params = new URLSearchParams(window.location.search);
+                const lang = params.get('lang') || 'it';
+                const testoCondividi = (traduzioni[lang] && traduzioni[lang].share_btn) ? traduzioni[lang].share_btn : "Manda";
+
+                basiRecenti.forEach(b => {
+                    const testoSicuro = b.copiaTesto.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                    
+                    // PULIZIA DEL TITOLO: Rimuove il contenuto tra parentesi prima dell'invio
+                    const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                    
+                    const div = document.createElement('div');
+                    div.className = 'track-item';
+                    div.innerHTML = `
+                        <div class="meta-col">
+                            <div class="artist-col">${b.artista}</div>
+                            <div class="title-col">${b.titolo} <span class="news-tag">NEWS</span> <span class="hq-badge">HQ</span></div>
+                        </div>
+                        <button class="copy-btn" onclick="window.copia('${testoSicuro}')">Copia</button>
+                        <button class="share-btn" onclick="window.condividi('${titoloCondivisione}')">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.586 4.391 1.696 6.356l-.999 3.648 3.792-.995zm11.234-7.116c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg><span>${testoCondividi}</span>
+                        </button>
+                    `;
+                    list.appendChild(div);
+                });
+            }
+        }
+
+        window.toggleNewsFilter = function() {
+            isNewsFilterActive = !isNewsFilterActive;
+            const btn = document.getElementById('newsFilterBtn');
+            if (isNewsFilterActive) {
+                btn.classList.add('active');
             } else {
-                document.getElementById('btnFilterNews').classList.remove('active');
-                document.getElementById('btnFilterAll').classList.add('active');
+                btn.classList.remove('active');
             }
             renderTracks(document.getElementById('searchInput').value);
         };
@@ -563,18 +610,19 @@
                 }
                 
                 const testoSicuro = b.copiaTesto.replace(/'/g, "\\'").replace(/"/g, "&quot;");
-                const titoloSicuro = b.titolo.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                
+                // PULIZIA DEL TITOLO: Rimuove il contenuto tra parentesi prima dell'invio
+                const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\\'").replace(/"/g, "&quot;");
                 
                 const div = document.createElement('div');
                 div.className = 'track-item';
-                // AGGIUNTO IL BADGE HQ PER TUTTI I BRANI
                 div.innerHTML = `
                     <div class="meta-col">
                         <div class="artist-col">${b.artista}</div>
                         <div class="title-col">${b.titolo} ${isNews} <span class="hq-badge">HQ</span></div>
                     </div>
                     <button class="copy-btn" onclick="window.copia('${testoSicuro}')">Copia</button>
-                    <button class="share-btn" onclick="window.condividi('${titoloSicuro}')">
+                    <button class="share-btn" onclick="window.condividi('${titoloCondivisione}')">
                         <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.586 4.391 1.696 6.356l-.999 3.648 3.792-.995zm11.234-7.116c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg><span>${testoCondividi}</span>
                     </button>
                 `;
@@ -654,7 +702,7 @@
                 c_title: "Archivio Ufficiale", search_ph: "Cerca brano o artista...", count_testo: "Totale basi: ", demo_title: "Ascolta la Qualità", share_btn: "Manda", btn_all: "📂 Mostra Tutto", btn_news: "🔥 Novità (5 gg)", widget_copies: "Copie:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: La voce merita rispetto.</h2><blockquote>"Cantare su una base di qualità valorizza il canto. La tua voce merita rispetto."</blockquote><p>Questo è il principio su cui ho fondato <strong>MAU•SCORPIO•EDITION</strong>. Non mi limito a fornire file audio; metto a disposizione uno strumento di lavoro che eleva la performance artistica, garantendo la dignità tecnica che ogni cantante cerca.</p><h3>L’Eccellenza è la mia scelta</h3><p>Il panorama musical è vasto, ma la qualità per me è una scelta imprescindibile. Copro l'intero spettro musicale, dai grandi classici alle hit contemporanee, con un unico comun denominatore: la perfezione sonora.</p><p>Seleziono e processo ogni singola base presente nel mio catalogo seguendo criteri rigorosi:</p><ul><li><strong>Qualità Studio:</strong> Non accetto compromessi. Ogni traccia che metto a disposizione è ottimizzata per offrire una dinamica chiara, definita e pronta per l'uso professionale.</li><li><strong>Precisione e Sincronizzazione:</strong> Il rispetto del tempo per me è sacro. La mia sincronizzazione è millimetrica, pensata per chi, come me, non accetta sbavature durante l'esecuzione live.</li><li><strong>Strumentazione Reale:</strong> La fedeltà all'originale non è un'opzione. Propongo solo basi che mantengono intatta la struttura timbrica originale, utilizzando suoni di strumenti reali che danno spessore e veridicità alla performance.</li></ul><h3>Un viaggio di sola andata verso la Qualità</h3><p>So bene che la differenza si sente fin dalla prima nota. È per questo che ho trasformato l'esperienza di chi usa le mie basi in un punto di non ritorno: chi sceglie <strong>MAU•SCORPIO•EDITION</strong> per le proprie esibizioni, non torna più indietro. Quando si prova la certezza di una base che non tradisce mai, che esalta ogni sfumatura della propria voce e che accompagna la performance con precisione assoluta, la ricerca di alternative diventa superflua.</p><h3>Il Valore del Passaparola</h3><p>Credo fermamente che un prodotto di qualità superiore non abbia bisogno di spinte forzate. <strong>MAU•SCORPIO•EDITION</strong> è un progetto che vive dell'esperienza diretta dei professionisti e degli appassionati. È la soddisfazione di chi trova finalmente la base perfetta, la sicurezza di chi sale sul palco sapendo di avere alle spalle un suono impeccabile, a generare quel passaparola naturale che guida altri cantanti verso il mio catalogo.</p><p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Perché la tua voce è il tuo strumento più prezioso. Trattala come tale.</em></p><blockquote>"Non chiedo di credermi sulla parola. Chiedo di provare una mia base. Sarà la tua voce a convincerti, e il tuo palco a raccontare la differenza."</blockquote>`,
                 g_title: "Guida al catalogo basi", 
-                g_text: "<p>Questo catalogo è lo specchio ufficiale del mio lavoro su <strong>StarMaker</strong>. È progettato per essere il tuo punto di riferimento costante: ogni base che carico sulla piattaforma viene sincronizzata qui in tempo reale, garantendoti un accesso sempre aggiornato al mio intero repertorio.</p><h3>1. Come trovare la tua base</h3><p>Puoi effettuare la ricerca in modo immediato utilizzando la barra in alto. Il sistema è flessibile: puoi cercare digitando il <strong>titolo del brano</strong> o il nome dell'<strong>artista</strong>. I risultati si aggiorneranno istantaneamente mentre scrivi.</p><h3>2. Il Workflow: Dal catalogo a StarMaker</h3><p>Ho reso il passaggio tra la ricerca e l'esecuzione su StarMaker più rapido possibile. Segui questi tre passaggi:</p><ul><li><strong>Trova</strong> il brano che vuoi cantare nel catalogo.</li><li>Premi il tasto <strong>COPIA</strong>: il sistema memorizzerà automaticamente la riferimento corretto.</li><li>Apri <strong>StarMaker</strong>, vai nella barra di ricerca brani e premi <strong>INCOLLA</strong>.</li></ul><p>In questo modo non perderai tempo a digitare e avrai la certezza di trovare esattamente la base che ho curato per te.</p><h3>3. Identificare le novità</h3><p>Vuoi sapere quali basi ho appena caricato? Cerca l'etichetta <span class=\"news-tag\">NEWS</span> accanto al titolo. Questo tag indica le mie ultime pubblicazioni e rimane attivo per i primi 5 giorni, permettendoti di restare sempre aggiornato sugli ultimi arrivi nel mio archivio.</p>"
+                g_text: "<p>Questo catalogo è lo specchio ufficiale del mio lavoro su <strong>StarMaker</strong>. È progettato per essere il tuo punto di riferimento costante: ogni base che carico sulla piattaforma viene sincronizzata qui in tempo reale, garantendoti un accesso sempre aggiornato al mio intero repertorio.</p><h3>1. Come trovare la tua base</h3><p>Puoi effettuare la ricerca in modo immediato utilizzando la barra in alto. Il sistema è flessibile: puoi cercare digitando il <strong>titolo del brano</strong> o il nome dell'<strong>artista</strong>. I risultati si aggiorneranno istantaneamente mentre scrivi.</p><h3>2. Il Workflow: Dal catalogo a StarMaker</h3><p>Ho reso il passaggio tra la ricerca e l'esecuzione su StarMaker più rapido possibile. Segui questi tre passaggi:</p><ul><li><strong>Trova</strong> il brano che vuoi cantare nel catalogo.</li><li>Premi il tasto <strong>COPIA</strong>: il sistema memorizzerà automaticamente la riferimento corretto.</li><li>Apri <strong>StarMaker</strong>, vai nella barra di ricerca brani e premi <strong>INCOLLA</strong>.</li></ul><p>In questo modo non perderai tempo a digitare e avrai la certezza di trovare esattamente la base che ho curato per te.</p><h3>3. Identificare le novità</h3><p>Vuoi sapere quali basi ho appena caricato? Cerca l'etichetta <span class=\"news-tag\">NEWS</span> accanto al titolo. Questo tag indica le mie últimas pubblicazioni e rimane attivo per i primi 5 giorni, permettendoti di restare sempre aggiornato sugli ultimi arrivi nel mio archivio.</p>"
             },
             en: { 
                 b1: "Scorpio Edition", b2: "Guide", b3: "Catalog", b4: "Sound Check",
