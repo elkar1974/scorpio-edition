@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" href="logo_scorpio.png">
     
     <style>
-        body { margin: 0; padding: 0; font-family: 'Arial', sans-serif; background-image: url('logo_scorpio.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-color: #000; color: #fff; min-height: 100vh; }
+        body { margin: 0; padding: 0; font-family: 'Arial', sans-serif; background-image: url('logo_scorpio.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-color: #000; color: #fff; min-height: 100vh; overflow-x: hidden; }
         body::before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.92); z-index: -1; }
         
         .navbar-fissa { position: sticky; top: 0; height: 60px; background: rgba(13, 13, 13, 0.98); z-index: 1000; border-bottom: 2px solid #ffcc00; box-shadow: 0 4px 10px rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 15px; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
@@ -22,7 +22,8 @@
         .navbar-fissa button:hover { color: #ffcc00; }
         .navbar-fissa button.attivo { color: #ffcc00; border-bottom: 2px solid #ffcc00; }
         
-        .pagina { display: none; padding: 20px; max-width: 900px; margin: auto; min-height: calc(100vh - 60px); }
+        /* AGGIORNATO: padding-bottom per non far accavallare l'ultimo brano ai widget */
+        .pagina { display: none; padding: 20px 20px 100px 20px; max-width: 900px; margin: auto; min-height: calc(100vh - 60px); box-sizing: border-box; }
         .pagina.attiva { display: block; }
         .pagina h2 { color: #ffcc00; text-transform: uppercase; font-size: 2em; margin-bottom: 20px; text-align: center;}
         .pagina h3 { color: #ffcc00; text-transform: uppercase; font-size: 1.5em; text-align: center; margin-top: 20px; margin-bottom: 20px;}
@@ -37,6 +38,7 @@
         /* Struttura Grid Desktop */
         .track-item { display: grid; grid-template-columns: 1fr 2fr 100px 110px; align-items: center; gap: 15px; padding: 14px; border-bottom: 1px solid #333; background: rgba(0, 0, 0, 0.6); margin-bottom: 5px; border-radius: 4px; }
         
+        /* display: contents fa comportare i figli di .meta-col come elementi diretti della grid su desktop */
         .meta-col { display: contents; }
         
         .artist-col { text-align: left; color: #ffcc00; font-size: 0.95em; text-transform: uppercase; font-weight: bold; border-right: 1px solid #444; padding-right: 10px; }
@@ -44,10 +46,12 @@
         
         .copy-btn { background: #ffcc00; border: none; padding: 10px; cursor: pointer; font-weight: bold; border-radius: 3px; color: #000; text-transform: uppercase; font-size: 0.9em; width: 100%; text-align: center; }
         
+        /* Stile del tasto Condividi WhatsApp */
         .share-btn { background: #25D366; border: none; padding: 10px; cursor: pointer; font-weight: bold; border-radius: 3px; color: #fff; text-transform: uppercase; font-size: 0.9em; width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-sizing: border-box; transition: background 0.2s; }
         .share-btn:hover { background: #20ba5a; }
         .share-btn svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
         
+        /* NUOVO STILE: Gruppo Pulsanti Filtro */
         .filter-group { display: flex; justify-content: center; gap: 10px; margin-top: 10px; margin-bottom: 5px; flex-wrap: wrap; }
         .filter-btn { background: transparent; border: 1px solid #ffcc00; color: #ffcc00; padding: 6px 15px; border-radius: 20px; cursor: pointer; font-weight: bold; font-size: 0.85em; text-transform: uppercase; transition: all 0.2s; }
         .filter-btn:hover { background: rgba(255, 204, 0, 0.15); }
@@ -91,10 +95,15 @@
             .sticky-header { top: 57px; padding: 10px 0; margin-bottom: 10px; } 
             .search-box { padding: 12px; margin-top: 5px; }
             
-            .track-item { grid-template-columns: 1fr auto auto; text-align: left; gap: 10px; padding: 10px; }
-            .meta-col { display: flex; flex-direction: column; gap: 4px; text-align: left; overflow: hidden; }
-            .artist-col { border-right: none; padding-right: 0; text-align: left; font-size: 0.8em; line-height: 1.2; }
-            .title-col { text-align: left; font-size: 0.95em; line-height: 1.2; }
+            /* AGGIORNATO: Imposta width a 100% per impedire che sbrodoli fuori schermo */
+            .track-item { grid-template-columns: 1fr auto auto; text-align: left; gap: 10px; padding: 10px; width: 100%; box-sizing: border-box; }
+            
+            /* AGGIORNATO: min-width a 0 impedisce al testo lungo di forzare la griglia fuori schermo */
+            .meta-col { display: flex; flex-direction: column; gap: 4px; text-align: left; overflow: hidden; min-width: 0; }
+            
+            /* AGGIORNATO: a capo automatico quando il testo tocca i margini */
+            .artist-col { border-right: none; padding-right: 0; text-align: left; font-size: 0.8em; line-height: 1.2; word-wrap: break-word; overflow-wrap: break-word; }
+            .title-col { text-align: left; font-size: 0.95em; line-height: 1.2; word-wrap: break-word; overflow-wrap: break-word; }
             
             .copy-btn, .share-btn { width: auto; padding: 10px 12px; font-size: 0.8em; height: 38px; }
             .share-btn span { display: none; }
@@ -558,6 +567,7 @@
                 
                 const div = document.createElement('div');
                 div.className = 'track-item';
+                // AGGIUNTO IL BADGE HQ PER TUTTI I BRANI
                 div.innerHTML = `
                     <div class="meta-col">
                         <div class="artist-col">${b.artista}</div>
