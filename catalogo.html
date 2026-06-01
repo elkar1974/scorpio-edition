@@ -626,6 +626,9 @@
         window.copia = function(text) {
             navigator.clipboard.writeText(text);
             
+            // Tracciamento Cloudflare Web Analytics per il pulsante Copia
+            try { if (window.cfBeacon) window.cfBeacon.send({"path": "/azione/copia"}); } catch(e) {}
+            
             baseCopiesStorage++;
             localStorage.setItem('scorpio_local_copies', baseCopiesStorage);
             aggiornaContatoreCopie();
@@ -651,6 +654,9 @@
         };
 
         window.condividi = function(titolo) {
+            // Tracciamento Cloudflare Web Analytics per il pulsante WhatsApp
+            try { if (window.cfBeacon) window.cfBeacon.send({"path": "/azione/whatsapp"}); } catch(e) {}
+            
             const params = new URLSearchParams(window.location.search);
             const lang = params.get('lang') || 'it';
             
@@ -769,6 +775,6 @@
             }
         });
     </script>
-    <script data-goatcounter="https://scorpioedition.goatcounter.com/count" async src="//gc.zgo.net/count.js"></script>
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6781ff68c6c14fedb064c3b86691707"}'></script>
 </body>
 </html>
