@@ -411,7 +411,6 @@
         let basi = [];
         let isNewsFilterActive = false;
 
-        // SISTEMA ALGORITMICO CONTATORE COPIE (Non invasivo e professionale)
         let baseCopiesStorage = parseInt(localStorage.getItem('scorpio_local_copies') || '0');
         
         function aggiornaContatoreCopie() {
@@ -426,15 +425,17 @@
             widget.classList.add('pulse-anim');
         }
 
-        // FUNZIONE INTELLIGENTE PER LE DATE (Risolve il bug dei 5 giorni)
         function parseScorpioDate(dateString) {
             if (!dateString) return new Date(0);
-            const parti = dateString.split(/[-/]/);
-            if (parti.length === 3) {
-                // Riconosce se l'anno è all'inizio o alla fine
-                let anno = parti[2].length === 4 ? parti[2] : parti[0];
-                let giorno = parti[2].length === 4 ? parti[0] : parti[2];
-                return new Date(anno, parti[1] - 1, giorno);
+            const str = dateString.trim().replace(/\s+/g, '');
+            const parti = str.split(/[-/]/);
+            if (parti.length >= 3) {
+                let p0 = parti[0];
+                let p1 = parti[1];
+                let p2 = parti[2];
+                let anno = p2.length === 4 ? p2 : p0;
+                let giorno = p2.length === 4 ? p0 : p2;
+                return new Date(parseInt(anno, 10), parseInt(p1, 10) - 1, parseInt(giorno, 10));
             }
             return new Date(0);
         }
@@ -510,7 +511,6 @@
             list.innerHTML = "";
             const vetrinaContainer = document.getElementById('vetrina-novita');
             
-            // Ordina una copia per data usando il traduttore intelligente
             const basiRecenti = [...basi].sort((a, b) => parseScorpioDate(b.data) - parseScorpioDate(a.data)).slice(0, 3);
             
             if(basiRecenti.length > 0) {
@@ -518,6 +518,7 @@
                 const params = new URLSearchParams(window.location.search);
                 const lang = params.get('lang') || 'it';
                 const testoCondividi = (traduzioni[lang] && traduzioni[lang].share_btn) ? traduzioni[lang].share_btn : "Manda";
+                const testoCopia = (traduzioni[lang] && traduzioni[lang].copy_btn) ? traduzioni[lang].copy_btn : "Copia";
 
                 basiRecenti.forEach(b => {
                     const testoSicuro = b.copiaTesto.replace(/'/g, "\\'").replace(/"/g, "&quot;");
@@ -530,7 +531,7 @@
                             <div class="artist-col">${b.artista}</div>
                             <div class="title-col">${b.titolo} <span class="news-tag">NEWS</span> <span class="hq-badge">HQ</span></div>
                         </div>
-                        <button class="copy-btn" onclick="window.copia('${testoSicuro}')">Copia</button>
+                        <button class="copy-btn" onclick="window.copia('${testoSicuro}')">${testoCopia}</button>
                         <button class="share-btn" onclick="window.condividi('${titoloCondivisione}')">
                             <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.586 4.391 1.696 6.356l-.999 3.648 3.792-.995zm11.234-7.116c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg><span>${testoCondividi}</span>
                         </button>
@@ -556,6 +557,7 @@
             const countContainer = document.getElementById('trackCount');
             list.innerHTML = "";
             const today = new Date();
+            today.setHours(0, 0, 0, 0); 
             
             const queryPulita = query.trim().replace(/\s+/g, ' ').toLowerCase();
             
@@ -569,9 +571,9 @@
                 basiFiltrate = basiFiltrate.filter(b => {
                     const bDate = parseScorpioDate(b.data);
                     if(bDate.getTime() !== 0) {
-                        const diffTime = Math.abs(today - bDate);
-                        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-                        return diffDays <= 5;
+                        const diffTime = today.getTime() - bDate.getTime();
+                        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+                        return diffDays >= -1 && diffDays <= 5;
                     }
                     return false;
                 });
@@ -581,6 +583,8 @@
             const lang = params.get('lang') || 'it';
             const testoContatore = (traduzioni[lang] && traduzioni[lang].count_testo) ? traduzioni[lang].count_testo : "Totale basi: ";
             const testoCondividi = (traduzioni[lang] && traduzioni[lang].share_btn) ? traduzioni[lang].share_btn : "Manda";
+            const testoCopia = (traduzioni[lang] && traduzioni[lang].copy_btn) ? traduzioni[lang].copy_btn : "Copia";
+            
             countContainer.innerText = `${testoContatore} ${basiFiltrate.length}`;
 
             if(basiFiltrate.length === 0) {
@@ -592,9 +596,9 @@
                 let isNews = '';
                 const bDate = parseScorpioDate(b.data);
                 if(bDate.getTime() !== 0) {
-                    const diffTime = Math.abs(today - bDate);
-                    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-                    if(diffDays <= 5) {
+                    const diffTime = today.getTime() - bDate.getTime();
+                    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+                    if(diffDays >= -1 && diffDays <= 5) {
                         isNews = '<span class="news-tag">NEWS</span>';
                     }
                 }
@@ -609,7 +613,7 @@
                         <div class="artist-col">${b.artista}</div>
                         <div class="title-col">${b.titolo} ${isNews} <span class="hq-badge">HQ</span></div>
                     </div>
-                    <button class="copy-btn" onclick="window.copia('${testoSicuro}')">Copia</button>
+                    <button class="copy-btn" onclick="window.copia('${testoSicuro}')">${testoCopia}</button>
                     <button class="share-btn" onclick="window.condividi('${titoloCondivisione}')">
                         <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.586 4.391 1.696 6.356l-.999 3.648 3.792-.995zm11.234-7.116c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg><span>${testoCondividi}</span>
                     </button>
@@ -685,6 +689,7 @@
 
         const traduzioni = {
             it: { 
+                copy_btn: "Copia",
                 b1: "Scorpio Edition", b2: "Guida", b3: "Catalogo", b4: "Sound Check",
                 c_title: "Archivio Ufficiale", search_ph: "Cerca brano o artista...", count_testo: "Totale basi: ", demo_title: "Ascolta la Qualità", share_btn: "Manda", btn_all: "📂 Mostra Tutto", btn_news: "🔥 Novità (5 gg)", widget_copies: "Copie:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: La voce merita rispetto.</h2><blockquote>"Cantare su una base di qualità valorizza il canto. La tua voce merita rispetto."</blockquote><p>Questo è il principio su cui ho fondato <strong>MAU•SCORPIO•EDITION</strong>. Non mi limito a fornire file audio; metto a disposizione uno strumento di lavoro che eleva la performance artistica, garantendo la dignità tecnica che ogni cantante cerca.</p><h3>L’Eccellenza è la mia scelta</h3><p>Il panorama musical è vasto, ma la qualità per me è una scelta imprescindibile. Copro l'intero spettro musicale, dai grandi classici alle hit contemporanee, con un unico comun denominatore: la perfezione sonora.</p><p>Seleziono e processo ogni singola base presente nel mio catalogo seguendo criteri rigorosi:</p><ul><li><strong>Qualità Studio:</strong> Non accetto compromessi. Ogni traccia che metto a disposizione è ottimizzata per offrire una dinamica chiara, definita e pronta per l'uso professionale.</li><li><strong>Precisione e Sincronizzazione:</strong> Il rispetto del tempo per me è sacro. La mia sincronizzazione è millimetrica, pensata per chi, come me, non accetta sbavature durante l'esecuzione live.</li><li><strong>Strumentazione Reale:</strong> La fedeltà all'originale non è un'opzione. Propongo solo basi che mantengono intatta la struttura timbrica originale, utilizzando suoni di strumenti reali che danno spessore e veridicità alla performance.</li></ul><h3>Un viaggio di sola andata verso la Qualità</h3><p>So bene che la differenza si sente fin dalla prima nota. È per questo che ho trasformato l'esperienza di chi usa le mie basi in un punto di non ritorno: chi sceglie <strong>MAU•SCORPIO•EDITION</strong> per le proprie esibizioni, non torna più indietro. Quando si prova la certezza di una base che non tradisce mai, che esalta ogni sfumatura della propria voce e che accompagna la performance con precisione assoluta, la ricerca di alternative diventa superflua.</p><h3>Il Valore del Passaparola</h3><p>Credo fermamente che un prodotto di qualità superiore non abbia bisogno di spinte forzate. <strong>MAU•SCORPIO•EDITION</strong> è un progetto che vive dell'esperienza diretta dei professionisti e degli appassionati. È la soddisfazione di chi trova finalmente la base perfetta, la sicurezza di chi sale sul palco sapendo di avere alle spalle un suono impeccabile, a generare quel passaparola naturale che guida altri cantanti verso il mio catalogo.</p><p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Perché la tua voce è il tuo strumento più prezioso. Trattala come tale.</em></p><blockquote>"Non chiedo di credermi sulla parola. Chiedo di provare una mia base. Sarà la tua voce a convincerti, e il tuo palco a raccontare la differenza."</blockquote>`,
@@ -692,6 +697,7 @@
                 g_text: "<p>Questo catalogo è lo specchio ufficiale del mio lavoro su <strong>StarMaker</strong>. È progettato per essere il tuo punto di riferimento costante: ogni base che carico sulla piattaforma viene sincronizzata qui in tempo reale, garantendoti un accesso sempre aggiornato al mio intero repertorio.</p><h3>1. Come trovare la tua base</h3><p>Puoi effettuare la ricerca in modo immediato utilizzando la barra in alto. Il sistema è flessibile: puoi cercare digitando il <strong>titolo del brano</strong> o il nome dell'<strong>artista</strong>. I risultati si aggiorneranno istantaneamente mentre scrivi.</p><h3>2. Il Workflow: Dal catalogo a StarMaker</h3><p>Ho reso il passaggio tra la ricerca e l'esecuzione su StarMaker più rapido possibile. Segui questi tre passaggi:</p><ul><li><strong>Trova</strong> il brano che vuoi cantare nel catalogo.</li><li>Premi il tasto <strong>COPIA</strong>: il sistema memorizzerà automaticamente la riferimento corretto.</li><li>Apri <strong>StarMaker</strong>, vai nella barra di ricerca brani e premi <strong>INCOLLA</strong>.</li></ul><p>In questo modo non perderai tempo a digitare e avrai la certezza di trovare esattamente la base che ho curato per te.</p><h3>3. Identificare le novità</h3><p>Vuoi sapere quali basi ho appena caricato? Cerca l'etichetta <span class=\"news-tag\">NEWS</span> accanto al titolo. Questa etichetta indica le mie ultime pubblicazioni e rimane attiva per i primi 5 giorni, permettendoti di restare sempre aggiornato sugli ultimi arrivi nel mio archivio.</p>"
             },
             en: { 
+                copy_btn: "Copy",
                 b1: "Scorpio Edition", b2: "Guide", b3: "Catalog", b4: "Sound Check",
                 c_title: "Official Catalog", search_ph: "Search song or artist...", count_testo: "Total tracks: ", demo_title: "Hear the Quality", share_btn: "Share", btn_all: "📂 Show All", btn_news: "🔥 New (5 days)", widget_copies: "Copies:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: Your voice deserves respect.</h2><blockquote>"Singing to a quality backing track enhances your singing. Your voice deserves respect."</blockquote><p>This is the principle upon which I founded <strong>MAU•SCORPIO•EDITION</strong>. I don't just provide audio files; I provide a tool that elevates artistic performance, ensuring the technical dignity every singer seeks.</p><h3>Excellence is my choice</h3><p>The musical landscape is vast, but quality is a non-negotiable choice for me. I cover the entire musical spectrum, from great classics to contemporary hits, with one common denominator: sonic perfection.</p><p>I select and process every single track in my catalog according to rigorous criteria:</p><ul><li><strong>Studio Quality:</strong> No compromises. Every track is optimized for clear, defined, professional dynamics.</li><li><strong>Precision and Synchronization:</strong> Timing is sacred to me. My synchronization is millimetric, designed for those who, like me, do not accept flaws during live performances.</li><li><strong>Real Instrumentation:</strong> Fidelity to the original is not an option. I offer only tracks that keep the original timbre structure intact, using real instrument sounds that give depth and authenticity to the performance.</li></ul><h3>A one-way journey towards Quality</h3><p>I know the difference is felt from the very first note. That is why I have transformed the experience of those who use my tracks into a point of no return: those who choose <strong>MAU•SCORPIO•EDITION</strong> for their performances never look back. When you experience the certainty of a track that never betrays you, that highlights every nuance of your voice and accompanies the performance with absolute precision, searching for alternatives becomes superfluous.</p><h3>The Value of Word-of-Mouth</h3><p>I firmly believe that a superior quality product does not need forced pushes. <strong>MAU•SCORPIO•EDITION</strong> is a project that thrives on the direct experience of professionals and enthusiasts. It is the satisfaction of those who finally find the perfect track, the confidence of those who take the stage knowing they have impeccable sound behind them, that generates the natural word-of-mouth that guides other singers to my catalog.</p><p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Because your voice is your most precious instrument. Treat it as such.</em></p><blockquote>"I don't ask you to take my word for it. I ask you to try one of my tracks. Your voice will convince you, and your stage will tell the difference."</blockquote>`,
@@ -699,6 +705,7 @@
                 g_text: "<p>This catalog is the official reflection of my work on <strong>StarMaker</strong>. It is designed to be your constant reference point: every track I upload to the platform is synchronized here in real-time, guaranteeing you up-to-date access to my entire repertoire.</p><h3>1. How to find your track</h3><p>You can search immediately using the bar at the top. The system is flexible: you can search by typing the <strong>song title</strong> or the <strong>artist's name</strong>. The results update instantly as you type.</p><h3>2. The Workflow: From catalog to StarMaker</h3><p>I have made the transition between searching and performing on StarMaker as fast as possible. Follow these three steps:</p><ul><li><strong>Find</strong> the track you want to sing in the catalog.</li><li>Press the <strong>COPY</strong> button: the system will automatically store the correct reference.</li><li>Open <strong>StarMaker</strong>, go to the song search bar, and press <strong>PASTE</strong>.</li></ul><p>This way, you won't waste time typing and will be sure to find exactly the track I have curated for you.</p><h3>3. Identifying new releases</h3><p>Want to know which tracks I have just uploaded? Look for the <span class=\"news-tag\">NEWS</span> tag next to the title. This tag indicates my latest releases and remains active for the first 5 days, allowing you to stay updated on the latest arrivals in my archive.</p>"
             },
             es: { 
+                copy_btn: "Copiar",
                 b1: "Scorpio Edition", b2: "Guía", b3: "Catálogo", b4: "Sound Check",
                 c_title: "Archivo Oficial", search_ph: "Buscar canción o artista...", count_testo: "Pistas totales: ", demo_title: "Escucha la Calidad", share_btn: "Enviar", btn_all: "📂 Mostrar Todo", btn_news: "🔥 Novedades (5 d)", widget_copies: "Copias:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: Tu voz merece respeto.</h2><blockquote>"Cantar sobre una base de calidad realza el canto. Tu voz merece respeto."</blockquote><p>Este es el principio sobre el cual fundé <strong>MAU•SCORPIO•EDITION</strong>. No me limito a proporcionar archivos de audio; ofrezco una herramienta de trabajo que eleva la interpretación artística, garantizando la dignidad técnica que cada cantante busca.</p><h3>La excelencia es mi elección</h3><p>El panorama musical es vasto, pero la calidad para mí es una elección imprescindible. Cubro todo el espectro musical, desde grandes clásicos hasta éxitos contemporáneos, con un denominador común: la perfección sonora.</p><p>Selecciono y proceso cada pista presente en mi catálogo siguiendo criterios rigorosos:</p><ul><li><strong>Calidad de Estudio:</strong> Sin concesiones. Cada pista está optimizada para ofrecer una dinámica clara, definida y lista para uso profesional.</li><li><strong>Precisión y Sincronización:</strong> El tiempo es sagrado para mí. Mi sincronización es milimétrica, pensada para quienes, como yo, no aceptan imperfecciones durante el directo.</li><li><strong>Instrumentación Real:</strong> La fidelidad al original no es una opción. Propongo solo bases que mantienen intacta la estructura tímbrica original, utilizando sonidos de instrumentos reales que aportan profundidad y veracidad a la interpretación.</li></ul><h3>Un viaje de ida hacia la Calidad</h3><p>Sé muy bien que la diferencia se siente desde la primera nota. Por eso he transformado la experiencia de quienes usan mis bases en un punto de no retorno: quien elige <strong>MAU•SCORPIO•EDITION</strong> para sus actuaciones, no vuelve atrás. Cuando pruebas la certeza de una base que nunca traiciona, que resalta cada matiz de tu voz y que acompaña la actuación con precisión absoluta, la búsqueda de alternativas se vuelve superflua.</p><h3>El valor del boca a boca</h3><p>Creo firmemente que un producto de calidad superior no necesita empujes forzados. <strong>MAU•SCORPIO•EDITION</strong> es un proyecto que vive de la experiencia directa de profesionales y entusiastas. Es la satisfacción de quien encuentra finalmente la base perfecta, la seguridad de quien sube al escenario sabiendo que tiene un sonido impecable, lo que genera ese boca a boca natural que guía a otros cantantes hacia mi catálogo.</p><p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Porque tu voz es tu instrumento más preciado. Trátala como tal.</em></p><blockquote>"No pido que me creas. Te pido que pruebes una de mis bases. Tu voz te convencerá y tu escenario contará la diferencia."</blockquote>`,
@@ -706,6 +713,7 @@
                 g_text: "<p>Este catálogo es el reflejo oficial de mi trabajo en <strong>StarMaker</strong>. Está diseñado para ser tu punto de referencia constante: cada base que subo a la plataforma se sincroniza aquí en tiempo real, garantizándote un acceso siempre actualizado a todo mi repertorio.</p><h3>1. Cómo encontrar tu base</h3><p>Puedes realizar la búsqueda de forma inmediata utilizando la barra superior. El sistema es flexible: puedes buscar escribiendo el <strong>título de la canción</strong> o el nombre del <strong>artista</strong>. Los resultados se actualizarán instantáneamente mientras escribes.</p><h3>2. El Workflow: Del catálogo a StarMaker</h3><p>He hecho que la transición entre la búsqueda y la ejecución en StarMaker sea lo más rápida posible. Sigue estos tres pasos:</p><ul><li><strong>Encuentra</strong> la canción que quieres cantar en el catálogo.</li><li>Presiona el botón <strong>COPIAR</strong>: el sistema memorizará automáticamente la referencia correcta.</li><li>Abre <strong>StarMaker</strong>, ve a la barra de búsqueda de canciones y presiona <strong>PEGAR</strong>.</li></ul><p>De esta forma, no perderás tiempo escribiendo y tendrás la certeza de encontrar exactamente la base que he preparado para ti.</p><h3>3. Identificar las novedades</h3><p>¿Quieres saber qué bases acabo de subir? Busca la etiqueta <span class=\"news-tag\">NEWS</span> junto al título. Esta etiqueta indica mis últimas publicaciones y permanece activa durante los primeros 5 días, permitiéndote estar siempre actualizado sobre las últimas llegadas a mi archivo.</p>"
             },
             fr: { 
+                copy_btn: "Copier",
                 b1: "Scorpio Edition", b2: "Guide", b3: "Catalogue", b4: "Sound Check",
                 c_title: "Archive Officielle", search_ph: "Rechercher une chanson ou un artiste...", count_testo: "Pistes totales : ", demo_title: "Écoutez la Qualité", share_btn: "Partager", btn_all: "📂 Tout Afficher", btn_news: "🔥 Nouveautés (5 j)", widget_copies: "Copies :",
                 m_content: `<h2>MAU•SCORPIO•EDITION : Ta voix mérite le respect.</h2><blockquote>"Chanter sur une base de qualité valorise le chant. Ta voix mérite le respect."</blockquote><p>C’est le principe sur lequel j’ai fondé <strong>MAU•SCORPIO•EDITION</strong>. Je ne me limite pas à fournir des fichiers audio ; je mets à disposition un outil de travail qui élève la performance artistique, garantissant la dignité technique que chaque chanteur recherche.</p><h3>L’Excellence est mon choix</h3><p>Le paysage musical est vaste, mais la qualité pour moi est un choix incontournable. Je couvre tout le spectre musical, des grands classiques aux hits contemporains, avec un seul dénominateur commun : la perfection sonore.</p><p>Je sélectionne et traite chaque piste présente dans mon catalogue selon des critères rigoureux :</p><ul><li><strong>Qualité Studio :</strong> Aucun compromis. Chaque piste est optimisée pour offrir une dynamique claire, définie et prête pour un usage professionnel.</li><li><strong>Précision et Synchronisation :</strong> Le temps est sacré pour moi. Ma synchronisation est millimétrée, conçue pour ceux qui, comme moi, n'acceptent aucune imperfection lors d'une performance live.</li><li><strong>Instrumentation Réelle :</strong> La fidélité à l'original n'est pas une option. Je propose uniquement des bases qui conservent intacte la structure timbale originale, en utilisant des sons d'instruments réels qui donnent de la profondeur et de la véracité à la performance.</li></ul><h3>Un voyage sans retour vers la Qualité</h3><p>Je sais très bien que la différence se sent dès la première note. C’est pourquoi j’ai transformé l’expérience de ceux qui utilisent mes bases en un point de non-retour : quiconque choisit <strong>MAU•SCORPIO•EDITION</strong> pour ses prestations ne revient jamais en arrière. Lorsque l'on goûte à la certitude d'une base qui ne trahit jamais, qui met en valeur chaque nuance de sa voix et qui accompagne la prestation avec une précision absolue, la recherche d'alternatives devient superflue.</p><h3>La valeur du bouche-à-oreille</h3><p>Je crois fermement qu’un produit de qualité supérieure n’a pas besoin de poussées forcées. <strong>MAU•SCORPIO•EDITION</strong> est un projet qui vit de l'expérience directe des professionnels et des passionnés. C’est la satisfaction de celui qui trouve enfin la base parfaite, la sécurité de celui qui monte sur scène en sachant qu’il a un son impeccable derrière lui, qui génère ce bouche-à-oreille naturel qui guide d'autres chanteurs vers mon catalogue.</p><p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Parce que ta voix est ton instrument le plus précieux. Traite-la comme tel.</em></p><blockquote>"Je ne demande pas de me croire sur parole. Je demande d'essayer l'une de mes bases. Ta voix te convaincra, et ta scène racontera la différence."</blockquote>`,
@@ -713,6 +721,7 @@
                 g_text: "<p>Ce catalogue est le reflet officiel de mon travail sur <strong>StarMaker</strong>. Il est conçu pour être ton point de référence constant : chaque base que je téléverse sur la plateforme est synchronisée ici en temps réel, te garantissant un accès toujours mis à jour à tout mon répertoire.</p><h3>1. Comment trouver ta base</h3><p>Tu peux effectuer la recherche immédiatement en utilisant la barre en haut. Le système est flexible : tu peux chercher en tapant le <strong>titre de la chanson</strong> ou le nom de l'<strong>artiste</strong>. Les résultats se mettront à jour instantanément pendant que tu écris.</p><h3>2. Le Workflow : Du catalogue à StarMaker</h3><p>J'ai rendu la transition entre la recherche et l'exécution sur StarMaker la plus rapide possible. Suis ces trois étapes :</p><ul><li><strong>Trouve</strong> la chanson que tu veux chanter dans le catalogue.</li><li>Appuie sur le bouton <strong>COPIAR</strong> : le système mémorisera automatiquement la référence correcte.</li><li>Ouvre <strong>StarMaker</strong>, va dans la barre de recherche des chansons et appuie sur <strong>COLLER</strong>.</li></ul><p>De cette façon, tu ne perdras pas de temps à taper et tu auras la certitude de trouver exactement la base que j'ai préparée pour toi.</p><h3>3. Identifier les nouveautés</h3><p>Tu veux savoir quelles bases je viens de téléverser ? Cherche l'étiquette <span class=\"news-tag\">NEWS</span> à côté du titre. Cette étiquette indique mes dernières publications et reste active pendant les 5 premiers jours, te permettant de rester toujours au courant des dernières arrivées dans mon archive.</p>"
             },
             de: { 
+                copy_btn: "Kopieren",
                 b1: "Scorpio Edition", b2: "Anleitung", b3: "Katalog", b4: "Sound Check",
                 c_title: "Offizielles Archiv", search_ph: "Song oder Künstler suchen...", count_testo: "Gesamte Playbacks: ", demo_title: "Hören Sie die Qualität", share_btn: "Teilen", btn_all: "📂 Alles Zeigen", btn_news: "🔥 Neuheiten (5 T)", widget_copies: "Kopien:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: Deine Stimme verdient Respekt.</h2><blockquote>"Auf einem hochwertigen Playback zu singen, wertet den Gesang auf. Deine Stimme verdient Respekt."</blockquote><p>Dies ist das Prinzip, auf dem ich <strong>MAU•SCORPIO•EDITION</strong> gegründet habe. Ich liefere nicht nur Audiodateien; ich stelle ein Arbeitswerkzeug zur Verfügung, das die künstlerische Darbietung hebt und die technische Qualität garantiert, die jeder Sänger sucht.</p><h3>Exzellenz ist meine Wahl</h3><p>Die Musiklandschaft ist riesig, aber Qualität ist für mich eine unverzichtbare Wahl. Ich decke das gesamte Musikspektrum ab, von großen Klassikern bis hin zu zeitgenössischen Hits, mit einem gemeinsamen Nenner: klangliche Perfektion.</p><p>Ich wähle und bearbeite jeden einzelnen Titel in meinem Katalog nach strengen Kriterien:</p><ul><li><strong>Studioqualität:</strong> Keine Kompromisse. Jeder Titel ist optimiert, um eine klare, definierte Dynamik zu bieten, die für den professionellen Einsatz bereit ist.</li><li><strong>Präzision und Synchronisation:</strong> Das Timing ist mir heilig. Meine Synchronisation ist millimetergenau – konzipiert für alle, die, genau wie ich, während eines Live-Auftritts keine Unsauberkeiten akzeptieren.</li><li><strong>Echte Instrumentierung:</strong> Die Originaltreue ist keine Option, sondern Standard. Ich biete nur Playbacks an, die die ursprüngliche Klangstruktur bewahren und echte Instrumentenklänge verwenden, die der Darbietung Tiefe und Authentizität verleihen.</li></ul><h3>Eine Reise ohne Rückkehr zur Qualität</h3><p>Ich weiß sehr gut, dass man den Unterschied ab der ersten Note hört. Deshalb habe ich die Erfahrung derjenigen, die meine Playbacks nutzen, in einen Punkt ohne Wiederkehr verwandelt: Wer sich für <strong>MAU•SCORPIO•EDITION</strong> für seine Auftritte entscheidet, geht nie wieder zurück. Wenn man die Gewissheit eines Playbacks spürt, das einen nie im Stich lässt, das jede Nuance der Stimme hervorhebt und die Performance mit absoluter Präzision begleitet, wird die Suche nach Alternativen überflüssig.</p><h3>Der Wert der Mundpropaganda</h3><p>Ich glaube fest daran, dass ein Produkt von überlegener Qualität keine erzwungene Werbung braucht. <strong>MAU•SCORPIO•EDITION</strong> ist ein Projekt, das von der direkten Erfahrung der Profis und Enthusiasten lebt. Es ist die Zufriedenheit derer, die endlich das perfekte Playback finden, und die Sicherheit derer, die auf die Bühne gehen und wissen, dass sie einen tadellosen Sound im Rücken haben, die die natürliche Mundpropaganda erzeugt, die andere Sänger zu meinem Katalog führt.</p><p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Weil deine Stimme dein wertvollstes Instrument ist. Behandle sie auch so.</em></p><blockquote>"Ich verlange nicht, dass du mir beim Wort glaubst. Probiere eines meiner Playbacks aus. Deine Stimme wird dich überzeugen, und deine Bühne wird den Unterschied erzählen."</blockquote>`,
@@ -742,7 +751,6 @@
             document.getElementById('btnFilterNews').innerText = data.btn_news;
             document.getElementById('copyWidgetText').innerText = data.widget_copies || "Copie:";
             
-            // Inizializza il contatore
             aggiornaContatoreCopie();
 
             if (searchParam) {
