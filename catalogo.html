@@ -22,7 +22,6 @@
         .navbar-fissa button:hover { color: #ffcc00; }
         .navbar-fissa button.attivo { color: #ffcc00; border-bottom: 2px solid #ffcc00; }
         
-        /* AGGIORNATO: padding-bottom per non far accavallare l'ultimo brano ai widget */
         .pagina { display: none; padding: 20px 20px 100px 20px; max-width: 900px; margin: auto; min-height: calc(100vh - 60px); box-sizing: border-box; }
         .pagina.attiva { display: block; }
         .pagina h2 { color: #ffcc00; text-transform: uppercase; font-size: 2em; margin-bottom: 20px; text-align: center;}
@@ -35,10 +34,8 @@
         .sticky-header { position: sticky; top: 62px; background: rgba(0, 0, 0, 0.95); z-index: 990; padding: 15px 0; border-bottom: 2px solid #ffcc00; margin-bottom: 20px; }
         .search-box { width: 100%; padding: 15px; border-radius: 5px; border: 1px solid #444; background: #1a1a1a; color: white; font-size: 1.1em; box-sizing: border-box; margin-top: 10px; }
         
-        /* Struttura Grid Desktop */
         .track-item { display: grid; grid-template-columns: 1fr 2fr 100px 110px; align-items: center; gap: 15px; padding: 14px; border-bottom: 1px solid #333; background: rgba(0, 0, 0, 0.6); margin-bottom: 5px; border-radius: 4px; }
         
-        /* display: contents fa comportare i figli di .meta-col come elementi diretti della grid su desktop */
         .meta-col { display: contents; }
         
         .artist-col { text-align: left; color: #ffcc00; font-size: 0.95em; text-transform: uppercase; font-weight: bold; border-right: 1px solid #444; padding-right: 10px; }
@@ -46,12 +43,10 @@
         
         .copy-btn { background: #ffcc00; border: none; padding: 10px; cursor: pointer; font-weight: bold; border-radius: 3px; color: #000; text-transform: uppercase; font-size: 0.9em; width: 100%; text-align: center; }
         
-        /* Stile del tasto Condividi WhatsApp */
         .share-btn { background: #25D366; border: none; padding: 10px; cursor: pointer; font-weight: bold; border-radius: 3px; color: #fff; text-transform: uppercase; font-size: 0.9em; width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-sizing: border-box; transition: background 0.2s; }
         .share-btn:hover { background: #20ba5a; }
         .share-btn svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
         
-        /* NUOVO STILE: Gruppo Pulsanti Filtro */
         .filter-group { display: flex; justify-content: center; gap: 10px; margin-top: 10px; margin-bottom: 5px; flex-wrap: wrap; }
         .filter-btn { background: transparent; border: 1px solid #ffcc00; color: #ffcc00; padding: 6px 15px; border-radius: 20px; cursor: pointer; font-weight: bold; font-size: 0.85em; text-transform: uppercase; transition: all 0.2s; }
         .filter-btn:hover { background: rgba(255, 204, 0, 0.15); }
@@ -75,12 +70,10 @@
         
         .messaggio-errore { color: #ff4444; text-align: center; font-weight: bold; padding: 20px; border: 1px solid #ff4444; border-radius: 5px; background: rgba(255, 0, 0, 0.1); margin-top: 20px; }
         
-        /* AGGIUNTA WIDGET COPIE FLUTTUANTE */
         .copy-counter-widget { position: fixed; bottom: 30px; left: 30px; background: rgba(15, 15, 15, 0.9); border: 1px solid rgba(255, 204, 0, 0.3); color: #ccc; padding: 8px 18px; border-radius: 30px; font-size: 0.85em; z-index: 998; box-shadow: 0 4px 15px rgba(0,0,0,0.6); display: flex; align-items: center; gap: 8px; backdrop-filter: blur(5px); }
         .copy-counter-widget span#copyWidgetNum { color: #ffcc00; font-weight: bold; font-size: 1.1em; letter-spacing: 0.5px; }
         .copy-counter-widget svg { width: 16px; height: 16px; fill: #ffcc00; }
         
-        /* Animazione al click di copia */
         @keyframes pulse-gold {
             0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0,0,0,0.6); }
             50% { transform: scale(1.08); box-shadow: 0 0 20px rgba(255,204,0,0.8); border-color: #ffcc00; }
@@ -88,20 +81,15 @@
         }
         .pulse-anim { animation: pulse-gold 0.4s ease; }
 
-        /* MOBILE */
         @media (max-width: 600px) {
             .navbar-fissa { height: 55px; justify-content: flex-start; padding: 0 10px; }
             .navbar-fissa button { font-size: 0.85em; padding: 8px 5px; }
             .sticky-header { top: 57px; padding: 10px 0; margin-bottom: 10px; } 
             .search-box { padding: 12px; margin-top: 5px; }
             
-            /* AGGIORNATO: Imposta width a 100% per impedire che sbrodoli fuori schermo */
             .track-item { grid-template-columns: 1fr auto auto; text-align: left; gap: 10px; padding: 10px; width: 100%; box-sizing: border-box; }
-            
-            /* AGGIORNATO: min-width a 0 impedisce al testo lungo di forzare la griglia fuori schermo */
             .meta-col { display: flex; flex-direction: column; gap: 4px; text-align: left; overflow: hidden; min-width: 0; }
             
-            /* AGGIORNATO: a capo automatico quando il testo tocca i margini */
             .artist-col { border-right: none; padding-right: 0; text-align: left; font-size: 0.8em; line-height: 1.2; word-wrap: break-word; overflow-wrap: break-word; }
             .title-col { text-align: left; font-size: 0.95em; line-height: 1.2; word-wrap: break-word; overflow-wrap: break-word; }
             
@@ -110,7 +98,6 @@
             .demo-title { font-size: 1.1em; }
             #backToTopBtn { bottom: 20px; right: 20px; width: 45px; height: 45px; font-size: 1.3em; }
             
-            /* Responsive widget copie */
             .copy-counter-widget { bottom: 20px; left: 15px; padding: 6px 12px; font-size: 0.75em; }
             .copy-counter-widget svg { width: 14px; height: 14px; }
         }
@@ -428,18 +415,28 @@
         let baseCopiesStorage = parseInt(localStorage.getItem('scorpio_local_copies') || '0');
         
         function aggiornaContatoreCopie() {
-            // Calcola un numero credibile e progressivo basato sul tempo trascorso dall'inizio del 2025
             let timeFactor = Math.floor((Date.now() - new Date("2025-01-01").getTime()) / (1000 * 60 * 15));
             let totalCopies = 14500 + timeFactor + baseCopiesStorage;
             
-            // Applica il numero formattato (es. 15.240)
             document.getElementById('copyWidgetNum').innerText = totalCopies.toLocaleString('it-IT');
             
-            // Innesca l'animazione di pulsazione
             const widget = document.getElementById('copyCounterWidget');
             widget.classList.remove('pulse-anim');
-            void widget.offsetWidth; // trucchetto per resettare l'animazione CSS
+            void widget.offsetWidth; 
             widget.classList.add('pulse-anim');
+        }
+
+        // FUNZIONE INTELLIGENTE PER LE DATE (Risolve il bug dei 5 giorni)
+        function parseScorpioDate(dateString) {
+            if (!dateString) return new Date(0);
+            const parti = dateString.split(/[-/]/);
+            if (parti.length === 3) {
+                // Riconosce se l'anno è all'inizio o alla fine
+                let anno = parti[2].length === 4 ? parti[2] : parti[0];
+                let giorno = parti[2].length === 4 ? parti[0] : parti[2];
+                return new Date(anno, parti[1] - 1, giorno);
+            }
+            return new Date(0);
         }
 
         async function caricaDatabase() {
@@ -488,7 +485,6 @@
                     return a.titolo.localeCompare(b.titolo);
                 });
 
-                // AGGIUNTA P.6: Inizializza la vetrina Novità nel Menu 1
                 renderVetrina();
 
                 const params = new URLSearchParams(window.location.search);
@@ -509,14 +505,13 @@
             }
         }
 
-        // AGGIUNTA P.6: Funzione per renderizzare la Vetrina Dinamica
         function renderVetrina() {
             const list = document.getElementById('vetrina-list');
             list.innerHTML = "";
             const vetrinaContainer = document.getElementById('vetrina-novita');
             
-            // Ordina una copia per data (le 3 più recenti)
-            const basiRecenti = [...basi].sort((a, b) => new Date(b.data) - new Date(a.data)).slice(0, 3);
+            // Ordina una copia per data usando il traduttore intelligente
+            const basiRecenti = [...basi].sort((a, b) => parseScorpioDate(b.data) - parseScorpioDate(a.data)).slice(0, 3);
             
             if(basiRecenti.length > 0) {
                 vetrinaContainer.style.display = 'block';
@@ -526,8 +521,6 @@
 
                 basiRecenti.forEach(b => {
                     const testoSicuro = b.copiaTesto.replace(/'/g, "\\'").replace(/"/g, "&quot;");
-                    
-                    // PULIZIA DEL TITOLO: Rimuove il contenuto tra parentesi prima dell'invio
                     const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\\'").replace(/"/g, "&quot;");
                     
                     const div = document.createElement('div');
@@ -574,9 +567,8 @@
 
             if (isNewsFilterActive) {
                 basiFiltrate = basiFiltrate.filter(b => {
-                    const dateParts = b.data.split('-');
-                    if(dateParts.length === 3) {
-                        const bDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+                    const bDate = parseScorpioDate(b.data);
+                    if(bDate.getTime() !== 0) {
                         const diffTime = Math.abs(today - bDate);
                         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
                         return diffDays <= 5;
@@ -597,11 +589,9 @@
             }
 
             basiFiltrate.forEach(b => {
-                const dateParts = b.data.split('-');
                 let isNews = '';
-                
-                if(dateParts.length === 3) {
-                    const bDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+                const bDate = parseScorpioDate(b.data);
+                if(bDate.getTime() !== 0) {
                     const diffTime = Math.abs(today - bDate);
                     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
                     if(diffDays <= 5) {
@@ -610,8 +600,6 @@
                 }
                 
                 const testoSicuro = b.copiaTesto.replace(/'/g, "\\'").replace(/"/g, "&quot;");
-                
-                // PULIZIA DEL TITOLO: Rimuove il contenuto tra parentesi prima dell'invio
                 const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\\'").replace(/"/g, "&quot;");
                 
                 const div = document.createElement('div');
@@ -633,7 +621,6 @@
         window.copia = function(text) {
             navigator.clipboard.writeText(text);
             
-            // AGGIORNAMENTO: Incrementa il contatore a ogni click e aggiorna l'UI
             baseCopiesStorage++;
             localStorage.setItem('scorpio_local_copies', baseCopiesStorage);
             aggiornaContatoreCopie();
@@ -702,7 +689,7 @@
                 c_title: "Archivio Ufficiale", search_ph: "Cerca brano o artista...", count_testo: "Totale basi: ", demo_title: "Ascolta la Qualità", share_btn: "Manda", btn_all: "📂 Mostra Tutto", btn_news: "🔥 Novità (5 gg)", widget_copies: "Copie:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: La voce merita rispetto.</h2><blockquote>"Cantare su una base di qualità valorizza il canto. La tua voce merita rispetto."</blockquote><p>Questo è il principio su cui ho fondato <strong>MAU•SCORPIO•EDITION</strong>. Non mi limito a fornire file audio; metto a disposizione uno strumento di lavoro che eleva la performance artistica, garantendo la dignità tecnica che ogni cantante cerca.</p><h3>L’Eccellenza è la mia scelta</h3><p>Il panorama musical è vasto, ma la qualità per me è una scelta imprescindibile. Copro l'intero spettro musicale, dai grandi classici alle hit contemporanee, con un unico comun denominatore: la perfezione sonora.</p><p>Seleziono e processo ogni singola base presente nel mio catalogo seguendo criteri rigorosi:</p><ul><li><strong>Qualità Studio:</strong> Non accetto compromessi. Ogni traccia che metto a disposizione è ottimizzata per offrire una dinamica chiara, definita e pronta per l'uso professionale.</li><li><strong>Precisione e Sincronizzazione:</strong> Il rispetto del tempo per me è sacro. La mia sincronizzazione è millimetrica, pensata per chi, come me, non accetta sbavature durante l'esecuzione live.</li><li><strong>Strumentazione Reale:</strong> La fedeltà all'originale non è un'opzione. Propongo solo basi che mantengono intatta la struttura timbrica originale, utilizzando suoni di strumenti reali che danno spessore e veridicità alla performance.</li></ul><h3>Un viaggio di sola andata verso la Qualità</h3><p>So bene che la differenza si sente fin dalla prima nota. È per questo che ho trasformato l'esperienza di chi usa le mie basi in un punto di non ritorno: chi sceglie <strong>MAU•SCORPIO•EDITION</strong> per le proprie esibizioni, non torna più indietro. Quando si prova la certezza di una base che non tradisce mai, che esalta ogni sfumatura della propria voce e che accompagna la performance con precisione assoluta, la ricerca di alternative diventa superflua.</p><h3>Il Valore del Passaparola</h3><p>Credo fermamente che un prodotto di qualità superiore non abbia bisogno di spinte forzate. <strong>MAU•SCORPIO•EDITION</strong> è un progetto che vive dell'esperienza diretta dei professionisti e degli appassionati. È la soddisfazione di chi trova finalmente la base perfetta, la sicurezza di chi sale sul palco sapendo di avere alle spalle un suono impeccabile, a generare quel passaparola naturale che guida altri cantanti verso il mio catalogo.</p><p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Perché la tua voce è il tuo strumento più prezioso. Trattala come tale.</em></p><blockquote>"Non chiedo di credermi sulla parola. Chiedo di provare una mia base. Sarà la tua voce a convincerti, e il tuo palco a raccontare la differenza."</blockquote>`,
                 g_title: "Guida al catalogo basi", 
-                g_text: "<p>Questo catalogo è lo specchio ufficiale del mio lavoro su <strong>StarMaker</strong>. È progettato per essere il tuo punto di riferimento costante: ogni base che carico sulla piattaforma viene sincronizzata qui in tempo reale, garantendoti un accesso sempre aggiornato al mio intero repertorio.</p><h3>1. Come trovare la tua base</h3><p>Puoi effettuare la ricerca in modo immediato utilizzando la barra in alto. Il sistema è flessibile: puoi cercare digitando il <strong>titolo del brano</strong> o il nome dell'<strong>artista</strong>. I risultati si aggiorneranno istantaneamente mentre scrivi.</p><h3>2. Il Workflow: Dal catalogo a StarMaker</h3><p>Ho reso il passaggio tra la ricerca e l'esecuzione su StarMaker più rapido possibile. Segui questi tre passaggi:</p><ul><li><strong>Trova</strong> il brano che vuoi cantare nel catalogo.</li><li>Premi il tasto <strong>COPIA</strong>: il sistema memorizzerà automaticamente la riferimento corretto.</li><li>Apri <strong>StarMaker</strong>, vai nella barra di ricerca brani e premi <strong>INCOLLA</strong>.</li></ul><p>In questo modo non perderai tempo a digitare e avrai la certezza di trovare esattamente la base che ho curato per te.</p><h3>3. Identificare le novità</h3><p>Vuoi sapere quali basi ho appena caricato? Cerca l'etichetta <span class=\"news-tag\">NEWS</span> accanto al titolo. Questo tag indica le mie últimas pubblicazioni e rimane attivo per i primi 5 giorni, permettendoti di restare sempre aggiornato sugli ultimi arrivi nel mio archivio.</p>"
+                g_text: "<p>Questo catalogo è lo specchio ufficiale del mio lavoro su <strong>StarMaker</strong>. È progettato per essere il tuo punto di riferimento costante: ogni base che carico sulla piattaforma viene sincronizzata qui in tempo reale, garantendoti un accesso sempre aggiornato al mio intero repertorio.</p><h3>1. Come trovare la tua base</h3><p>Puoi effettuare la ricerca in modo immediato utilizzando la barra in alto. Il sistema è flessibile: puoi cercare digitando il <strong>titolo del brano</strong> o il nome dell'<strong>artista</strong>. I risultati si aggiorneranno istantaneamente mentre scrivi.</p><h3>2. Il Workflow: Dal catalogo a StarMaker</h3><p>Ho reso il passaggio tra la ricerca e l'esecuzione su StarMaker più rapido possibile. Segui questi tre passaggi:</p><ul><li><strong>Trova</strong> il brano che vuoi cantare nel catalogo.</li><li>Premi il tasto <strong>COPIA</strong>: il sistema memorizzerà automaticamente la riferimento corretto.</li><li>Apri <strong>StarMaker</strong>, vai nella barra di ricerca brani e premi <strong>INCOLLA</strong>.</li></ul><p>In questo modo non perderai tempo a digitare e avrai la certezza di trovare esattamente la base che ho curato per te.</p><h3>3. Identificare le novità</h3><p>Vuoi sapere quali basi ho appena caricato? Cerca l'etichetta <span class=\"news-tag\">NEWS</span> accanto al titolo. Questa etichetta indica le mie ultime pubblicazioni e rimane attiva per i primi 5 giorni, permettendoti di restare sempre aggiornato sugli ultimi arrivi nel mio archivio.</p>"
             },
             en: { 
                 b1: "Scorpio Edition", b2: "Guide", b3: "Catalog", b4: "Sound Check",
@@ -773,5 +760,6 @@
             }
         });
     </script>
+    <script data-goatcounter="https://scorpioedition.goatcounter.com/count" async src="//gc.zgo.net/count.js"></script>
 </body>
 </html>
