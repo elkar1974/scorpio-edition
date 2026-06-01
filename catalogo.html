@@ -541,13 +541,14 @@
             }
         }
 
-        window.toggleNewsFilter = function() {
-            isNewsFilterActive = !isNewsFilterActive;
-            const btn = document.getElementById('newsFilterBtn');
-            if (isNewsFilterActive) {
-                btn.classList.add('active');
+        window.setFilter = function(isNews) {
+            isNewsFilterActive = isNews;
+            if(isNews) {
+                document.getElementById('btnFilterNews').classList.add('active');
+                document.getElementById('btnFilterAll').classList.remove('active');
             } else {
-                btn.classList.remove('active');
+                document.getElementById('btnFilterNews').classList.remove('active');
+                document.getElementById('btnFilterAll').classList.add('active');
             }
             renderTracks(document.getElementById('searchInput').value);
         };
