@@ -102,6 +102,7 @@
             .copy-counter-widget svg { width: 14px; height: 14px; }
         }
     </style>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="5b9047a4-c276-426b-8fa8-ceef3d41a2cd"></script>
 </head>
 <body>
 
@@ -655,8 +656,10 @@
         window.copia = function(text) {
             navigator.clipboard.writeText(text);
             
-            // Tracciamento Cloudflare Web Analytics per il pulsante Copia
-            try { if (window.cfBeacon) window.cfBeacon.send({"path": "/azione/copia"}); } catch(e) {}
+            // Tracciamento Umami per il brano copiato
+            if (window.umami) {
+                window.umami.track('Copia Brano', { brano: text });
+            }
             
             baseCopiesStorage++;
             localStorage.setItem('scorpio_local_copies', baseCopiesStorage);
@@ -683,8 +686,10 @@
         };
 
         window.condividi = function(titolo) {
-            // Tracciamento Cloudflare Web Analytics per il pulsante WhatsApp
-            try { if (window.cfBeacon) window.cfBeacon.send({"path": "/azione/whatsapp"}); } catch(e) {}
+            // Tracciamento Umami per il pulsante Condividi
+            if (window.umami) {
+                window.umami.track('Condividi WhatsApp', { brano: titolo });
+            }
             
             const params = new URLSearchParams(window.location.search);
             const lang = params.get('lang') || 'it';
@@ -891,6 +896,5 @@
             }
         });
     </script>
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6781ff68c6c14fedb064c3b86691707"}'></script>
 </body>
 </html>
