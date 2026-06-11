@@ -107,10 +107,11 @@
 <body>
 
     <div class="navbar-fissa">
-        <button id="btn1" onclick="window.cambiaPagina('menu1', this)">Scorpio Edition</button>
+        <button id="btn1" onclick="window.cambiaPagina('menu1', this)">Home</button>
         <button id="btn2" onclick="window.cambiaPagina('menu2', this)">Guida</button>
         <button id="btn3" class="attivo" onclick="window.cambiaPagina('catalogo', this)">Catalogo</button>
-        <button id="btn4" onclick="window.cambiaPagina('menu4', this)">Sound Check</button>
+        <button id="btn4" onclick="window.cambiaPagina('menu4', this)">Demo</button>
+        <button id="btn5" onclick="window.cambiaPagina('menu5', this)">Contatti</button>
     </div>
 
     <div id="menu1" class="pagina">
@@ -353,6 +354,14 @@
             </div>
         </div>
     </div>
+    
+    <div id="menu5" class="pagina">
+        <div id="contatti-content"></div>
+        <div style="text-align: center; margin-top: 30px;">
+            <p id="testo-qr" style="color: #ccc; font-style: italic; margin-bottom: 10px;"></p>
+            <img src="qr_whatsapp.jpg" alt="WhatsApp QR Code" style="max-width: 200px; border: 2px solid #ffcc00; border-radius: 10px; box-shadow: 0 0 15px rgba(255,204,0,0.3);">
+        </div>
+    </div>
 
     <div id="copyCounterWidget" class="copy-counter-widget">
         <svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
@@ -416,7 +425,7 @@
 
         let basi = [];
         let isNewsFilterActive = false;
-        let currentCategory = 'KARAOKE'; // Stato iniziale della categoria
+        let currentCategory = 'KARAOKE'; 
 
         let baseCopiesStorage = parseInt(localStorage.getItem('scorpio_local_copies') || '0');
         
@@ -468,7 +477,6 @@
                             const copiaTesto = parti[1].trim(); 
                             const dataStringa = parti[2].trim();
                             
-                            // Legge la 4° colonna per la categoria, altrimenti assegna KARAOKE di default
                             const categoria = (parti.length >= 4) ? parti[3].trim().toUpperCase() : "KARAOKE";
                             
                             let titolo = rawDisplay;
@@ -583,10 +591,8 @@
             const today = new Date();
             today.setHours(0, 0, 0, 0); 
             
-            // Primo filtro assoluto: Categoria (Karaoke o Radio)
             let basiFiltrate = basi.filter(b => b.categoria === currentCategory);
             
-            // Secondo filtro: Ricerca testuale
             const queryPulita = query.trim().replace(/\s+/g, ' ').toLowerCase();
             if (queryPulita) {
                 basiFiltrate = basiFiltrate.filter(b => 
@@ -596,7 +602,6 @@
                 );
             }
 
-            // Terzo filtro: Novità
             if (isNewsFilterActive) {
                 basiFiltrate = basiFiltrate.filter(b => {
                     const bDate = parseScorpioDate(b.data);
@@ -615,7 +620,6 @@
             const testoCondividi = (traduzioni[lang] && traduzioni[lang].share_btn) ? traduzioni[lang].share_btn : "Manda";
             const testoCopia = (traduzioni[lang] && traduzioni[lang].copy_btn) ? traduzioni[lang].copy_btn : "Copia";
             
-            // Conta le basi della vista attuale
             countContainer.innerText = `${testoContatore} ${basiFiltrate.length}`;
 
             if(basiFiltrate.length === 0) {
@@ -656,7 +660,6 @@
         window.copia = function(text) {
             navigator.clipboard.writeText(text);
             
-            // Tracciamento Umami per il brano copiato
             if (window.umami) {
                 window.umami.track('Copia Brano', { brano: text });
             }
@@ -686,7 +689,6 @@
         };
 
         window.condividi = function(titolo) {
-            // Tracciamento Umami per il pulsante Condividi
             if (window.umami) {
                 window.umami.track('Condividi WhatsApp', { brano: titolo });
             }
@@ -731,8 +733,8 @@
         const traduzioni = {
             it: { 
                 copy_btn: "Copia", btn_karaoke: "🎤 Karaoke", btn_radio: "📻 Radio",
-                b1: "Scorpio Edition", b2: "Guida", b3: "Catalogo", b4: "Sound Check",
-                c_title: "Archivio Ufficiale", search_ph: "Cerca brano o artista...", count_testo: "Totale basi: ", demo_title: "Ascolta la Qualità", share_btn: "Manda", btn_all: "📂 Mostra Tutto", btn_news: "🔥 Novità (5 gg)", widget_copies: "Copie:",
+                b1: "Home", b2: "Guida", b3: "Catalogo", b4: "Demo", b5: "Contatti",
+                c_title: "Archivio Ufficiale", search_ph: "Cerca brano o artista...", count_testo: "Totale basi: ", demo_title: "Ascolta la Qualità", share_btn: "Manda", btn_all: "📂 Mostra Tutto", btn_news: "🔥 Novità (5 gg)", widget_copies: "Copie:", qr_text: "Inquadra il QR Code da PC:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: La voce merita rispetto.</h2>
                 <blockquote>"Cantare su una base di qualità valorizza il canto. La tua voce merita rispetto."</blockquote>
                 <p>Questo è il principio su cui ho fondato <strong>MAU•SCORPIO•EDITION</strong>. Non mi limito a fornire file audio; metto a disposizione uno strumento di lavoro che eleva la performance artistica, garantendo la dignità tecnica che ogni cantante cerca.</p>
@@ -752,12 +754,27 @@
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Perché la tua voce è il tuo strumento più prezioso. Trattala come tale.</em></p>
                 <blockquote>"Non chiedo di credermi sulla parola. Chiedo di provare. Sarà la tua voce a convincerti, e il tuo palco a raccontare la differenza."</blockquote>`,
                 g_title: "Guida", 
-                g_text: `<p>Questo catalogo è lo specchio ufficiale del mio lavoro su StarMaker. Ogni traccia viene sincronizzata qui in tempo reale, garantendoti un accesso sempre aggiornato al repertorio.</p><div style="font-family: monospace; font-size: 1.05em; line-height: 1.6; color: #ddd; white-space: pre-wrap;">│<br>├── 📑 <strong>1. LA RICERCA IMMEDIATA</strong><br>│   └── Usa la barra in alto per cercare digitando il <strong>Titolo del brano</strong> o il <strong>Nome dell'artista</strong>. I risultati si aggiorneranno istantaneamente mentre scrivi.<br>│<br>├── 🎛️ <strong>2. IL FILTRO DI CATEGORIA (Novità)</strong><br>│   └── Ora puoi separare l'esperienza di canto da quella di ascolto usando i due nuovi pulsanti dedicati:<br>│       │<br>│       ├── 🎤 <strong>[KARAOKE]</strong> -> Mostra solo le basi musicali professionali ottimizzate per la tua voce.<br>│       └── 📻 <strong>[RADIO]</strong>   -> Mostra i brani originali con testo millimetrico, ideali per studio ed esibizione live.<br>│<br>├── ⚙️ <strong>3. IL WORKFLOW: DAL CATALOGO A STARMAKER</strong><br>│   └── Il passaggio dal sito alla piattaforma è immediato. Segui la cascata:<br>│       │<br>│       ├── 1️⃣ Trova il brano (Karaoke o Radio) nel catalogo.<br>│       ├── 2️⃣ Premi il tasto <strong>COPIA</strong>: il sistema memorizzerà il riferimento corretto.<br>│       └── 3️⃣ Apri StarMaker, vai nella barra di ricerca e premi <strong>INCOLLA</strong>.<br>│<br>└── ✨ <strong>4. IDENTIFICARE LE NOVITÀ</strong><br>    └── Vuoi sapere cosa ho appena caricato? Cerca l'etichetta <span class="news-tag">NEWS</span> accanto al titolo. Rimane attiva per i primi 5 giorni su tutte le nuove pubblicazioni.</div>`
+                g_text: `<p>Questo catalogo è lo specchio ufficiale del mio lavoro su StarMaker. Ogni traccia viene sincronizzata qui in tempo reale, garantendoti un accesso sempre aggiornato al repertorio.</p><div style="font-family: monospace; font-size: 1.05em; line-height: 1.6; color: #ddd; white-space: pre-wrap;">│<br>├── 📑 <strong>1. LA RICERCA IMMEDIATA</strong><br>│   └── Usa la barra in alto per cercare digitando il <strong>Titolo del brano</strong> o il <strong>Nome dell'artista</strong>. I risultati si aggiorneranno istantaneamente mentre scrivi.<br>│<br>├── 🎛️ <strong>2. IL FILTRO DI CATEGORIA (Novità)</strong><br>│   └── Ora puoi separare l'esperienza di canto da quella di ascolto usando i due nuovi pulsanti dedicati:<br>│       │<br>│       ├── 🎤 <strong>[KARAOKE]</strong> -> Mostra solo le basi musicali professionali ottimizzate per la tua voce.<br>│       └── 📻 <strong>[RADIO]</strong>   -> Mostra i brani originali con testo millimetrico, ideali per studio ed esibizione live.<br>│<br>├── ⚙️ <strong>3. IL WORKFLOW: DAL CATALOGO A STARMAKER</strong><br>│   └── Il passaggio dal sito alla piattaforma è immediato. Segui la cascata:<br>│       │<br>│       ├── 1️⃣ Trova il brano (Karaoke o Radio) nel catalogo.<br>│       ├── 2️⃣ Premi il tasto <strong>COPIA</strong>: il sistema memorizzerà il riferimento corretto.<br>│       └── 3️⃣ Apri StarMaker, vai nella barra di ricerca e premi <strong>INCOLLA</strong>.<br>│<br>└── ✨ <strong>4. IDENTIFICARE LE NOVITÀ</strong><br>    └── Vuoi sapere cosa ho appena caricato? Cerca l'etichetta <span class="news-tag">NEWS</span> accanto al titolo. Rimane attiva per i primi 5 giorni su tutte le nuove pubblicazioni.</div>`,
+                contatti_testo: `<h2>Richieste e Supporto</h2>
+                <p>Il catalogo Scorpio Edition è in continuo aggiornamento. Se non trovi quello che ti serve per la tua performance su StarMaker, puoi richiederlo direttamente.</p>
+                <h3>Cosa puoi richiedere:</h3>
+                <ul>
+                    <li>🎤 <strong>Basi Karaoke:</strong> Un brano specifico che manca nell'archivio.</li>
+                    <li>📻 <strong>Brani Radio:</strong> Un artista o una canzone originale per l'ascolto e lo studio.</li>
+                </ul>
+                <h3>Come inviare la richiesta:</h3>
+                <ul>
+                    <li>📱 <strong>Da Smartphone:</strong> Clicca sul tasto WhatsApp qui sotto per scrivermi direttamente.</li>
+                    <li>💻 <strong>Da PC:</strong> Inquadra il QR Code a fondo pagina con la fotocamera del tuo telefono.</li>
+                </ul>
+                <div style="text-align: center; margin-top: 35px; margin-bottom: 25px;">
+                    <a href="https://wa.me/393534099223?text=Ciao%20Maurizio!%20Ti%20scrivo%20dal%20catalogo%20Scorpio%20Edition.%20Vorrei%20richiedere%20l%27inserimento%20di%20un%20nuovo%20brano%20(Base%20Karaoke%20o%20Brano%20Radio)%3A%20" target="_blank" style="display: inline-block; background-color: #25D366; color: white; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.1em; box-shadow: 0 4px 10px rgba(0,0,0,0.5); transition: background 0.3s;">💬 Scrivimi su WhatsApp</a>
+                </div>`
             },
             en: { 
                 copy_btn: "Copy", btn_karaoke: "🎤 Karaoke", btn_radio: "📻 Radio",
-                b1: "Scorpio Edition", b2: "Guide", b3: "Catalog", b4: "Sound Check",
-                c_title: "Official Catalog", search_ph: "Search song or artist...", count_testo: "Total tracks: ", demo_title: "Hear the Quality", share_btn: "Share", btn_all: "📂 Show All", btn_news: "🔥 New (5 days)", widget_copies: "Copies:",
+                b1: "Home", b2: "Guide", b3: "Catalog", b4: "Demo", b5: "Contact",
+                c_title: "Official Catalog", search_ph: "Search song or artist...", count_testo: "Total tracks: ", demo_title: "Hear the Quality", share_btn: "Share", btn_all: "📂 Show All", btn_news: "🔥 New (5 days)", widget_copies: "Copies:", qr_text: "Scan the QR Code from your PC:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: Your voice deserves respect.</h2>
                 <blockquote>"Singing to a quality backing track enhances your singing. Your voice deserves respect."</blockquote>
                 <p>This is the principle upon which I founded <strong>MAU•SCORPIO•EDITION</strong>. I don't just provide audio files; I provide a tool that elevates artistic performance, ensuring the technical dignity every singer seeks.</p>
@@ -777,12 +794,27 @@
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Because your voice is your most precious instrument. Treat it as such.</em></p>
                 <blockquote>"I don't ask you to take my word for it. I ask you to try. Your voice will convince you, and your stage will tell the difference."</blockquote>`,
                 g_title: "Guide", 
-                g_text: `<p>This catalog is the official reflection of my work on StarMaker. Every track is synchronized here in real-time, guaranteeing you up-to-date access to the repertoire.</p><div style="font-family: monospace; font-size: 1.05em; line-height: 1.6; color: #ddd; white-space: pre-wrap;">│<br>├── 📑 <strong>1. INSTANT SEARCH</strong><br>│   └── Use the top bar to search by typing the <strong>Song title</strong> or <strong>Artist name</strong>. The results update instantly as you type.<br>│<br>├── 🎛️ <strong>2. CATEGORY FILTER (New)</strong><br>│   └── You can now separate the singing experience from the listening one using the two dedicated buttons:<br>│       │<br>│       ├── 🎤 <strong>[KARAOKE]</strong> -> Shows only professional backing tracks optimized for your voice.<br>│       └── 📻 <strong>[RADIO]</strong>   -> Shows original songs with millimetric lyrics, ideal for study and live performance.<br>│<br>├── ⚙️ <strong>3. THE WORKFLOW: CATALOG TO STARMAKER</strong><br>│   └── The transition from the site to the platform is immediate. Follow the cascade:<br>│       │<br>│       ├── 1️⃣ Find the track (Karaoke or Radio) in the catalog.<br>│       ├── 2️⃣ Press the <strong>COPY</strong> button: the system stores the correct reference.<br>│       └── 3️⃣ Open StarMaker, go to the search bar and press <strong>PASTE</strong>.<br>│<br>└── ✨ <strong>4. IDENTIFYING NEW RELEASES</strong><br>    └── Want to know what I just uploaded? Look for the <span class="news-tag">NEWS</span> tag next to the title. It remains active for the first 5 days on all new publications.</div>`
+                g_text: `<p>This catalog is the official reflection of my work on StarMaker. Every track is synchronized here in real-time, guaranteeing you up-to-date access to the repertoire.</p><div style="font-family: monospace; font-size: 1.05em; line-height: 1.6; color: #ddd; white-space: pre-wrap;">│<br>├── 📑 <strong>1. INSTANT SEARCH</strong><br>│   └── Use the top bar to search by typing the <strong>Song title</strong> or <strong>Artist name</strong>. The results update instantly as you type.<br>│<br>├── 🎛️ <strong>2. CATEGORY FILTER (New)</strong><br>│   └── You can now separate the singing experience from the listening one using the two dedicated buttons:<br>│       │<br>│       ├── 🎤 <strong>[KARAOKE]</strong> -> Shows only professional backing tracks optimized for your voice.<br>│       └── 📻 <strong>[RADIO]</strong>   -> Shows original songs with millimetric lyrics, ideal for study and live performance.<br>│<br>├── ⚙️ <strong>3. THE WORKFLOW: CATALOG TO STARMAKER</strong><br>│   └── The transition from the site to the platform is immediate. Follow the cascade:<br>│       │<br>│       ├── 1️⃣ Find the track (Karaoke or Radio) in the catalog.<br>│       ├── 2️⃣ Press the <strong>COPY</strong> button: the system stores the correct reference.<br>│       └── 3️⃣ Open StarMaker, go to the search bar and press <strong>PASTE</strong>.<br>│<br>└── ✨ <strong>4. IDENTIFYING NEW RELEASES</strong><br>    └── Want to know what I just uploaded? Look for the <span class="news-tag">NEWS</span> tag next to the title. It remains active for the first 5 days on all new publications.</div>`,
+                contatti_testo: `<h2>Requests & Support</h2>
+                <p>The Scorpio Edition catalog is constantly updated. If you can't find what you need for your StarMaker performance, you can request it directly from support.</p>
+                <h3>What you can request:</h3>
+                <ul>
+                    <li>🎤 <strong>Karaoke Tracks:</strong> A specific song missing from the archive.</li>
+                    <li>📻 <strong>Radio Tracks:</strong> An original artist or song to be added for listening and studying.</li>
+                </ul>
+                <h3>How to send a request:</h3>
+                <ul>
+                    <li>📱 <strong>From Smartphone:</strong> Click the WhatsApp button below to message me directly.</li>
+                    <li>💻 <strong>From PC:</strong> Scan the QR Code at the bottom of the page with your phone's camera.</li>
+                </ul>
+                <div style="text-align: center; margin-top: 35px; margin-bottom: 25px;">
+                    <a href="https://wa.me/393534099223?text=Hi%20Maurizio!%20I%27m%20writing%20from%20the%20Scorpio%20Edition%20catalog.%20I%20would%20like%20to%20request%20the%20addition%20of%20a%20new%20track%20(Karaoke%20Track%20or%20Radio%20Track)%3A%20" target="_blank" style="display: inline-block; background-color: #25D366; color: white; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.1em; box-shadow: 0 4px 10px rgba(0,0,0,0.5); transition: background 0.3s;">💬 Message me on WhatsApp</a>
+                </div>`
             },
             es: { 
                 copy_btn: "Copiar", btn_karaoke: "🎤 Karaoke", btn_radio: "📻 Radio",
-                b1: "Scorpio Edition", b2: "Guía", b3: "Catálogo", b4: "Sound Check",
-                c_title: "Archivo Oficial", search_ph: "Buscar canción o artista...", count_testo: "Pistas totales: ", demo_title: "Escucha la Calidad", share_btn: "Enviar", btn_all: "📂 Mostrar Todo", btn_news: "🔥 Novedades (5 d)", widget_copies: "Copias:",
+                b1: "Home", b2: "Guía", b3: "Catálogo", b4: "Demo", b5: "Contacto",
+                c_title: "Archivo Oficial", search_ph: "Buscar canción o artista...", count_testo: "Pistas totales: ", demo_title: "Escucha la Calidad", share_btn: "Enviar", btn_all: "📂 Mostrar Todo", btn_news: "🔥 Novedades (5 d)", widget_copies: "Copias:", qr_text: "Escanea el código QR desde tu PC:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: Tu voz merece respeto.</h2>
                 <blockquote>"Cantar sobre una base de calidad realza el canto. Tu voz merece respeto."</blockquote>
                 <p>Este es el principio sobre el cual fundé <strong>MAU•SCORPIO•EDITION</strong>. No me limito a proporcionar archivos de audio; ofrezco una herramienta de trabajo que eleva la interpretación artística, garantizando la dignidad técnica que cada cantante busca.</p>
@@ -802,12 +834,27 @@
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Porque tu voz es tu instrumento más preciado. Trátala como tal.</em></p>
                 <blockquote>"No pido que me creas. Te pido que pruebes. Tu voz te convencerá y tu escenario contará la diferencia."</blockquote>`,
                 g_title: "Guía", 
-                g_text: `<p>Este catálogo es el reflejo oficial de mi trabajo en StarMaker. Cada pista se sincroniza aquí en tiempo real, garantizándote un acceso siempre actualizado al repertorio.</p><div style="font-family: monospace; font-size: 1.05em; line-height: 1.6; color: #ddd; white-space: pre-wrap;">│<br>├── 📑 <strong>1. BÚSQUEDA INMEDIATA</strong><br>│   └── Usa la barra superior para buscar escribiendo el <strong>Título de la canción</strong> o <strong>Nombre del artista</strong>. Los resultados se actualizarán al instante mientras escribes.<br>│<br>├── 🎛️ <strong>2. FILTRO DE CATEGORÍA (Novedad)</strong><br>│   └── Ahora puedes separar la experiencia de canto de la de escucha usando los dos botones dedicados:<br>│       │<br>│       ├── 🎤 <strong>[KARAOKE]</strong> -> Muestra solo bases musicales profesionales optimizadas para tu voz.<br>│       └── 📻 <strong>[RADIO]</strong>   -> Muestra canciones originales con letra milimétrica, ideales para estudio y actuación en vivo.<br>│<br>├── ⚙️ <strong>3. EL WORKFLOW: DEL CATÁLOGO A STARMAKER</strong><br>│   └── El paso del sitio a la plataforma es inmediato. Sigue la cascada:<br>│       │<br>│       ├── 1️⃣ Encuentra la pista (Karaoke o Radio) en el catálogo.<br>│       ├── 2️⃣ Presiona el botón <strong>COPIAR</strong>: el sistema memorizará la referencia correcta.<br>│       └── 3️⃣ Abre StarMaker, ve a la barra de búsqueda y presiona <strong>PEGAR</strong>.<br>│<br>└── ✨ <strong>4. IDENTIFICAR LAS NOVEDADES</strong><br>    └── ¿Quieres saber qué acabo de subir? Busca la etiqueta <span class="news-tag">NEWS</span> junto al título. Permanece activa los primeros 5 días en todas las nuevas publicaciones.</div>`
+                g_text: `<p>Este catálogo es el reflejo oficial de mi trabajo en StarMaker. Cada pista se sincroniza aquí en tiempo real, garantizándote un acceso siempre actualizado al repertorio.</p><div style="font-family: monospace; font-size: 1.05em; line-height: 1.6; color: #ddd; white-space: pre-wrap;">│<br>├── 📑 <strong>1. BÚSQUEDA INMEDIATA</strong><br>│   └── Usa la barra superior para buscar escribiendo el <strong>Título de la canción</strong> o <strong>Nombre del artista</strong>. Los resultados se actualizarán al instante mientras escribes.<br>│<br>├── 🎛️ <strong>2. FILTRO DE CATEGORÍA (Novedad)</strong><br>│   └── Ahora puedes separar la experiencia de canto de la de escucha usando los dos botones dedicados:<br>│       │<br>│       ├── 🎤 <strong>[KARAOKE]</strong> -> Muestra solo bases musicales profesionales optimizadas para tu voz.<br>│       └── 📻 <strong>[RADIO]</strong>   -> Muestra canciones originales con letra milimétrica, ideales para estudio y actuación en vivo.<br>│<br>├── ⚙️ <strong>3. EL WORKFLOW: DEL CATÁLOGO A STARMAKER</strong><br>│   └── El paso del sitio a la plataforma es inmediato. Sigue la cascada:<br>│       │<br>│       ├── 1️⃣ Encuentra la pista (Karaoke o Radio) en el catálogo.<br>│       ├── 2️⃣ Presiona el botón <strong>COPIAR</strong>: el sistema memorizará la referencia correcta.<br>│       └── 3️⃣ Abre StarMaker, ve a la barra de búsqueda y presiona <strong>PEGAR</strong>.<br>│<br>└── ✨ <strong>4. IDENTIFICAR LAS NOVEDADES</strong><br>    └── ¿Quieres saber qué acabo de subir? Busca la etiqueta <span class="news-tag">NEWS</span> junto al título. Permanece activa los primeros 5 días en todas las nuevas publicaciones.</div>`,
+                contatti_testo: `<h2>Peticiones y Soporte</h2>
+                <p>El catálogo Scorpio Edition se actualiza continuamente. Si no encuentras lo que necesitas para tu actuación en StarMaker, puedes solicitarlo directamente al soporte.</p>
+                <h3>Qué puedes solicitar:</h3>
+                <ul>
+                    <li>🎤 <strong>Bases Karaoke:</strong> Una canción específica que falta en el archivo.</li>
+                    <li>📻 <strong>Pistas Radio:</strong> Un artista o una canción original para escuchar y estudiar.</li>
+                </ul>
+                <h3>Cómo enviar la solicitud:</h3>
+                <ul>
+                    <li>📱 <strong>Desde un Smartphone:</strong> Haz clic en el botón de WhatsApp a continuación para escribirme directamente.</li>
+                    <li>💻 <strong>Desde un PC:</strong> Escanea el código QR en la parte inferior de la página con la cámara de tu teléfono.</li>
+                </ul>
+                <div style="text-align: center; margin-top: 35px; margin-bottom: 25px;">
+                    <a href="https://wa.me/393534099223?text=%C2%A1Hola%20Maurizio!%20Te%20escribo%20desde%20el%20cat%C3%A1logo%20Scorpio%20Edition.%20Me%20gustar%C3%ADa%20solicitar%20la%20incorporaci%C3%B3n%20de%20una%20nueva%20pista%20(Base%20Karaoke%20o%20Pista%20Radio)%3A%20" target="_blank" style="display: inline-block; background-color: #25D366; color: white; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.1em; box-shadow: 0 4px 10px rgba(0,0,0,0.5); transition: background 0.3s;">💬 Escríbeme por WhatsApp</a>
+                </div>`
             },
             fr: { 
                 copy_btn: "Copier", btn_karaoke: "🎤 Karaoké", btn_radio: "📻 Radio",
-                b1: "Scorpio Edition", b2: "Guide", b3: "Catalogue", b4: "Sound Check",
-                c_title: "Archive Officielle", search_ph: "Rechercher une chanson ou un artiste...", count_testo: "Pistes totales : ", demo_title: "Écoutez la Qualité", share_btn: "Partager", btn_all: "📂 Tout Afficher", btn_news: "🔥 Nouveautés (5 j)", widget_copies: "Copies :",
+                b1: "Home", b2: "Guide", b3: "Catalogue", b4: "Démo", b5: "Contact",
+                c_title: "Archive Officielle", search_ph: "Rechercher une chanson ou un artiste...", count_testo: "Pistes totales : ", demo_title: "Écoutez la Qualité", share_btn: "Partager", btn_all: "📂 Tout Afficher", btn_news: "🔥 Nouveautés (5 j)", widget_copies: "Copies :", qr_text: "Scannez le code QR depuis votre PC :",
                 m_content: `<h2>MAU•SCORPIO•EDITION : Ta voix mérite le respect.</h2>
                 <blockquote>"Chanter sur une base de qualité valorise le chant. Ta voix mérite le respect."</blockquote>
                 <p>C’est le principe sur lequel j’ai fondé <strong>MAU•SCORPIO•EDITION</strong>. Je ne me limite pas à fournir des fichiers audio ; je mets à disposition un outil de travail qui élève la performance artistique, garantissant la dignité technique que chaque chanteur recherche.</p>
@@ -821,18 +868,33 @@
                 <h3>Au-delà du Karaoké : L'Expérience Radio</h3>
                 <p>Le dévouement à la qualité ne s'arrête pas aux bases. J'ai voulu enrichir le projet en introduisant une section entièrement dédiée à l'écoute et à l'étude : <strong>les chansons originales</strong>. En partant de la plus haute qualité audio master disponible, j'ai importé sur StarMaker les chansons chantées par les artistes originaux, en appliquant à ces pistes exactement le même soin maniaque et millimétré pour la synchronisation des paroles. Une expérience immersive, pensée pour ceux qui veulent écouter, s'exercer ou chanter sur l'original avec la garantie de la marque Scorpio.</p>
                 <h3>Un voyage sans retour vers la Qualité</h3>
-                <p>Je sais très bien que la différence se sent dès la première note. C’est pourquoi j’ai transformé l’expérience de ceux qui utilisent mes fichiers en un point de non-retour : quiconque choisit <strong>MAU•SCORPIO•EDITION</strong> pour ses prestations ne revient jamais en arrière. Lorsque l'on goûte à la certitude d'une piste qui ne trahit jamais, qui met en valeur chaque nuance de sa voix et qui accompagne l'écoute et la prestation avec une précision absolue, la recherche d'alternatives devient superflue.</p>
+                <p>Je sais très bien que la différence se sent dès la première note. C’est pourquoi j’ai transformé l’expérience de ceux qui utilisent mes fichiers en un point de non-retour : quiconque choisit <strong>MAU•SCORPIO•EDITION</strong> pour ses prestations ne revient jamais en arrière. Lorsque l'on goûte à la certitude d'une piste qui ne trahit jamais, qui met en valeur chaque nuance de sa voix et qui accompagne l'écoute et la prestation avec une précision absolue, la recherche d'alternatives devient superflua.</p>
                 <h3>La valeur du bouche-à-oreille</h3>
                 <p>Je crois fermement qu’un produit de qualité supérieure n’a pas besoin de poussées forcées. <strong>MAU•SCORPIO•EDITION</strong> est un projet qui vit de l'expérience directe des professionnels et des passionnés. C’est la satisfaction de celui qui trouve enfin la piste parfaite, la sécurité de celui qui monte sur scène en sachant qu’il a un son impeccable derrière lui, qui génère ce bouche-à-oreille naturel qui guide d'autres chanteurs vers mon catalogue.</p>
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Parce que ta voix est ton instrument le plus précieux. Traite-la comme tel.</em></p>
                 <blockquote>"Je ne demande pas de me croire sur parole. Je demande d'essayer. Ta voix te convaincra, et ta scène racontera la différence."</blockquote>`,
                 g_title: "Guide", 
-                g_text: `<p>Ce catalogue est le reflet officiel de mon travail sur StarMaker. Chaque piste est synchronisée ici en temps réel, te garantissant un accès toujours mis à jour au répertoire.</p><div style="font-family: monospace; font-size: 1.05em; line-height: 1.6; color: #ddd; white-space: pre-wrap;">│<br>├── 📑 <strong>1. RECHERCHE IMMÉDIATE</strong><br>│   └── Utilise la barre en haut pour chercher en tapant le <strong>Titre de la chanson</strong> ou le <strong>Nom de l'artiste</strong>. Les résultats se mettront à jour instantanément.<br>│<br>├── 🎛️ <strong>2. FILTRE DE CATÉGORIE (Nouveauté)</strong><br>│   └── Tu peux désormais séparer l'expérience de chant de l'écoute avec deux boutons dédiés :<br>│       │<br>│       ├── 🎤 <strong>[KARAOKE]</strong> -> Affiche uniquement les bases musicales professionnelles optimisées pour ta voix.<br>│       └── 📻 <strong>[RADIO]</strong>   -> Affiche les chansons originales avec texte millimétré, idéales pour l'étude et le live.<br>│<br>├── ⚙️ <strong>3. LE WORKFLOW : DU CATALOGUE À STARMAKER</strong><br>│   └── Le passage du site à la plateforme est immédiat. Suis la cascade :<br>│       │<br>│       ├── 1️⃣ Trouve la piste (Karaoke ou Radio) dans le catalogue.<br>│       ├── 2️⃣ Appuie sur le bouton <strong>COPIER</strong> : le système mémorisera la bonne référence.<br>│       └── 3️⃣ Ouvre StarMaker, va dans la barre de recherche et appuie sur <strong>COLLER</strong>.<br>│<br>└── ✨ <strong>4. IDENTIFIER LES NOUVEAUTÉS</strong><br>    └── Tu veux savoir ce que je viens de charger ? Cherche l'étiquette <span class="news-tag">NEWS</span> à côté du titre. Elle reste active les 5 premiers jours sur toutes les nouveautés.</div>`
+                g_text: `<p>Ce catalogue est le reflet officiel de mon travail sur StarMaker. Chaque piste est synchronisée ici en temps réel, te garantissant un accès toujours mis à jour au répertoire.</p><div style="font-family: monospace; font-size: 1.05em; line-height: 1.6; color: #ddd; white-space: pre-wrap;">│<br>├── 📑 <strong>1. RECHERCHE IMMÉDIATE</strong><br>│   └── Utilise la barre en haut pour chercher en tapant le <strong>Titre de la chanson</strong> ou le <strong>Nom de l'artiste</strong>. Les résultats se mettront à jour instantanément.<br>│<br>├── 🎛️ <strong>2. FILTRE DE CATÉGORIE (Nouveauté)</strong><br>│   └── Tu peux désormais séparer l'expérience de chant de l'écoute avec deux boutons dédiés :<br>│       │<br>│       ├── 🎤 <strong>[KARAOKE]</strong> -> Affiche uniquement les bases musicales professionnelles optimisées pour ta voix.<br>│       └── 📻 <strong>[RADIO]</strong>   -> Affiche les chansons originales avec texte millimétré, idéales pour l'étude et le live.<br>│<br>├── ⚙️ <strong>3. LE WORKFLOW : DU CATALOGUE À STARMAKER</strong><br>│   └── Le passage du site à la plateforme est immédiat. Suis la cascade :<br>│       │<br>│       ├── 1️⃣ Trouve la piste (Karaoke ou Radio) dans le catalogue.<br>│       ├── 2️⃣ Appuie sur le bouton <strong>COPIER</strong> : le système mémorisera la bonne référence.<br>│       └── 3️⃣ Ouvre StarMaker, va dans la barre de recherche et appuie sur <strong>COLLER</strong>.<br>│<br>└── ✨ <strong>4. IDENTIFIER LES NOUVEAUTÉS</strong><br>    └── Tu veux savoir ce que je viens de charger ? Cherche l'étiquette <span class="news-tag">NEWS</span> à côté du titre. Elle reste active les 5 premiers jours sur toutes les nouveautés.</div>`,
+                contatti_testo: `<h2>Demandes et Support</h2>
+                <p>Le catalogue Scorpio Edition est constamment mis à jour. Si vous ne trouvez pas ce dont vous avez besoin pour votre performance sur StarMaker, vous pouvez le demander directement au support.</p>
+                <h3>Ce que vous pouvez demander :</h3>
+                <ul>
+                    <li>🎤 <strong>Bases Karaoké :</strong> Une chanson spécifique qui manque dans les archives.</li>
+                    <li>📻 <strong>Pistes Radio :</strong> Un artiste ou une chanson originale à ajouter pour l'écoute et l'étude.</li>
+                </ul>
+                <h3>Comment envoyer la demande :</h3>
+                <ul>
+                    <li>📱 <strong>Depuis un Smartphone :</strong> Cliquez sur le bouton WhatsApp ci-dessous pour m'écrire directement.</li>
+                    <li>💻 <strong>Depuis un PC :</strong> Scannez le code QR au bas de la page avec l'appareil photo de votre téléphone.</li>
+                </ul>
+                <div style="text-align: center; margin-top: 35px; margin-bottom: 25px;">
+                    <a href="https://wa.me/393534099223?text=Salut%20Maurizio%20!%20Je%20t%27%C3%A9cris%20depuis%20le%20catalogue%20Scorpio%20Edition.%20Je%20voudrais%20demander%20l%27ajout%20d%27une%20nouvelle%20piste%20(Base%20Karaok%C3%A9%20ou%20Piste%20Radio)%20%3A%20" target="_blank" style="display: inline-block; background-color: #25D366; color: white; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.1em; box-shadow: 0 4px 10px rgba(0,0,0,0.5); transition: background 0.3s;">💬 Écris-moi sur WhatsApp</a>
+                </div>`
             },
             de: { 
                 copy_btn: "Kopieren", btn_karaoke: "🎤 Karaoke", btn_radio: "📻 Radio",
-                b1: "Scorpio Edition", b2: "Anleitung", b3: "Katalog", b4: "Sound Check",
-                c_title: "Offizielles Archiv", search_ph: "Song oder Künstler suchen...", count_testo: "Gesamte Playbacks: ", demo_title: "Hören Sie die Qualität", share_btn: "Teilen", btn_all: "📂 Alles Zeigen", btn_news: "🔥 Neuheiten (5 T)", widget_copies: "Kopien:",
+                b1: "Home", b2: "Anleitung", b3: "Katalog", b4: "Demo", b5: "Kontakt",
+                c_title: "Offizielles Archiv", search_ph: "Song oder Künstler suchen...", count_testo: "Gesamte Playbacks: ", demo_title: "Hören Sie die Qualität", share_btn: "Teilen", btn_all: "📂 Alles Zeigen", btn_news: "🔥 Neuheiten (5 T)", widget_copies: "Kopien:", qr_text: "Scanne den QR-Code vom PC aus:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: Deine Stimme verdient Respekt.</h2>
                 <blockquote>"Auf einem hochwertigen Playback zu singen, wertet den Gesang auf. Deine Stimme verdient Respekt."</blockquote>
                 <p>Dies ist das Prinzip, auf dem ich <strong>MAU•SCORPIO•EDITION</strong> gegründet habe. Ich liefere nicht nur Audiodateien; ich stelle ein Arbeitswerkzeug zur Verfügung, das die künstlerische Darbietung hebt und die technische Qualität garantiert, die jeder Sänger sucht.</p>
@@ -852,7 +914,22 @@
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Weil deine Stimme dein wertvollstes Instrument ist. Behandle sie auch so.</em></p>
                 <blockquote>"Ich verlange nicht, dass du mir beim Wort glaubst. Probiere es aus. Deine Stimme wird dich überzeugen, und deine Bühne wird den Unterschied erzählen."</blockquote>`,
                 g_title: "Anleitung", 
-                g_text: `<p>Dieser Katalog ist das offizielle Abbild meiner Arbeit auf StarMaker. Jeder Track wird hier in Echtzeit synchronisiert, was dir einen stets aktuellen Zugriff auf das Repertoire garantiert.</p><div style="font-family: monospace; font-size: 1.05em; line-height: 1.6; color: #ddd; white-space: pre-wrap;">│<br>├── 📑 <strong>1. SOFORTIGE SUCHE</strong><br>│   └── Nutze die Suchleiste oben, um nach <strong>Songtitel</strong> oder <strong>Künstler</strong> zu suchen. Die Ergebnisse aktualisieren sich sofort beim Tippen.<br>│<br>├── 🎛️ <strong>2. KATEGORIE-FILTER (Neu)</strong><br>│   └── Du kannst nun das Gesangs- und Hörerlebnis durch zwei Buttons trennen:<br>│       │<br>│       ├── 🎤 <strong>[KARAOKE]</strong> -> Zeigt nur professionelle, für deine Stimme optimierte Playbacks.<br>│       └── 📻 <strong>[RADIO]</strong>   -> Zeigt Originalsongs mit millimetergenauem Text, ideal zum Üben und für Live-Auftritte.<br>│<br>├── ⚙️ <strong>3. DER WORKFLOW: VOM KATALOG ZU STARMAKER</strong><br>│   └── Der Übergang von der Website zur Plattform ist nahtlos. Folge der Kaskade:<br>│       │<br>│       ├── 1️⃣ Finde den Track (Karaoke oder Radio) im Katalog.<br>│       ├── 2️⃣ Drücke <strong>KOPIEREN</strong>: Das System speichert die richtige Referenz.<br>│       └── 3️⃣ Öffne StarMaker, gehe zur Suchleiste und drücke <strong>EINFÜGEN</strong>.<br>│<br>└── ✨ <strong>4. NEUHEITEN ERKENNEN</strong><br>    └── Willst du wissen, was ich gerade hochgeladen habe? Suche nach dem <span class="news-tag">NEWS</span>-Tag neben dem Titel. Es bleibt die ersten 5 Tage nach Veröffentlichung aktiv.</div>`
+                g_text: `<p>Dieser Katalog ist das offizielle Abbild meiner Arbeit auf StarMaker. Jeder Track wird hier in Echtzeit synchronisiert, was dir einen stets aktuellen Zugriff auf das Repertoire garantiert.</p><div style="font-family: monospace; font-size: 1.05em; line-height: 1.6; color: #ddd; white-space: pre-wrap;">│<br>├── 📑 <strong>1. SOFORTIGE SUCHE</strong><br>│   └── Nutze die Suchleiste oben, um nach <strong>Songtitel</strong> oder <strong>Künstler</strong> zu suchen. Die Ergebnisse aktualisieren sich sofort beim Tippen.<br>│<br>├── 🎛️ <strong>2. KATEGORIE-FILTER (Neu)</strong><br>│   └── Du kannst nun das Gesangs- und Hörerlebnis durch zwei Buttons trennen:<br>│       │<br>│       ├── 🎤 <strong>[KARAOKE]</strong> -> Zeigt nur professionelle, für deine Stimme optimierte Playbacks.<br>│       └── 📻 <strong>[RADIO]</strong>   -> Zeigt Originalsongs mit millimetergenauem Text, ideal zum Üben und für Live-Auftritte.<br>│<br>├── ⚙️ <strong>3. DER WORKFLOW: VOM KATALOG ZU STARMAKER</strong><br>│   └── Der Übergang von der Website zur Plattform ist nahtlos. Folge der Kaskade:<br>│       │<br>│       ├── 1️⃣ Finde den Track (Karaoke oder Radio) im Katalog.<br>│       ├── 2️⃣ Drücke <strong>KOPIEREN</strong>: Das System speichert die richtige Referenz.<br>│       └── 3️⃣ Öffne StarMaker, gehe zur Suchleiste und drücke <strong>EINFÜGEN</strong>.<br>│<br>└── ✨ <strong>4. NEUHEITEN ERKENNEN</strong><br>    └── Willst du wissen, was ich gerade hochgeladen habe? Suche nach dem <span class="news-tag">NEWS</span>-Tag neben dem Titel. Es bleibt die ersten 5 Tage nach Veröffentlichung aktiv.</div>`,
+                contatti_testo: `<h2>Anfragen & Support</h2>
+                <p>Der Scorpio Edition Katalog wird ständig aktualisiert. Wenn du für deinen StarMaker-Auftritt nicht das findest, was du brauchst, kannst du es direkt beim Support anfragen.</p>
+                <h3>Was du anfragen kannst:</h3>
+                <ul>
+                    <li>🎤 <strong>Karaoke-Playbacks:</strong> Ein bestimmter Song, der im Archiv fehlt.</li>
+                    <li>📻 <strong>Radio-Tracks:</strong> Ein Originalkünstler oder -song zum Anhören und Üben.</li>
+                </ul>
+                <h3>Wie man eine Anfrage sendet:</h3>
+                <ul>
+                    <li>📱 <strong>Vom Smartphone:</strong> Klicke auf den WhatsApp-Button unten, um mir direkt zu schreiben.</li>
+                    <li>💻 <strong>Vom PC:</strong> Scanne den QR-Code unten auf der Seite mit der Kamera deines Smartphones.</li>
+                </ul>
+                <div style="text-align: center; margin-top: 35px; margin-bottom: 25px;">
+                    <a href="https://wa.me/393534099223?text=Hallo%20Maurizio!%20Ich%20schreibe%20aus%20dem%20Scorpio%20Edition%20Katalog.%20Ich%20m%C3%B6chte%20die%20Aufnahme%20eines%20neuen%20Tracks%20anfragen%20(Karaoke-Playback%20oder%20Radio-Track)%3A%20" target="_blank" style="display: inline-block; background-color: #25D366; color: white; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.1em; box-shadow: 0 4px 10px rgba(0,0,0,0.5); transition: background 0.3s;">💬 Schreib mir auf WhatsApp</a>
+                </div>`
             }
         };
 
@@ -866,6 +943,7 @@
             document.getElementById('btn2').innerText = data.b2;
             document.getElementById('btn3').innerText = data.b3;
             document.getElementById('btn4').innerText = data.b4;
+            document.getElementById('btn5').innerText = data.b5;
             
             document.getElementById('manifesto-content').innerHTML = data.m_content;
             document.getElementById('demo-title-text').innerText = data.demo_title || "Ascolta la Qualità";
@@ -878,6 +956,9 @@
             document.getElementById('btnFilterAll').innerText = data.btn_all;
             document.getElementById('btnFilterNews').innerText = data.btn_news;
             document.getElementById('copyWidgetText').innerText = data.widget_copies || "Copie:";
+            
+            document.getElementById('contatti-content').innerHTML = data.contatti_testo;
+            document.getElementById('testo-qr').innerText = data.qr_text;
             
             aggiornaContatoreCopie();
 
