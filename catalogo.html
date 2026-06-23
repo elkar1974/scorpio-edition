@@ -346,10 +346,13 @@
             
             const queryPulita = query.trim().replace(/\s+/g, ' ').toLowerCase();
             if (queryPulita) {
-                basiFiltrate = basiFiltrate.filter(b => 
-                    b.titolo.toLowerCase().replace(/\u200D/g, '').includes(queryPulita) || 
-                    b.artista.toLowerCase().replace(/\u200D/g, '').includes(queryPulita) ||
-                    b.copiaTesto.toLowerCase().replace(/\u200D/g, '').includes(queryPulita)
+                basiFiltrate = basiFiltrate.filter(b => {
+                    // Questa funzione spazza via TUTTI i caratteri invisibili (scudo compreso) e i doppi spazi
+                    const pulisci = (t) => t.toLowerCase().replace(/[\u200B-\u200D\uFEFF\u200E\u200F]/g, '').replace(/\s+/g, ' ');
+                    
+                    return pulisci(b.titolo).includes(queryPulita) || 
+                           pulisci(b.artista).includes(queryPulita) ||
+                           pulisci(b.copiaTesto).includes(queryPulita);
                 );
             }
 
