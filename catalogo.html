@@ -142,7 +142,7 @@
                 <button id="btnFilterNews" class="filter-btn" onclick="setFilter(true)">🔥 Novità (5 gg)</button>
             </div>
 
-            <input type="text" id="searchInput" class="search-box" placeholder="Cerca...">
+            <input type="search" id="searchInput" class="search-box" placeholder="Cerca...">
         </div>
         <div id="trackList">
             <p style="text-align: center; color: #ffcc00;">Caricamento database in corso...</p>
@@ -720,7 +720,9 @@
             
             caricaDatabase();
             
-            document.getElementById('searchInput').addEventListener('input', (e) => renderTracks(e.target.value));
+            const sInput = document.getElementById('searchInput');
+sInput.addEventListener('input', (e) => renderTracks(e.target.value));
+sInput.addEventListener('search', (e) => renderTracks(e.target.value));
             
             if(window.location.hash) {
                 const id = window.location.hash.substring(1);
