@@ -347,9 +347,9 @@
             const queryPulita = query.trim().replace(/\s+/g, ' ').toLowerCase();
             if (queryPulita) {
                 basiFiltrate = basiFiltrate.filter(b => 
-                    b.titolo.toLowerCase().includes(queryPulita) || 
-                    b.artista.toLowerCase().includes(queryPulita) ||
-                    b.copiaTesto.toLowerCase().includes(queryPulita)
+                    b.titolo.toLowerCase().replace(/\u200D/g, '').includes(queryPulita) || 
+                    b.artista.toLowerCase().replace(/\u200D/g, '').includes(queryPulita) ||
+                    b.copiaTesto.toLowerCase().replace(/\u200D/g, '').includes(queryPulita)
                 );
             }
 
