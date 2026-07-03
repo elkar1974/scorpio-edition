@@ -34,7 +34,7 @@
         .sticky-header { position: sticky; top: 62px; background: rgba(0, 0, 0, 0.95); z-index: 990; padding: 15px 0; border-bottom: 2px solid #ffcc00; margin-bottom: 20px; }
         .search-box { width: 100%; padding: 15px; border-radius: 5px; border: 1px solid #444; background: #1a1a1a; color: white; font-size: 1.1em; box-sizing: border-box; margin-top: 10px; -webkit-appearance: none; }
 
-input[type="search"]::-webkit-search-cancel-button {
+        input[type="search"]::-webkit-search-cancel-button {
             -webkit-appearance: searchfield-cancel-button !important;
             display: inline-block !important;
             opacity: 1 !important;
@@ -122,9 +122,11 @@ input[type="search"]::-webkit-search-cancel-button {
         
         <div id="guida-video-container" style="max-width: 380px; margin: 0 auto 30px auto; padding: 10px;">
             <div style="padding:100% 0 0 0; position:relative; border: 2px solid #ffcc00; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(255,204,0,0.3); background: #000;">
+                <!-- OTTIMIZZAZIONE VELOCITÀ: Aggiunto loading="lazy" per non bloccare il caricamento iniziale -->
                 <iframe src="https://player.vimeo.com/video/1200711710?badge=0&autopause=0&player_id=0&app_id=58479&muted=0&transparent=0" 
                         frameborder="0" 
                         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                        loading="lazy"
                         style="position:absolute;top:0;left:0;width:100%;height:100%;" 
                         title="guida scorpio edition">
                 </iframe>
@@ -226,6 +228,9 @@ input[type="search"]::-webkit-search-cancel-button {
                 
                 basi = []; 
                 
+                // OTTIMIZZAZIONE VELOCITÀ: Funzione di pulizia calcolata UNA SOLA VOLTA durante il caricamento
+                const pulisci = (t) => t.toLowerCase().replace(/[\u200B-\u200D\uFEFF\u200E\u200F]/g, '').replace(/\s+/g, ' ');
+                
                 for (let riga of righe) {
                     if (riga.trim() !== '') {
                         const parti = riga.split('|');
@@ -250,7 +255,9 @@ input[type="search"]::-webkit-search-cancel-button {
                                 artista: artista,
                                 copiaTesto: copiaTesto,
                                 data: dataStringa,
-                                categoria: categoria
+                                categoria: categoria,
+                                // OTTIMIZZAZIONE VELOCITÀ: Salviamo la stringa già pronta per la ricerca istantanea
+                                stringaRicerca: pulisci(titolo + ' ' + artista + ' ' + copiaTesto)
                             });
                         }
                     }
@@ -284,7 +291,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
         function renderVetrina() {
             const list = document.getElementById('vetrina-list');
-            list.innerHTML = "";
             const vetrinaContainer = document.getElementById('vetrina-novita');
             
             const basiRecenti = [...basi].sort((a, b) => parseScorpioDate(b.data) - parseScorpioDate(a.data)).slice(0, 3);
@@ -296,24 +302,26 @@ input[type="search"]::-webkit-search-cancel-button {
                 const testoCondividi = (traduzioni[lang] && traduzioni[lang].share_btn) ? traduzioni[lang].share_btn : "Manda";
                 const testoCopia = (traduzioni[lang] && traduzioni[lang].copy_btn) ? traduzioni[lang].copy_btn : "Copia";
 
-                basiRecenti.forEach(b => {
+                // OTTIMIZZAZIONE VELOCITÀ: Creazione HTML in blocco per evitare ricalcoli grafici
+                const htmlVetrina = basiRecenti.map(b => {
                     const testoSicuro = b.copiaTesto.replace(/'/g, "\\'").replace(/"/g, "&quot;");
                     const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\\'").replace(/"/g, "&quot;");
                     
-                    const div = document.createElement('div');
-                    div.className = 'track-item';
-                    div.innerHTML = `
-                        <div class="meta-col">
-                            <div class="artist-col">${b.artista}</div>
-                            <div class="title-col">${b.titolo} <span class="news-tag">NEWS</span> <span class="hq-badge">HQ</span></div>
+                    return `
+                        <div class="track-item">
+                            <div class="meta-col">
+                                <div class="artist-col">${b.artista}</div>
+                                <div class="title-col">${b.titolo} <span class="news-tag">NEWS</span> <span class="hq-badge">HQ</span></div>
+                            </div>
+                            <button class="copy-btn" onclick="window.copia('${testoSicuro}')">${testoCopia}</button>
+                            <button class="share-btn" onclick="window.condividi('${titoloCondivisione}')">
+                                <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.586 4.391 1.696 6.356l-.999 3.648 3.792-.995zm11.234-7.116c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg><span>${testoCondividi}</span>
+                            </button>
                         </div>
-                        <button class="copy-btn" onclick="window.copia('${testoSicuro}')">${testoCopia}</button>
-                        <button class="share-btn" onclick="window.condividi('${titoloCondivisione}')">
-                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.586 4.391 1.696 6.356l-.999 3.648 3.792-.995zm11.234-7.116c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg><span>${testoCondividi}</span>
-                        </button>
                     `;
-                    list.appendChild(div);
-                });
+                }).join('');
+                
+                list.innerHTML = htmlVetrina;
             }
         }
 
@@ -344,7 +352,6 @@ input[type="search"]::-webkit-search-cancel-button {
         function renderTracks(query = "") {
             const list = document.getElementById('trackList');
             const countContainer = document.getElementById('trackCount');
-            list.innerHTML = "";
             const today = new Date();
             today.setHours(0, 0, 0, 0); 
             
@@ -352,13 +359,8 @@ input[type="search"]::-webkit-search-cancel-button {
             
             const queryPulita = query.trim().replace(/\s+/g, ' ').toLowerCase();
             if (queryPulita) {
-                basiFiltrate = basiFiltrate.filter(b => {
-                    const pulisci = (t) => t.toLowerCase().replace(/[\u200B-\u200D\uFEFF\u200E\u200F]/g, '').replace(/\s+/g, ' ');
-                    
-                    return pulisci(b.titolo).includes(queryPulita) || 
-                           pulisci(b.artista).includes(queryPulita) ||
-                           pulisci(b.copiaTesto).includes(queryPulita);
-                });
+                // OTTIMIZZAZIONE VELOCITÀ: Ricerca fulminea sulla stringa pre-calcolata senza usare regex nel ciclo!
+                basiFiltrate = basiFiltrate.filter(b => b.stringaRicerca.includes(queryPulita));
             }
 
             if (isNewsFilterActive) {
@@ -386,7 +388,8 @@ input[type="search"]::-webkit-search-cancel-button {
                 return;
             }
 
-            basiFiltrate.forEach(b => {
+            // OTTIMIZZAZIONE VELOCITÀ: Array Map + Join. Evita di bloccare il browser creando nodi DOM uno ad uno in un ciclo!
+            const htmlCompleto = basiFiltrate.map(b => {
                 let isNews = '';
                 const bDate = parseScorpioDate(b.data);
                 if(bDate.getTime() !== 0) {
@@ -400,20 +403,21 @@ input[type="search"]::-webkit-search-cancel-button {
                 const testoSicuro = b.copiaTesto.replace(/'/g, "\\'").replace(/"/g, "&quot;");
                 const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\\'").replace(/"/g, "&quot;");
                 
-                const div = document.createElement('div');
-                div.className = 'track-item';
-                div.innerHTML = `
-                    <div class="meta-col">
-                        <div class="artist-col">${b.artista}</div>
-                        <div class="title-col">${b.titolo} ${isNews} <span class="hq-badge">HQ</span></div>
+                return `
+                    <div class="track-item">
+                        <div class="meta-col">
+                            <div class="artist-col">${b.artista}</div>
+                            <div class="title-col">${b.titolo} ${isNews} <span class="hq-badge">HQ</span></div>
+                        </div>
+                        <button class="copy-btn" onclick="window.copia('${testoSicuro}')">${testoCopia}</button>
+                        <button class="share-btn" onclick="window.condividi('${titoloCondivisione}')">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.586 4.391 1.696 6.356l-.999 3.648 3.792-.995zm11.234-7.116c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg><span>${testoCondividi}</span>
+                        </button>
                     </div>
-                    <button class="copy-btn" onclick="window.copia('${testoSicuro}')">${testoCopia}</button>
-                    <button class="share-btn" onclick="window.condividi('${titoloCondivisione}')">
-                        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.586 4.391 1.696 6.356l-.999 3.648 3.792-.995zm11.234-7.116c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg><span>${testoCondividi}</span>
-                    </button>
                 `;
-                list.appendChild(div);
-            });
+            }).join('');
+            
+            list.innerHTML = htmlCompleto;
         }
 
         window.copia = function(text) {
@@ -589,7 +593,7 @@ input[type="search"]::-webkit-search-cancel-button {
                 <h3>Un viaje de ida hacia la Calidad</h3>
                 <p>Sé muy bien que la diferencia se siente desde la primera nota. Por eso he transformado la experiencia de quienes usan mis bases en un punto de no retorno: quien elige <strong>MAU•SCORPIO•EDITION</strong> para sus actuaciones, no vuelve atrás. Cuando pruebas la certeza de una pista que nunca traiciona, que resalta cada matiz de tu voz y que acompaña la escucha y la actuación con precisión absoluta, la búsqueda de alternativas se vuelve superflua.</p>
                 <h3>El valor del boca a boca</h3>
-                <p>Creo firmemente que un producto de calidad superior no necesita empujes forzados. <strong>MAU•SCORPIO•EDITION</strong> es un proyecto que vive de la experiencia directa de profesionales y entusiastas. Es la satisfacción de quien encuentra finalmente la pista perfecta, la seguridad de quien sube al escenario sabiendo que tiene un sonido impecable, lo que genera ese boca a boca natural que guía a otros cantantes hacia mi catálogo.</p>
+                <p>Creo firmamente que un producto de calidad superior no necesita empujes forzados. <strong>MAU•SCORPIO•EDITION</strong> es un proyecto que vive de la experiencia directa de profesionales y entusiastas. Es la satisfacción de quien encuentra finalmente la pista perfecta, la seguridad de quien sube al escenario sabiendo que tiene un sonido impecable, lo que genera ese boca a boca natural que guía a otros cantantes hacia mi catálogo.</p>
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Porque tu voz es tu instrumento más preciado. Trátala como tal.</em></p>
                 <blockquote>"No pido que me creas. Te pido que pruebes. Tu voz te convencerá y tu escenario contará la diferencia."</blockquote>`,
                 g_title: "Guía Escrita", 
@@ -726,9 +730,18 @@ input[type="search"]::-webkit-search-cancel-button {
             
             caricaDatabase();
             
+            // OTTIMIZZAZIONE VELOCITÀ: Ritardo di 180ms (Debounce) sulla digitazione per evitare blocchi grafici
+            let timeoutRicerca = null;
+            const eseguiRicercaConRitardo = (query) => {
+                clearTimeout(timeoutRicerca);
+                timeoutRicerca = setTimeout(() => {
+                    renderTracks(query);
+                }, 180);
+            };
+
             const sInput = document.getElementById('searchInput');
-sInput.addEventListener('input', (e) => renderTracks(e.target.value));
-sInput.addEventListener('search', (e) => renderTracks(e.target.value));
+            sInput.addEventListener('input', (e) => eseguiRicercaConRitardo(e.target.value));
+            sInput.addEventListener('search', (e) => renderTracks(e.target.value));
             
             if(window.location.hash) {
                 const id = window.location.hash.substring(1);
