@@ -122,7 +122,6 @@
         
         <div id="guida-video-container" style="max-width: 380px; margin: 0 auto 30px auto; padding: 10px;">
             <div style="padding:100% 0 0 0; position:relative; border: 2px solid #ffcc00; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(255,204,0,0.3); background: #000;">
-                <!-- OTTIMIZZAZIONE VELOCITÀ: Aggiunto loading="lazy" per non bloccare il caricamento iniziale -->
                 <iframe src="https://player.vimeo.com/video/1200711710?badge=0&autopause=0&player_id=0&app_id=58479&muted=0&transparent=0" 
                         frameborder="0" 
                         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
@@ -215,53 +214,23 @@
             return new Date(0);
         }
 
+        // --- NUOVO CARICAMENTO DA FILE JSON ULTRA-VELOCE ---
         async function caricaDatabase() {
             try {
-                const response = await fetch('scorpio_database.txt');
+                const response = await fetch('scorpio_database.json');
                 
                 if (!response.ok) {
-                    throw new Error("File scorpio_database.txt non trovato.");
+                    throw new Error("File scorpio_database.json non trovato.");
                 }
                 
-                const text = await response.text();
-                const righe = text.split('\n');
+                const dataJson = await response.json();
                 
-                basi = []; 
-                
-                // OTTIMIZZAZIONE VELOCITÀ: Funzione di pulizia calcolata UNA SOLA VOLTA durante il caricamento
                 const pulisci = (t) => t.toLowerCase().replace(/[\u200B-\u200D\uFEFF\u200E\u200F]/g, '').replace(/\s+/g, ' ');
                 
-                for (let riga of righe) {
-                    if (riga.trim() !== '') {
-                        const parti = riga.split('|');
-                        if (parti.length >= 3) {
-                            const rawDisplay = parti[0].trim();
-                            const copiaTesto = parti[1].trim(); 
-                            const dataStringa = parti[2].trim();
-                            
-                            const categoria = (parti.length >= 4) ? parti[3].trim().toUpperCase() : "KARAOKE";
-                            
-                            let titolo = rawDisplay;
-                            let artista = "Sconosciuto";
-                            
-                            const match = rawDisplay.match(/\[(.*?)\]/);
-                            if (match) {
-                                artista = match[1].trim();
-                                titolo = rawDisplay.replace(`[${artista}]`, '').trim();
-                            }
-
-                            basi.push({
-                                titolo: titolo,
-                                artista: artista,
-                                copiaTesto: copiaTesto,
-                                data: dataStringa,
-                                categoria: categoria,
-                                // OTTIMIZZAZIONE VELOCITÀ: Salviamo la stringa già pronta per la ricerca istantanea
-                                stringaRicerca: pulisci(titolo + ' ' + artista + ' ' + copiaTesto)
-                            });
-                        }
-                    }
-                }
+                basi = dataJson.map(b => ({
+                    ...b,
+                    stringaRicerca: pulisci((b.titolo || '') + ' ' + (b.artista || '') + ' ' + (b.copiaTesto || ''))
+                }));
                 
                 basi.sort((a, b) => {
                     let cmpArtista = a.artista.localeCompare(b.artista);
@@ -282,8 +251,8 @@
                 console.error("Errore:", error);
                 document.getElementById('trackList').innerHTML = `
                     <div class="messaggio-errore">
-                        Impossibile caricare l'archivio basi (scorpio_database.txt).<br><br>
-                        Assicurati che il file sia presente e che tu stia avviando un server locale e non aprendo il file HTML direttamente.
+                        Impossibile caricare l'archivio basi (scorpio_database.json).<br><br>
+                        Assicurati che il file sia presente sul server o nella cartella locale.
                     </div>
                 `;
             }
@@ -302,7 +271,6 @@
                 const testoCondividi = (traduzioni[lang] && traduzioni[lang].share_btn) ? traduzioni[lang].share_btn : "Manda";
                 const testoCopia = (traduzioni[lang] && traduzioni[lang].copy_btn) ? traduzioni[lang].copy_btn : "Copia";
 
-                // OTTIMIZZAZIONE VELOCITÀ: Creazione HTML in blocco per evitare ricalcoli grafici
                 const htmlVetrina = basiRecenti.map(b => {
                     const testoSicuro = b.copiaTesto.replace(/'/g, "\\'").replace(/"/g, "&quot;");
                     const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\\'").replace(/"/g, "&quot;");
@@ -359,7 +327,6 @@
             
             const queryPulita = query.trim().replace(/\s+/g, ' ').toLowerCase();
             if (queryPulita) {
-                // OTTIMIZZAZIONE VELOCITÀ: Ricerca fulminea sulla stringa pre-calcolata senza usare regex nel ciclo!
                 basiFiltrate = basiFiltrate.filter(b => b.stringaRicerca.includes(queryPulita));
             }
 
@@ -388,7 +355,6 @@
                 return;
             }
 
-            // OTTIMIZZAZIONE VELOCITÀ: Array Map + Join. Evita di bloccare il browser creando nodi DOM uno ad uno in un ciclo!
             const htmlCompleto = basiFiltrate.map(b => {
                 let isNews = '';
                 const bDate = parseScorpioDate(b.data);
@@ -517,7 +483,7 @@
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Perché la tua voce è il tuo strumento più prezioso. Trattala come tale.</em></p>
                 <blockquote>"Non chiedo di credermi sulla parola. Chiedo di provare. Sarà la tua voce a convincerti, e il tuo palco a raccontare la differenza."</blockquote>`,
                 g_title: "Guida Scritta", 
-                g_text: `<p>Questo catalogo è lo specchio ufficiale del mio lavoro su StarMaker. Ogni traccia viene sincronizzata qui in tempo reale, garantendoti un accesso sempre aggiornato al repertorio.</p><div style="font-family: monospace; font-size: 1.05em; line-height: 1.6; color: #ddd; white-space: pre-wrap;">│<br>├── 📑 <strong>1. LA RICERCA IMMEDIATA</strong><br>│   └── Usa la barra in alto per cercare digitando il <strong>Titolo del brano</strong> o il <strong>Nome dell'artista</strong>. I risultati si aggiorneranno istantaneamente mentre scrivi.<br>│<br>├── 🎛️ <strong>2. IL FILTRO DI CATEGORIA (Novità)</strong><br>│   └── Ora puoi separare l'esperienza di canto da quella di ascolto usando i due nuovi pulsanti dedicati:<br>│       │<br>│       ├── 🎤 <strong>[KARAOKE]</strong> -> Mostra solo le basi musicali professionali ottimizzate per la tua voce.<br>│       └── 📻 <strong>[RADIO]</strong>   -> Mostra i brani originali con testo millimetrico, ideali per studio ed esibizione live.<br>│<br>├── ⚙️ <strong>3. IL WORKFLOW: DAL CATALOGO A STARMAKER</strong><br>│   └── Il passaggio dal sito alla piattaforma è immediato. Segui la cascata:<br>│       │<br>│       ├── 1️⃣ Trova il brano (Karaoke o Radio) nel catalogo.<br>│       ├── 2️⃣ Premi il tasto <strong>COPIA</strong>: il sistema memorizzerà il riferimento corretto.<br>│       └── 3️⃣ Apri StarMaker, vai nella barra di ricerca e premi <strong>INCOLLA</strong>.<br>│<br>└── ✨ <strong>4. IDENTIFICARE LE NOVITÀ</strong><br>    └── Vuoi sapere cosa ho appena caricato? Cerca l'etichetta <span class="news-tag">NEWS</span> accanto al titolo. Rimane attiva per i primi 5 giorni su tutte le nuove pubblicazioni.</div>`,
+                g_text: `<p>Questo catalogo è lo specchio ufficiale del mio lavoro su StarMaker. Ogni traccia viene sincronizzata qui in tempo reale, garantendoti un accesso sempre aggiornato al repertorio.</p><div style="font-family: monospace; font-size: 1.05em; line-height: 1.6; color: #ddd; white-space: pre-wrap;">│<br>├── 📑 <strong>1. LA RICERCA IMMEDIATA</strong><br>│   └── Usa la barra in alto per cercare digitando il <strong>Titolo del brano</strong> o il <strong>Nome dell'artista</strong>. I risultati si aggiorneranno istantaneamente mentre scrivi.<br>│<br>├── 🎛️ <strong>2. IL FILTRO DI CATEGORIA (Novità)</strong><br>│   └── Ora puoi separare l'esperienza di canto da quella di ascolto usando i due nuovi pulsanti dedicati:<br>│       │<br>│       ├── 🎤 <strong>[KARAOKE]</strong> -> Mostra solo le basi musicali professionali ottimizzate per la tua voce.<br>│       └── 📻 <strong>[RADIO]</strong>   -> Mostra i brani originali con testo millimetrico, ideali per studio ed esibizione live.<br>│<br>├── ⚙️ <strong>3. IL WORKFLOW: DAL CATALOGO A STARMAKER</strong><br>│   └── Il passaggio dal sito alla piattaforma è immediato. Segui la cascada:<br>│       │<br>│       ├── 1️⃣ Trova il brano (Karaoke o Radio) nel catalogo.<br>│       ├── 2️⃣ Premi il tasto <strong>COPIA</strong>: il sistema memorizzerà il riferimento corretto.<br>│       └── 3️⃣ Apri StarMaker, vai nella barra di ricerca e premi <strong>INCOLLA</strong>.<br>│<br>└── ✨ <strong>4. IDENTIFICARE LE NOVITÀ</strong><br>    └── Vuoi sapere cosa ho appena caricato? Cerca l'etichetta <span class="news-tag">NEWS</span> accanto al titolo. Rimane attiva per i primi 5 giorni su tutte le nuove pubblicazioni.</div>`,
                 contatti_testo: `<h2>Richieste e Supporto</h2>
                 <p>Il catalogo Scorpio Edition è in continuo aggiornamento. Se non trovi quello che ti serve per la tua performance su StarMaker, puoi richiederlo direttamente.</p>
                 <h3>Cosa puoi richiedere:</h3>
@@ -589,7 +555,7 @@
                     <li><strong>Instrumentación Real:</strong> La fidelidad al original no es una opción. Propongo solo bases que mantienen intacta la estructura tímbrica original, utilizando sonidos de instrumentos reales que aportan profundidad y veracidad a la interpretación.</li>
                 </ul>
                 <h3>Más allá del Karaoke: La Experiencia Radio</h3>
-                <p>La dedicación a la calidad no se detiene en las bases. He querido enriquecer el proyecto introduciendo una sección enteramente dedicada a la escucha y el estudio: <strong>las canciones originales</strong>. Partiendo de la máxima calidad de audio máster disponible, he llevado a StarMaker las canciones cantadas por los artistas originales, aplicando a estas pistas exactamente el mismo cuidado obsesivo y milimétrico para la sincronización de la letra. Una experiencia inmersiva, pensada para quienes desean escuchar, practicar o cantar sobre el original con la garantía de la marca Scorpio.</p>
+                <p>La dedicación a la calidad no se detiene en las bases. He querido enriquecer el proyecto introducendo una sección enteramente dedicada a la escucha y el estudio: <strong>las canciones originales</strong>. Partiendo de la máxima calidad de audio máster disponible, he llevado a StarMaker las canciones cantadas por los artistas originales, aplicando a estas pistas exactamente el mismo cuidado obsesivo y milimétrico para la sincronización de la letra. Una experiencia inmersiva, pensada para quienes desean escuchar, practicar o cantar sobre el original con la garantía de la marca Scorpio.</p>
                 <h3>Un viaje de ida hacia la Calidad</h3>
                 <p>Sé muy bien que la diferencia se siente desde la primera nota. Por eso he transformado la experiencia de quienes usan mis bases en un punto de no retorno: quien elige <strong>MAU•SCORPIO•EDITION</strong> para sus actuaciones, no vuelve atrás. Cuando pruebas la certeza de una pista que nunca traiciona, que resalta cada matiz de tu voz y que acompaña la escucha y la actuación con precisión absoluta, la búsqueda de alternativas se vuelve superflua.</p>
                 <h3>El valor del boca a boca</h3>
