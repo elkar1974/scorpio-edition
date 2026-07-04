@@ -1,0 +1,15 @@
+{
+  "name": "Scorpio Edition",
+  "short_name": "Scorpio",
+  "start_url": "catalogo.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "logo_scorpio.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
