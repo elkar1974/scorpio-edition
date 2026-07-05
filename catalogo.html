@@ -15,7 +15,6 @@
         body { margin: 0; padding: 0; font-family: 'Arial', sans-serif; background-image: url('logo_scorpio.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-color: #000; color: #fff; min-height: 100vh; overflow-x: hidden; }
         body::before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.92); z-index: -1; }
         
-        /* Modifica applicata: trasformato in fixed e agganciato saldamente per sbloccare il tocco su mobile */
         .navbar-fissa { position: fixed; top: 0; left: 0; width: 100%; box-sizing: border-box; height: 60px; background: rgba(13, 13, 13, 0.98); z-index: 1000; border-bottom: 2px solid #ffcc00; box-shadow: 0 4px 10px rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 15px; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
         .navbar-fissa::-webkit-scrollbar { display: none; }
         
@@ -23,7 +22,6 @@
         .navbar-fissa button:hover { color: #ffcc00; }
         .navbar-fissa button.attivo { color: #ffcc00; border-bottom: 2px solid #ffcc00; }
         
-        /* Modifica applicata qui: aggiunto padding-top di 80px per evitare il testo mangiato e bilanciato il min-height */
         .pagina { display: none; padding: 80px 20px 100px 20px; max-width: 900px; margin: auto; min-height: 100vh; box-sizing: border-box; }
         .pagina.attiva { display: block; }
         .pagina h2 { color: #ffcc00; text-transform: uppercase; font-size: 2em; margin-bottom: 20px; text-align: center;}
@@ -216,7 +214,6 @@
             return new Date(0);
         }
 
-        // --- NUOVO CARICAMENTO DA FILE JSON ULTRA-VELOCE ---
         async function caricaDatabase() {
             try {
                 const response = await fetch('scorpio_database.json');
@@ -561,7 +558,7 @@
                 <h3>Un viaje de ida hacia la Calidad</h3>
                 <p>Sé muy bien que la diferencia se siente desde la primera nota. Por eso he transformado la experiencia de quienes usan mis bases en un punto de no retorno: quien elige <strong>MAU•SCORPIO•EDITION</strong> para sus actuaciones, no vuelve atrás. Cuando pruebas la certeza de una pista que nunca traiciona, que resalta cada matiz de tu voz y que acompaña la escucha y la actuación con precisión absoluta, la búsqueda de alternativas se vuelve superflua.</p>
                 <h3>El valor del boca a boca</h3>
-                <p>Creo firmamente que un producto de calidad superior no necesita empujes forzados. <strong>MAU•SCORPIO•EDITION</strong> es un proyecto que vive de la experiencia directa de profesionales y entusiastas. Es la satisfacción de quien encuentra finalmente la pista perfecta, la seguridad de quien sube al escenario sabiendo que tiene un sonido impecable, lo que genera ese boca a boca natural que guía a otros cantantes hacia mi catálogo.</p>
+                <p>Creo firmamente que un producto de calidad superior no necesita empujes forzados. <strong>MAU•SCORPIO•EDITION</strong> es un proyecto que vive de la experiencia directa de profesionales y entusiastas. Es la satisfaction de quien encuentra finalmente la pista perfecta, la seguridad de quien sube al escenario sabiendo que tiene un sonido impecable, lo que genera ese boca a boca natural que guía a otros cantantes hacia mi catálogo.</p>
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Porque tu voz es tu instrumento más preciado. Trátala como tal.</em></p>
                 <blockquote>"No pido que me creas. Te pido que pruebes. Tu voz te convencerá y tu escenario contará la diferencia."</blockquote>`,
                 g_title: "Guía Escrita", 
@@ -698,7 +695,6 @@
             
             caricaDatabase();
             
-            // OTTIMIZZAZIONE VELOCITÀ: Ritardo di 180ms (Debounce) sulla digitazione per evitare blocchi grafici
             let timeoutRicerca = null;
             const eseguiRicercaConRitardo = (query) => {
                 clearTimeout(timeoutRicerca);
