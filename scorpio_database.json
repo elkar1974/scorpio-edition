@@ -448,13 +448,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Livin' On The Edge",
-        "artista": "Aerosmith",
-        "copiaTesto": "Livin' On The Edge [Aerosmith]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Lady Writer",
         "artista": "Dire Straits",
         "copiaTesto": "Lady Writer [Dire S‍traits * SCORPIO EDITION *]",
@@ -625,7 +618,7 @@
     {
         "titolo": "L'Amore Ai Tempi Del Cellulare",
         "artista": "Vasco Rossi",
-        "copiaTesto": "L'Aamore Ai Tempi Del Cellulare [Vasco‍ Rossi * SC *]",
+        "copiaTesto": "L'Amore Ai Tempi Del Cellulare [Vasco‍ Rossi * SC *]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -717,13 +710,6 @@
         "titolo": "La Vita È Adesso",
         "artista": "Gianni Morandi Ft Claudio Baglioni",
         "copiaTesto": "La Vita È Adesso [Gianni M. - Claudio B. * SCORPIO EDITION *]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "La Tana Del Re",
-        "artista": "Adriano Celentano",
-        "copiaTesto": "La tana del re [Adriano Celentàno]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -857,13 +843,6 @@
         "titolo": "La Cura  (Live)",
         "artista": "Fiorella Mannoia",
         "copiaTesto": "La Cura [Fiorella‍ Mannoia * SCORPIO EDITION *] (Live)",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "La Tua Immagine  (Sound Of Silence)",
-        "artista": "2ue",
-        "copiaTesto": "La tua immagine [2ue] [Sound of silence]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -1757,13 +1736,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Portami A Ballare",
-        "artista": "Luca Barbarossa",
-        "copiaTesto": "Portami A Ballare - luca Barbarossa",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Diamante",
         "artista": "Gianna Nannini Ft Francesco De Gregori",
         "copiaTesto": "Diamante [Gianna Nannini Ft.Francesco De Gregori]",
@@ -1802,13 +1774,6 @@
         "titolo": "Guarda Che Luna",
         "artista": "Emma Marrone",
         "copiaTesto": "Guarda che luna [Emma Marrone]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Generale",
-        "artista": "Antonello Venditti Ft Francesco De Gregori",
-        "copiaTesto": "Generale [Venditti Ft. De Gregori]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -1872,13 +1837,6 @@
         "titolo": "Strada Facendo",
         "artista": "Laura Pausini",
         "copiaTesto": "Strada facendo [Laura Pausini]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Ricordati Di Me",
-        "artista": "Antonello Venditti Ft Francesco De Gregori",
-        "copiaTesto": "Ricordati di me [Venditti Ft. De Gregori]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -2401,13 +2359,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Gente  (Live)",
-        "artista": "Laura Pausini",
-        "copiaTesto": "Gente [Laura Pausini] [Live]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Viento E Terra",
         "artista": "Pino Daniele",
         "copiaTesto": "Viento e terra [Pino Daniele]",
@@ -2439,13 +2390,6 @@
         "titolo": "A Groovy Kind Of Love",
         "artista": "Phil Collins",
         "copiaTesto": "A Groovy Kind Of Love [Phil Collins]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Luce",
-        "artista": "Mango Ft Zenima",
-        "copiaTesto": "Luce [Mango Ft. Zenima]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -2590,13 +2534,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "I Duri Hanno Due Cuori  (Live)",
-        "artista": "Ligabue",
-        "copiaTesto": "I Duri hanno due cuori [Ligabue] [Live]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Heal The World",
         "artista": "Michael Jackson",
         "copiaTesto": "Heal the world [Michael Jackson]",
@@ -2702,13 +2639,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Siamo Solo Noi  (Live)",
-        "artista": "Vasco Rossi",
-        "copiaTesto": "Siamo Solo Noi [Live] [Vasco Rossi]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Milady",
         "artista": "Roberto Vecchioni",
         "copiaTesto": "Milady [Roberto Vecchioni]",
@@ -2719,13 +2649,6 @@
         "titolo": "Come Te Non C'è Nessuno",
         "artista": "Rita Pavone",
         "copiaTesto": "Come te non c'è nessuno [Rita Pavone]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Sentimento Pentimento  (Band Edit)",
-        "artista": "Neri Per Caso",
-        "copiaTesto": "Sentimento Pentimento [Neri Per Caso] [Band Edit]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -2810,13 +2733,6 @@
         "titolo": "Vivro Per Lei  (My Prayer)",
         "artista": "Adriano Celentano",
         "copiaTesto": "Vivro Per Lei [Adriano Celentano] [My Prayer]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Il Re Del Mondo  (Live)",
-        "artista": "Franco Battiato",
-        "copiaTesto": "Il re del mondo [Franco Battiato] [Live]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -2961,13 +2877,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "O Forse Sei Tu  (Tonalità Uomo)",
-        "artista": "Elisa",
-        "copiaTesto": "O forse sei tu [Elisa] [Tonalità Uomo]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Don't Cry",
         "artista": "Guns N' Roses",
         "copiaTesto": "Don't Cry [Guns N' Roses]",
@@ -2992,13 +2901,6 @@
         "titolo": "Un Sole Dentro Al Cuore",
         "artista": "Giorgia",
         "copiaTesto": "Un sole dentro al cuore [Giorgia]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Propaganda",
-        "artista": "Fabri Fibra Ft Colapesce Ft Dimartino",
-        "copiaTesto": "Propaganda [Fabri Fibra ft. Colapesce & Dimartino]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -3062,13 +2964,6 @@
         "titolo": "It's Only Love",
         "artista": "Bryan Adams Ft Tina Turner",
         "copiaTesto": "It's only love [Bryan Adams Ft. Tina Turner]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "La Gatta  (Sul Tetto)",
-        "artista": "Giorgia",
-        "copiaTesto": "La gatta [Giorgia] [Sul Tetto]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -3444,13 +3339,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Più Di Un Sogno",
-        "artista": "Adriano Celentano",
-        "copiaTesto": "PIU' DI UN SOGNO [ADRIANO CELENTANO]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Blackout",
         "artista": "The Kolors",
         "copiaTesto": "Blackout [The Kolors]",
@@ -3664,13 +3552,6 @@
         "titolo": "Non Cambierei Questa Vita Con Nessun'altra",
         "artista": "Ligabue",
         "copiaTesto": "Non cambierei questa vita con nessun'altra [Ligabue]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Nati Per Vivere  (Adesso E Qui)",
-        "artista": "Ligabue",
-        "copiaTesto": "Nati per vivere [Ligabue] [adesso e qui]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -3913,13 +3794,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "When You Walk Into The Room  (Live)",
-        "artista": "Bruce Springsteen",
-        "copiaTesto": "When you walk into the room [Bruce Springsteen] [Live]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Come Potete Giudicar",
         "artista": "Nomadi",
         "copiaTesto": "Come potete giudicar [Nomadi]",
@@ -3951,13 +3825,6 @@
         "titolo": "Povero Cuore",
         "artista": "Mobrici Ft Brunori Sas",
         "copiaTesto": "Povero cuore [Mobrici ft. Brunori Sas]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Laurea Ad Honorem",
-        "artista": "Marracash Ft Calcutta",
-        "copiaTesto": "Laurea ad Honorem [Marracash Ft. Calcutta]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -4053,13 +3920,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Hungry Heart  (Live)",
-        "artista": "Bruce Springsteen",
-        "copiaTesto": "Hungry heart [Bruce Springsteen] [Live]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "La Storia Di Noi Due",
         "artista": "Pupo",
         "copiaTesto": "La Storia Di Noi Due [Pupo]",
@@ -4098,13 +3958,6 @@
         "titolo": "Sir Duke",
         "artista": "Stevie Wonder",
         "copiaTesto": "Sir Duke [Stevie Wonder]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Sensibile All'estate",
-        "artista": "Jovanotti Ft Sixpm",
-        "copiaTesto": "Sensibile all'estate [Jovanotti Ft. Sixpm]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -4410,13 +4263,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Palla Al Centro",
-        "artista": "Elisa Ft Jovanotti",
-        "copiaTesto": "Palla al centro [Elisa Ft. Jovanotti]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Hold Me Closer",
         "artista": "Elton John Ft Britney Spears",
         "copiaTesto": "Hold me closer [Elton John Ft. Britney Spears]",
@@ -4564,13 +4410,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Panico",
-        "artista": "Lazza Ft Takagi Ft Ketra",
-        "copiaTesto": "Panico [Lazza Ft. Takagi Ft. Ketra]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Patto Con Riscatto",
         "artista": "Vasco Rossi",
         "copiaTesto": "Patto con riscatto [Vasco Rossi]",
@@ -4665,13 +4504,6 @@
         "titolo": "Personalità",
         "artista": "Renzo Arbore Ft Gli Arborigeni",
         "copiaTesto": "Personalità [Renzo Arbore E Gli Arborigeni]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Mi Fiderò",
-        "artista": "Marco Mengoni Ft Madame",
-        "copiaTesto": "Mi fiderò [Marco Mengoni Ft.Madame]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -9362,13 +9194,6 @@
         "titolo": "Blue Jeans Rock",
         "artista": "Adriano Celentano",
         "copiaTesto": "Blue Jeans Rock [Adriano Celentàno]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Besame Mucho",
-        "artista": "Artisti Vari",
-        "copiaTesto": "Besame Mucho [AA.VV.]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -14630,13 +14455,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Canzone Inutile",
-        "artista": "Alessandra Amoroso",
-        "copiaTesto": "Canzone Inutile [Alessandra Amoroso]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Cosa Faremo Da Grandi",
         "artista": "Lucio Corsi",
         "copiaTesto": "Cosa Faremo Da Grandi [Lucio‍ Corsi * SCORPIO *]",
@@ -14724,13 +14542,6 @@
         "titolo": "Cosa Ti Fai",
         "artista": "Vasco Rossi",
         "copiaTesto": "Cosa Ti Fai [Vasco‍ Rossi * SCORPIO EDITION *]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Ciao Ti Dirò  (Live)",
-        "artista": "Adriano Celentano Ft Giorgio Gaber",
-        "copiaTesto": "Ciao ti dirò [Adriano Celentàno Ft. Giòrgio Gaber] [Live]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -14857,13 +14668,6 @@
         "titolo": "Cracklin' Rosie",
         "artista": "Neil Diamond",
         "copiaTesto": "Cracklin' Rosie [Neil D‍iamond * SCORPIO *]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Che Sarà  (Salsa)",
-        "artista": "Artisti Vari",
-        "copiaTesto": "Che Sarà [Salsa] [AA.VV.]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -15158,13 +14962,6 @@
         "titolo": "Custodire",
         "artista": "Renzo Rubino",
         "copiaTesto": "Custodire [Renzo ‍Rubino * SCORPIO EDITION *]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Comfortably Numb",
-        "artista": "Pink Floyd",
-        "copiaTesto": "Comfortably Numb [Pink Floyd]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -17766,13 +17563,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Eva",
-        "artista": "Mina Ft Adriano Celentano",
-        "copiaTesto": "Eva [Mina Ft. Adriano Celentano]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Euforia",
         "artista": "Annalisa",
         "copiaTesto": "Euforia [Annalisa]",
@@ -18130,13 +17920,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Eroi Nel Vento  (Live)",
-        "artista": "Litfiba",
-        "copiaTesto": "Eroi Nel Vento [Litfiba] [Live]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "E Mi Ribello",
         "artista": "Eros Ramazzotti",
         "copiaTesto": "E Mi Ribello [Eros Ramazzotti]",
@@ -18182,13 +17965,6 @@
         "titolo": "Eccezionale",
         "artista": "Irene Grandi",
         "copiaTesto": "Eccezionale [Irene Grandi]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "E La Luna",
-        "artista": "Irama",
-        "copiaTesto": "E la luna [Irama]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -18266,13 +18042,6 @@
         "titolo": "Estasi",
         "artista": "Gaia",
         "copiaTesto": "Estasi [Gaia]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "E La Chiamano Estate  (Live)",
-        "artista": "Franco Califano",
-        "copiaTesto": "E la chiamano estate [Franco Califano] [Live]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -18406,13 +18175,6 @@
         "titolo": "Electric",
         "artista": "Darin",
         "copiaTesto": "Electric [Darin]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Everything Counts  (Live)",
-        "artista": "Depeche Mode",
-        "copiaTesto": "Everything Counts [Depeche Mode] [Live]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -19603,13 +19365,6 @@
         "titolo": "Fortuna",
         "artista": "Ghali",
         "copiaTesto": "Fortuna [Ghali * SCORPIO EDITION *]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Favola  (Live)",
-        "artista": "Modà",
-        "copiaTesto": "Favola [Modà] [Live]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -21595,23 +21350,9 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Il Problema Più Importante",
-        "artista": "Adriano Celentano",
-        "copiaTesto": "Il problema più importante [Adriano Celentàno]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "I Dubbi Dell'Amore",
         "artista": "Enrico Ruggeri",
         "copiaTesto": "I Dubbi Dell'Amore [Enrico ‍Ruggeri * SCORPIO *]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Il Ribelle",
-        "artista": "Adriano Celentano",
-        "copiaTesto": "Il Ribelle [Adriano Celentàno]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -21794,20 +21535,6 @@
         "titolo": "Io Che Amo Solo Te",
         "artista": "Claudio Baglioni",
         "copiaTesto": "Io Che Amo Solo Te [Claudio B. * SCORPIO EDITION *]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Io Che Non Vivo  (Senza Te)",
-        "artista": "Claudio Baglioni",
-        "copiaTesto": "Io Che Non Vivo [Claudio B. * SCORPIO EDITION *] (Senza Te)",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Io Sono Qui  (Live)",
-        "artista": "Gianni Morandi Ft Claudio Baglioni",
-        "copiaTesto": "Io Sono Qui [Gianni M. - Claudio B. * SCORPIO EDITION *] (Live)",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -22109,13 +21836,6 @@
         "titolo": "Im Not Here To Make Friends",
         "artista": "Calvin Harris Ft Sam Smith Ft Jessie Reyez",
         "copiaTesto": "IM Not Here To Make Friends [Calvin‍ Harris - Sam ‍Smith - Jessie‍ Reyez]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Il Nostro Tempo",
-        "artista": "Alessandra Amoroso",
-        "copiaTesto": "Il Nostro Tempo [Alessandra Amoroso]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -22816,13 +22536,6 @@
         "titolo": "I Miei Passi",
         "artista": "Fiorella Mannoia",
         "copiaTesto": "I Miei Passi [Fiorella‍ Mannoia * SCORPIO *]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Il Congiuntivo",
-        "artista": "Lorenzo Baglioni",
-        "copiaTesto": "Il Congiuntivo [Lorenzo B. * SCORPIO EDITION *]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -23884,13 +23597,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Jenny È Pazza  (Live)",
-        "artista": "Vasco Rossi",
-        "copiaTesto": "Jenny è Pazza [Vasco Rossi] [Live]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Just Walk Away",
         "artista": "Celine Dion",
         "copiaTesto": "Just Walk Away [Celin‍e Dion * SCORPIO EDITION *]",
@@ -24220,13 +23926,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "La Cura  (Live)",
-        "artista": "Fiorella Mannoia",
-        "copiaTesto": "La Cura [Fìorella Mannòia] [Live]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "La Lontananza",
         "artista": "Domenico Modugno",
         "copiaTesto": "La Lontananza [Domenico‍ Modugno * SCORPIO *]",
@@ -24251,13 +23950,6 @@
         "titolo": "Luna",
         "artista": "Friendly Looka",
         "copiaTesto": "Luna [Friendly Looka *SCORPIO EDITION*]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "La Forza Della Vita",
-        "artista": "Paolo Vallesi",
-        "copiaTesto": "La Forza Della Vita [P. Val.]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -24335,13 +24027,6 @@
         "titolo": "La Notte",
         "artista": "Adamo",
         "copiaTesto": "La Notte [Adamo Scorpio Edition]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "La Favola Mia  (Live)",
-        "artista": "Renato Zero",
-        "copiaTesto": "La favola mia [Renato Zero] [Live]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -24552,13 +24237,6 @@
         "titolo": "Lunedì  (Live - No Intro)",
         "artista": "Vasco Rossi",
         "copiaTesto": "Lunedì [Vasco‍ Rossi * SCORPIO EDITION *] (Live - No Intro)",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "La Terza Guerra Mondiale",
-        "artista": "Adriano Celentano",
-        "copiaTesto": "La terza guerra mondiale [Adriano Celentàno]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -28483,13 +28161,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Oh My God",
-        "artista": "Adele",
-        "copiaTesto": "Oh My God [Adele]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Occhi Neri",
         "artista": "Fiorella Mannoia",
         "copiaTesto": "Occhi Neri [Fiorella‍ Mannoia * SCORPIO *]",
@@ -31472,13 +31143,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Stupendo  (Live)",
-        "artista": "Vasco Rossi",
-        "copiaTesto": "Stupendo [Vasco Rossi] [Live]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Stella Stellina",
         "artista": "Ermal Meta",
         "copiaTesto": "Stella Stellina [Ermal‍ Meta * SCORPIO EDITION *]",
@@ -31734,13 +31398,6 @@
         "titolo": "Spiagge",
         "artista": "Renato Zero",
         "copiaTesto": "Spiagge [Rènato Zèro]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Suonare Suonare",
-        "artista": "Pfm",
-        "copiaTesto": "Suonare Suonare [Pfm]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -33061,13 +32718,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Se Io Se Lei",
-        "artista": "Biagio Antonacci",
-        "copiaTesto": "Se Io Se Lei [Biàgio Antonàcci]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Stasera",
         "artista": "Vasco Rossi",
         "copiaTesto": "Stasera [Vasco‍ Rossi * SCORPIO EDITION *]",
@@ -33306,13 +32956,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Someone Like You  (Band Version)",
-        "artista": "Adele",
-        "copiaTesto": "Someone Like You [Band Version] [Adele]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Sapore",
         "artista": "Fedez Ft Tedua",
         "copiaTesto": "Sapore [Fe‍dez Ft. Te‍dua * SCORPIO EDITION *]",
@@ -33463,13 +33106,6 @@
         "titolo": "Scusa",
         "artista": "Fred Bongusto",
         "copiaTesto": "Scusa [Fred B‍ongusto * SCORPIO EDITION *]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Scelgo Ancora Te  (Tonalità Uomo)",
-        "artista": "Giorgia",
-        "copiaTesto": "Scelgo Ancora Te [ton.uomo] [Giorgia]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -38433,13 +38069,6 @@
         "titolo": "Xxx S And Ooo S",
         "artista": "Trisha Yearwood",
         "copiaTesto": "XXX s And OOO s [Trisha Yearwood]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Xi Comandamento",
-        "artista": "Vasco Rossi",
-        "copiaTesto": "XI Comandamento [Vasco‍ Rossi * SCORPIO *]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -46420,13 +46049,6 @@
         "titolo": "When I Look At You",
         "artista": "Miley Cyrus",
         "copiaTesto": "When I Look At You [Miley‍ Cyrus * SCORPIO *]",
-        "data": "2026-06-16",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "When You Believe",
-        "artista": "Mariah Carey Ft Whitney Houston",
-        "copiaTesto": "When You Believe [Mariah‍ Carey - Whitney‍ Houston]",
         "data": "2026-06-16",
         "categoria": "KARAOKE"
     },
