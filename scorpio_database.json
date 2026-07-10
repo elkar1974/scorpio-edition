@@ -52248,7 +52248,7 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "lo Canto",
+        "titolo": "Io Canto",
         "artista": "Riccardo Cocciante",
         "copiaTesto": "lo Canto [Riccardo Cocciante * SCORPIO *]",
         "data": "2026-07-06",
@@ -52353,7 +52353,7 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Il Mondo Avra Una Grande Anima",
+        "titolo": "Il Mondo Avrà Una Grande Anima",
         "artista": "Ron",
         "copiaTesto": "Il Mondo Avra Una Grande Anima [Ron * SCORPIO *]",
         "data": "2026-07-06",
@@ -53844,7 +53844,7 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Sulla Terra lo E Lei",
+        "titolo": "Sulla Terra Io E Lei",
         "artista": "Riccardo Cocciante",
         "copiaTesto": "Sulla Terra lo E Lei [Riccardo Cocciante * SC *]",
         "data": "2026-07-09",
@@ -53897,6 +53897,265 @@
         "artista": "Riccardo Fogli",
         "copiaTesto": "Storie Di Tutti I Giorni [Riccardo Fogli * SC *] (Band Version)",
         "data": "2026-07-09",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Show Must Go On",
+        "artista": "Queen",
+        "copiaTesto": "The Show Must Go On [Queen * SCORPIO EDITION *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Zephyr Song",
+        "artista": "Red Hot Chili Peppers",
+        "copiaTesto": "The Zephyr Song [Red Hot Chili Peppers * SC *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "These Are The Days Of Our Lives",
+        "artista": "Queen",
+        "copiaTesto": "These Are The Days Of Our Lives [Queen * SC *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "These Days",
+        "artista": "Rudimental Ft. Jess Glynne Ft.",
+        "copiaTesto": "These Days [Rudimental Ft. Jess Glynne Ft. * SC *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "These Foolish Things",
+        "artista": "Rod Stewart",
+        "copiaTesto": "These Foolish Things [Rod Stewart * SCORPIO *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ti Amo E Ti Penso",
+        "artista": "Rosario Miraggio",
+        "copiaTesto": "Ti Amo E Ti Penso [Rosario Miraggio * SCORPIO *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ti Andrebbe Di Cambiare Il Mondo",
+        "artista": "Renato Zero",
+        "copiaTesto": "Ti Andrebbe Di Cambiare Il Mon [Renato Zero * SC *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ti Insegnerò A Volare",
+        "artista": "Roberto Vecchioni - Francesco Guccini",
+        "copiaTesto": "Ti Insegnero' A Volare [Roberto Vecchioni - Francesco Guccini]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ti Leggo Nel Pensiero",
+        "artista": "Ron",
+        "copiaTesto": "Ti Leggo Nel Pensiero [Ron * SCORPIO EDITION *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ti Porterò Con Me",
+        "artista": "Renato Zero",
+        "copiaTesto": "Ti Portero' Con Me [Renato Zero * SCORPIO *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ti Pretendo",
+        "artista": "Raf",
+        "copiaTesto": "Ti Pretendo [Raf * SCORPIO EDITION *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ti Volevo Dedicare",
+        "artista": "Rocco Hunt Ft. J-Ax - Boomdabash",
+        "copiaTesto": "Ti Volevo Dedicare [Rocco Hunt Ft. J-Ax - Boomdabash]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tonight'S The Night  (Gonna Be Alright)",
+        "artista": "Rod Stewart",
+        "copiaTesto": "Tonight'S The Night [Rod Stewart * SCORPIO *] (Gonna Be Alright)",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Torna A Sorridere",
+        "artista": "Riccardo Fogli",
+        "copiaTesto": "Torna A Sorridere [Riccardo Fogli * SCORPIO *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Torna A Surriento",
+        "artista": "Renzo Arbore",
+        "copiaTesto": "Torna A Surriento [Renzo Arbore * SCORPIO *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Torna Da Me",
+        "artista": "Raffaella Carrà",
+        "copiaTesto": "Torna Da Me [Raffaella Carrà * SCORPIO *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Toxic Till The End",
+        "artista": "Rosè",
+        "copiaTesto": "Toxic Till The End [Rosè * SCORPIO EDITION *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tu Non Mi Basti Mai",
+        "artista": "Ron",
+        "copiaTesto": "Tu Non Mi Basti Mai [Ron * SCORPIO EDITION *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tutti Quanti Abbiamo Un Angelo",
+        "artista": "Ron",
+        "copiaTesto": "Tutti Quanti Abbiamo Un Angelo [Ron * SCORPIO *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tuyo  (Narcos Theme Song)",
+        "artista": "Rodrigo Amarante",
+        "copiaTesto": "Tuyo [Rodrigo Amarante * SCORPIO EDITION *] (Narcos Theme Song)",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Uberlin",
+        "artista": "R.e.m.",
+        "copiaTesto": "Uberlin [R.e.m. * SCORPIO EDITION *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ufficio Reclami",
+        "artista": "Renato Zero",
+        "copiaTesto": "Ufficio Reclami [Renato Zero * SCORPIO *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Un Abbraccio Unico",
+        "artista": "Ron",
+        "copiaTesto": "Un Abbraccio Unico [Ron * SCORPIO EDITION *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Un Amico In Me",
+        "artista": "Riccardo Cocciante",
+        "copiaTesto": "Un Amico In Me [Riccardo Cocciante * SCORPIO *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Un Bacio Piccolissimo",
+        "artista": "Robertino",
+        "copiaTesto": "Un Bacio Piccolissimo [Robertino * SCORPIO *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Un Momento Anche Per Te",
+        "artista": "Ron",
+        "copiaTesto": "Un Momento Anche Per Te [Ron * SCORPIO *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Un Porto Nel Vento",
+        "artista": "Ron",
+        "copiaTesto": "Un Porto Nel Vento [Ron * SCORPIO EDITION *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Un Taxi Giallo",
+        "artista": "Roberto Soffici",
+        "copiaTesto": "Un Taxi Giallo [Roberto Soffici * SCORPIO *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Un Uomo Da Bruciare",
+        "artista": "Renato Zero",
+        "copiaTesto": "Un Uomo Da Bruciare [Renato Zero * SCORPIO *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Una Canzone Da Cantare Avrai",
+        "artista": "Renato Zero",
+        "copiaTesto": "Una Canzone Da Cantare Avrai [Renato Zero * SC *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Una Vieja Canción De Amor",
+        "artista": "Raul Abramzon",
+        "copiaTesto": "Una Vieja Canción De Amor [Raul Abramzon * SC *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Una Vita Fa",
+        "artista": "Renato Zero",
+        "copiaTesto": "Una Vita Fa [Renato Zero * SCORPIO EDITION *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Under The Bridge  (Live)",
+        "artista": "Red Hot Chili Peppers",
+        "copiaTesto": "Under The Bridge [Red Hot Chili Peppers * SC *] (Live)",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Unfaithful",
+        "artista": "Rihanna",
+        "copiaTesto": "Unfaithful [Rihanna * SCORPIO EDITION *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Uno Tranquillo  (Suddenly You Love Me)",
+        "artista": "Riccardo Del Turco",
+        "copiaTesto": "Uno Tranquillo [Riccardo Del Turco * SCORPIO *] (Suddenly You Love Me)",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Uomo No",
+        "artista": "Renato Zero",
+        "copiaTesto": "Uomo No [Renato Zero * SCORPIO EDITION *]",
+        "data": "2026-07-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Sally",
+        "artista": "Fiorella Mannoia",
+        "copiaTesto": "Sally [Fiorella Mannoia * SCORPIO EDITION *]",
+        "data": "2026-07-10",
         "categoria": "KARAOKE"
     }
 ]
