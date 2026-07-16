@@ -57160,5 +57160,411 @@
         "copiaTesto": "Colpevole [Nicola Arigliano * RADIO SCORPIO *]",
         "data": "2026-07-16",
         "categoria": "RADIO"
+    },
+    {
+        "titolo": "I Heard It Through The Grapevine  (Live)",
+        "artista": "Tina Turner",
+        "copiaTesto": "I Heard It Through The Grapevine [Tina Turner] (Live)",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Learned From The Best",
+        "artista": "Whitney Houston",
+        "copiaTesto": "I Learned From The Best [Whitney Houston * SC *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Left My Heart In San Francisco",
+        "artista": "Tony Bennett",
+        "copiaTesto": "I Left My Heart In San Francisco [Tony Bennett]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Look To You",
+        "artista": "Whitney Houston",
+        "copiaTesto": "I Look To You [Whitney Houston * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Never Lie",
+        "artista": "Zach Top",
+        "copiaTesto": "I Never Lie [Zach Top * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Nostri Anni",
+        "artista": "Tommaso Paradiso",
+        "copiaTesto": "I Nostri Anni [Tommaso Paradiso * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Saw Her Standing There",
+        "artista": "The Beatles",
+        "copiaTesto": "I Saw Her Standing There [The Beatles * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Still Haven'T Found What I'M",
+        "artista": "U2",
+        "copiaTesto": "I Still Haven'T Found What I'M [U2 * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Tuoi Particolari",
+        "artista": "Ultimo",
+        "copiaTesto": "I Tuoi Particolari [Ultimo * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Won'T Back Down",
+        "artista": "Tom Petty And The Heartbreakers",
+        "copiaTesto": "I Won'T Back Down [Tom Petty And The Heartbreakers]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "ILl Be There For You",
+        "artista": "The Rembrandts",
+        "copiaTesto": "ILl Be There For You [The Rembrandts * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "ILl Follow The Sun",
+        "artista": "The Beatles",
+        "copiaTesto": "ILl Follow The Sun [The Beatles * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "ILl Never Fall In Love Again",
+        "artista": "Tom Jones",
+        "copiaTesto": "ILl Never Fall In Love Again [Tom Jones * SC *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "IM Gonna Be  (500 Miles)",
+        "artista": "The Proclaimers",
+        "copiaTesto": "IM Gonna Be [The Proclaimers * SCORPIO *] (500 Miles)",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "IM So Excited",
+        "artista": "The Pointer Sisters",
+        "copiaTesto": "IM So Excited [The Pointer Sisters * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ich Möcht So Gern Dave Dudley Hörn",
+        "artista": "Truck Stop",
+        "copiaTesto": "Ich Möcht So Gern Dave Dudley Hörn [Truck Stop]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ich War Noch Niemals In New York",
+        "artista": "Udo Jürgens",
+        "copiaTesto": "Ich War Noch Niemals In New York [Udo Jürgens]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "If He Should Ever Leave You",
+        "artista": "Tom Jones",
+        "copiaTesto": "If He Should Ever Leave You [Tom Jones * SC *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "If I Had A Hammer",
+        "artista": "Trini Lopez",
+        "copiaTesto": "If I Had A Hammer [Trini Lopez * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Il Ballo Delle Incertezze",
+        "artista": "Ultimo",
+        "copiaTesto": "Il Ballo Delle Incertezze [Ultimo * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Il Ballo Di San Vito",
+        "artista": "Vinicio Capossela",
+        "copiaTesto": "Il Ballo Di San Vito [Vinicio Capossela * SC *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Il Bambino Che Contava Le Stelle",
+        "artista": "Ultimo",
+        "copiaTesto": "Il Bambino Che Contava Le Stelle [Ultimo * SC *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Il Cielo",
+        "artista": "Tiromancino",
+        "copiaTesto": "Il Cielo [Tiromancino * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Il Regalo Più Grande",
+        "artista": "Tiziano Ferro",
+        "copiaTesto": "Il Regalo Più Grande [Tiziano Ferro * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Il Rubacuori",
+        "artista": "Tiromancino",
+        "copiaTesto": "Il Rubacuori [Tiromancino * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Imparare Dal Vento",
+        "artista": "Tiromancino",
+        "copiaTesto": "Imparare Dal Vento [Tiromancino * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "In Mezzo A Questo Inverno",
+        "artista": "Tiziano Ferro",
+        "copiaTesto": "In Mezzo A Questo Inverno [Tiziano Ferro * SC *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "In The Midnight Hour",
+        "artista": "Wilson Pickett",
+        "copiaTesto": "In The Midnight Hour [Wilson Pickett * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "In The Navy",
+        "artista": "Village People",
+        "copiaTesto": "In The Navy [Village People * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "In The Shadows",
+        "artista": "The Rasmus",
+        "copiaTesto": "In The Shadows [The Rasmus * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "In Your Arms  (For An Angel)",
+        "artista": "Topic, Robin Schulz, Nico Santos, Paul Van Dyk",
+        "copiaTesto": "In Your Arms [Topic, Robin Schulz, Nico Santos, Paul Van Dyk] (For An Angel)",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "In Your Eyes",
+        "artista": "The Weeknd",
+        "copiaTesto": "In Your Eyes [The Weeknd * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Indietro",
+        "artista": "Tiziano Ferro",
+        "copiaTesto": "Indietro [Tiziano Ferro * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Indifferentemente",
+        "artista": "Valentina Stella",
+        "copiaTesto": "Indifferentemente [Valentina Stella * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ipocondria",
+        "artista": "Ultimo",
+        "copiaTesto": "Ipocondria [Ultimo * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Is It Over Now  (Taylor'S Version - From The Vault)",
+        "artista": "Taylor Swift",
+        "copiaTesto": "Is It Over Now [Taylor Swift * SCORPIO *] (Taylor'S Version - From The Vault)",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Is This Love",
+        "artista": "Whitesnake",
+        "copiaTesto": "Is This Love [Whitesnake * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "It Takes Two",
+        "artista": "Tina Turner - Rod Stewart",
+        "copiaTesto": "It Takes Two [Tina Turner - Rod Stewart * SC *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "It'S My Life",
+        "artista": "Talk Talk",
+        "copiaTesto": "It'S My Life [Talk Talk * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "It'S Not Right But It'S Okay",
+        "artista": "Whitney Houston",
+        "copiaTesto": "It'S Not Right But It'S Okay [Whitney Houston]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "It'S Raining Men  (Radio Edit)",
+        "artista": "The Weather Girls",
+        "copiaTesto": "It'S Raining Men [The Weather Girls * SCORPIO *] (Radio Edit)",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "It'S Raining Men",
+        "artista": "The Weather Girls",
+        "copiaTesto": "It'S Raining Men [The Weather Girls * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Italodisco",
+        "artista": "The Kolors",
+        "copiaTesto": "Italodisco [The Kolors * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Jambo",
+        "artista": "Takagi & Ketra Ft. Omi - Giusy Ferreri",
+        "copiaTesto": "Jambo [Takagi & Ketra Ft. Omi - Giusy Ferreri]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Jeopardy",
+        "artista": "The Greg Kihn Band",
+        "copiaTesto": "Jeopardy [The Greg Kihn Band * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Johnny Walker",
+        "artista": "Westernhagen",
+        "copiaTesto": "Johnny Walker [Westernhagen * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Jump",
+        "artista": "Van Halen",
+        "copiaTesto": "Jump [Van Halen * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Jumping Jack Flash",
+        "artista": "The Rolling Stones",
+        "copiaTesto": "Jumping Jack Flash [The Rolling Stones * SC *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Junger Adler Einen Sohn)  (Ein Lied Für (M)",
+        "artista": "Tom Astor",
+        "copiaTesto": "Junger Adler Einen Sohn) [Tom Astor * SCORPIO *] (Ein Lied Für (M)",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Just What I Needed",
+        "artista": "The Cars",
+        "copiaTesto": "Just What I Needed [The Cars * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Kalimba De Luna  (Latin Edit)",
+        "artista": "Tony Esposito",
+        "copiaTesto": "Kalimba De Luna [Tony Esposito * SCORPIO *] (Latin Edit)",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Karma",
+        "artista": "The Kolors",
+        "copiaTesto": "Karma [The Kolors * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "King Of Pain",
+        "artista": "The Police",
+        "copiaTesto": "King Of Pain [The Police * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "King Of The Road",
+        "artista": "The Proclaimers",
+        "copiaTesto": "King Of The Road [The Proclaimers * SCORPIO *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La Descrizione Di Un Attimo",
+        "artista": "Tiromancino",
+        "copiaTesto": "La Descrizione Di Un Attimo [Tiromancino * SC *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La Differenza Tra Me E Te",
+        "artista": "Tiziano Ferro",
+        "copiaTesto": "La Differenza Tra Me E Te [Tiziano Ferro * SC *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La Luna E La Gatta",
+        "artista": "Takagi & Ketra Ft. T.paradiso - Jovanotti - Calcutta",
+        "copiaTesto": "La Luna E La Gatta [Takagi & Ketra Ft. T.paradiso - Jovanotti - Calcutta]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Fata Morgana",
+        "artista": "Litfiba",
+        "copiaTesto": "Fata Morgana [Litfiba * SCORPIO EDITION *]",
+        "data": "2026-07-16",
+        "categoria": "KARAOKE"
     }
 ]
