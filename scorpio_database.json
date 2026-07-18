@@ -58133,5 +58133,285 @@
         "copiaTesto": "Oro [Mango * SCORPIO EDITION *]",
         "data": "2026-07-17",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Anni '80 - Vol.3  (Beloved E Cube)",
+        "artista": "The Beloved - Cube",
+        "copiaTesto": "Medley Anni '80 - Vol.3 [The Beloved - Cube * SC *] (Beloved E Cube)",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Best Of U2",
+        "artista": "U2",
+        "copiaTesto": "Medley Best Of U2 [U2 * SCORPIO EDITION *]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Dance '70 - Village People",
+        "artista": "Village People",
+        "copiaTesto": "Medley Dance '70 - Village People [Village People]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Dance - Shine On Infinity",
+        "artista": "Yves La Rock - Rio - Guru Josh Project",
+        "copiaTesto": "Medley Dance - Shine On Infinity [Yves La Rock - Rio - Guru Josh Project]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Eros Ramazzotti  (Sanremo 2023)",
+        "artista": "Ultimo - Eros Ramazzotti",
+        "copiaTesto": "Medley Eros Ramazzotti [Ultimo - Eros Ramazzotti] (Sanremo 2023)",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley I Classici Anni '60",
+        "artista": "Umberto Smaila",
+        "copiaTesto": "Medley I Classici Anni '60 [Umberto Smaila * SC *]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Italian Songs - Vol. 2  (Ballads)",
+        "artista": "Umberto Smaila",
+        "copiaTesto": "Medley Italian Songs - Vol. 2 [Umberto Smaila] (Ballads)",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Italian Songs - Vol.3  (Anni '60)",
+        "artista": "Umberto Smaila",
+        "copiaTesto": "Medley Italian Songs - Vol.3 [Umberto Smaila * SC *] (Anni '60)",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Italian Songs - Vol.4  (Ska)",
+        "artista": "Umberto Smaila",
+        "copiaTesto": "Medley Italian Songs - Vol.4 [Umberto Smaila * SC *] (Ska)",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Italian Songs - Vol.5  (Ballads)",
+        "artista": "Umberto Smaila",
+        "copiaTesto": "Medley Italian Songs - Vol.5 [Umberto Smaila * SC *] (Ballads)",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Italian Songs - Vol.6  (Ballads)",
+        "artista": "Umberto Smaila",
+        "copiaTesto": "Medley Italian Songs - Vol.6 [Umberto Smaila * SC *] (Ballads)",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Italian Songs Vol. 1",
+        "artista": "Umberto Smaila",
+        "copiaTesto": "Medley Italian Songs Vol. 1 [Umberto Smaila * SC *]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Sanremo 2024 - Uomo",
+        "artista": "The Kolors - Ghali - Mahmood",
+        "copiaTesto": "Medley Sanremo 2024 - Uomo [The Kolors - Ghali - Mahmood]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley The Kolors",
+        "artista": "The Kolors",
+        "copiaTesto": "Medley The Kolors [The Kolors * SCORPIO *]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Tiziano Ferro  (Live)",
+        "artista": "Tiziano Ferro",
+        "copiaTesto": "Medley Tiziano Ferro [Tiziano Ferro * SCORPIO *] (Live)",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Valzer - That'S Amore E Que Serà Serà",
+        "artista": "Umberto Smaila",
+        "copiaTesto": "Medley Valzer - That'S Amore E Que Serà Serà [Umberto Smaila]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Melodia Criminal",
+        "artista": "Takagi E Ketra - Fred De Palma - Ana Mena",
+        "copiaTesto": "Melodia Criminal [Takagi E Ketra - Fred De Palma - Ana Mena]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mentre Aspetto Che Ritorni",
+        "artista": "Zero Renato",
+        "copiaTesto": "Mentre Aspetto Che Ritorni [Zero Renato * SC *]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mercy",
+        "artista": "The Blessed Madonna - Jacob Lusk",
+        "copiaTesto": "Mercy [The Blessed Madonna - Jacob Lusk * SC *]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Battisti",
+        "artista": "Umberto Smaila",
+        "copiaTesto": "Medley Battisti [Umberto Smaila * SCORPIO *]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Merry Christmas Everyone",
+        "artista": "Tom Gaebel - The Bosshoss",
+        "copiaTesto": "Merry Christmas Everyone [Tom Gaebel - The Bosshoss]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mi Piacerebbe Andare Al Mare",
+        "artista": "Toto Cutugno",
+        "copiaTesto": "Mi Piacerebbe Andare Al Mare [Toto Cutugno]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mi Rituffo Nella Notte",
+        "artista": "Tiromancino",
+        "copiaTesto": "Mi Rituffo Nella Notte [Tiromancino]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mi Sei Entrata Nel Cuore",
+        "artista": "The Showmen",
+        "copiaTesto": "Mi Sei Entrata Nel Cuore [The Showmen]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Midnight Rider",
+        "artista": "The Allman Brothers Band",
+        "copiaTesto": "Midnight Rider [The Allman Brothers Band]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Million Dollar Baby",
+        "artista": "Tommy Richman",
+        "copiaTesto": "Million Dollar Baby [Tommy Richman]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Million Dollar Bill",
+        "artista": "Whitney Houston",
+        "copiaTesto": "Million Dollar Bill [Whitney Houston]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Missing You",
+        "artista": "Tina Turner",
+        "copiaTesto": "Missing You [Tina Turner]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mixed Emotion",
+        "artista": "The Rolling Stones",
+        "copiaTesto": "Mixed Emotion [The Rolling Stones]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mon Petit Garcon",
+        "artista": "Yuyu",
+        "copiaTesto": "Mon Petit Garcon [Yuyu]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mothers Talk",
+        "artista": "Tears For Fears",
+        "copiaTesto": "Mothers Talk [Tears For Fears]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mr. Brightside",
+        "artista": "The Killers",
+        "copiaTesto": "Mr. Brightside [The Killers]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mustang Sally",
+        "artista": "Wilson Pickett",
+        "copiaTesto": "Mustang Sally [Wilson Pickett]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "My Love",
+        "artista": "Westlife",
+        "copiaTesto": "My Love [Westlife]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "My Sharona",
+        "artista": "The Knack",
+        "copiaTesto": "My Sharona [The Knack]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mysterious Ways",
+        "artista": "U2",
+        "copiaTesto": "Mysterious Ways [U2]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Nah Neh Nah (Still)",
+        "artista": "Vaya Con Dios",
+        "copiaTesto": "Nah Neh Nah (Still) [Vaya Con Dios]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Nel Blu Dipinto Di Blu (Volare)",
+        "artista": "Tiziano Ferro",
+        "copiaTesto": "Nel Blu Dipinto Di Blu (Volare) [Tiziano Ferro]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Neve Al Sole",
+        "artista": "Ultimo",
+        "copiaTesto": "Neve Al Sole [Ultimo * SCORPIO EDITION *]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Never Forget You",
+        "artista": "The Noisettes",
+        "copiaTesto": "Never Forget You [The Noisettes * SCORPIO *]",
+        "data": "2026-07-18",
+        "categoria": "KARAOKE"
     }
 ]
