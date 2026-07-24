@@ -60667,5 +60667,397 @@
         "copiaTesto": "Tu Cosa Fai Questa Sera [Noemi * SCORPIO *]",
         "data": "2026-07-23",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Canción De Luto",
+        "artista": "Ana Guerra & Coti",
+        "copiaTesto": "Canción De Luto [Ana Guerra & Coti * RADIO SC *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "Con Una Mirada",
+        "artista": "Ana Guerra",
+        "copiaTesto": "Con Una Mirada [Ana Guerra * RADIO SCORPIO *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "Contar Mentiras",
+        "artista": "Ana Guerra",
+        "copiaTesto": "Contar Mentiras [Ana Guerra * RADIO SCORPIO *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "Culpable O No",
+        "artista": "Ana Guerra & Cepeda",
+        "copiaTesto": "Culpable O No [Ana Guerra & Cepeda * RADIO SC *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "Desde Que Te Vi",
+        "artista": "Bustamante & Ana Guerra",
+        "copiaTesto": "Desde Que Te Vi [Bustamante & Ana Guerra * RS *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "El Remedio",
+        "artista": "Ana Guerra",
+        "copiaTesto": "El Remedio [Ana Guerra * RADIO SCORPIO *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "La Bikina",
+        "artista": "Ana Guerra",
+        "copiaTesto": "La Bikina [Ana Guerra * RADIO SCORPIO *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "La Llama",
+        "artista": "Ana Guerra",
+        "copiaTesto": "La Llama [Ana Guerra * RADIO SCORPIO *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "Listo Va",
+        "artista": "Ana Guerra & Lérica",
+        "copiaTesto": "Listo Va [Ana Guerra & Lérica * RADIO SC *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "Lo Malo",
+        "artista": "Aitana & Ana Guerra",
+        "copiaTesto": "Lo Malo [Aitana & Ana Guerra * RADIO SC *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "Ni La Hora",
+        "artista": "Ana Guerra & Juan Magán",
+        "copiaTesto": "Ni La Hora [Ana Guerra & Juan Magán * RADIO SC *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "No Sabe A Nada",
+        "artista": "Ana Guerra",
+        "copiaTesto": "No Sabe A Nada [Ana Guerra * RADIO SCORPIO *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "Robarte El Corazón",
+        "artista": "Bombai & Ana Guerra",
+        "copiaTesto": "Robarte El Corazón [Bombai & Ana Guerra * RS *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "Sayonara",
+        "artista": "Ana Guerra & Mike Bahía",
+        "copiaTesto": "Sayonara [Ana Guerra & Mike Bahía * RADIO SC *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "Tarde O Temprano",
+        "artista": "Ana Guerra",
+        "copiaTesto": "Tarde O Temprano [Ana Guerra * RADIO SC *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "Tik Tak",
+        "artista": "Ana Guerra",
+        "copiaTesto": "Tik Tak [Ana Guerra * RADIO SCORPIO *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "Bajito",
+        "artista": "Ana Guerra",
+        "copiaTesto": "Bajito [Ana Guerra * RADIO SCORPIO *]",
+        "data": "2026-07-23",
+        "categoria": "RADIO"
+    },
+    {
+        "titolo": "Adieù Jolie Candy",
+        "artista": "Jean Francois Michael",
+        "copiaTesto": "Adieù Jolie Candy [Jean Francois Michael * SC *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Adios Amor",
+        "artista": "Andy Borg",
+        "copiaTesto": "Adios Amor [Andy Borg * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Advertising Space",
+        "artista": "Robbie Williams",
+        "copiaTesto": "Advertising Space [Robbie Williams * SCORPIO *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Alla Mia Età",
+        "artista": "Tiziano Ferro",
+        "copiaTesto": "Alla Mia Età [Tiziano Ferro * SCORPIO *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Am I The Same Girl  (Live)",
+        "artista": "Swing Out Sister",
+        "copiaTesto": "Am I The Same Girl [Swing Out Sister * SCORPIO *] (Live)",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "American Girls",
+        "artista": "Harry Styles",
+        "copiaTesto": "American Girls [Harry Styles * SCORPIO *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Amore Che Vieni Amore Che Vai",
+        "artista": "Fabrizio De Andrè",
+        "copiaTesto": "Amore Che Vieni Amore Che Vai [Fabrizio De Andrè]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Amore È",
+        "artista": "Elisa",
+        "copiaTesto": "Amore È [Elisa * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Arrivederci Per Lei",
+        "artista": "Marco Masini - Umberto Tozzi",
+        "copiaTesto": "Arrivederci Per Lei [Marco Masini - Umberto Tozzi]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Atlantide",
+        "artista": "Francesco De Gregori",
+        "copiaTesto": "Atlantide [Francesco De Gregori * SCORPIO *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Bam Bam Bambina",
+        "artista": "Elettra Lamborghini",
+        "copiaTesto": "Bam Bam Bambina [Elettra Lamborghini * SCORPIO *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Be A Boy",
+        "artista": "Robbie Williams",
+        "copiaTesto": "Be A Boy [Robbie Williams * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Bocca Di Rosa",
+        "artista": "Ornella Vanoni",
+        "copiaTesto": "Bocca Di Rosa [Ornella Vanoni * SCORPIO *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Bocca Dolce  (Sugar Sugar)",
+        "artista": "Il Supergruppo",
+        "copiaTesto": "Bocca Dolce [Il Supergruppo * SCORPIO EDITION *] (Sugar Sugar)",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Borghesia",
+        "artista": "Claudio Lolli",
+        "copiaTesto": "Borghesia [Claudio Lolli * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Bossa Nostra",
+        "artista": "Gaia",
+        "copiaTesto": "Bossa Nostra [Gaia * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Buon Vento",
+        "artista": "Alfa - Jovanotti",
+        "copiaTesto": "Buon Vento [Alfa - Jovanotti * SCORPIO *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Buona Domenica",
+        "artista": "Sayf",
+        "copiaTesto": "Buona Domenica [Sayf * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Caminito",
+        "artista": "Julio Iglesias",
+        "copiaTesto": "Caminito [Julio Iglesias * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cha Cha Cha",
+        "artista": "Bruno Mars",
+        "copiaTesto": "Cha Cha Cha [Bruno Mars * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Che Tesoro Che Sei",
+        "artista": "Antonello Venditti - Achille Lauro",
+        "copiaTesto": "Che Tesoro Che Sei [Antonello Venditti - Achille Lauro]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ci Penserò Domani",
+        "artista": "Papik - Alan Scaffardi",
+        "copiaTesto": "Ci Penserò Domani [Papik - Alan Scaffardi * SC *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Come Fa Bene L'Amore",
+        "artista": "Gianni Morandi",
+        "copiaTesto": "Come Fa Bene L'Amore [Gianni Morandi * SCORPIO *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Coming Around Again",
+        "artista": "Carly Simon",
+        "copiaTesto": "Coming Around Again [Carly Simon * SCORPIO *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Could It Be Magic",
+        "artista": "Donna Summer",
+        "copiaTesto": "Could It Be Magic [Donna Summer * SCORPIO *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dai Dai  (Fifa World Cup 2026 Song)",
+        "artista": "Burna Boy - Shakira",
+        "copiaTesto": "Dai Dai [Burna Boy - Shakira * SCORPIO *] (Fifa World Cup 2026 Song)",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Different",
+        "artista": "Robbie Williams",
+        "copiaTesto": "Different [Robbie Williams * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dio Come Ti Amo  (Tonalità Uomo)",
+        "artista": "Anna Tatangelo",
+        "copiaTesto": "Dio Come Ti Amo [Anna Tatangelo * SCORPIO *] (Tonalità Uomo)",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dio Come Ti Amo",
+        "artista": "Anna Tatangelo",
+        "copiaTesto": "Dio Come Ti Amo [Anna Tatangelo * SCORPIO *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "E Fuori E' Buio",
+        "artista": "Tiziano Ferro",
+        "copiaTesto": "E Fuori E' Buio [Tiziano Ferro * SCORPIO *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Feel",
+        "artista": "Robbie Williams",
+        "copiaTesto": "Feel [Robbie Williams * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Fiori Bianchi Per Te  (Adieù Jolie Candy)",
+        "artista": "Adamo",
+        "copiaTesto": "Fiori Bianchi Per Te [Adamo * SCORPIO EDITION *] (Adieù Jolie Candy)",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Go Gentle",
+        "artista": "Robbie Williams",
+        "copiaTesto": "Go Gentle [Robbie Williams * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Halleluja",
+        "artista": "Jeff Buckley",
+        "copiaTesto": "Halleluja [Jeff Buckley * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Hang On To Your Love",
+        "artista": "Sade",
+        "copiaTesto": "Hang On To Your Love [Sade * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Hate That I Made You Love Me",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Hate That I Made You Love Me [Ariana Grande * SC *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "High Time We Went  (Live)",
+        "artista": "Joe Cocker",
+        "copiaTesto": "High Time We Went [Joe Cocker * SCORPIO *] (Live)",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Il Cammino Dell'Età",
+        "artista": "Gigi D'alessio",
+        "copiaTesto": "Il Cammino Dell'Età [Gigi D'alessio * SCORPIO *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Il Sud",
+        "artista": "Nino Ferrer",
+        "copiaTesto": "Il Sud [Nino Ferrer * SCORPIO EDITION *]",
+        "data": "2026-07-24",
+        "categoria": "KARAOKE"
     }
 ]
