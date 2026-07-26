@@ -61325,5 +61325,33 @@
         "copiaTesto": "Who Knew [Pink * SCORPIO EDITION *]",
         "data": "2026-07-25",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Believe",
+        "artista": "Savatage",
+        "copiaTesto": "Believe [Savatage * SCORPIO EDITION *]",
+        "data": "2026-07-26",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Chance",
+        "artista": "Savatage",
+        "copiaTesto": "Chance [Savatage * SCORPIO EDITION *]",
+        "data": "2026-07-26",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Senti come batte il cuore",
+        "artista": "Alessandro Fiorello",
+        "copiaTesto": "Senti come batte il cuore [Alessandro Fiorello]",
+        "data": "2026-07-26",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Senza più catene",
+        "artista": "Blip",
+        "copiaTesto": "Senza più catene [Blip * SCORPIO EDITION *]",
+        "data": "2026-07-26",
+        "categoria": "KARAOKE"
     }
 ]
