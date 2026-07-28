@@ -61388,5 +61388,19 @@
         "copiaTesto": "Oggi Ho Imparato a Volare [Eugenio Finardi * SC *]",
         "data": "2026-07-26",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La Corsa Contro Il Tempo  (Inedito Base)",
+        "artista": "Mau Scorpio Edition",
+        "copiaTesto": "La Corsa Contro Il Tempo [Mau Scorpio Edition] (Inedito Base)",
+        "data": "2026-07-28",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "La Corsa Contro Il Tempo  (Inedito Cantato)",
+        "artista": "Mau Scorpio Edition",
+        "copiaTesto": "La Corsa Contro Il Tempo [Mau Scorpio Edition] (Inedito Cantato)",
+        "data": "2026-07-28",
+        "categoria": "INEDITI"
     }
 ]
