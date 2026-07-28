@@ -61402,5 +61402,19 @@
         "copiaTesto": "La Corsa Contro Il Tempo [Mau Scorpio Edition] (Inedito Cantato)",
         "data": "2026-07-28",
         "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Senza Bussola",
+        "artista": "Scorpio Inedito Brano",
+        "copiaTesto": "Senza Bussola [Scorpio Inedito Brano]",
+        "data": "2026-07-28",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Senza Bussola",
+        "artista": "Scorpio Inedito Karaoke",
+        "copiaTesto": "Senza Bussola [Scorpio Inedito Karaoke]",
+        "data": "2026-07-28",
+        "categoria": "BASI_INEDITI"
     }
 ]
