@@ -61416,5 +61416,19 @@
         "copiaTesto": "Senza Bussola [Scorpio Inedito Karaoke]",
         "data": "2026-07-28",
         "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Chasing The Light Without",
+        "artista": "Karaoke Scorpio Inedito",
+        "copiaTesto": "Chasing The Light Without [Karaoke Scorpio Inedito]",
+        "data": "2026-07-28",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Chasing The Light",
+        "artista": "Brano Scorpio Inedito",
+        "copiaTesto": "Chasing The Light [Brano Scorpio Inedito]",
+        "data": "2026-07-28",
+        "categoria": "INEDITI"
     }
 ]
