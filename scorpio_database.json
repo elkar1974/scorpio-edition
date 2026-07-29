@@ -61390,14 +61390,14 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "La Corsa Contro Il Tempo  (Inedito Base)",
+        "titolo": "La Corsa Contro Il Tempo",
         "artista": "MAU•SCORPIO•EDITION",
         "copiaTesto": "La Corsa Contro Il Tempo [Mau Scorpio Edition] (Inedito Base)",
         "data": "2026-07-28",
         "categoria": "BASI_INEDITI"
     },
     {
-        "titolo": "La Corsa Contro Il Tempo  (Inedito Cantato)",
+        "titolo": "La Corsa Contro Il Tempo",
         "artista": "MAU•SCORPIO•EDITION",
         "copiaTesto": "La Corsa Contro Il Tempo [Mau Scorpio Edition] (Inedito Cantato)",
         "data": "2026-07-28",
@@ -61472,5 +61472,96 @@
         "copiaTesto": "Out Of Signal (karaoke) [MAU•SCORPIO•EDITION]",
         "data": "2026-07-29",
         "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Cosmic Echo",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Cosmic Echo (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Cosmic Echo",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Cosmic Echo (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Cyber Struck",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Cyber Struck (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Cyber Struck",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Cyber Struck (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Iron Tower",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Iron Tower (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Iron Tower",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Iron Tower (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Polvere E Stelle",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Polvere E Stelle (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Polvere E Stelle",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Polvere E Stelle (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Run Deep",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Run Deep (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Run Deep",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Run Deep (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Where Did Seconds Go",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Where Did Seconds Go (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Where Did Seconds Go",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Where Did Seconds Go (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Tutto da rifare",
+        "artista": "Velvet",
+        "copiaTesto": "Tutto da rifare [Velvet * SCORPIO EDITION *]",
+        "data": "2026-07-29",
+        "categoria": "KARAOKE"
     }
 ]
