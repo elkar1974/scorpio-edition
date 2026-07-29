@@ -12440,7 +12440,7 @@
     },
     {
         "titolo": "Caruso  (Napoli Mood)",
-        "artista": "Arrangiamento Inedito M-Live",
+        "artista": "Live",
         "copiaTesto": "Caruso [Arrangiamento Inedito M-Li‍ve * SCORPIO *] (Napoli Mood)",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
@@ -61391,44 +61391,86 @@
     },
     {
         "titolo": "La Corsa Contro Il Tempo  (Inedito Base)",
-        "artista": "Mau Scorpio Edition",
+        "artista": "MAU•SCORPIO•EDITION",
         "copiaTesto": "La Corsa Contro Il Tempo [Mau Scorpio Edition] (Inedito Base)",
         "data": "2026-07-28",
         "categoria": "BASI_INEDITI"
     },
     {
         "titolo": "La Corsa Contro Il Tempo  (Inedito Cantato)",
-        "artista": "Mau Scorpio Edition",
+        "artista": "MAU•SCORPIO•EDITION",
         "copiaTesto": "La Corsa Contro Il Tempo [Mau Scorpio Edition] (Inedito Cantato)",
         "data": "2026-07-28",
         "categoria": "INEDITI"
     },
     {
         "titolo": "Senza Bussola",
-        "artista": "Scorpio Inedito Brano",
+        "artista": "MAU•SCORPIO•EDITION",
         "copiaTesto": "Senza Bussola [Scorpio Inedito Brano]",
         "data": "2026-07-28",
         "categoria": "INEDITI"
     },
     {
         "titolo": "Senza Bussola",
-        "artista": "Scorpio Inedito Karaoke",
+        "artista": "MAU•SCORPIO•EDITION",
         "copiaTesto": "Senza Bussola [Scorpio Inedito Karaoke]",
         "data": "2026-07-28",
         "categoria": "BASI_INEDITI"
     },
     {
-        "titolo": "Chasing The Light Without",
-        "artista": "Karaoke Scorpio Inedito",
+        "titolo": "Chasing The Light",
+        "artista": "MAU•SCORPIO•EDITION",
         "copiaTesto": "Chasing The Light Without [Karaoke Scorpio Inedito]",
         "data": "2026-07-28",
         "categoria": "BASI_INEDITI"
     },
     {
         "titolo": "Chasing The Light",
-        "artista": "Brano Scorpio Inedito",
+        "artista": "MAU•SCORPIO•EDITION",
         "copiaTesto": "Chasing The Light [Brano Scorpio Inedito]",
         "data": "2026-07-28",
         "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Beyond The Grid",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Beyond The Grid (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Beyond The Grid",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Beyond The Grid (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "L'Orizzonte Degli Eventi",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "L'Orizzonte Degli Eventi (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "L'Orizzonte Degli Eventi",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "L'Orizzonte Degli Eventi (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Out Of Signal",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Out Of Signal (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Out Of Signal",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Out Of Signal (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-07-29",
+        "categoria": "BASI_INEDITI"
     }
 ]
