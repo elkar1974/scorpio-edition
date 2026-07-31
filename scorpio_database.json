@@ -61850,5 +61850,19 @@
         "copiaTesto": "Whispers In The Static (karaoke) [MAU•SCORPIO•EDITION]",
         "data": "2026-07-31",
         "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Sabato Pomeriggio",
+        "artista": "Gianni Morandi - Claudio Baglioni",
+        "copiaTesto": "Sabato Pomeriggio [Gianni Morandi - Claudio Baglioni]",
+        "data": "2026-07-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Unica",
+        "artista": "Antonello Venditti",
+        "copiaTesto": "Unica [Antonello Venditti * SCORPIO EDITION *]",
+        "data": "2026-07-31",
+        "categoria": "KARAOKE"
     }
 ]
