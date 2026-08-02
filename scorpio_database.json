@@ -61864,5 +61864,19 @@
         "copiaTesto": "Unica [Antonello Venditti * SCORPIO EDITION *]",
         "data": "2026-07-31",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Non Importa Di Noi",
+        "artista": "Dear Jack * SCORPIO *",
+        "copiaTesto": "Non Importa Di Noi [Dear Jack * SCORPIO *]",
+        "data": "2026-08-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Alegria",
+        "artista": "Cirque du Soleil * SCORPIO *",
+        "copiaTesto": "Alegria [Cirque du Soleil * SCORPIO *]",
+        "data": "2026-08-02",
+        "categoria": "KARAOKE"
     }
 ]
