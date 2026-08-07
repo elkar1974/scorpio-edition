@@ -61878,5 +61878,313 @@
         "copiaTesto": "Una Faccia Pulita [Claudio Baglioni * SCORPIO *]",
         "data": "2026-08-02",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Break The Signal",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Break The Signal (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Break The Signal",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Break The Signal (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Caffè Freddo",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Caffè Freddo (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Caffè Freddo",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Caffè Freddo (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Echoes On The Harbor Wall",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Echoes On The Harbor Wall (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Echoes On The Harbor Wall",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Echoes On The Harbor Wall (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Gears Of Fog And Cedar",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Gears Of Fog And Cedar (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Gears Of Fog And Cedar",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Gears Of Fog And Cedar (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Il Faro Spento",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Il Faro Spento (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Il Faro Spento",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Il Faro Spento (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Letters To The Tide",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Letters To The Tide (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Letters To The Tide",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Letters To The Tide (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Neon Meridian Drift",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Neon Meridian Drift (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Neon Meridian Drift",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Neon Meridian Drift (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Orizzonti",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Orizzonti (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Orizzonti",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Orizzonti (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Overpass",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Overpass (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Overpass",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Overpass (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Semaforo Rosso",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Semaforo Rosso (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Semaforo Rosso",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Semaforo Rosso (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "Turn The Key",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Turn The Key (brano) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "INEDITI"
+    },
+    {
+        "titolo": "Turn The Key",
+        "artista": "MAU•SCORPIO•EDITION",
+        "copiaTesto": "Turn The Key (karaoke) [MAU•SCORPIO•EDITION]",
+        "data": "2026-08-02",
+        "categoria": "BASI_INEDITI"
+    },
+    {
+        "titolo": "A Me Mi Piace Il Mare",
+        "artista": "Cochi E Renato",
+        "copiaTesto": "A Me Mi Piace Il Mare [Cochi E Renato * SCORPIO *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Amori In Corso",
+        "artista": "Claudio Baglioni",
+        "copiaTesto": "Amori In Corso [Claudio Baglioni * SCORPIO *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Andiamo A Casa",
+        "artista": "Claudio Baglioni",
+        "copiaTesto": "Andiamo A Casa [Claudio Baglioni * SCORPIO *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Barbera e Champagne",
+        "artista": "Giorgio Gaber",
+        "copiaTesto": "Barbera e Champagne [Giorgio Gaber * SCORPIO *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Canzone Intelligente",
+        "artista": "Cochi E Renato",
+        "copiaTesto": "Canzone Intelligente [Cochi E Renato * SCORPIO *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Come porti i capelli bella bionda",
+        "artista": "Giorgio Gaber",
+        "copiaTesto": "Come porti i capelli bella bionda [Giorgio Gaber]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "E la vita, la vita  (From E la vita, la vita)",
+        "artista": "2020 Remaster",
+        "copiaTesto": "E la vita, la vita [2020 Remaster * SCORPIO *] (From E la vita, la vita)",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Goganga",
+        "artista": "Giorgio Gaber",
+        "copiaTesto": "Goganga [Giorgio Gaber * SCORPIO EDITION *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Il Mattino Si E' Svegliato",
+        "artista": "Claudio Baglioni * SC *",
+        "copiaTesto": "Il Mattino Si E' Svegliato [Claudio Baglioni * SC *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Il Riccardo",
+        "artista": "Giorgio Gaber",
+        "copiaTesto": "Il Riccardo [Giorgio Gaber * SCORPIO EDITION *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Io Non Mi Sento Italiano",
+        "artista": "Giorgio Gaber * SC *",
+        "copiaTesto": "Io Non Mi Sento Italiano [Giorgio Gaber * SC *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "L'Amico E Domani",
+        "artista": "Claudio Baglioni",
+        "copiaTesto": "L'Amico E Domani [Claudio Baglioni * SCORPIO *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La Balilla",
+        "artista": "Giorgio Gaber",
+        "copiaTesto": "La Balilla [Giorgio Gaber * SCORPIO EDITION *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La Ballata del Cerutti",
+        "artista": "Giorgio Gaber",
+        "copiaTesto": "La Ballata del Cerutti [Giorgio Gaber * SCORPIO *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La Gallina",
+        "artista": "Cochi E Renato",
+        "copiaTesto": "La Gallina [Cochi E Renato * SCORPIO EDITION *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La strana famiglia",
+        "artista": "Giorgio Gaber",
+        "copiaTesto": "La strana famiglia [Giorgio Gaber * SCORPIO *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Padremadre",
+        "artista": "Cesare Cremonini",
+        "copiaTesto": "Padremadre [Cesare Cremonini * SCORPIO *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Porta Romana",
+        "artista": "Giorgio Gaber",
+        "copiaTesto": "Porta Romana [Giorgio Gaber * SCORPIO EDITION *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Snoopy contro il Barone rosso",
+        "artista": "Giorgio Gaber * SC *",
+        "copiaTesto": "Snoopy contro il Barone rosso [Giorgio Gaber * SC *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Un Bimbo Sul Leone  (Remastered)",
+        "artista": "Adriano Celentano",
+        "copiaTesto": "Un Bimbo Sul Leone [Adriano Celentano * SCORPIO *] (Remastered)",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Un Nuovo Giorno O Un Giorno",
+        "artista": "Claudio Baglioni",
+        "copiaTesto": "Un Nuovo Giorno O Un Giorno [Claudio Baglioni]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Una Fetta Di Limone",
+        "artista": "Giorgio Gaber",
+        "copiaTesto": "Una Fetta Di Limone [Giorgio Gaber * SCORPIO *]",
+        "data": "2026-08-07",
+        "categoria": "KARAOKE"
     }
 ]
