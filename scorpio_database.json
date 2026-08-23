@@ -62235,5 +62235,19 @@
         "copiaTesto": "Questo Piccolo Grande Amore [Claudio Baglioni]",
         "data": "2026-08-22",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Discolabirinto",
+        "artista": "Subsonica",
+        "copiaTesto": "Discolabirinto [Subsonica * SCORPIO EDITION *]",
+        "data": "2026-08-23",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Qualcosa per te",
+        "artista": "Ligabue",
+        "copiaTesto": "Qualcosa per te [Ligabue * SCORPIO EDITION *]",
+        "data": "2026-08-23",
+        "categoria": "KARAOKE"
     }
 ]
