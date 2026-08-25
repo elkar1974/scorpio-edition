@@ -62249,5 +62249,19 @@
         "copiaTesto": "Qualcosa per te [Ligabue * SCORPIO EDITION *]",
         "data": "2026-08-23",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A un Passo",
+        "artista": "Laura Bono",
+        "copiaTesto": "A un Passo [Laura Bono * SCORPIO EDITION *]",
+        "data": "2026-08-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ti voglio bene",
+        "artista": "Tiziano Ferro",
+        "copiaTesto": "Ti voglio bene [Tiziano Ferro * SCORPIO *]",
+        "data": "2026-08-25",
+        "categoria": "KARAOKE"
     }
 ]
