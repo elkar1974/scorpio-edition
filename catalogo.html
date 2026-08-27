@@ -225,7 +225,7 @@
                 
                 const dataJson = await response.json();
                 
-                const pulisci = (t) => t.toLowerCase().replace(/[\u200B-\u200D\uFEFF\u200E\u200F]/g, '').replace(/\s+/g, ' ');
+                const pulisci = (t) => t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[\u200B-\u200D\uFEFF\u200E\u200F]/g, '').replace(/\s+/g, ' ');
                 
                 basi = dataJson.map(b => ({
                     ...b,
@@ -321,7 +321,7 @@
             
             let basiFiltrate = basi.filter(b => b.categoria === currentCategory);
             
-            const queryPulita = query.trim().replace(/\s+/g, ' ').toLowerCase();
+            const queryPulita = query.trim().replace(/\s+/g, ' ').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
             if (queryPulita) {
                 basiFiltrate = basiFiltrate.filter(b => b.stringaRicerca.includes(queryPulita));
             }
