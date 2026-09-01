@@ -62846,9 +62846,9 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Hero Chad Kroeger",
-        "artista": "Sconosciuto",
-        "copiaTesto": "Hero Chad Kroeger",
+        "titolo": "Hero",
+        "artista": "Chad Kroeger",
+        "copiaTesto": "Hero [Chad Kroeger]",
         "data": "2026-08-31",
         "categoria": "KARAOKE"
     },
@@ -62878,6 +62878,13 @@
         "artista": "883",
         "copiaTesto": "Come Deve Andare [883 * SCORPIO EDITION *]",
         "data": "2026-08-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Pericolosamente amici",
+        "artista": "Renato Zero",
+        "copiaTesto": "Pericolosamente amici [Renato Zero * SCORPIO *]",
+        "data": "2026-09-01",
         "categoria": "KARAOKE"
     }
 ]
