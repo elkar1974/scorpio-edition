@@ -39753,7 +39753,7 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Rivoglio La Mia Vita",
+        "titolo": "Io Rivoglio La Mia Vita",
         "artista": "Lighea",
         "copiaTesto": "Rivoglio La Mia Vita [Lig‍hea * SCORPIO *]",
         "data": "2026-06-02",
@@ -62920,6 +62920,55 @@
         "artista": "Vasco Rossi",
         "copiaTesto": "Ogni Volta Live [Vasco Rossi * SCORPIO *]",
         "data": "2026-09-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dreadlock Holiday",
+        "artista": "10cc",
+        "copiaTesto": "Dreadlock Holiday [10cc * SCORPIO EDITION *]",
+        "data": "2026-09-04",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Good Morning Judge",
+        "artista": "10cc",
+        "copiaTesto": "Good Morning Judge [10cc * SCORPIO EDITION *]",
+        "data": "2026-09-04",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mi Mancherai",
+        "artista": "Elsa Lila",
+        "copiaTesto": "Mi Mancherai [Elsa Lila * SCORPIO EDITION *]",
+        "data": "2026-09-04",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Siamo Soli Nell'Immenso Vuoto Che C'è",
+        "artista": "Laura Pausini",
+        "copiaTesto": "SIAMO SOLI NELL'IMMENSO VUOTO CHE C'È [Laura Pausini]",
+        "data": "2026-09-04",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Siamo Soli Nell'Immenso Vuoto Che C'è",
+        "artista": "Raf",
+        "copiaTesto": "Siamo Soli Nell'Immenso Vuoto. [Raf * SCORPIO *]",
+        "data": "2026-09-04",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Things We Do For Love",
+        "artista": "10cc",
+        "copiaTesto": "The Things We Do For Love [10cc * SCORPIO *]",
+        "data": "2026-09-04",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Why",
+        "artista": "Randy Crawford",
+        "copiaTesto": "Why [Randy Crawford * SCORPIO EDITION *]",
+        "data": "2026-09-04",
         "categoria": "KARAOKE"
     }
 ]
