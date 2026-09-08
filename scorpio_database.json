@@ -63855,7 +63855,7 @@
     },
     {
         "titolo": "Problem Child",
-        "artista": "",
+        "artista": "AcDc",
         "copiaTesto": "Problem Child [Ac_dc * SCORPIO EDITION *]",
         "data": "2026-09-07",
         "categoria": "KARAOKE"
@@ -64292,6 +64292,13 @@
         "artista": "Acdc",
         "copiaTesto": "You Ain't Got a Hold On Me [Acdc * SCORPIO *]",
         "data": "2026-09-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Through The Barricades",
+        "artista": "Spandau Ballet",
+        "copiaTesto": "Through The Barricades [Spandau Ballet * SC *]",
+        "data": "2026-09-08",
         "categoria": "KARAOKE"
     }
 ]
