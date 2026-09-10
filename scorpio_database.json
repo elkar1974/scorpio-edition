@@ -2079,13 +2079,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Il Mondo Insieme A Te",
-        "artista": "883",
-        "copiaTesto": "Il mondo insieme a te [883]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Goccia A Goccia",
         "artista": "Litfiba",
         "copiaTesto": "Goccia a goccia [Litfiba]",
@@ -2919,13 +2912,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Rotta Per Casa Di Dio",
-        "artista": "883",
-        "copiaTesto": "Rotta per casa di Dio [883]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Tieni Il Tempo",
         "artista": "883",
         "copiaTesto": "Tieni il tempo [883]",
@@ -3097,13 +3083,6 @@
         "titolo": "The Lady In My Life",
         "artista": "Michael Jackson",
         "copiaTesto": "The lady in my life [Michael Jackson]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Quello Che Capita",
-        "artista": "883",
-        "copiaTesto": "Quello che capita [883]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -4490,13 +4469,6 @@
         "titolo": "Run Like Hell",
         "artista": "Pink Floyd",
         "copiaTesto": "Run Like Hell [Pink Floyd]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Nella Notte",
-        "artista": "883",
-        "copiaTesto": "Nella notte [883]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -14591,13 +14563,6 @@
         "titolo": "Così Come Mi Viene",
         "artista": "Francesco Gabbani",
         "copiaTesto": "Così Come Mi Viene [Francesc‍o Gabbani * SCORPIO *]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
-        "titolo": "Con Dentro Me",
-        "artista": "883",
-        "copiaTesto": "Con dentro me [883]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -64789,6 +64754,328 @@
         "artista": "Renato Zero",
         "copiaTesto": "L'Impossibile Vivere [Renato Zero * SCORPIO *]",
         "data": "2026-09-09",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A Voi Romani",
+        "artista": "Alberto Fortis",
+        "copiaTesto": "A Voi Romani [Alberto Fortis * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A mano a mano",
+        "artista": "Alessio Bernabei",
+        "copiaTesto": "A mano a mano [Alessio Bernabei * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Avrò cura di tutto",
+        "artista": "Alessandra Amoroso",
+        "copiaTesto": "Avrò cura di tutto [Alessandra Amoroso * SC *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Buongiorno",
+        "artista": "Alessandra Amoroso",
+        "copiaTesto": "Buongiorno [Alessandra Amoroso * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Chasing Stars",
+        "artista": "Alesso - Marshmello",
+        "copiaTesto": "Chasing Stars [Alesso - Marshmello * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cool",
+        "artista": "Alesso",
+        "copiaTesto": "Cool [Alesso * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dalla tua parte",
+        "artista": "Alessandra Amoroso",
+        "copiaTesto": "Dalla tua parte [Alessandra Amoroso * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Destiny",
+        "artista": "Alesso - Sacha",
+        "copiaTesto": "Destiny [Alesso - Sacha * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Falling",
+        "artista": "Alesso",
+        "copiaTesto": "Falling [Alesso * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Going Dumb",
+        "artista": "Alesso - Corsak",
+        "copiaTesto": "Going Dumb [Alesso - Corsak * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Hell or High Water",
+        "artista": "Alessandra Amoroso",
+        "copiaTesto": "Hell or High Water [Alessandra Amoroso * SC *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Here",
+        "artista": "Alessia Cara",
+        "copiaTesto": "Here [Alessia Cara * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Heroes we could be",
+        "artista": "Alesso",
+        "copiaTesto": "Heroes we could be [Alesso * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "How Far I'll Go",
+        "artista": "Alessia Cara",
+        "copiaTesto": "How Far I'll Go [Alessia Cara * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Like It",
+        "artista": "Alesso - Nate Smith",
+        "copiaTesto": "I Like It [Alesso - Nate Smith * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Wanna Know",
+        "artista": "Alesso",
+        "copiaTesto": "I Wanna Know [Alesso * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Il Duomo Di Notte",
+        "artista": "Alberto Fortis",
+        "copiaTesto": "Il Duomo Di Notte [Alberto Fortis * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "In Soffitta",
+        "artista": "Alberto Fortis",
+        "copiaTesto": "In Soffitta [Alberto Fortis * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "In the Middle",
+        "artista": "Alesso - Sumr Camp",
+        "copiaTesto": "In the Middle [Alesso - Sumr Camp * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Io non sarei",
+        "artista": "Alessandra Amoroso",
+        "copiaTesto": "Io non sarei [Alessandra Amoroso * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Is That for Me",
+        "artista": "Alesso - Anitta",
+        "copiaTesto": "Is That for Me [Alesso - Anitta * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "L'Amicizia",
+        "artista": "Alberto Fortis",
+        "copiaTesto": "L'Amicizia [Alberto Fortis * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "L'unica cosa da fare",
+        "artista": "Alessandra Amoroso",
+        "copiaTesto": "L'unica cosa da fare [Alessandra Amoroso * SC *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La Pazienza",
+        "artista": "Alberto Fortis",
+        "copiaTesto": "La Pazienza [Alberto Fortis * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La gente non sei tu",
+        "artista": "Alessandra Amoroso",
+        "copiaTesto": "La gente non sei tu [Alessandra Amoroso * SC *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La vita in un anno",
+        "artista": "Alessandra Amoroso",
+        "copiaTesto": "La vita in un anno [Alessandra Amoroso * SC *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Leave a Little Love",
+        "artista": "Alesso - Armin Van Buuren",
+        "copiaTesto": "Leave a Little Love [Alesso - Armin Van Buuren]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mezzo Rotto",
+        "artista": "Alessandra Amoroso",
+        "copiaTesto": "Mezzo Rotto [Alessandra Amoroso * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mi porti via da me",
+        "artista": "Alessandra Amoroso",
+        "copiaTesto": "Mi porti via da me [Alessandra Amoroso * SC *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Midnight",
+        "artista": "Alesso",
+        "copiaTesto": "Midnight [Alesso * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Milano E Vincenzo",
+        "artista": "Alberto Fortis",
+        "copiaTesto": "Milano E Vincenzo [Alberto Fortis * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "No",
+        "artista": "Alejandro Fernández",
+        "copiaTesto": "No [Alejandro Fernández * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Non Ho Che Te",
+        "artista": "Alessandra Amoroso",
+        "copiaTesto": "Non Ho Che Te [Alessandra Amoroso * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Nuda E Senza Seno",
+        "artista": "Alberto Fortis",
+        "copiaTesto": "Nuda E Senza Seno [Alberto Fortis * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Out of Love",
+        "artista": "Alessia Cara",
+        "copiaTesto": "Out of Love [Alessia Cara * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "REMEDY",
+        "artista": "Alesso",
+        "copiaTesto": "REMEDY [Alesso * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Sad Song",
+        "artista": "Alesso",
+        "copiaTesto": "Sad Song [Alesso * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Sono Contento Di Voi",
+        "artista": "Alberto Fortis",
+        "copiaTesto": "Sono Contento Di Voi [Alberto Fortis * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Surrender",
+        "artista": "Alesso - Becky Hill",
+        "copiaTesto": "Surrender [Alesso - Becky Hill * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Sweet Escape",
+        "artista": "Alesso",
+        "copiaTesto": "Sweet Escape [Alesso * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "TIME",
+        "artista": "Alesso",
+        "copiaTesto": "TIME [Alesso * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Take My Breath Away",
+        "artista": "Alesso",
+        "copiaTesto": "Take My Breath Away [Alesso * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "UR",
+        "artista": "Alanis Morissette",
+        "copiaTesto": "UR [Alanis Morissette * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Words",
+        "artista": "Alesso - Zara Larsson",
+        "copiaTesto": "Words [Alesso - Zara Larsson * SCORPIO *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "X2",
+        "artista": "Alessandro Casillo",
+        "copiaTesto": "X2 [Alessandro Casillo * SCORPIO EDITION *]",
+        "data": "2026-09-10",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Years",
+        "artista": "Alesso",
+        "copiaTesto": "Years [Alesso * SCORPIO EDITION *]",
+        "data": "2026-09-10",
         "categoria": "KARAOKE"
     }
 ]
