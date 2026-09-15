@@ -21518,6 +21518,13 @@
         "categoria": "KARAOKE"
     },
     {
+        "titolo": "E L'Amore",
+        "artista": "Mina-Celentano",
+        "copiaTesto": "E L'Amore [Mina-Celentano * SCORPIO EDITION *]",
+        "data": "2026-09-15",
+        "categoria": "KARAOKE"
+    },
+    {
         "titolo": "Il Grande Baboomba",
         "artista": "Zucchero Ft Mousse T.",
         "copiaTesto": "Il Grande Baboomba [Zucc. - Mousse T. Scorpio Edition]",
@@ -58142,7 +58149,7 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Medley Italian Songs - Vol. 2  (Ballads)",
+        "titolo": "Medley Italian Songs - Vol.2  (Ballads)",
         "artista": "Umberto Smaila",
         "copiaTesto": "Medley Italian Songs - Vol. 2 [Umberto Smaila] (Ballads)",
         "data": "2026-07-18",
@@ -58177,7 +58184,7 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Medley Italian Songs Vol. 1",
+        "titolo": "Medley Italian Songs - Vol.1",
         "artista": "Umberto Smaila",
         "copiaTesto": "Medley Italian Songs Vol. 1 [Umberto Smaila * SC *]",
         "data": "2026-07-18",
@@ -63609,13 +63616,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Unica",
-        "artista": "Antonello Venditti",
-        "copiaTesto": "Unica [Antonello Venditti * SCORPIO EDITION *]",
-        "data": "2026-09-07",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "I Still Have Faith In You",
         "artista": "Abba",
         "copiaTesto": "I Still Have Faith In You [Abba * SCORPIO *]",
@@ -67445,13 +67445,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "In Questa Notte",
-        "artista": "Raf",
-        "copiaTesto": "In Questa Notte [Raf * SCORPIO EDITION *]",
-        "data": "2026-09-14",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Incontro",
         "artista": "Francesco Guccini",
         "copiaTesto": "Incontro [Francesco Guccini * SCORPIO EDITION *]",
@@ -67722,6 +67715,13 @@
         "artista": "George Michael",
         "copiaTesto": "Careless Whisper [George Michael * SCORPIO *]",
         "data": "2026-09-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Surrender (Acoustic)",
+        "artista": "Celine Dion",
+        "copiaTesto": "I Surrender (Acoustic) [Celine Dion *SCORPIO*]",
+        "data": "2026-09-15",
         "categoria": "KARAOKE"
     }
 ]
