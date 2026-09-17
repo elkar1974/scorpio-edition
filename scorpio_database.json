@@ -70516,5 +70516,355 @@
         "copiaTesto": "Stiamo Come Stiamo [Mia Martini - Loredana Bertè]",
         "data": "2026-09-17",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Every Natural Thing",
+        "artista": "Aretha Franklin",
+        "copiaTesto": "Every Natural Thing [Aretha Franklin * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Fireside",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "Fireside [Arctic Monkeys * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Fluorescent Adolescent",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "Fluorescent Adolescent [Arctic Monkeys * SC *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Focus",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Focus [Ariana Grande * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Followers",
+        "artista": "Area21 - Maejor - Martin Garrix",
+        "copiaTesto": "Followers [Area21 - Maejor - Martin Garrix * SC *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Four Out Of Five",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "Four Out Of Five [Arctic Monkeys * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Fp",
+        "artista": "Arcángel - Rauw Alejandro",
+        "copiaTesto": "Fp [Arcángel - Rauw Alejandro * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Freeway Of Love",
+        "artista": "Aretha Franklin",
+        "copiaTesto": "Freeway Of Love [Aretha Franklin * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "From The Ritz To The Rubble",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "From The Ritz To The Rubble [Arctic Monkeys * SC *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ghostin",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Ghostin [Ariana Grande * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Greedy",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Greedy [Ariana Grande * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Honeymoon Avenue",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Honeymoon Avenue [Ariana Grande * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "How I Look On You",
+        "artista": "Ariana Grande",
+        "copiaTesto": "How I Look On You [Ariana Grande * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Ain’T Quite Where I Think I Am",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "I Ain’T Quite Where I Think I Am [Arctic Monkeys]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Bet You Look Good On The Dancefloor",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "I Bet You Look Good On The Dancefloor [Arctic Monkeys]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Don'T Know That",
+        "artista": "Aoto - M-3",
+        "copiaTesto": "I Don'T Know That [Aoto - M-3 * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Wanna Be Yours",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "I Wanna Be Yours [Arctic Monkeys * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Want It All",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "I Want It All [Arctic Monkeys * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Wish I Hated You",
+        "artista": "Ariana Grande",
+        "copiaTesto": "I Wish I Hated You [Ariana Grande * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "If You Were There, Beware",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "If You Were There, Beware [Arctic Monkeys * SC *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Into You",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Into You [Ariana Grande * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "It Hurts Like Hell From Waiting To Exhale",
+        "artista": "Aretha Franklin",
+        "copiaTesto": "It Hurts Like Hell From Waiting To Exhale [Aretha Franklin]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Joy To The World",
+        "artista": "Aretha Franklin",
+        "copiaTesto": "Joy To The World [Aretha Franklin * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Just A Little Bit Of Your Heart",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Just A Little Bit Of Your Heart [Ariana Grande]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Kiss Me",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Kiss Me [Ariana Grande * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Knee Socks",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "Knee Socks [Arctic Monkeys * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Knew Better Forever Boy",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Knew Better Forever Boy [Ariana Grande * SC *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Last Christmas",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Last Christmas [Ariana Grande * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Leave Me Lonely",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Leave Me Lonely [Ariana Grande * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Let It Be",
+        "artista": "Aretha Franklin",
+        "copiaTesto": "Let It Be [Aretha Franklin * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mad Sounds",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "Mad Sounds [Arctic Monkeys * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Main Thing",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Main Thing [Ariana Grande * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mardy Bum",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "Mardy Bum [Arctic Monkeys * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Matador",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "Matador [Arctic Monkeys * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Moonlight",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Moonlight [Ariana Grande * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "My Everything",
+        "artista": "Ariana Grande",
+        "copiaTesto": "My Everything [Ariana Grande * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "My Hair",
+        "artista": "Ariana Grande",
+        "copiaTesto": "My Hair [Ariana Grande * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "My Oh My",
+        "artista": "Aqua",
+        "copiaTesto": "My Oh My [Aqua * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Nasa",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Nasa [Ariana Grande * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "No. 1 Party Anthem",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "No. 1 Party Anthem [Arctic Monkeys * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Nowhere, Nobody",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Nowhere, Nobody [Ariana Grande * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "O Christmas Tree",
+        "artista": "Aretha Franklin",
+        "copiaTesto": "O Christmas Tree [Aretha Franklin * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Oh Well",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Oh Well [Ariana Grande * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Omg",
+        "artista": "Arash",
+        "copiaTesto": "Omg [Arash * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "One For The Road",
+        "artista": "Arctic Monkeys",
+        "copiaTesto": "One For The Road [Arctic Monkeys * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Only 1",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Only 1 [Ariana Grande * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ordinary Things",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Ordinary Things [Ariana Grande * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Over The Rainbow",
+        "artista": "Aretha Franklin",
+        "copiaTesto": "Over The Rainbow [Aretha Franklin * SCORPIO *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Petal",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Petal [Ariana Grande * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Piano",
+        "artista": "Ariana Grande",
+        "copiaTesto": "Piano [Ariana Grande * SCORPIO EDITION *]",
+        "data": "2026-09-17",
+        "categoria": "KARAOKE"
     }
 ]
