@@ -70945,13 +70945,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Saturn Returns",
-        "artista": "Ariana Grande",
-        "copiaTesto": "Saturn Returns [Ariana Grande * SCORPIO *]",
-        "data": "2026-09-18",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Secreto",
         "artista": "Anuel Aa - Karol G",
         "copiaTesto": "Secreto [Anuel Aa - Karol G * SCORPIO EDITION *]",
@@ -71698,6 +71691,13 @@
         "artista": "B.b. King",
         "copiaTesto": "You Upset Me Baby [B.b. King * SCORPIO *]",
         "data": "2026-09-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mi Manchi",
+        "artista": "Loredana Bertè",
+        "copiaTesto": "Mi Manchi [Loredana Bertè * SCORPIO EDITION *]",
+        "data": "2026-09-19",
         "categoria": "KARAOKE"
     }
 ]
