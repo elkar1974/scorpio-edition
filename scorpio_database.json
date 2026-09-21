@@ -71890,13 +71890,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Buon Giorno Bell'Anima",
-        "artista": "Biagio Antonacci",
-        "copiaTesto": "Buon Giorno Bell'Anima [Biagio Antonacci * SC *]",
-        "data": "2026-09-19",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "California Dreamin'",
         "artista": "Benny Benassi - Dualité",
         "copiaTesto": "California Dreamin' [Benny Benassi - Dualité * SC *]",
@@ -72636,6 +72629,139 @@
         "artista": "Bellini",
         "copiaTesto": "Samba Do Brasil [Bellini * SCORPIO EDITION *]",
         "data": "2026-09-19",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Trav'Lin' All Alone",
+        "artista": "Billie Holiday",
+        "copiaTesto": "Trav'Lin' All Alone [Billie Holiday * SCORPIO *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tv",
+        "artista": "Billie Eilish",
+        "copiaTesto": "Tv [Billie Eilish * SCORPIO EDITION *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Until The Night",
+        "artista": "Billy Joel",
+        "copiaTesto": "Until The Night [Billy Joel * SCORPIO EDITION *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Uptown Girl",
+        "artista": "Billy Joel",
+        "copiaTesto": "Uptown Girl [Billy Joel * SCORPIO EDITION *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "War Pigs Luke'S Wall",
+        "artista": "Black Sabbath - Remaster",
+        "copiaTesto": "War Pigs Luke'S Wall [Black Sabbath - Remaster]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "War Pigs",
+        "artista": "Black Sabbath",
+        "copiaTesto": "War Pigs [Black Sabbath * SCORPIO EDITION *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Watch",
+        "artista": "Billie Eilish",
+        "copiaTesto": "Watch [Billie Eilish * SCORPIO EDITION *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "We Didn'T Start The Fire",
+        "artista": "Billy Joel",
+        "copiaTesto": "We Didn'T Start The Fire [Billy Joel * SCORPIO *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "What A Little Moonlight Can Do",
+        "artista": "Billie Holiday - Teddy Wilson",
+        "copiaTesto": "What A Little Moonlight Can Do [Billie Holiday - Teddy Wilson]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "When I Was Older",
+        "artista": "Billie Eilish",
+        "copiaTesto": "When I Was Older [Billie Eilish * SCORPIO *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "When The Party'S Over",
+        "artista": "Billie Eilish",
+        "copiaTesto": "When The Party'S Over [Billie Eilish * SCORPIO *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "White Christmas",
+        "artista": "Bing Crosby",
+        "copiaTesto": "White Christmas [Bing Crosby * SCORPIO *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "White Wedding, Pt. 1",
+        "artista": "Billy Idol",
+        "copiaTesto": "White Wedding, Pt. 1 [Billy Idol * SCORPIO *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "White Wedding, Pts. 1 & 2",
+        "artista": "Billy Idol",
+        "copiaTesto": "White Wedding, Pts. 1 & 2 [Billy Idol * SCORPIO *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Who Is He",
+        "artista": "Bill Withers",
+        "copiaTesto": "Who Is He [Bill Withers * SCORPIO EDITION *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wish You Were Gay",
+        "artista": "Billie Eilish",
+        "copiaTesto": "Wish You Were Gay [Billie Eilish * SCORPIO *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Xanny",
+        "artista": "Billie Eilish",
+        "copiaTesto": "Xanny [Billie Eilish * SCORPIO EDITION *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "You Should See Me In A Crown",
+        "artista": "Billie Eilish",
+        "copiaTesto": "You Should See Me In A Crown [Billie Eilish * SC *]",
+        "data": "2026-09-21",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Zanzibar",
+        "artista": "Billy Joel",
+        "copiaTesto": "Zanzibar [Billy Joel * SCORPIO EDITION *]",
+        "data": "2026-09-21",
         "categoria": "KARAOKE"
     }
 ]
