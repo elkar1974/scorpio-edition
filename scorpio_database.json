@@ -74793,5 +74793,26 @@
         "copiaTesto": "Living Proof [Bon Jovi * SCORPIO EDITION *]",
         "data": "2026-09-24",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Attenta",
+        "artista": "Negramaro",
+        "copiaTesto": "Attenta [Negramaro * SCORPIO EDITION *]",
+        "data": "2026-09-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Redemption Song",
+        "artista": "Bob Marley - The Wailers",
+        "copiaTesto": "Redemption Song [Bob Marley - The Wailers * SC *]",
+        "data": "2026-09-24",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Three Little Birds",
+        "artista": "Bob Marley - The Wailers",
+        "copiaTesto": "Three Little Birds [Bob Marley - The Wailers * SC *]",
+        "data": "2026-09-24",
+        "categoria": "KARAOKE"
     }
 ]
