@@ -74821,5 +74821,579 @@
         "copiaTesto": "This Is Me [Keala Settle * SCORPIO EDITION *]",
         "data": "2026-09-25",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Waterloo",
+        "artista": "Cher",
+        "copiaTesto": "Waterloo [Cher * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "We All Sleep Alone",
+        "artista": "Cher",
+        "copiaTesto": "We All Sleep Alone [Cher * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "We Are Bulletproof, Pt. 2",
+        "artista": "Bts",
+        "copiaTesto": "We Are Bulletproof, Pt. 2 [Bts * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "We Are The Eternal",
+        "artista": "Bts",
+        "copiaTesto": "We Are The Eternal [Bts * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "We",
+        "artista": "Chris Brown",
+        "copiaTesto": "We [Chris Brown * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "We'Ll Be Coming Back",
+        "artista": "Calvin Harris Feat. Example",
+        "copiaTesto": "We'Ll Be Coming Back [Calvin Harris Feat. Example]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Welcome To Burlesque",
+        "artista": "Cher",
+        "copiaTesto": "Welcome To Burlesque [Cher * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wet The Bed",
+        "artista": "Chris Brown Feat. Ludacris",
+        "copiaTesto": "Wet The Bed [Chris Brown Feat. Ludacris * SC *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Whalien 52",
+        "artista": "Bts",
+        "copiaTesto": "Whalien 52 [Bts * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "What A Girl Wants",
+        "artista": "Christina Aguilera",
+        "copiaTesto": "What A Girl Wants [Christina Aguilera * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Why You Wanna Fight",
+        "artista": "Bruno Mars",
+        "copiaTesto": "Why You Wanna Fight [Bruno Mars * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "With You",
+        "artista": "Chris Brown",
+        "copiaTesto": "With You [Chris Brown * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Won'T Keep You Waiting",
+        "artista": "Chris Brown Feat. Mario",
+        "copiaTesto": "Won'T Keep You Waiting [Chris Brown Feat. Mario]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Won'T Let Me Leave",
+        "artista": "Chris Brown",
+        "copiaTesto": "Won'T Let Me Leave [Chris Brown * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Working On The Highway",
+        "artista": "Bruce Springsteen",
+        "copiaTesto": "Working On The Highway [Bruce Springsteen * SC *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ya Man Ain'T Me",
+        "artista": "Chris Brown",
+        "copiaTesto": "Ya Man Ain'T Me [Chris Brown * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ya Se Que Te Vas",
+        "artista": "Cali Y El Dandee Feat. Lucca Perotti",
+        "copiaTesto": "Ya Se Que Te Vas [Cali Y El Dandee Feat. Lucca Perotti]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Yakety Axe",
+        "artista": "Chet Atkins Feat. Mark Knopfler",
+        "copiaTesto": "Yakety Axe [Chet Atkins Feat. Mark Knopfler * SC *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Yeah 3X",
+        "artista": "Chris Brown",
+        "copiaTesto": "Yeah 3X [Chris Brown * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Yet To Come",
+        "artista": "Bts",
+        "copiaTesto": "Yet To Come [Bts * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Yo -Yo",
+        "artista": "Carl Brave Feat. Dylan",
+        "copiaTesto": "Yo -Yo [Carl Brave Feat. Dylan * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Yo No Trabajo",
+        "artista": "Checco Zalone",
+        "copiaTesto": "Yo No Trabajo [Checco Zalone * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Yo Te Amo",
+        "artista": "Chayanne",
+        "copiaTesto": "Yo Te Amo [Chayanne * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Yo Te Esperaré",
+        "artista": "Cali Y El Dandee",
+        "copiaTesto": "Yo Te Esperaré [Cali Y El Dandee * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Yo",
+        "artista": "Chris Brown",
+        "copiaTesto": "Yo [Chris Brown * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "You & Me",
+        "artista": "Clean Bandit Feat. A7s",
+        "copiaTesto": "You & Me [Clean Bandit Feat. A7s * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "You Haven'T Seen The Last Of Me",
+        "artista": "Cher",
+        "copiaTesto": "You Haven'T Seen The Last Of Me [Cher * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "You Like That",
+        "artista": "Chris Brown",
+        "copiaTesto": "You Like That [Chris Brown * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "You'Re The Inspiration",
+        "artista": "Chicago",
+        "copiaTesto": "You'Re The Inspiration [Chicago * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Young Girls",
+        "artista": "Bruno Mars",
+        "copiaTesto": "Young Girls [Bruno Mars * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Your Eyes Tell",
+        "artista": "Bts",
+        "copiaTesto": "Your Eyes Tell [Bts * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "0000",
+        "artista": "Bts",
+        "copiaTesto": "0000 [Bts * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "10",
+        "artista": "Carl Brave",
+        "copiaTesto": "10 [Carl Brave * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "134340",
+        "artista": "Bts",
+        "copiaTesto": "134340 [Bts * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "2! 3!",
+        "artista": "Bts",
+        "copiaTesto": "2! 3! [Bts * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "2.0",
+        "artista": "Bts",
+        "copiaTesto": "2.0 [Bts * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "20",
+        "artista": "Capo Plaza",
+        "copiaTesto": "20 [Capo Plaza * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "21St Century Girl",
+        "artista": "Bts",
+        "copiaTesto": "21St Century Girl [Bts * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "24 Hours X Gypsy Woman",
+        "artista": "Clean Bandit Feat. Yasmin Green",
+        "copiaTesto": "24 Hours X Gypsy Woman [Clean Bandit Feat. Yasmin Green]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "25 Or 6 To 4",
+        "artista": "Chicago",
+        "copiaTesto": "25 Or 6 To 4 [Chicago * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "26",
+        "artista": "Chic",
+        "copiaTesto": "26 [Chic * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "2Nd Grade",
+        "artista": "Bts",
+        "copiaTesto": "2Nd Grade [Bts * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "3 A.M.",
+        "artista": "Cali Y El Dandee",
+        "copiaTesto": "3 A.M. [Cali Y El Dandee * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "42",
+        "artista": "Coldplay",
+        "copiaTesto": "42 [Coldplay * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "4Th Of July, Asbury Park",
+        "artista": "Bruce Springsteen",
+        "copiaTesto": "4Th Of July, Asbury Park [Bruce Springsteen * SC *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "51St State",
+        "artista": "Bryan Adams",
+        "copiaTesto": "51St State [Bryan Adams * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "59",
+        "artista": "Brian Setzer",
+        "copiaTesto": "59 [Brian Setzer * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "8",
+        "artista": "Chicane",
+        "copiaTesto": "8 [Chicane * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "99",
+        "artista": "Cara",
+        "copiaTesto": "99 [Cara * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A Brand New Day",
+        "artista": "Bts Feat. Zara Larsson",
+        "copiaTesto": "A Brand New Day [Bts Feat. Zara Larsson * SC *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A Kiss",
+        "artista": "Celeste",
+        "copiaTesto": "A Kiss [Celeste * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A L I E N S",
+        "artista": "Coldplay",
+        "copiaTesto": "A L I E N S [Coldplay * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A Message",
+        "artista": "Coldplay",
+        "copiaTesto": "A Message [Coldplay * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A Rush Of Blood To The Head",
+        "artista": "Coldplay",
+        "copiaTesto": "A Rush Of Blood To The Head [Coldplay * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A Supplementary Story You Never Walk Alone",
+        "artista": "Bts",
+        "copiaTesto": "A Supplementary Story You Never Walk Alone [Bts]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A+E",
+        "artista": "Clean Bandit Feat. Kandaka Moore",
+        "copiaTesto": "A+E [Clean Bandit Feat. Kandaka Moore * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Abisso Di Xanax",
+        "artista": "Chiello",
+        "copiaTesto": "Abisso Di Xanax [Chiello * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Abiura Di Me",
+        "artista": "Caparezza",
+        "copiaTesto": "Abiura Di Me [Caparezza * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Accelerate",
+        "artista": "Christina Aguilera Feat. Ty Dolla $ign",
+        "copiaTesto": "Accelerate [Christina Aguilera Feat. Ty Dolla $ign]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Acceptable In The 80'S",
+        "artista": "Calvin Harris",
+        "copiaTesto": "Acceptable In The 80'S [Calvin Harris * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ad Agordo È Così",
+        "artista": "Claudio Baglioni",
+        "copiaTesto": "Ad Agordo È Così [Claudio Baglioni * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Add Me In",
+        "artista": "Chris Brown",
+        "copiaTesto": "Add Me In [Chris Brown * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Adeste Fideles",
+        "artista": "Céline Dion",
+        "copiaTesto": "Adeste Fideles [Céline Dion * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "After Last Night",
+        "artista": "Silk Sonic Feat. Thundercat",
+        "copiaTesto": "After Last Night [Silk Sonic Feat. Thundercat]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Agnus Dei",
+        "artista": "Cecilia Krull Feat. Mala Rodríguez",
+        "copiaTesto": "Agnus Dei [Cecilia Krull Feat. Mala Rodríguez]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Agnus Dei",
+        "artista": "Cecilia Krull",
+        "copiaTesto": "Agnus Dei [Cecilia Krull * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Agora Estou Sofrendo",
+        "artista": "Calcinha Preta Feat. Gusttavo Lima",
+        "copiaTesto": "Agora Estou Sofrendo [Calcinha Preta Feat. Gusttavo Lima]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ah",
+        "artista": "Charles Aznavour",
+        "copiaTesto": "Ah [Charles Aznavour * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ahora Dice",
+        "artista": "Chris Jedi Feat. Arcángel",
+        "copiaTesto": "Ahora Dice [Chris Jedi Feat. Arcángel * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ain'T Necessarily So",
+        "artista": "Bronski Beat",
+        "copiaTesto": "Ain'T Necessarily So [Bronski Beat * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ain'T No Way",
+        "artista": "Chris Brown",
+        "copiaTesto": "Ain'T No Way [Chris Brown * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Airplane, Pt. 2",
+        "artista": "Bts",
+        "copiaTesto": "Airplane, Pt. 2 [Bts * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Al Tuo Matrimonio",
+        "artista": "Cesare Cremonini",
+        "copiaTesto": "Al Tuo Matrimonio [Cesare Cremonini * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Aliens",
+        "artista": "Bts",
+        "copiaTesto": "Aliens [Bts * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All Back",
+        "artista": "Chris Brown",
+        "copiaTesto": "All Back [Chris Brown * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All I Can Think About Is You",
+        "artista": "Coldplay",
+        "copiaTesto": "All I Can Think About Is You [Coldplay * SC *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All Night Feat. Juice Wrld",
+        "artista": "Bts",
+        "copiaTesto": "All Night Feat. Juice Wrld [Bts * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All On Me",
+        "artista": "Chris Brown",
+        "copiaTesto": "All On Me [Chris Brown * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Almost Grown",
+        "artista": "Chuck Berry",
+        "copiaTesto": "Almost Grown [Chuck Berry * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Alone",
+        "artista": "Burna Boy",
+        "copiaTesto": "Alone [Burna Boy * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Alone",
+        "artista": "Céline Dion",
+        "copiaTesto": "Alone [Céline Dion * SCORPIO EDITION *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Non Pensare A Me",
+        "artista": "Iva Zanicchi",
+        "copiaTesto": "Non Pensare A Me [Iva Zanicchi * SCORPIO *]",
+        "data": "2026-09-25",
+        "categoria": "KARAOKE"
     }
 ]
