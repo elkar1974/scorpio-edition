@@ -78358,13 +78358,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Sai Cosa C’È",
-        "artista": "Blanco",
-        "copiaTesto": "Sai Cosa C’È [Blanco * SCORPIO EDITION *]",
-        "data": "2026-09-28",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Saturday Night Gave Me Sunday Morning",
         "artista": "Bon Jovi",
         "copiaTesto": "Saturday Night Gave Me Sunday Morning [Bon Jovi]",
@@ -79824,6 +79817,13 @@
         "titolo": "Life On Mars",
         "artista": "David Bowie",
         "copiaTesto": "Life On Mars [David Bowie * SCORPIO EDITION *]",
+        "data": "2026-10-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Karma",
+        "artista": "Alicia Keys",
+        "copiaTesto": "Karma [Alicia Keys * SCORPIO EDITION *]",
         "data": "2026-10-02",
         "categoria": "KARAOKE"
     }
