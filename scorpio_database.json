@@ -82927,5 +82927,19 @@
         "copiaTesto": "Mà [Blanco * SCORPIO EDITION *]",
         "data": "2026-10-04",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Bad Romance",
+        "artista": "Thirty Seconds To Mars",
+        "copiaTesto": "Bad Romance [Thirty Seconds To Mars * SCORPIO *]",
+        "data": "2026-10-04",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Killing Me Softly  (Acoustic)",
+        "artista": "Luana Camarah",
+        "copiaTesto": "Killing Me Softly [Luana Camarah * SCORPIO *] (Acoustic)",
+        "data": "2026-10-04",
+        "categoria": "KARAOKE"
     }
 ]
