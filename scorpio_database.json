@@ -87820,5 +87820,19 @@
         "copiaTesto": "Xverso [Tiziano Ferro * SCORPIO EDITION *] (Cori)",
         "data": "2026-10-07",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Solo Lui",
+        "artista": "Mina",
+        "copiaTesto": "Solo Lui [Mina * SCORPIO EDITION *]",
+        "data": "2026-10-08",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mai",
+        "artista": "Raf",
+        "copiaTesto": "Mai [Raf *SCORPIO EDITION*]",
+        "data": "2026-10-08",
+        "categoria": "KARAOKE"
     }
 ]
