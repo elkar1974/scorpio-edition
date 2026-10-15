@@ -24045,13 +24045,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "La Bamba - Twist & Shout  (Medley)",
-        "artista": "Artisti Vari",
-        "copiaTesto": "La Bamba - Twist & Shout [Medley] [AA.VV.]",
-        "data": "2026-05-26",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "L'Immensità",
         "artista": "Johnny Dorelli",
         "copiaTesto": "L'immensità [Johnny Dorelli]",
@@ -24367,7 +24360,7 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "La Bamba - Twist E Shout  (Medley)",
+        "titolo": "La Bamba & Twist E Shout  (Medley)",
         "artista": "Artisti Vari",
         "copiaTesto": "La Bamba - Twist E Shout [Aa.‍vv. * SCORPIO *] (Medley)",
         "data": "2026-05-26",
@@ -93720,6 +93713,349 @@
         "artista": "Tiziano Ferro",
         "copiaTesto": "Meritiamo Di Più [Tiziano Ferro * SCORPIO *]",
         "data": "2026-10-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "100 Kg Di Piume",
+        "artista": "Gaudiano",
+        "copiaTesto": "100 Kg Di Piume [Gaudiano * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "1993",
+        "artista": "Ghali",
+        "copiaTesto": "1993 [Ghali * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "1H",
+        "artista": "Geolier",
+        "copiaTesto": "1H [Geolier * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "2 Giorni Di Fila",
+        "artista": "Geolier Feat. Sfera Ebbasta",
+        "copiaTesto": "2 Giorni Di Fila [Geolier Feat. Sfera Ebbasta]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "2 Secondi",
+        "artista": "Geolier",
+        "copiaTesto": "2 Secondi [Geolier * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "2222",
+        "artista": "Ghali",
+        "copiaTesto": "2222 [Ghali * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "6 Milioni Di Euro Fa",
+        "artista": "Geolier",
+        "copiaTesto": "6 Milioni Di Euro Fa [Geolier * SCORPIO *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A 12 Km",
+        "artista": "Gemelli Diversi",
+        "copiaTesto": "A 12 Km [Gemelli Diversi * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A Different Corner",
+        "artista": "George Michael",
+        "copiaTesto": "A Different Corner [George Michael * SCORPIO *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A Napoli Non Piove",
+        "artista": "Geolier",
+        "copiaTesto": "A Napoli Non Piove [Geolier * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Abacab",
+        "artista": "Genesis",
+        "copiaTesto": "Abacab [Genesis * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Abc",
+        "artista": "Gayle",
+        "copiaTesto": "Abc [Gayle * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ae-Au",
+        "artista": "Gianluca Grignani",
+        "copiaTesto": "Ae-Au [Gianluca Grignani * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Algo Contigo",
+        "artista": "Gente De Zona",
+        "copiaTesto": "Algo Contigo [Gente De Zona * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Anima Gemella",
+        "artista": "Gemelli Diversi Feat. Eros Ramazzotti",
+        "copiaTesto": "Anima Gemella [Gemelli Diversi Feat. Eros Ramazzotti]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Beat On My Drum",
+        "artista": "Gabry Ponte Feat. Pitbull - Sophia Del Carmen",
+        "copiaTesto": "Beat On My Drum [Gabry Ponte Feat. Pitbull - Sophia Del Carmen]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Belva",
+        "artista": "Gazzelle",
+        "copiaTesto": "Belva [Gazzelle * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Better",
+        "artista": "Gashi Feat. Wiz Khalifa",
+        "copiaTesto": "Better [Gashi Feat. Wiz Khalifa * SCORPIO *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Blast Off",
+        "artista": "Gesaffelstein Feat. Pharrell Williams",
+        "copiaTesto": "Blast Off [Gesaffelstein Feat. Pharrell Williams]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Blood On The Rooftops",
+        "artista": "Genesis",
+        "copiaTesto": "Blood On The Rooftops [Genesis * SCORPIO *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Blu",
+        "artista": "Gazzelle",
+        "copiaTesto": "Blu [Gazzelle * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Boca",
+        "artista": "Gaia Feat. Sean Paul",
+        "copiaTesto": "Boca [Gaia Feat. Sean Paul * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Born To Love Ya",
+        "artista": "Gabry Ponte Feat. Sean Paul",
+        "copiaTesto": "Born To Love Ya [Gabry Ponte Feat. Sean Paul * SC *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Brava",
+        "artista": "Mina",
+        "copiaTesto": "Brava [Mina * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Brutta Nuvola",
+        "artista": "Gazzelle",
+        "copiaTesto": "Brutta Nuvola [Gazzelle * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Budapest",
+        "artista": "George Ezra",
+        "copiaTesto": "Budapest [George Ezra * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Butterflies",
+        "artista": "Gayle",
+        "copiaTesto": "Butterflies [Gayle * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Call Me",
+        "artista": "Gabry Ponte Feat. R3hab",
+        "copiaTesto": "Call Me [Gabry Ponte Feat. R3hab * SCORPIO *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Che Sole Oggi",
+        "artista": "Geolier",
+        "copiaTesto": "Che Sole Oggi [Geolier * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Chi Sei Adesso",
+        "artista": "Gemelli Diversi",
+        "copiaTesto": "Chi Sei Adesso [Gemelli Diversi * SCORPIO *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Chiagne",
+        "artista": "Geolier Feat. Lazza",
+        "copiaTesto": "Chiagne [Geolier Feat. Lazza * SCORPIO *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Coltellata",
+        "artista": "Gazzelle Feat. Tha Supreme",
+        "copiaTesto": "Coltellata [Gazzelle Feat. Tha Supreme * SC *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Combo",
+        "artista": "Ghali Feat. Mr Eazi",
+        "copiaTesto": "Combo [Ghali Feat. Mr Eazi * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Come Il Pane",
+        "artista": "Gazzelle",
+        "copiaTesto": "Come Il Pane [Gazzelle * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Con Le Mani Al Cielo",
+        "artista": "Gabry Ponte Feat. M¥ss Keta",
+        "copiaTesto": "Con Le Mani Al Cielo [Gabry Ponte Feat. M¥ss Keta]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Da Capo A 12",
+        "artista": "Gazzelle",
+        "copiaTesto": "Da Capo A 12 [Gazzelle * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Damn",
+        "artista": "Galantis Feat. Mnek",
+        "copiaTesto": "Damn [Galantis Feat. Mnek * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dancing With The Moonlit Knight",
+        "artista": "Genesis",
+        "copiaTesto": "Dancing With The Moonlit Knight [Genesis * SC *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Desert Rose",
+        "artista": "Faouzia",
+        "copiaTesto": "Desert Rose [Faouzia * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Desiderio",
+        "artista": "Geolier",
+        "copiaTesto": "Desiderio [Geolier * SCORPIO EDITION *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dna",
+        "artista": "Galantis Feat. Craig David",
+        "copiaTesto": "Dna [Galantis Feat. Craig David * SCORPIO *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dottor Jekill & Mr. Dj",
+        "artista": "Gabry Ponte",
+        "copiaTesto": "Dottor Jekill & Mr. Dj [Gabry Ponte * SCORPIO *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Drari",
+        "artista": "Ghali Feat. Baby Gang",
+        "copiaTesto": "Drari [Ghali Feat. Baby Gang * SCORPIO *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Déjà Vu",
+        "artista": "Gabry Ponte - Proyecto Fenomeno Feat. Deivys",
+        "copiaTesto": "Déjà Vu [Gabry Ponte - Proyecto Fenomeno Feat. Deivys]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "My Mother Told Me",
+        "artista": "Ekaterina Shelehova",
+        "copiaTesto": "My Mother Told Me [Ekaterina Shelehova * SC *]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Your Love",
+        "artista": "Ennio Morricone Feat. Dulce Pontes",
+        "copiaTesto": "Your Love [Ennio Morricone Feat. Dulce Pontes]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Bella E Brutta Notizia",
+        "artista": "Geolier Feat. Maria Becerra",
+        "copiaTesto": "Bella E Brutta Notizia [Geolier Feat. Maria Becerra]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cavalieri Senza Re, Pt. 2",
+        "artista": "Gemelli Diversi Feat. Articolo 31",
+        "copiaTesto": "Cavalieri Senza Re, Pt. 2 [Gemelli Diversi Feat. Articolo 31]",
+        "data": "2026-10-15",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dio Lo Sa",
+        "artista": "Geolier",
+        "copiaTesto": "Dio Lo Sa [Geolier * SCORPIO EDITION *]",
+        "data": "2026-10-15",
         "categoria": "KARAOKE"
     }
 ]
