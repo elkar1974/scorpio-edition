@@ -35,7 +35,20 @@
         }
         
         /* Margine ridotto per accogliere uniformemente le due righe di testo sottostanti */
-        .logo-main { width: 80vw; max-width: 400px; height: auto; margin-bottom: 20px; }
+        @keyframes fluttuazione {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Margine ridotto per accogliere uniformemente le due righe di testo sottostanti */
+        .logo-main { 
+            width: 80vw; 
+            max-width: 400px; 
+            height: auto; 
+            margin-bottom: 20px; 
+            animation: fluttuazione 4s ease-in-out infinite; 
+        }
         
         .lang-switcher { display: flex; gap: 15px; margin-top: 25px; flex-wrap: wrap; justify-content: center; }
         .lang-switcher a img { 
@@ -71,6 +84,12 @@
             text-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
         }
 
+        @keyframes respiroRosso {
+            0% { box-shadow: 0 0 6px rgba(255, 0, 0, 0.3); border-color: rgba(255, 0, 0, 0.4); }
+            50% { box-shadow: 0 0 18px rgba(255, 0, 0, 0.75); border-color: rgba(255, 0, 0, 0.9); }
+            100% { box-shadow: 0 0 6px rgba(255, 0, 0, 0.3); border-color: rgba(255, 0, 0, 0.4); }
+        }
+
         /* NUOVO STILE YOUTUBE LINK */
         .youtube-link {
             display: inline-flex;
@@ -87,12 +106,13 @@
             border-radius: 20px;
             transition: all 0.3s ease;
             margin-top: 5px;
+            animation: respiroRosso 3s infinite ease-in-out;
         }
         .youtube-link:hover {
-            background: rgba(255, 0, 0, 0.3);
+            background: rgba(255, 0, 0, 0.35);
             border-color: #ff0000;
             transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.9);
         }
         .youtube-link svg {
             width: 20px;
