@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAU•SCORPIO•EDITION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         body { 
-            margin: 0; padding: 0; font-family: 'Arial', sans-serif; 
+            margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; 
             background-image: url('logo_scorpio.png');
             background-size: cover; background-position: center;
             background-repeat: no-repeat; background-attachment: fixed;
@@ -18,17 +19,40 @@
             content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(0, 0, 0, 0.92); z-index: 0;
         }
-        .container { padding: 20px; position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; }
+        @keyframes ingressoMorbido {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container { 
+            padding: 20px; 
+            position: relative; 
+            z-index: 1; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            animation: ingressoMorbido 1s ease-out;
+        }
         
         /* Margine ridotto per accogliere uniformemente le due righe di testo sottostanti */
         .logo-main { width: 80vw; max-width: 400px; height: auto; margin-bottom: 20px; }
         
         .lang-switcher { display: flex; gap: 15px; margin-top: 25px; flex-wrap: wrap; justify-content: center; }
         .lang-switcher a img { 
-            width: 50px; height: auto; border: 2px solid transparent; 
-            border-radius: 4px; transition: transform 0.2s; cursor: pointer;
+            width: 55px; 
+            height: 55px; 
+            object-fit: cover; 
+            border: 2px solid #333; 
+            border-radius: 50%; 
+            transition: all 0.3s ease; 
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.8); 
         }
-        .lang-switcher a:hover img { transform: scale(1.15); border-color: #ffcc00; }
+        .lang-switcher a:hover img { 
+            transform: scale(1.15) translateY(-5px); 
+            border-color: #ffcc00; 
+            box-shadow: 0 8px 15px rgba(255, 204, 0, 0.5); 
+        }
 
         /* AGGIUNTA: Nuovo stile professionale per Nick e ID impaginati su due righe */
         .profile-info {
@@ -76,10 +100,21 @@
             fill: #ff0000;
         }
 
+        @keyframes respiro {
+            0% { transform: scale(1); opacity: 0.8; text-shadow: 0 0 5px rgba(255, 204, 0, 0.3); }
+            50% { transform: scale(1.05); opacity: 1; text-shadow: 0 0 20px rgba(255, 204, 0, 0.9); }
+            100% { transform: scale(1); opacity: 0.8; text-shadow: 0 0 5px rgba(255, 204, 0, 0.3); }
+        }
+
         .welcome-text {
-            margin-top: 25px; color: #ffcc00; font-size: 1.8em;
-            letter-spacing: 3px; text-transform: uppercase; font-weight: bold;
-            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5); cursor: default;
+            margin-top: 35px; 
+            color: #ffcc00; 
+            font-size: 1.5em; 
+            letter-spacing: 6px; 
+            text-transform: uppercase; 
+            font-weight: bold;
+            animation: respiro 3s infinite ease-in-out; 
+            cursor: default;
         }
     </style>
 </head>
