@@ -16,7 +16,15 @@
         body { margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; background-image: url('logo_scorpio.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-color: #000; color: #fff; min-height: 100vh; overflow-x: hidden; }
         body::before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.92); z-index: -1; }
         
-        .navbar-fissa { position: fixed; top: 0; left: 0; width: 100%; box-sizing: border-box; height: 60px; background: rgba(13, 13, 13, 0.98); z-index: 1000; border-bottom: 2px solid #ffcc00; box-shadow: 0 4px 10px rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 15px; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+        .navbar-fissa { 
+    position: fixed; top: 0; left: 0; width: 100%; box-sizing: border-box; height: 60px; 
+    background: rgba(10, 10, 10, 0.75); 
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    z-index: 1000; border-bottom: 2px solid #ffcc00; box-shadow: 0 4px 10px rgba(0,0,0,0.8); 
+    display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 15px; 
+    flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; 
+}
         .navbar-fissa::-webkit-scrollbar { display: none; }
         
         .navbar-fissa button { background: none; border: none; cursor: pointer; color: #ffffff; font-weight: bold; text-transform: uppercase; font-size: 1em; letter-spacing: 1px; padding: 10px 15px; transition: color 0.2s; border-bottom: 2px solid transparent; font-family: inherit; white-space: nowrap; flex-shrink: 0; }
@@ -40,13 +48,60 @@
         .pagina li { margin-bottom: 10px; color: #ddd; }
         .pagina p { line-height: 1.6; color: #eee; }
         
-        .sticky-header { position: sticky; top: 62px; background: rgba(0, 0, 0, 0.95); z-index: 990; padding: 15px 0; border-bottom: 2px solid #ffcc00; margin-bottom: 20px; }
-        .search-box { width: 100%; padding: 15px; border-radius: 5px; border: 1px solid #444; background: #1a1a1a; color: white; font-size: 1.1em; box-sizing: border-box; margin-top: 10px; -webkit-appearance: none; }
-
-        input[type="search"]::-webkit-search-cancel-button {
-            -webkit-appearance: searchfield-cancel-button !important;
-            display: inline-block !important;
-            opacity: 1 !important;
+        .sticky-header { 
+    position: sticky; top: 62px; 
+    background: rgba(10, 10, 10, 0.75); 
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    z-index: 990; padding: 15px 0; border-bottom: 2px solid #ffcc00; margin-bottom: 20px; 
+}
+        .search-wrapper {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .search-box { 
+            width: 100%; padding: 15px 45px 15px 15px; border-radius: 6px; 
+            border: 1px solid #444; background: #1a1a1a; color: white; 
+            font-size: 1.1em; box-sizing: border-box; 
+            -webkit-appearance: none; outline: none; transition: all 0.3s ease; 
+        }
+        .search-box:focus {
+            border-color: #ffcc00;
+            box-shadow: 0 0 12px rgba(255, 204, 0, 0.45);
+            background: #141414;
+        }
+        /* Nasconde la crocetta nativa difettosa del browser */
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none;
+            display: none;
+        }
+        /* Nostro pulsante X personalizzato universale */
+        .clear-search-btn {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #333;
+            color: #ffcc00;
+            border: 1px solid #555;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85em;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 0;
+            line-height: 1;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+        }
+        .clear-search-btn:active {
+            transform: translateY(-50%) scale(0.9);
+            background: #444;
         }
         
         .track-item { 
@@ -81,6 +136,10 @@
             text-align: center;
             box-shadow: 0 4px 10px rgba(255, 204, 0, 0.2); 
         }
+         
+        .copy-btn:active, .share-btn:active, .filter-btn:active {
+            transform: scale(0.96);
+        }
 
         .share-btn { 
             background: linear-gradient(135deg, #25D366, #1da851); 
@@ -112,9 +171,33 @@
         #backToTopBtn { position: fixed; bottom: 30px; right: 30px; display: none; z-index: 999; background: rgba(0, 0, 0, 0.8); border: 2px solid #ffcc00; color: #ffcc00; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5em; cursor: pointer; transition: background 0.3s, transform 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.5); align-items: center; justify-content: center; }
         #backToTopBtn:hover { background: rgba(255, 204, 0, 0.2); transform: scale(1.1); }
 
-        .hq-badge { background: linear-gradient(45deg, #ffcc00, #ff9900); color: #000; font-size: 0.65em; padding: 3px 6px; border-radius: 4px; font-weight: bold; margin-left: 8px; vertical-align: middle; border: 1px solid #333; box-shadow: 0 0 5px rgba(255,204,0,0.4); }
+        .hq-badge { 
+            background: linear-gradient(135deg, #ffe066, #ffaa00); 
+            color: #000; 
+            font-size: 0.65em; 
+            padding: 3px 7px; 
+            border-radius: 4px; 
+            font-weight: 800; 
+            margin-left: 8px; 
+            vertical-align: middle; 
+            border: 1px solid rgba(255, 255, 255, 0.3); 
+            box-shadow: 0 2px 6px rgba(255, 170, 0, 0.45); 
+            letter-spacing: 0.5px;
+        }
         
-        .news-tag { background: #ffcc00; color: #000; font-size: 0.75em; padding: 3px 8px; border-radius: 3px; font-weight: bold; margin-left: 10px; vertical-align: middle; }
+        .news-tag { 
+            background: linear-gradient(135deg, #ff4444, #cc0000); 
+            color: #fff; 
+            font-size: 0.70em; 
+            padding: 3px 8px; 
+            border-radius: 4px; 
+            font-weight: 800; 
+            margin-left: 8px; 
+            vertical-align: middle; 
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 2px 6px rgba(255, 0, 0, 0.4);
+            letter-spacing: 0.5px;
+        }
         
         .messaggio-errore { color: #ff4444; text-align: center; font-weight: bold; padding: 20px; border: 1px solid #ff4444; border-radius: 5px; background: rgba(255, 0, 0, 0.1); margin-top: 20px; }
         
@@ -128,6 +211,57 @@
             100% { transform: scale(1); box-shadow: 0 4px 15px rgba(0,0,0,0.6); }
         }
         .pulse-anim { animation: pulse-gold 0.4s ease; }
+@keyframes pop-text {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); color: #ffffff; text-shadow: 0 0 10px #ffcc00; }
+            100% { transform: scale(1); }
+        }
+        .pop-anim { animation: pop-text 0.3s ease-out; display: inline-block; }
+/* Stile Tasto Installazione App */
+        .install-app-btn {
+            background: linear-gradient(135deg, #111, #222);
+            color: #ffcc00;
+            border: 1px solid #ffcc00;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 800;
+            font-size: 0.85em;
+            cursor: pointer;
+            display: none; /* Nascosto di default */
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 4px 10px rgba(255, 204, 0, 0.2);
+            text-transform: uppercase;
+            transition: transform 0.2s;
+        }
+        .install-app-btn:active { transform: scale(0.95); }
+        
+        /* Pop-up Guida iOS */
+        .ios-install-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(15, 15, 15, 0.95);
+            border: 1px solid #ffcc00;
+            color: white;
+            padding: 15px;
+            border-radius: 12px;
+            z-index: 3000;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            backdrop-filter: blur(10px);
+            width: 85%;
+            max-width: 320px;
+        }
+        .ios-install-popup .close-ios {
+            position: absolute; top: 5px; right: 10px; color: #ffcc00; font-size: 1.2em; font-weight: bold; cursor: pointer;
+        }
+        .ios-install-popup p { margin: 10px 0; font-size: 0.9em; line-height: 1.4; }
+        .ios-install-popup svg { width: 20px; height: 20px; fill: #ffcc00; vertical-align: middle; }
 
         @media (max-width: 600px) {
             .navbar-fissa { height: 55px; justify-content: flex-start; padding: 0 10px; }
@@ -147,6 +281,34 @@
             
             .copy-counter-widget { bottom: 20px; left: 15px; padding: 6px 12px; font-size: 0.75em; }
             .copy-counter-widget svg { width: 14px; height: 14px; }
+        }
+        .toast-notifica {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(80px);
+            background: rgba(15, 15, 15, 0.95);
+            border: 1px solid #ffcc00;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 0 12px rgba(255, 204, 0, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 2000;
+            font-size: 0.9em;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            opacity: 0;
+            pointer-events: none;
+            transition: transform 0.35s ease, opacity 0.35s ease;
+            white-space: nowrap;
+        }
+        .toast-notifica.visibile {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
         }
     </style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="5b9047a4-c276-426b-8fa8-ceef3d41a2cd"></script>
@@ -195,6 +357,11 @@
         <div class="sticky-header">
             <h2 id="catalogo-title">Archivio Ufficiale</h2>
             <div id="trackCount" style="text-align: center; color: #ffcc00; font-weight: bold; font-size: 1.1em; margin-bottom: 5px;"></div>
+<div style="display: flex; justify-content: center; margin-bottom: 10px;">
+                <button id="btnInstallApp" class="install-app-btn" onclick="installaApp()">
+                    <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg> Installa App
+                </button>
+            </div>
             
             
             <div class="filter-group">
@@ -207,7 +374,10 @@
                 <button id="btnFilterNews" class="filter-btn" onclick="setFilter(true)">🔥 Novità (5 gg)</button>
             </div>
 
-            <input type="search" id="searchInput" class="search-box" placeholder="Cerca...">
+            <div class="search-wrapper">
+    <input type="search" id="cerca" class="search-box" placeholder="Cerca artista o brano..." oninput="gestisciInputRicerca()">
+    <button type="button" id="clearSearchBtn" class="clear-search-btn" onclick="svuotaRicerca()" title="Pulisci">✕</button>
+</div>
         </div>
         <div id="trackList">
             <p style="text-align: center; color: #ffcc00;">Caricamento database in corso...</p>
@@ -235,6 +405,12 @@
     </div>
 
     <button id="backToTopBtn" onclick="window.scrollToTop()">▲</button>
+    <div id="toastNotifica" class="toast-notifica"></div>
+<div id="iosInstallPopup" class="ios-install-popup">
+        <span class="close-ios" onclick="document.getElementById('iosInstallPopup').style.display='none'">×</span>
+        <p><strong>Installa Scorpio Edition</strong><br>su iPhone per averla a schermo intero.</p>
+        <p>1. Tocca l'icona Condividi <svg viewBox="0 0 24 24" style="margin-bottom:-5px;"><path d="M16 5l-4-4-4 4h3v9h2V5h3zm-8 4H4v11h16V9h-4v2h2v7H6v-7h2V9z"/></svg><br>2. Scorri e premi <strong>Aggiungi alla schermata Home</strong></p>
+    </div>
 
     <script>
         window.cambiaPagina = function(idPagina, tastoCliccato) {
@@ -247,7 +423,35 @@
 
         let basi = [];
         let isNewsFilterActive = false;
-        let currentCategory = 'KARAOKE'; 
+        let currentCategory = 'KARAOKE';
+let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            document.getElementById('btnInstallApp').style.display = 'inline-flex';
+        });
+
+        window.installaApp = function() {
+            const isIos = /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
+            if (isIos) {
+                document.getElementById('iosInstallPopup').style.display = 'flex';
+            } else if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choice) => {
+                    if (choice.outcome === 'accepted') {
+                        document.getElementById('btnInstallApp').style.display = 'none';
+                    }
+                    deferredPrompt = null;
+                });
+            }
+        };
+
+        if (/iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase()) && !window.navigator.standalone) {
+            setTimeout(() => { 
+                const btn = document.getElementById('btnInstallApp');
+                if (btn) btn.style.display = 'inline-flex'; 
+            }, 500);
+        } 
 
         let baseCopiesStorage = parseInt(localStorage.getItem('scorpio_local_copies') || '0');
         
@@ -360,20 +564,37 @@
             currentCategory = cat;
             document.getElementById('btnCatKaraoke').classList.toggle('active', cat === 'KARAOKE');
             document.getElementById('btnCatBasiInediti').classList.toggle('active', cat === 'BASI_INEDITI');
-            renderTracks(document.getElementById('searchInput').value);
+            renderTracks(document.getElementById('cerca').value);
         };
 
         window.setFilter = function(isNews) {
-            isNewsFilterActive = isNews;
-            if(isNews) {
-                document.getElementById('btnFilterNews').classList.add('active');
-                document.getElementById('btnFilterAll').classList.remove('active');
-            } else {
-                document.getElementById('btnFilterNews').classList.remove('active');
-                document.getElementById('btnFilterAll').classList.add('active');
-            }
-            renderTracks(document.getElementById('searchInput').value);
-        };
+    isNewsFilterActive = isNews;
+    if(isNews) {
+        document.getElementById('btnFilterNews').classList.add('active');
+        document.getElementById('btnFilterAll').classList.remove('active');
+    } else {
+        document.getElementById('btnFilterNews').classList.remove('active');
+        document.getElementById('btnFilterAll').classList.add('active');
+    }
+    renderTracks(document.getElementById('cerca').value);
+};
+
+function gestisciInputRicerca() {
+    const input = document.getElementById('cerca');
+    const btnClear = document.getElementById('clearSearchBtn');
+    btnClear.style.display = input.value.length > 0 ? 'flex' : 'none';
+    renderTracks(input.value);
+}
+
+function svuotaRicerca() {
+    const input = document.getElementById('cerca');
+    const btnClear = document.getElementById('clearSearchBtn');
+    input.value = '';
+    btnClear.style.display = 'none';
+    input.focus();
+    renderTracks('');
+}
+
 
         function renderTracks(query = "") {
             const list = document.getElementById('trackList');
@@ -407,6 +628,10 @@
             const testoCopia = (traduzioni[lang] && traduzioni[lang].copy_btn) ? traduzioni[lang].copy_btn : "Copia";
             
             countContainer.innerText = `${testoContatore} ${basiFiltrate.length}`;
+            
+            countContainer.classList.remove('pop-anim');
+            void countContainer.offsetWidth; 
+            countContainer.classList.add('pop-anim');
 
             if(basiFiltrate.length === 0) {
                 list.innerHTML = "<p style='text-align:center; color:#ccc; margin-top:30px;'>Nessuna traccia trovata in questa sezione.</p>";
@@ -448,6 +673,17 @@
             }
         }
 
+        let toastTimeout = null;
+        function mostraToast(messaggio) {
+            const toast = document.getElementById('toastNotifica');
+            toast.innerHTML = `<span>✅</span> <span>${messaggio}</span>`;
+            toast.classList.add('visibile');
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('visibile');
+            }, 2600);
+        }
+
         window.copia = function(text) {
             navigator.clipboard.writeText(text);
             
@@ -462,21 +698,13 @@
             const params = new URLSearchParams(window.location.search);
             const lang = params.get('lang') || 'it';
             
-            let messaggio = "";
-            if (lang === 'it') {
-                messaggio = "✅ BASE COPIATA CON SUCCESSO!\n\nHai selezionato: " + text + "\n\n➡️ PROSSIMO PASSO:\nApri l'app StarMaker e INCOLLA questo testo nella barra di ricerca brani.\n\n⭐ AIUTAMI A FAR CRESCERE SCORPIO EDITION:\nPrima di andare a cantare, supporta il mio lavoro! Clicca sul tasto verde MANDA per condividere questa base con i tuoi amici o nel tuo gruppo su WhatsApp!";
-            } else if (lang === 'en') {
-                messaggio = "✅ TRACK SUCCESSFULLY COPIED!\n\nYou selected: " + text + "\n\n➡️ NEXT STEP:\nOpen the StarMaker app and PASTE this text into the search bar.\n\n⭐ HELP ME GROW SCORPIO EDITION:\nBefore you go sing, please support my work! Click the green SHARE button to share this track with your friends or singing group on WhatsApp!";
-            } else if (lang === 'es') {
-                messaggio = "✅ ¡PISTA COPIADA CON ÉXITO!\n\nHas seleccionado: " + text + "\n\n➡️ SIGUIENTE PASO:\nAbre la app StarMaker y PEGA este texto en la barra de búsqueda.\n\n⭐ AYÚDAME A CRECER SCORPIO EDITION:\n¡Antes de ir a cantar, apoya mi trabajo! Haz clic en el botón verde ENVIAR para compartir esta pista con tus amigos en WhatsApp!";
-            } else if (lang === 'fr') {
-                messaggio = "✅ PISTE COPIÉE AVEC SUCCÈS !\n\nVous avez sélectionné : " + text + "\n\n➡️ PROCHAINE ÉTAPE :\nOuvrez l'application StarMaker et COLLEZ ce texte dans la barre de recherche.\n\n⭐ AIDEZ-MOI À FAIRE GRANDIR SCORPIO EDITION :\nAvant de chanter, soutenez mon travail ! Cliquez sur le bouton vert PARTAGER pour envoyer cette piste à vos amis ou groupes sur WhatsApp !";
-            } else if (lang === 'de') {
-                messaggio = "✅ PLAYBACK ERFOLGREICH KOPIERT!\n\nDu hast ausgewählt: " + text + "\n\n➡️ NÄCHSTER SCHRITT:\nÖffne die StarMaker-App und FÜGE diesen Text in die Suchleiste EIN.\n\n⭐ HILF MIR, SCORPIO EDITION ZU VERGRÖSSERN:\nBevor du singst, unterstütze meine Arbeit! Klicke auf den grünen TEILEN-Button, um diesen Track mit deinen Freunden auf WhatsApp zu teilen!";
-            } else {
-                messaggio = "✅ BASE COPIATA CON SUCCESSO!\n\nHai selezionato: " + text + "\n\n➡️ PROSSIMO PASSO:\nApri l'app StarMaker e INCOLLA questo testo nella barra di ricerca brani.\n\n⭐ AIUTAMI A FAR CRESCERE SCORPIO EDITION:\nPrima di andare a cantare, supporta il mio lavoro! Clicca sul tasto verde MANDA per condividere questa base con i tuoi amici o nel tuo gruppo su WhatsApp!";
-            }
-            alert(messaggio);
+            let messaggio = "Base copiata! Incollala su StarMaker";
+            if (lang === 'en') messaggio = "Track copied! Paste it in StarMaker";
+            else if (lang === 'es') messaggio = "¡Pista copiada! Pégala en StarMaker";
+            else if (lang === 'fr') messaggio = "Piste copiée ! Collez-la sur StarMaker";
+            else if (lang === 'de') messaggio = "Playback kopiert! In StarMaker einfügen";
+            
+            mostraToast(messaggio);
         };
 
         window.condividi = function(titolo) {
@@ -764,7 +992,7 @@
             document.getElementById('video-guida-title').innerText = data.b2;
             document.getElementById('guida-content').innerHTML = `<h3>${data.g_title}</h3>${data.g_text}`;
             document.getElementById('catalogo-title').innerText = data.c_title;
-            document.getElementById('searchInput').placeholder = data.search_ph;
+            document.getElementById('cerca').placeholder = data.search_ph;
             
             document.getElementById('btnCatKaraoke').innerText = data.btn_karaoke || "🎤 Karaoke";
             document.getElementById('btnCatBasiInediti').innerText = data.btn_basi_inediti || "🎙️ Basi Inediti";
@@ -779,22 +1007,13 @@
             aggiornaContatoreCopie();
 
             if (searchParam) {
-                document.getElementById('searchInput').value = searchParam;
-            }
+        document.getElementById('cerca').value = searchParam;
+        document.getElementById('clearSearchBtn').style.display = 'flex';
+    }
             
             caricaDatabase();
             
-            let timeoutRicerca = null;
-            const eseguiRicercaConRitardo = (query) => {
-                clearTimeout(timeoutRicerca);
-                timeoutRicerca = setTimeout(() => {
-                    renderTracks(query);
-                }, 180);
-            };
-
-            const sInput = document.getElementById('searchInput');
-            sInput.addEventListener('input', (e) => eseguiRicercaConRitardo(e.target.value));
-            sInput.addEventListener('search', (e) => renderTracks(e.target.value));
+            
             
             if(window.location.hash) {
                 const id = window.location.hash.substring(1);
