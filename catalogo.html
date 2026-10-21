@@ -885,12 +885,32 @@ window.inviaRichiestaBrano = async function() {
                 });
 
                 if (response.ok) {
+                    const params = new URLSearchParams(window.location.search);
+                    const lang = params.get('lang') || 'it';
+
+                    let msgEsito = 'Richiesta inviata con successo!';
+                    let msgToast = 'Richiesta inviata a Maurizio!';
+
+                    if (lang === 'en') {
+                        msgEsito = 'Request sent successfully!';
+                        msgToast = 'Request sent to Maurizio!';
+                    } else if (lang === 'es') {
+                        msgEsito = '¡Solicitud enviada con éxito!';
+                        msgToast = '¡Solicitud enviada a Maurizio!';
+                    } else if (lang === 'fr') {
+                        msgEsito = 'Demande envoyée avec succès !';
+                        msgToast = 'Demande envoyée à Maurizio !';
+                    } else if (lang === 'de') {
+                        msgEsito = 'Anfrage erfolgreich gesendet!';
+                        msgToast = 'Anfrage an Maurizio gesendet!';
+                    }
+
                     esito.className = 'richiesta-esito ok';
                     esito.style.display = 'block';
-                    esito.innerText = 'Richiesta inviata con successo!';
+                    esito.innerText = msgEsito;
                     
-                    // Attivazione immediata del Popup Toast a schermo
-                    mostraToast("Richiesta inviata a Maurizio!");
+                    // Attivazione immediata del Popup Toast nella lingua corretta
+                    mostraToast(msgToast);
 
                     document.getElementById('reqArtista').value = '';
                     document.getElementById('reqTitolo').value = '';
