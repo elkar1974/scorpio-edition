@@ -64,10 +64,17 @@
             cursor: pointer;
             box-shadow: 0 4px 10px rgba(0,0,0,0.8); 
         }
-        .lang-switcher a:hover img { 
-            transform: scale(1.15) translateY(-5px); 
+        @media (hover: hover) {
+            .lang-switcher a:hover img { 
+                transform: scale(1.15) translateY(-5px); 
+                border-color: #ffcc00; 
+                box-shadow: 0 8px 15px rgba(255, 204, 0, 0.5); 
+            }
+        }
+        
+        .lang-switcher a:active img {
+            transform: scale(0.95);
             border-color: #ffcc00; 
-            box-shadow: 0 8px 15px rgba(255, 204, 0, 0.5); 
         }
 
         .profile-info {
