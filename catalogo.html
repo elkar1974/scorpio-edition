@@ -413,13 +413,11 @@
     </div>
 
     <script>
-        const urlParamsIniziali = new URLSearchParams(window.location.search);
-        if (urlParamsIniziali.has('lang')) {
-            localStorage.setItem('scorpio_lang', urlParamsIniziali.get('lang'));
-        } else if (localStorage.getItem('scorpio_lang')) {
-            const savedLang = localStorage.getItem('scorpio_lang');
-            const newUrl = window.location.pathname + '?lang=' + savedLang + (window.location.hash || '');
-            window.history.replaceState(null, '', newUrl);
+        // Controllo avvio App: se aperta da icona su Android/iOS, forza la pagina di Benvenuto
+        const isApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
+        if (isApp && !sessionStorage.getItem('app_started')) {
+            sessionStorage.setItem('app_started', '1');
+            window.location.replace('index.html');
         }
 
         window.cambiaPagina = function(idPagina, tastoCliccato) {
