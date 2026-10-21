@@ -163,7 +163,7 @@
             <a href="catalogo.html?lang=it#menu1"><img src="https://flagcdn.com/w40/it.png" alt="Italiano"></a>
             <a href="catalogo.html?lang=es#menu1"><img src="https://flagcdn.com/w40/es.png" alt="Español"></a>
             <a href="catalogo.html?lang=en#menu1"><img src="https://flagcdn.com/w40/gb.png" alt="English"></a>
-            <a href="catalogo.html`lang=fr#menu1"><img src="https://flagcdn.com/w40/fr.png" alt="Français"></a>
+            <a href="catalogo.html?lang=fr#menu1"><img src="https://flagcdn.com/w40/fr.png" alt="Français"></a>
             <a href="catalogo.html?lang=de#menu1"><img src="https://flagcdn.com/w40/de.png" alt="Deutsch"></a>
         </div>
         <div class="welcome-text">WELCOME</div>
@@ -176,13 +176,17 @@
                 const response = await fetch('scorpio_database.json?v=' + new Date().getTime(), { cache: 'no-store' });
                 if (response.ok) {
                     const data = await response.json();
-                    const reale = data.length; // es. 13230
-                    const arrotondato = Math.floor(reale / 100) * 100; // 13200
+                    
+                    // Filtra esattamente come il catalogo, prendendo solo la categoria KARAOKE
+                    const basiKaraoke = data.filter(b => b.categoria === 'KARAOKE');
+                    const reale = basiKaraoke.length; 
+                    
+                    // Arrotondamento per difetto alle centinaia (es. 13230 -> 13200)
+                    const arrotondato = Math.floor(reale / 100) * 100;
                     
                     document.getElementById('contatore-brani').innerHTML = `Oltre <span>${arrotondato.toLocaleString('it-IT')}</span> basi ufficiali disponibili`;
                 }
             } catch (error) {
-                // Fallback sicuro al valore esatto calcolato sul catalogo
                 document.getElementById('contatore-brani').innerHTML = `Oltre <span>13.200</span> basi ufficiali disponibili`;
             }
         }
