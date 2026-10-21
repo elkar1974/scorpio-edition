@@ -183,6 +183,8 @@
     </div>
 
     <script>
+        sessionStorage.setItem('app_started', '1');
+
         async function contaBasi() {
             try {
                 const response = await fetch('scorpio_database.json?v=' + new Date().getTime(), { cache: 'no-store' });
