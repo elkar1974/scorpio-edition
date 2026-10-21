@@ -486,7 +486,7 @@
             <div class="filter-group">
                 <button id="btnFilterAll" class="filter-btn active" onclick="setFilter(false)">📂 Mostra Tutto</button>
                 <button id="btnFilterNews" class="filter-btn" onclick="setFilter(true)">🔥 Novità (5 gg)</button>
-                <button id="btnFilterFav" class="filter-btn" onclick="setFilterFav()">⭐ Preferiti <span id="favCount">(0)</span></button>
+                <button id="btnFilterFav" class="filter-btn" onclick="setFilterFav()"><span id="textBtnFav">⭐ Preferiti</span> <span id="favCount">(0)</span></button>
             </div>
 
             <div class="search-wrapper">
@@ -846,61 +846,37 @@ window.setFilterFav = function() {
                 toast.classList.remove('visibile');
             }, 2600);
         }
-window.inviaRichiestaBrano = async function() {
-            const artista = document.getElementById('reqArtista').value.trim();
-            const titolo = document.getElementById('reqTitolo').value.trim();
-            const note = document.getElementById('reqNote').value.trim();
-            const esito = document.getElementById('esitoRichiesta');
-            const btn = document.getElementById('btnInviaRichiesta');
-
-            if (!artista || !titolo) {
-                esito.className = 'richiesta-esito err';
-                esito.style.display = 'block';
-                esito.innerText = 'Compila sia il nome dell\'artista che il titolo del brano.';
-                return;
-            }
-
-            btn.disabled = true;
-            btn.innerText = 'Invio in corso...';
-            esito.style.display = 'none';
-
-            const oggettoEmail = `🚨 [SCORPIO EDITION] RICHIESTA BRANO: ${artista} - ${titolo}`;
-
-            try {
-                const response = await fetch("https://formsubmit.co/ajax/maurizio.chiarilli.mc@gmail.com", {
-                    method: "POST",
-                    headers: { 
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        _subject: oggettoEmail,
-                        _template: "table",
-                        _captcha: "false",
-                        "Artista Richiesto": artista,
-                        "Titolo Brano": titolo,
-                        "Note o Richiedente": note || "Nessuna nota specificata",
-                        "Data Richiesta": new Date().toLocaleString('it-IT')
-                    })
-                });
-
-                if (response.ok) {
+if (response.ok) {
+                    // Rileva la lingua in modo infallibile: prima da URL, poi dal testo della navbar
                     const params = new URLSearchParams(window.location.search);
-                    const lang = params.get('lang') || 'it';
+                    let currentLang = params.get('lang');
+                    
+                    if (!currentLang) {
+                        const btnHomeText = document.getElementById('btn1').innerText.trim().toLowerCase();
+                        if (btnHomeText === 'home') {
+                            // Se il catalogo ha il titolo in inglese
+                            const catTitle = document.getElementById('catalogo-title').innerText.trim().toLowerCase();
+                            if (catTitle.includes('official catalog')) currentLang = 'en';
+                            else if (catTitle.includes('archivo oficial')) currentLang = 'es';
+                            else if (catTitle.includes('archive officielle')) currentLang = 'fr';
+                            else if (catTitle.includes('offizielles archiv')) currentLang = 'de';
+                            else currentLang = 'it';
+                        }
+                    }
 
                     let msgEsito = 'Richiesta inviata con successo!';
                     let msgToast = 'Richiesta inviata a Maurizio!';
 
-                    if (lang === 'en') {
+                    if (currentLang === 'en') {
                         msgEsito = 'Request sent successfully!';
                         msgToast = 'Request sent to Maurizio!';
-                    } else if (lang === 'es') {
+                    } else if (currentLang === 'es') {
                         msgEsito = '¡Solicitud enviada con éxito!';
                         msgToast = '¡Solicitud enviada a Maurizio!';
-                    } else if (lang === 'fr') {
+                    } else if (currentLang === 'fr') {
                         msgEsito = 'Demande envoyée avec succès !';
                         msgToast = 'Demande envoyée à Maurizio !';
-                    } else if (lang === 'de') {
+                    } else if (currentLang === 'de') {
                         msgEsito = 'Anfrage erfolgreich gesendet!';
                         msgToast = 'Anfrage an Maurizio gesendet!';
                     }
@@ -909,28 +885,11 @@ window.inviaRichiestaBrano = async function() {
                     esito.style.display = 'block';
                     esito.innerText = msgEsito;
                     
-                    // Attivazione immediata del Popup Toast nella lingua corretta
                     mostraToast(msgToast);
 
                     document.getElementById('reqArtista').value = '';
                     document.getElementById('reqTitolo').value = '';
                     document.getElementById('reqNote').value = '';
-                    
-                    if (window.umami) {
-                        window.umami.track('Richiesta Brano In-App', { artista: artista, brano: titolo });
-                    }
-                } else {
-                    throw new Error("Errore durante l'invio");
-                }
-            } catch (err) {
-                esito.className = 'richiesta-esito err';
-                esito.style.display = 'block';
-                esito.innerText = 'Errore durante l\'invio. Riprova più tardi.';
-            } finally {
-                btn.disabled = false;
-                btn.innerText = 'Invia Richiesta';
-            }
-        };
 
         window.copia = function(text) {
             // Effetto nota volante Pro StarMaker
@@ -1012,7 +971,7 @@ window.inviaRichiestaBrano = async function() {
 
         const traduzioni = {
             it: { 
-                copy_btn: "Copia", btn_karaoke: "🎤 Karaoke", btn_inediti: "🎧 Inediti", btn_basi_inediti: "🎙️ Karaoke Inediti",
+                copy_btn: "Copia", btn_karaoke: "🎤 Karaoke", btn_inediti: "🎧 Inediti", btn_basi_inediti: "🎙️ Karaoke Inediti", btn_fav: "⭐ Preferiti",
                 b1: "Home", b2: "Video Guida", b3: "Catalogo", b5: "Contatti",
                 c_title: "Archivio Ufficiale", search_ph: "Cerca brano o artista...", count_testo: "Totale basi: ", share_btn: "Manda", btn_all: "📂 Mostra Tutto", btn_news: "🔥 Novità (5 gg)", widget_copies: "Copie:", qr_text: "Inquadra il QR Code da PC:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: La voce merita rispetto.</h2>
@@ -1063,7 +1022,7 @@ window.inviaRichiestaBrano = async function() {
                 </div>`
             },
             en: { 
-                copy_btn: "Copy", btn_karaoke: "🎤 Karaoke", btn_inediti: "🎧 Originals", btn_basi_inediti: "🎙️ Karaoke Originals",
+                copy_btn: "Copy", btn_karaoke: "🎤 Karaoke", btn_inediti: "🎧 Originals", btn_basi_inediti: "🎙️ Karaoke Originals", btn_fav: "⭐ Favorites",
                 b1: "Home", b2: "Video Guide", b3: "Catalog", b5: "Contact",
                 c_title: "Official Catalog", search_ph: "Search song or artist...", count_testo: "Total tracks: ", share_btn: "Share", btn_all: "📂 Show All", btn_news: "🔥 New (5 days)", widget_copies: "Copies:", qr_text: "Scan the QR Code from your PC:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: Your voice deserves respect.</h2>
@@ -1114,7 +1073,7 @@ window.inviaRichiestaBrano = async function() {
                 </div>`
             },
             es: { 
-                copy_btn: "Copiar", btn_karaoke: "🎤 Karaoke", btn_inediti: "🎧 Inéditos", btn_basi_inediti: "🎙️ Karaoke Inéditos",
+                copy_btn: "Copiar", btn_karaoke: "🎤 Karaoke", btn_inediti: "🎧 Inéditos", btn_basi_inediti: "🎙️ Karaoke Inéditos", btn_fav: "⭐ Favoritos",
                 b1: "Home", b2: "Video Guía", b3: "Catálogo", b5: "Contacto",
                 c_title: "Archivo Oficial", search_ph: "Buscar canción o artista...", count_testo: "Pistas totales: ", share_btn: "Enviar", btn_all: "📂 Mostrar Todo", btn_news: "🔥 Novedades (5 d)", widget_copies: "Copias:", qr_text: "Escanea el código QR desde tu PC:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: Tu voz merece respeto.</h2>
@@ -1165,7 +1124,7 @@ window.inviaRichiestaBrano = async function() {
                 </div>`
             },
             fr: { 
-                copy_btn: "Copier", btn_karaoke: "🎤 Karaoké", btn_inediti: "🎧 Inédits", btn_basi_inediti: "🎙️ Karaoké Inédits",
+                copy_btn: "Copier", btn_karaoke: "🎤 Karaoké", btn_inediti: "🎧 Inédits", btn_basi_inediti: "🎙️ Karaoké Inédits", btn_fav: "⭐ Favoris",
                 b1: "Home", b2: "Guide Vidéo", b3: "Catalogue", b5: "Contact",
                 c_title: "Archive Officielle", search_ph: "Rechercher une chanson ou un artiste...", count_testo: "Pistes totales : ", share_btn: "Partager", btn_all: "📂 Tout Afficher", btn_news: "🔥 Nouveautés (5 j)", widget_copies: "Copies :", qr_text: "Scannez le code QR depuis votre PC :",
                 m_content: `<h2>MAU•SCORPIO•EDITION : Ta voix mérite le respect.</h2>
@@ -1216,7 +1175,7 @@ window.inviaRichiestaBrano = async function() {
                 </div>`
             },
             de: { 
-                copy_btn: "Kopieren", btn_karaoke: "🎤 Karaoke", btn_inediti: "🎧 Originale", btn_basi_inediti: "🎙️ Karaoke Originale",
+                copy_btn: "Kopieren", btn_karaoke: "🎤 Karaoke", btn_inediti: "🎧 Originale", btn_basi_inediti: "🎙️ Karaoke Originale", btn_fav: "⭐ Favoriten",
                 b1: "Home", b2: "Video-Anleitung", b3: "Katalog", b5: "Kontakt",
                 c_title: "Offizielles Archiv", search_ph: "Song oder Künstler suchen...", count_testo: "Gesamte Playbacks: ", share_btn: "Teilen", btn_all: "📂 Alles Zeigen", btn_news: "🔥 Neuheiten (5 T)", widget_copies: "Kopien:", qr_text: "Scanne den QR-Code vom PC aus:",
                 m_content: `<h2>MAU•SCORPIO•EDITION: Deine Stimme verdient Respekt.</h2>
@@ -1278,6 +1237,7 @@ window.inviaRichiestaBrano = async function() {
             document.getElementById('btn2').innerText = data.b2;
             document.getElementById('btn3').innerText = data.b3;
             document.getElementById('btn5').innerText = data.b5;
+            document.getElementById('textBtnFav').innerText = data.btn_fav || "⭐ Preferiti";
             
             document.getElementById('manifesto-content').innerHTML = data.m_content;
             document.getElementById('video-guida-title').innerText = data.b2;
