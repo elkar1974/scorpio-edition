@@ -34,14 +34,12 @@
             animation: ingressoMorbido 1s ease-out;
         }
         
-        /* Margine ridotto per accogliere uniformemente le due righe di testo sottostanti */
         @keyframes fluttuazione {
             0% { transform: translateY(0); }
             50% { transform: translateY(-8px); }
             100% { transform: translateY(0); }
         }
 
-        /* Margine ridotto per accogliere uniformemente le due righe di testo sottostanti */
         .logo-main { 
             width: 80vw; 
             max-width: 400px; 
@@ -67,7 +65,6 @@
             box-shadow: 0 8px 15px rgba(255, 204, 0, 0.5); 
         }
 
-        /* AGGIUNTA: Nuovo stile professionale per Nick e ID impaginati su due righe */
         .profile-info {
             display: flex;
             flex-direction: column;
@@ -90,7 +87,6 @@
             100% { box-shadow: 0 0 6px rgba(255, 0, 0, 0.3); border-color: rgba(255, 0, 0, 0.4); }
         }
 
-        /* NUOVO STILE YOUTUBE LINK */
         .youtube-link {
             display: inline-flex;
             align-items: center;
@@ -136,7 +132,7 @@
             animation: respiro 3s infinite ease-in-out; 
             cursor: default;
         }
-.contatore-brani {
+        .contatore-brani {
             margin-top: 10px;
             color: #aaaaaa;
             font-size: 0.9em;
@@ -155,7 +151,6 @@
     <div class="container">
         <img src="logo_scorpio.png" class="logo-main" alt="MAU•SCORPIO•EDITION">
         
-        <!-- AGGIUNTA: Nick e YouTube Link impaginati su due righe -->
         <div class="profile-info">
             <div class="profile-nick">MAU•SCORPIO•EDITION</div>
             <a href="https://www.youtube.com/@ScorpioEditionOfficial" target="_blank" class="youtube-link">
@@ -172,17 +167,18 @@
             <a href="catalogo.html?lang=de#menu1"><img src="https://flagcdn.com/w40/de.png" alt="Deutsch"></a>
         </div>
         <div class="welcome-text">WELCOME</div>
-<div id="contatore-brani" class="contatore-brani">Caricamento archivio...</div>
+        <div id="contatore-brani" class="contatore-brani">Caricamento archivio...</div>
     </div>
-<script>
+
+    <script>
         async function contaBasi() {
             try {
                 const response = await fetch('scorpio_database.json?v=' + new Date().getTime(), { cache: 'no-store' });
                 if (response.ok) {
                     const data = await response.json();
-                    const reale = data.length; // es. 13230
+                    const reale = data.length; 
                     
-                    // Arrotonda per difetto alle centinaia (es. 13200)
+                    // Arrotondamento esatto alle centinaia inferiori (es. 13230 -> 13200)
                     const arrotondato = Math.floor(reale / 100) * 100;
                     
                     document.getElementById('contatore-brani').innerHTML = `Oltre <span>${arrotondato.toLocaleString('it-IT')}</span> basi ufficiali disponibili`;
@@ -195,7 +191,6 @@
         }
         contaBasi();
 
-        // Registrazione Service Worker per la pagina di ingresso
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('./sw.js')
