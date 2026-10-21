@@ -180,7 +180,12 @@
                 const response = await fetch('scorpio_database.json?v=' + new Date().getTime(), { cache: 'no-store' });
                 if (response.ok) {
                     const data = await response.json();
-                    document.getElementById('contatore-brani').innerHTML = `Oltre <span>${data.length}</span> basi ufficiali disponibili`;
+                    const reale = data.length; // es. 13230
+                    
+                    // Arrotonda per difetto alle centinaia (es. 13200)
+                    const arrotondato = Math.floor(reale / 100) * 100;
+                    
+                    document.getElementById('contatore-brani').innerHTML = `Oltre <span>${arrotondato.toLocaleString('it-IT')}</span> basi ufficiali disponibili`;
                 } else {
                     document.getElementById('contatore-brani').style.display = 'none';
                 }
