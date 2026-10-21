@@ -136,6 +136,19 @@
             animation: respiro 3s infinite ease-in-out; 
             cursor: default;
         }
+.contatore-brani {
+            margin-top: 10px;
+            color: #aaaaaa;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .contatore-brani span {
+            color: #ffcc00;
+            font-weight: 800;
+            font-size: 1.2em;
+            text-shadow: 0 0 8px rgba(255, 204, 0, 0.4);
+        }
     </style>
 </head>
 <body>
@@ -159,6 +172,31 @@
             <a href="catalogo.html?lang=de#menu1"><img src="https://flagcdn.com/w40/de.png" alt="Deutsch"></a>
         </div>
         <div class="welcome-text">WELCOME</div>
+<div id="contatore-brani" class="contatore-brani">Caricamento archivio...</div>
     </div>
+<script>
+        async function contaBasi() {
+            try {
+                const response = await fetch('scorpio_database.json?v=' + new Date().getTime(), { cache: 'no-store' });
+                if (response.ok) {
+                    const data = await response.json();
+                    document.getElementById('contatore-brani').innerHTML = `Oltre <span>${data.length}</span> basi ufficiali disponibili`;
+                } else {
+                    document.getElementById('contatore-brani').style.display = 'none';
+                }
+            } catch (error) {
+                document.getElementById('contatore-brani').style.display = 'none';
+            }
+        }
+        contaBasi();
+
+        // Registrazione Service Worker per la pagina di ingresso
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .catch((err) => console.error('Errore Service Worker index:', err));
+            });
+        }
+    </script>
 </body>
 </html>

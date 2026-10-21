@@ -310,7 +310,121 @@
             transform: translateX(-50%) translateY(0);
             opacity: 1;
         }
+/* Effetto Pro StarMaker: nota musicale volante */
+        @keyframes volaNota {
+            0% {
+                opacity: 1;
+                transform: translateY(0) scale(1) rotate(0deg);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-60px) scale(1.6) rotate(-20deg);
+            }
+        }
+        .nota-animata {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            font-size: 1.8em;
+            text-shadow: 0 0 12px rgba(255, 204, 0, 0.9);
+            animation: volaNota 0.8s ease-out forwards;
+        }
+/* Stile per la stellina dei Preferiti */
+        .btn-preferito {
+            background: none;
+            border: none;
+            color: #555;
+            font-size: 1.5em;
+            cursor: pointer;
+            padding: 0 5px;
+            transition: all 0.2s;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        .btn-preferito.attivo {
+            color: #ffcc00;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+            transform: scale(1.15);
+        }
+/* Scheda Modulo Richiesta Brani In-App */
+        .box-richiesta {
+            background: rgba(20, 20, 20, 0.85);
+            border: 2px solid #ffcc00;
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 450px;
+            margin: 25px auto;
+            box-shadow: 0 4px 20px rgba(255, 204, 0, 0.25);
+            box-sizing: border-box;
+            text-align: left;
+        }
+        .box-richiesta label {
+            display: block;
+            color: #ffcc00;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .box-richiesta input, .box-richiesta textarea {
+            width: 100%;
+            padding: 10px 12px;
+            background: #111;
+            border: 1px solid #444;
+            border-radius: 6px;
+            color: #fff;
+            font-family: inherit;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .box-richiesta input:focus, .box-richiesta textarea:focus {
+            border-color: #ffcc00;
+            box-shadow: 0 0 8px rgba(255, 204, 0, 0.4);
+        }
+        .btn-invia-richiesta {
+            width: 100%;
+            background: linear-gradient(135deg, #ffcc00, #ffaa00);
+            border: none;
+            color: #000;
+            font-weight: 800;
+            font-size: 1em;
+            padding: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 12px rgba(255, 204, 0, 0.3);
+            transition: transform 0.2s, filter 0.2s;
+        }
+        .btn-invia-richiesta:active {
+            transform: scale(0.97);
+        }
+        .richiesta-esito {
+            display: none;
+            text-align: center;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .richiesta-esito.ok {
+            background: rgba(37, 211, 102, 0.15);
+            border: 1px solid #25D366;
+            color: #25D366;
+            display: block;
+        }
+        .richiesta-esito.err {
+            background: rgba(255, 68, 68, 0.15);
+            border: 1px solid #ff4444;
+            color: #ff4444;
+            display: block;
+        }
     </style>
+
 <script defer src="https://cloud.umami.is/script.js" data-website-id="5b9047a4-c276-426b-8fa8-ceef3d41a2cd"></script>
 </head>
 <body>
@@ -372,6 +486,7 @@
             <div class="filter-group">
                 <button id="btnFilterAll" class="filter-btn active" onclick="setFilter(false)">📂 Mostra Tutto</button>
                 <button id="btnFilterNews" class="filter-btn" onclick="setFilter(true)">🔥 Novità (5 gg)</button>
+                <button id="btnFilterFav" class="filter-btn" onclick="setFilterFav()">⭐ Preferiti <span id="favCount">(0)</span></button>
             </div>
 
             <div class="search-wrapper">
@@ -430,7 +545,9 @@
 
         let basi = [];
         let isNewsFilterActive = false;
+        let isFavFilterActive = false;
         let currentCategory = 'KARAOKE';
+        let preferiti = JSON.parse(localStorage.getItem('scorpio_preferiti') || '[]');
 let deferredPrompt;
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
@@ -601,6 +718,37 @@ function svuotaRicerca() {
     input.focus();
     renderTracks('');
 }
+window.setFilterFav = function() {
+            isFavFilterActive = !isFavFilterActive;
+            isNewsFilterActive = false;
+            
+            document.getElementById('btnFilterFav').classList.toggle('active', isFavFilterActive);
+            
+            if(isFavFilterActive) {
+                document.getElementById('btnFilterAll').classList.remove('active');
+                document.getElementById('btnFilterNews').classList.remove('active');
+            } else {
+                document.getElementById('btnFilterAll').classList.add('active');
+            }
+            renderTracks(document.getElementById('cerca').value);
+        };
+
+        window.toggleFav = function(idBrano) {
+            const index = preferiti.indexOf(idBrano);
+            if (index > -1) {
+                preferiti.splice(index, 1);
+            } else {
+                preferiti.push(idBrano);
+            }
+            localStorage.setItem('scorpio_preferiti', JSON.stringify(preferiti));
+            aggiornaContatoreFav();
+            renderTracks(document.getElementById('cerca').value);
+        };
+
+        function aggiornaContatoreFav() {
+            const favCountSpan = document.getElementById('favCount');
+            if(favCountSpan) favCountSpan.innerText = `(${preferiti.length})`;
+        }
 
 
         function renderTracks(query = "") {
@@ -626,6 +774,10 @@ function svuotaRicerca() {
                     }
                     return false;
                 });
+            }
+
+            if (isFavFilterActive) {
+                basiFiltrate = basiFiltrate.filter(b => preferiti.includes(b.copiaTesto));
             }
 
             const params = new URLSearchParams(window.location.search);
@@ -658,12 +810,16 @@ function svuotaRicerca() {
                 
                 const testoSicuro = b.copiaTesto.replace(/'/g, "\\'").replace(/"/g, "&quot;");
                 const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                const favClass = preferiti.includes(b.copiaTesto) ? 'attivo' : '';
                 
                 return `
                     <div class="track-item">
                         <div class="meta-col">
                             <div class="artist-col">${b.artista}</div>
-                            <div class="title-col">${b.titolo} ${isNews} <span class="hq-badge">HQ</span></div>
+                            <div class="title-col">
+                                <button class="btn-preferito ${favClass}" onclick="window.toggleFav('${testoSicuro}')">★</button> 
+                                ${b.titolo} ${isNews} <span class="hq-badge">HQ</span>
+                            </div>
                         </div>
                         <button class="copy-btn" onclick="window.copia('${testoSicuro}')">${testoCopia}</button>
                         <button class="share-btn" onclick="window.condividi('${titoloCondivisione}')">
@@ -690,8 +846,80 @@ function svuotaRicerca() {
                 toast.classList.remove('visibile');
             }, 2600);
         }
+window.inviaRichiestaBrano = async function() {
+            const artista = document.getElementById('reqArtista').value.trim();
+            const titolo = document.getElementById('reqTitolo').value.trim();
+            const note = document.getElementById('reqNote').value.trim();
+            const esito = document.getElementById('esitoRichiesta');
+            const btn = document.getElementById('btnInviaRichiesta');
+
+            if (!artista || !titolo) {
+                esito.className = 'richiesta-esito err';
+                esito.innerText = 'Compila sia il nome dell\'artista che il titolo del brano.';
+                return;
+            }
+
+            btn.disabled = true;
+            btn.innerText = 'Invio in corso...';
+            esito.className = 'richiesta-esito';
+            esito.style.display = 'none';
+
+            const oggettoEmail = `🚨 [SCORPIO EDITION] RICHIESTA BRANO: ${artista} - ${titolo}`;
+
+            try {
+                const response = await fetch("https://formsubmit.co/ajax/maurizio.chiarilli.mc@gmail.com", {
+                    method: "POST",
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        _subject: oggettoEmail,
+                        _template: "table",
+                        _captcha: "false",
+                        "Artista Richiesto": artista,
+                        "Titolo Brano": titolo,
+                        "Note o Richiedente": note || "Nessuna nota specificata",
+                        "Data Richiesta": new Date().toLocaleString('it-IT')
+                    })
+                });
+
+                if (response.ok) {
+                    esito.className = 'richiesta-esito ok';
+                    esito.innerText = '✅ Richiesta inviata con successo! Ti risponderò appena possibile.';
+                    document.getElementById('reqArtista').value = '';
+                    document.getElementById('reqTitolo').value = '';
+                    document.getElementById('reqNote').value = '';
+                    
+                    if (window.umami) {
+                        window.umami.track('Richiesta Brano In-App', { artista: artista, brano: titolo });
+                    }
+                } else {
+                    throw new Error("Errore durante l'invio");
+                }
+            } catch (err) {
+                esito.className = 'richiesta-esito err';
+                esito.innerText = 'Si è verificato un errore durante l\'invio. Riprova più tardi.';
+            } finally {
+                btn.disabled = false;
+                btn.innerText = 'Invia Richiesta';
+            }
+        };
 
         window.copia = function(text) {
+            // Effetto nota volante Pro StarMaker
+            try {
+                const nota = document.createElement('div');
+                nota.className = 'nota-animata';
+                nota.innerText = '🎵';
+                const x = (window.event && window.event.clientX) ? window.event.clientX : (window.innerWidth / 2);
+                const y = (window.event && window.event.clientY) ? window.event.clientY : (window.innerHeight / 2);
+                nota.style.left = (x - 15) + 'px';
+                nota.style.top = (y - 30) + 'px';
+                document.body.appendChild(nota);
+                setTimeout(() => nota.remove(), 800);
+            } catch (e) {}
+
             navigator.clipboard.writeText(text);
             
             if (window.umami) {
@@ -786,20 +1014,26 @@ function svuotaRicerca() {
                 <blockquote>"Non chiedo di credermi sulla parola. Chiedo di provare. Sarà la tua voce a convincerti, e il tuo palco a raccontare la differenza."</blockquote>`,
                 g_title: "Guida Scritta", 
                 g_text: `<p>Questo catalogo è lo specchio ufficiale del mio lavoro su StarMaker. Ogni traccia viene sincronizzata qui in tempo reale, garantendoti un accesso sempre aggiornato al repertorio.</p><div style="font-family: monospace; font-size: 1.05em; line-height: 1.6; color: #ddd; white-space: pre-wrap;">│<br>├── 📑 <strong>1. LA RICERCA IMMEDIATA</strong><br>│   └── Usa la barra in alto per cercare digitando il <strong>Titolo del brano</strong> o il <strong>Nome dell'artista</strong>. I risultati si aggiorneranno istantaneamente mentre scrivi.<br>│<br>├── 🎛️ <strong>2. IL FILTRO DI CATEGORIA</strong><br>│   └── Puoi navigare tra le cover classiche e le mie produzioni originali usando i pulsanti dedicati:<br>│       │<br>│       ├── 🎤 <strong>[KARAOKE]</strong>         -> Le basi classiche dei grandi artisti per le tue cover.<br>│       └── 🎙️ <strong>[KARAOKE INEDITI]</strong> -> Le basi strumentali delle mie canzoni per cantarle su StarMaker.<br>│<br>├── ⚙️ <strong>3. IL WORKFLOW: DAL CATALOGO A STARMAKER</strong><br>│   └── Il passaggio dal sito alla piattaforma è immediato. Segui la cascata:<br>│       │<br>│       ├── 1️⃣ Trova il brano (Karaoke o Karaoke Inedito) nel catalogo.<br>│       ├── 2️⃣ Premi il tasto <strong>COPIA</strong>: il sistema memorizzerà il riferimento corretto.<br>│       └── 3️⃣ Apri StarMaker, vai nella barra di ricerca e premi <strong>INCOLLA</strong>.<br>│<br>└── ✨ <strong>4. IDENTIFICARE LE NOVITÀ</strong><br>    └── Vuoi sapere cosa ho appena caricato? Cerca l'etichetta <span class="news-tag">NEWS</span> accanto al titolo. Rimane attiva per i primi 5 giorni su tutte le nuove pubblicazioni.</div>`,
-                contatti_testo: `<h2>Richieste e Supporto</h2>
-                <p>Il catalogo Scorpio Edition è in continuo aggiornamento. Se non trovi quello che ti serve per la tua performance su StarMaker, puoi richiederlo direttamente.</p>
-                <h3>Cosa puoi richiedere:</h3>
-                <ul>
-                    <li>🎤 <strong>Basi Karaoke:</strong> Un brano classico che manca nell'archivio.</li>
-                    <li>🎧 <strong>Informazioni sugli Inediti:</strong> Domande o curiosità sulle mie produzioni originali.</li>
-                </ul>
-                <h3>Come inviare la richiesta:</h3>
-                <ul>
-                    <li>📱 <strong>Da Smartphone:</strong> Clicca sul tasto WhatsApp qui sotto per scrivermi direttamente.</li>
-                    <li>💻 <strong>Da PC:</strong> Inquadra il QR Code a fondo pagina con la fotocamera del tuo telefono.</li>
-                </ul>
-                <div style="text-align: center; margin-top: 35px; margin-bottom: 25px;">
-                    <a href="https://wa.me/393534099223?text=Ciao%20Maurizio!%20Ti%20scrivo%20dal%20catalogo%20Scorpio%20Edition.%20Vorrei%20richiedere%20l%27inserimento%20di%20una%20nuova%20base%20o%20informazioni%20sugli%20inediti%3A%20" target="_blank" style="display: inline-block; background-color: #25D366; color: white; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.1em; box-shadow: 0 4px 10px rgba(0,0,0,0.5); transition: background 0.3s;">💬 Scrivimi su WhatsApp</a>
+                contatti_testo: `<h2>Richiedi un Brano</h2>
+                <p style="text-align: center; color: #ccc; margin-bottom: 20px;">Non trovi una base nel catalogo? Inviami la richiesta direttamente da qui, senza aprire altre app.</p>
+                
+                <div class="box-richiesta">
+                    <label for="reqArtista">🎤 Nome Artista *</label>
+                    <input type="text" id="reqArtista" placeholder="Es. Vasco Rossi, Mina, Queen...">
+                    
+                    <label for="reqTitolo">🎵 Titolo del Brano *</label>
+                    <input type="text" id="reqTitolo" placeholder="Es. Sally, Grande grande grande...">
+                    
+                    <label for="reqNote">✍️ Tuo Nome / Note Aggiuntive</label>
+                    <textarea id="reqNote" rows="2" placeholder="Es. Versione acustica, tonalità originale..."></textarea>
+                    
+                    <button type="button" class="btn-invia-richiesta" id="btnInviaRichiesta" onclick="inviaRichiestaBrano()">Invia Richiesta</button>
+                    <div id="esitoRichiesta" class="richiesta-esito"></div>
+                </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <p style="color: #888; font-size: 0.85em; margin-bottom: 8px;">Per collaborazioni o comunicazioni generali:</p>
+                    <a href="https://wa.me/393534099223?text=Ciao%20Maurizio!%20Ti%20scrivo%20dal%20catalogo%20Scorpio%20Edition%20per%20informazioni%20generali." target="_blank" style="display: inline-block; background-color: transparent; border: 1px solid #25D366; color: #25D366; padding: 8px 18px; text-decoration: none; font-weight: 600; border-radius: 20px; font-size: 0.85em;">💬 Scrivimi su WhatsApp</a>
                 </div>`
             },
             en: { 
@@ -1012,6 +1246,7 @@ function svuotaRicerca() {
             document.getElementById('testo-qr').innerText = data.qr_text;
             
             aggiornaContatoreCopie();
+            if(typeof aggiornaContatoreFav === 'function') aggiornaContatoreFav();
 
             if (searchParam) {
         document.getElementById('cerca').value = searchParam;
@@ -1028,6 +1263,13 @@ function svuotaRicerca() {
                 if(btn) window.cambiaPagina(id, btn);
             }
         });
+if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then((reg) => console.log('Scorpio PWA Service Worker attivo:', reg.scope))
+                    .catch((err) => console.error('Errore Service Worker:', err));
+            });
+        }
     </script>
 </body>
 </html>
