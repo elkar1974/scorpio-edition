@@ -99468,5 +99468,19 @@
         "copiaTesto": "Zelensky [Fabri Fibra * SCORPIO EDITION *]",
         "data": "2026-10-22",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tu Sei Per Me (No Cori)",
+        "artista": "Enrico Nigiotti",
+        "copiaTesto": "Tu Sei Per Me [Enrico Nigiotti * SCORPIO *] (No Cori)",
+        "data": "2026-10-22",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Voglia E Turna",
+        "artista": "Teresa De Sio",
+        "copiaTesto": "Voglia E Turna [Teresa De Sio * SCORPIO *]",
+        "data": "2026-10-22",
+        "categoria": "KARAOKE"
     }
 ]
