@@ -863,15 +863,58 @@
             const esito = document.getElementById('esitoRichiesta');
             const btn = document.getElementById('btnInviaRichiesta');
 
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang') || 'it';
+
+            const dizionarioMessaggi = {
+                it: {
+                    vuoto: "Compila sia il nome dell'artista che il titolo del brano.",
+                    attendere: "Invio in corso...",
+                    btnTesto: "Invia Richiesta",
+                    okEsito: "Richiesta inviata con successo!",
+                    okToast: "Richiesta inviata a Maurizio!"
+                },
+                en: {
+                    vuoto: "Please fill in both the artist name and the song title.",
+                    attendere: "Sending...",
+                    btnTesto: "Send Request",
+                    okEsito: "Request sent successfully!",
+                    okToast: "Request sent to Maurizio!"
+                },
+                es: {
+                    vuoto: "Por favor, completa el nombre del artista y el título.",
+                    attendere: "Enviando...",
+                    btnTesto: "Enviar Solicitud",
+                    okEsito: "¡Solicitud enviada con éxito!",
+                    okToast: "¡Solicitud enviada a Maurizio!"
+                },
+                fr: {
+                    vuoto: "Veuillez remplir le nom de l'artiste et le titre du morceau.",
+                    attendere: "Envoi en cours...",
+                    btnTesto: "Envoyer la Demande",
+                    okEsito: "Demande envoyée avec succès !",
+                    okToast: "Demande envoyée à Maurizio !"
+                },
+                de: {
+                    vuoto: "Bitte fülle Künstlernamen und Songtitel aus.",
+                    attendere: "Wird gesendet...",
+                    btnTesto: "Anfrage Senden",
+                    okEsito: "Anfrage erfolgreich gesendet!",
+                    okToast: "Anfrage an Maurizio gesendet!"
+                }
+            };
+
+            const testi = dizionarioMessaggi[lang] || dizionarioMessaggi['it'];
+
             if (!artista || !titolo) {
                 esito.className = 'richiesta-esito err';
                 esito.style.display = 'block';
-                esito.innerText = 'Compila sia il nome dell\'artista che il titolo del brano.';
+                esito.innerText = testi.vuoto;
                 return;
             }
 
             btn.disabled = true;
-            btn.innerText = 'Invio in corso...';
+            btn.innerText = testi.attendere;
             esito.style.display = 'none';
 
             const oggettoEmail = `🚨 [SCORPIO EDITION] RICHIESTA BRANO: ${artista} - ${titolo}`;
@@ -894,32 +937,14 @@
                     })
                 });
 
-                if (response.ok) {
-                    const params = new URLSearchParams(window.location.search);
-                    const lang = params.get('lang') || 'it';
+                const data = await response.json().catch(() => ({}));
 
-                    let msgEsito = 'Richiesta inviata con successo!';
-                    let msgToast = 'Richiesta inviata a Maurizio!';
-
-                    if (lang === 'en') {
-                        msgEsito = 'Request sent successfully!';
-                        msgToast = 'Request sent to Maurizio!';
-                    } else if (lang === 'es') {
-                        msgEsito = '¡Solicitud enviada con éxito!';
-                        msgToast = '¡Solicitud enviada a Maurizio!';
-                    } else if (lang === 'fr') {
-                        msgEsito = 'Demande envoyée avec succès !';
-                        msgToast = 'Demande envoyée à Maurizio !';
-                    } else if (lang === 'de') {
-                        msgEsito = 'Anfrage erfolgreich gesendet!';
-                        msgToast = 'Anfrage an Maurizio gesendet!';
-                    }
-
+                if (response.ok && (data.success === "true" || data.success === true || response.status === 200)) {
                     esito.className = 'richiesta-esito ok';
                     esito.style.display = 'block';
-                    esito.innerText = msgEsito;
+                    esito.innerText = testi.okEsito;
                     
-                    mostraToast(msgToast);
+                    mostraToast(testi.okToast);
 
                     document.getElementById('reqArtista').value = '';
                     document.getElementById('reqTitolo').value = '';
@@ -929,15 +954,19 @@
                         window.umami.track('Richiesta Brano In-App', { artista: artista, brano: titolo });
                     }
                 } else {
-                    throw new Error("Errore durante l'invio");
+                    console.error("Dettaglio errore FormSubmit:", data);
+                    esito.className = 'richiesta-esito err';
+                    esito.style.display = 'block';
+                    esito.innerText = 'Server FormSubmit: ' + (data.message || response.statusText || ('Codice ' + response.status));
                 }
             } catch (err) {
+                console.error("Errore invio richiesta:", err);
                 esito.className = 'richiesta-esito err';
                 esito.style.display = 'block';
-                esito.innerText = 'Errore durante l\'invio. Riprova più tardi.';
+                esito.innerText = 'Errore di connessione: ' + err.message;
             } finally {
                 btn.disabled = false;
-                btn.innerText = 'Invia Richiesta';
+                btn.innerText = testi.btnTesto;
             }
         };
 
