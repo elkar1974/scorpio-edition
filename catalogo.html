@@ -140,7 +140,7 @@
         }
 
         .share-btn { 
-            background: linear-gradient(135deg, #25D366, #1da851); 
+            background: linear-gradient(135deg, #ff2d55, #d90429); 
             border: none; 
             padding: 10px; 
             cursor: pointer; 
@@ -155,11 +155,11 @@
             justify-content: center; 
             gap: 6px; 
             box-sizing: border-box; 
-            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
+            box-shadow: 0 4px 10px rgba(255, 45, 85, 0.3);
             transition: all 0.2s;
         }
-        .share-btn:hover { background: linear-gradient(135deg, #20ba5a, #178a3c); }
-        .share-btn svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
+        .share-btn:hover { background: linear-gradient(135deg, #e62047, #b80020); }
+        .share-btn img { width: 18px; height: 18px; object-fit: contain; flex-shrink: 0; }
         
         .filter-group { display: flex; justify-content: center; gap: 10px; margin-top: 10px; margin-bottom: 5px; flex-wrap: wrap; }
         .filter-btn { background: transparent; border: 1px solid #ffcc00; color: #ffcc00; padding: 6px 15px; border-radius: 20px; cursor: pointer; font-weight: bold; font-size: 0.85em; text-transform: uppercase; transition: all 0.2s; }
@@ -409,6 +409,27 @@
             color: #ff4444;
             display: block;
         }
+.box-highlight {
+            background: linear-gradient(135deg, rgba(255, 45, 85, 0.1), rgba(217, 4, 41, 0.1));
+            border: 2px solid #ff2d55;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(255, 45, 85, 0.2);
+        }
+        .box-highlight h4 {
+            color: #ff2d55;
+            margin-top: 0;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .box-highlight p { margin-bottom: 10px; font-size: 0.95em; line-height: 1.5; }
+        .box-highlight p:last-child { margin-bottom: 0; }
+        .icon-inline { width: 18px; height: 18px; vertical-align: middle; margin: 0 4px; transform: translateY(-2px); }
     </style>
 
 <script defer src="https://cloud.umami.is/script.js" data-website-id="5b9047a4-c276-426b-8fa8-ceef3d41a2cd"></script>
@@ -656,8 +677,8 @@
                             </div>
                             <button class="copy-btn" onclick="window.copia('${testoSicuro}')">${testoCopia}</button>
                             <button class="share-btn" onclick="window.condividi('${titoloCondivisione}')">
-                                <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.586 4.391 1.696 6.356l-.999 3.648 3.792-.995zm11.234-7.116c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg><span>${testoCondividi}</span>
-                            </button>
+    <img src="starmaker.png" alt="StarMaker"><span>StarMaker</span>
+</button>
                         </div>
                     `;
                 }).join('');
@@ -814,7 +835,7 @@
                         </div>
                         <button class="copy-btn" onclick="window.copia('${testoSicuro}')">${testoCopia}</button>
                         <button class="share-btn" onclick="window.condividi('${titoloCondivisione}')">
-                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.586 4.391 1.696 6.356l-.999 3.648 3.792-.995zm11.234-7.116c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg><span>${testoCondividi}</span>
+                            <img src="starmaker.png" alt="StarMaker"><span>StarMaker</span>
                         </button>
                     </div>
                 `;
@@ -960,33 +981,129 @@
 
         window.condividi = function(titolo) {
             if (window.umami) {
-                window.umami.track('Condividi WhatsApp', { brano: titolo });
+                window.umami.track('Copia Messaggio StarMaker', { brano: titolo });
             }
             
             const params = new URLSearchParams(window.location.search);
             const lang = params.get('lang') || 'it';
             
-            const queryRicerca = encodeURIComponent(titolo.trim());
-            const baseUrl = window.location.protocol + '//' + window.location.host + window.location.pathname;
-            const linkCondivisione = `${baseUrl}?lang=${lang}&search=${queryRicerca}#catalogo`;
+            // Calcolo automatico a scaglioni di 500 basi (es. 14.000, 14.500, 15.000...)
+            const bloccoBasi = Math.floor(basi.length / 500) * 500;
+            const formatoLocale = (lang === 'en') ? 'en-US' : (lang === 'de') ? 'de-DE' : (lang === 'fr') ? 'fr-FR' : 'it-IT';
+            const totaleFormattato = bloccoBasi.toLocaleString(formatoLocale);
             
             let messaggio = "";
-            if (lang === 'it') {
-                messaggio = `🎵 Ehi! Guarda che base stupenda ho trovato nel catalogo ufficiale MAU•SCORPIO•EDITION!\n\n🎵 *Brano:* ${titolo}\n\nVai a sentirla e copiala per StarMaker da qui:\n${linkCondivisione}`;
-            } else if (lang === 'en') {
-                messaggio = `🎵 Hey! Check out this amazing backing track I found in the official MAU•SCORPIO•EDITION catalog!\n\n🎵 *Song:* ${titolo}\n\nListen to it and copy it for StarMaker here:\n${linkCondivisione}`;
+            let messaggioToast = "";
+            
+            if (lang === 'en') {
+                messaggio = `🎤 READY TO LEVEL UP ON STARMAKER?
+
+Your voice deserves studio dynamics,
+impeccable arrangements
+and millimetric sync.
+
+Search on Google:
+👉 scorpio edition
+
+Explore the catalog with:
+🔥 OVER ${totaleFormattato} TRACKS 🔥
+constantly expanding!
+
+Tap COPY on your favorite track
+and PASTE directly into StarMaker.
+
+Sing at the highest level!`;
+                messaggioToast = "PASTE in Family, groups, followers... Thanks for the help!";
+                
             } else if (lang === 'es') {
-                messaggio = `🎵 ¡Ey! ¡Mira qué pista tan increíble encontré en el catálogo oficial de MAU•SCORPIO•EDITION!\n\n🎵 *Canción:* ${titolo}\n\nEscúchala y cópiala para StarMaker aquí:\n${linkCondivisione}`;
+                messaggio = `🎤 ¿LISTO PARA DAR EL SALTO EN STARMAKER?
+
+Tu voz merece dinámica de estudio,
+arreglos impecables
+y sincronización milimétrica.
+
+Busca en Google:
+👉 scorpio edition
+
+Entra al catálogo con:
+🔥 ¡MÁS DE ${totaleFormattato} PISTAS! 🔥
+¡en constante crecimiento!
+
+Toca COPIAR en tu tema favorito
+y dale a PEGAR en StarMaker.
+
+¡Canta al máximo nivel!`;
+                messaggioToast = "¡PEGA en Family, grupos, seguidores... Gracias por la ayuda!";
+                
             } else if (lang === 'fr') {
-                messaggio = `🎵 Salut ! Regarde cette superbe bande-son que j'ai trouvée dans le catalogue officiel MAU•SCORPIO•EDITION !\n\n🎵 *Titre:* ${titolo}\n\nÉcoute-la et copie-la pour StarMaker ici :\n${linkCondivisione}`;
+                messaggio = `🎤 PRÊT À PASSER UN CAP SUR STARMAKER ?
+
+Ta voix mérite une dynamique studio,
+des arrangements impeccables
+et une synchronisation au millimètre.
+
+Recherche sur Google :
+👉 scorpio edition
+
+Découvre le catalogue avec :
+🔥 PLUS DE ${totaleFormattato} BANDES-SON 🔥
+en constante évolution !
+
+Touche COPIER sur ton titre préféré
+et COLLE directement sur StarMaker.
+
+Chante au plus haut niveau !`;
+                messaggioToast = "COLLEZ dans Family, groupes, followers... Merci pour l'aide !";
+                
             } else if (lang === 'de') {
-                messaggio = `🎵 Hi! Schau dir dieses tolle Playback an, das ich im offiziellen MAU•SCORPIO•EDITION Katalog gefunden habe!\n\n🎵 *Song:* ${titolo}\n\nHöre es dir an und kopiere es für StarMaker hier:\n${linkCondivisione}`;
+                messaggio = `🎤 BEREIT FÜR DAS NÄCHSTE LEVEL AUF STARMAKER?
+
+Deine Stimme verdient Studio-Dynamik,
+makellose Arrangements
+und millimetergenaue Synchronisation.
+
+Suche auf Google:
+👉 scorpio edition
+
+Entdecke den Katalog mit:
+🔥 ÜBER ${totaleFormattato} PLAYBACKS 🔥
+ständig wachsend!
+
+Tippe bei deinem Song auf KOPIEREN
+und füge ihn direkt in StarMaker EIN.
+
+Singe auf höchstem Niveau!`;
+                messaggioToast = "EINFÜGEN in Family, Gruppen, Follower... Danke für die Hilfe!";
+                
             } else {
-                messaggio = `🎵 Ehi! Guarda che base stupenda ho trovato nel catalogo ufficiale MAU•SCORPIO•EDITION!\n\n🎵 *Brano:* ${titolo}\n\nVai a sentirla e copiala per StarMaker da qui:\n${linkCondivisione}`;
+                // Italiano (Default)
+                messaggio = `🎤 VUOI FARE IL SALTO DI QUALITÀ SU STARMAKER?
+
+La tua voce merita arrangiamenti impeccabili,
+dinamica professionale
+e sincronizzazione millimetrica.
+
+Cerca subito su Google:
+👉 scorpio edition
+
+Entra nel catalogo con:
+🔥 OLTRE ${totaleFormattato} BASI 🔥
+in costante crescita!
+
+Tocca COPIA sul tuo brano
+e fai INCOLLA su StarMaker.
+
+Canta al massimo livello!`;
+                messaggioToast = "INCOLLA in Family, gruppi, follower... Grazie per l'aiuto!";
             }
             
-            const urlWhatsApp = `https://wa.me/?text=${encodeURIComponent(messaggio)}`;
-            window.open(urlWhatsApp, '_blank');
+            navigator.clipboard.writeText(messaggio).then(() => {
+                mostraToast(messaggioToast);
+            }).catch(() => {
+                // Fallback di sicurezza
+                navigator.clipboard.writeText(messaggio);
+                mostraToast(messaggioToast);
+            });
         };
 
         window.addEventListener('scroll', () => {
@@ -1026,12 +1143,17 @@
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Perché la tua voce è il tuo strumento più prezioso. Trattala come tale.</em></p>
                 <blockquote>"Non chiedo di credermi sulla parola. Chiedo di provare. Sarà la tua voce a convincerti, e il tuo palco a raccontare la differenza."</blockquote>`,
                 g_title: "Guida Scritta", 
-                g_text: `<p>Benvenuto nell'archivio ufficiale di <strong>MAU•SCORPIO•EDITION</strong>! Segui questi semplici passi per trovare le canzoni, cantarle subito su StarMaker o condividerle con gli amici:</p>
-                <p>🔍 <strong>1. CERCA IL TUO BRANO PREFERITO</strong><br>Tocca la voce <strong>Catalogo</strong> nel menu in alto. Troverai subito una barra di ricerca: scrivi semplicemente il <strong>titolo della canzone</strong> o il <strong>nome dell'artista</strong>. Mentre scrivi le lettere, la pagina ti mostrerà subito la base giusta.</p>
-                <p>📋 <strong>2. UN TOCCO SU "COPIA" E NON DEVI FARE ALTRO</strong><br>Quando vedi la canzone che vuoi cantare, premi il pulsante giallo con la scritta <strong>COPIA</strong>. Fatto! Non devi fare nient'altro: il telefono (o il computer, se usi PC o Mac) memorizza da solo il titolo esatto pronto da usare.</p>
-                <p>🎤 <strong>3. ENTRA SU STARMAKER E INCOLLA</strong><br>Apri l'app <strong>StarMaker</strong> sul tuo smartphone o tablet. Tocca la barra in alto dove cerchi di solito le canzoni: tieni premuto il dito sullo schermo finché non appare la scritta <strong>INCOLLA</strong> e toccala (se sei da computer, premi il tasto destro del mouse e clicca su Incolla). La base comparirà immediatamente, pronta da cantare a tempo perfetto!</p>
-                <p>💬 <strong>4. INVIA IL BRANO A UN AMICO SU WHATSAPP</strong><br>Vuoi far sentire la base a qualcuno o passarla nel tuo gruppo di canto? Premi il pulsante verde con la scritta <strong>MANDA</strong>. Si aprirà all'istante WhatsApp con il link già pronto: tocca solo invio!</p>
-                <p>✍️ <strong>5. NON TROVI LA CANZONE? TE LA PREPARO IO!</strong><br>Hai cercato un brano ma non compare nella lista? Niente paura! Tocca la voce <strong>Contatti</strong> nel menu in alto: troverai una semplice casella dove scrivere l'artista e il titolo che ti mancano. Premi il pulsante <strong>INVIA RICHIESTA</strong> e la riceverò direttamente per prepararla in archivio al più presto!</p>
+                g_text: `<p>Benvenuto nell'archivio ufficiale di <strong>MAU•SCORPIO•EDITION</strong>! Segui questi semplici passi per trovare le canzoni e cantarle subito su StarMaker:</p>
+                <p>🔍 <strong>1. CERCA IL TUO BRANO PREFERITO</strong><br>Tocca la voce <strong>Catalogo</strong> nel menu in alto. Troverai subito una barra di ricerca: scrivi il <strong>titolo della canzone</strong> o il <strong>nome dell'artista</strong> per trovare la base giusta.</p>
+                <p>📋 <strong>2. UN TOCCO SU "COPIA" E NON DEVI FARE ALTRO</strong><br>Quando vedi la canzone che vuoi cantare, premi il pulsante giallo con la scritta <strong>COPIA</strong>. Il tuo dispositivo memorizzerà da solo il titolo esatto pronto da usare.</p>
+                <p>🎤 <strong>3. ENTRA SU STARMAKER E INCOLLA</strong><br>Apri l'app <strong>StarMaker</strong>. Tocca la barra in alto dove cerchi di solito le canzoni: tieni premuto il dito sullo schermo e fai <strong>INCOLLA</strong>. La base comparirà immediatamente, pronta da cantare a tempo perfetto!</p>
+                <p>✍️ <strong>4. NON TROVI LA CANZONE? TE LA PREPARO IO!</strong><br>Tocca <strong>Contatti</strong> nel menu in alto. Compila la richiesta e la riceverò direttamente per prepararla in archivio al più presto!</p>
+                <div class="box-highlight">
+                    <h4>🚀 Diventa Ambasciatore della Qualità</h4>
+                    <p>Hai notato il nuovo pulsante con il logo <img src="starmaker.png" alt="StarMaker" class="icon-inline"> accanto a ogni brano? È pensato per te e per la tua community!</p>
+                    <p>Premendolo, copierai in automatico un messaggio professionale e già impaginato (con il conteggio esatto delle basi in archivio). Ti basterà fare <strong>INCOLLA</strong> nelle chat della tua Family, nei gruppi o nei messaggi ai tuoi follower.</p>
+                    <p>Fai scoprire a tutti cosa significa cantare con audio da studio. Condividere la qualità fa alzare il livello di tutti!</p>
+                </div>
                 <p>✨ <em>La tua voce merita la qualità migliore. Buon canto e buon divertimento!</em></p>`,
                 contatti_testo: `<h2>Richiedi un Brano</h2>
                 <p style="text-align: center; color: #ccc; margin-bottom: 20px;">Non trovi una base nel catalogo? Inviami la richiesta direttamente da qui, senza aprire altre app.</p>
@@ -1080,12 +1202,17 @@
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Because your voice is your most precious instrument. Treat it as such.</em></p>
                 <blockquote>"I don't ask you to take my word for it. I ask you to try. Your voice will convince you, and your stage will tell the difference."</blockquote>`,
                 g_title: "Written Guide", 
-                g_text: `<p>Welcome to the official <strong>MAU•SCORPIO•EDITION</strong> archive! Follow these simple steps to find songs, sing them immediately on StarMaker, or share them with friends:</p>
-                <p>🔍 <strong>1. SEARCH FOR YOUR FAVORITE SONG</strong><br>Tap <strong>Catalog</strong> in the top menu. You will immediately find a search bar: simply type the <strong>song title</strong> or the <strong>artist's name</strong>. As you type, the page will instantly show you the right backing track.</p>
-                <p>📋 <strong>2. ONE TAP ON "COPY" AND YOU'RE DONE</strong><br>When you see the song you want to sing, press the yellow button labeled <strong>COPY</strong>. Done! You don't need to do anything else: your phone (or computer, if using a PC or Mac) automatically memorizes the exact title ready to use.</p>
-                <p>🎤 <strong>3. OPEN STARMAKER AND PASTE</strong><br>Open the <strong>StarMaker</strong> app on your smartphone or tablet. Tap the top bar where you usually search for songs: hold your finger on the screen until the word <strong>PASTE</strong> appears and tap it (if on a computer, right-click and click Paste). The backing track will appear immediately, ready to be sung in perfect time!</p>
-                <p>💬 <strong>4. SEND THE SONG TO A FRIEND ON WHATSAPP</strong><br>Want to let someone hear the track or share it in your singing group? Press the green button labeled <strong>SHARE</strong>. WhatsApp will open instantly with the ready-made link: just hit send!</p>
-                <p>✍️ <strong>5. CAN'T FIND THE SONG? I'LL MAKE IT FOR YOU!</strong><br>Searched for a track but it's not on the list? No worries! Tap <strong>Contact</strong> in the top menu: you'll find a simple box to write the missing artist and title. Press the <strong>SEND REQUEST</strong> button and I will receive it directly to prepare it for the archive as soon as possible!</p>
+                g_text: `<p>Welcome to the official <strong>MAU•SCORPIO•EDITION</strong> archive! Follow these simple steps to find songs and sing them immediately on StarMaker:</p>
+                <p>🔍 <strong>1. SEARCH FOR YOUR FAVORITE SONG</strong><br>Tap <strong>Catalog</strong> in the top menu. You will find a search bar: type the <strong>song title</strong> or the <strong>artist's name</strong> to find the right backing track.</p>
+                <p>📋 <strong>2. ONE TAP ON "COPY" AND YOU'RE DONE</strong><br>When you see the song you want to sing, press the yellow button labeled <strong>COPY</strong>. Your device will memorize the exact title ready to use.</p>
+                <p>🎤 <strong>3. OPEN STARMAKER AND PASTE</strong><br>Open the <strong>StarMaker</strong> app. Tap the top bar where you usually search for songs: hold your finger on the screen and tap <strong>PASTE</strong>. The backing track will appear immediately!</p>
+                <p>✍️ <strong>4. CAN'T FIND THE SONG? I'LL MAKE IT FOR YOU!</strong><br>Tap <strong>Contact</strong> in the top menu. Fill out the request and I will receive it directly to prepare it for the archive!</p>
+                <div class="box-highlight">
+                    <h4>🚀 Become an Ambassador of Quality</h4>
+                    <p>Have you noticed the new button with the <img src="starmaker.png" alt="StarMaker" class="icon-inline"> logo next to each track? It's designed for you and your community!</p>
+                    <p>By pressing it, you'll automatically copy a professional, ready-to-use message (with the exact count of backing tracks in the archive). Just <strong>PASTE</strong> it in your Family chats, groups, or messages to your followers.</p>
+                    <p>Let everyone discover what it means to sing with studio audio. Sharing quality raises the bar for everyone!</p>
+                </div>
                 <p>✨ <em>Your voice deserves the best quality. Happy singing and have fun!</em></p>`,
                 contatti_testo: `<h2>Request a Track</h2>
                 <p style="text-align: center; color: #ccc; margin-bottom: 20px;">Can't find a backing track in the catalog? Send your request directly from here without opening other apps.</p>
@@ -1134,12 +1261,17 @@
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Porque tu voz es tu instrumento más preciado. Trátala como tal.</em></p>
                 <blockquote>"No pido que me creas. Te pido que pruebes. Tu voz te convencerá y tu escenario contará la diferencia."</blockquote>`,
                 g_title: "Guía Escrita", 
-                g_text: `<p>¡Bienvenido al archivo oficial de <strong>MAU•SCORPIO•EDITION</strong>! Sigue estos sencillos pasos para encontrar canciones, cantarlas de inmediato en StarMaker o compartirlas con amigos:</p>
-                <p>🔍 <strong>1. BUSCA TU CANCIÓN FAVORITA</strong><br>Toca <strong>Catálogo</strong> en el menú superior. Encontrarás enseguida una barra de búsqueda: simplemente escribe el <strong>título de la canción</strong> o el <strong>nombre del artista</strong>. Mientras escribes, la página te mostrará al instante la pista correcta.</p>
-                <p>📋 <strong>2. UN TOQUE EN "COPIAR" Y LISTO</strong><br>Cuando veas la canción que quieres cantar, presiona el botón amarillo que dice <strong>COPIAR</strong>. ¡Listo! No tienes que hacer nada más: el teléfono (o la computadora, si usas PC o Mac) memoriza automáticamente el título exacto listo para usar.</p>
-                <p>🎤 <strong>3. ENTRA A STARMAKER Y PEGA</strong><br>Abre la aplicación <strong>StarMaker</strong> en tu smartphone o tablet. Toca la barra superior donde sueles buscar canciones: mantén el dedo en la pantalla hasta que aparezca la palabra <strong>PEGAR</strong> y tócala (si estás en computadora, haz clic derecho y luego en Pegar). ¡La pista aparecerá de inmediato, lista para cantar a un tempo perfecto!</p>
-                <p>💬 <strong>4. ENVÍA LA CANCIÓN A UN AMIGO POR WHATSAPP</strong><br>¿Quieres que alguien escuche la pista o pasarla a tu grupo de canto? Presiona el botón verde que dice <strong>ENVIAR</strong>. WhatsApp se abrirá al instante con el enlace ya preparado: ¡solo dale a enviar!</p>
-                <p>✍️ <strong>5. ¿NO ENCUENTRAS LA CANCIÓN? ¡YO TE LA PREPARO!</strong><br>¿Buscaste un tema pero no aparece en la lista? ¡No te preocupes! Toca <strong>Contacto</strong> en el menú superior: encontrarás una casilla sencilla donde escribir el artista y el título que faltan. Presiona el botón <strong>ENVIAR SOLICITUD</strong> y la recibiré directamente para prepararla en el archivo lo antes posible.</p>
+                g_text: `<p>¡Bienvenido al archivo oficial de <strong>MAU•SCORPIO•EDITION</strong>! Sigue estos sencillos pasos para encontrar canciones y cantarlas de inmediato en StarMaker:</p>
+                <p>🔍 <strong>1. BUSCA TU CANCIÓN FAVORITA</strong><br>Toca <strong>Catálogo</strong> en el menú superior. Encontrarás una barra de búsqueda: escribe el <strong>título de la canción</strong> o el <strong>nombre del artista</strong> para encontrar la pista correcta.</p>
+                <p>📋 <strong>2. UN TOQUE EN "COPIAR" Y LISTO</strong><br>Cuando veas la canción que quieres cantar, presiona el botón amarillo que dice <strong>COPIAR</strong>. Tu dispositivo memorizará el título exacto listo para usar.</p>
+                <p>🎤 <strong>3. ENTRA A STARMAKER Y PEGA</strong><br>Abre la aplicación <strong>StarMaker</strong>. Toca la barra superior donde sueles buscar canciones: mantén el dedo en la pantalla y haz <strong>PEGAR</strong>. ¡La pista aparecerá de inmediato!</p>
+                <p>✍️ <strong>4. ¿NO ENCUENTRAS LA CANCIÓN? ¡YO TE LA PREPARO!</strong><br>Toca <strong>Contacto</strong> en el menú superior. Completa la solicitud y la recibiré directamente para prepararla en el archivo.</p>
+                <div class="box-highlight">
+                    <h4>🚀 Conviértete en Embajador de la Calidad</h4>
+                    <p>¿Has notado el nuevo botón con el logo <img src="starmaker.png" alt="StarMaker" class="icon-inline"> junto a cada pista? ¡Está pensado para ti y tu comunidad!</p>
+                    <p>Al presionarlo, copiarás automáticamente un mensaje profesional y listo para usar (con el recuento exacto de pistas en el archivo). Solo tienes que hacer <strong>PEGAR</strong> en los chats de tu Family, en grupos o en mensajes a tus seguidores.</p>
+                    <p>Haz que todos descubran lo que significa cantar con audio de estudio. ¡Compartir la calidad eleva el nivel de todos!</p>
+                </div>
                 <p>✨ <em>Tu voz merece la mejor calidad. ¡Feliz canto y que te diviertas!</em></p>`,
                 contatti_testo: `<h2>Solicitar una Pista</h2>
                 <p style="text-align: center; color: #ccc; margin-bottom: 20px;">¿No encuentras una base en el catálogo? Envía tu solicitud directamente desde aquí sin abrir otras aplicaciones.</p>
@@ -1188,12 +1320,17 @@
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Parce que ta voix est ton instrument le plus précieux. Traite-la comme tel.</em></p>
                 <blockquote>"Je ne demande pas de me croire sur parole. Je demande d'essayer. Ta voix te convaincra, et ta scène racontera la différence."</blockquote>`,
                 g_title: "Guide Écrit", 
-                g_text: `<p>Bienvenue dans l'archive officielle de <strong>MAU•SCORPIO•EDITION</strong> ! Suivez ces étapes simples pour trouver des chansons, les chanter immédiatement sur StarMaker ou les partager avec vos amis :</p>
-                <p>🔍 <strong>1. CHERCHEZ VOTRE CHANSON PRÉFÉRÉE</strong><br>Appuyez sur <strong>Catalogue</strong> dans le menu en haut. Vous trouverez tout de suite une barre de recherche : écrivez simplement le <strong>titre de la chanson</strong> ou le <strong>nom de l'artiste</strong>. Pendant que vous tapez, la page affichera instantanément la bonne piste.</p>
-                <p>📋 <strong>2. UN TOUCHE SUR "COPIER" ET C'EST TOUT</strong><br>Quand vous voyez la chanson que vous voulez chanter, appuyez sur le bouton jaune avec écrit <strong>COPIER</strong>. C'est fait ! Vous n'avez rien d'autre à faire : le téléphone (ou l'ordinateur, si vous utilisez un PC ou un Mac) mémorise tout seul le titre exact prêt à être utilisé.</p>
-                <p>🎤 <strong>3. OUVREZ STARMAKER ET COLLEZ</strong><br>Ouvrez l'application <strong>StarMaker</strong> sur votre smartphone ou tablette. Touchez la barre en haut où vous cherchez d'habitude les chansons : maintenez le doigt sur l'écran jusqu'à ce que le mot <strong>COLLER</strong> apparaisse et touchez-le (si vous êtes sur ordinateur, faites un clic droit puis Coller). La piste apparaîtra immédiatement, prête à être chantée avec un rythme parfait !</p>
-                <p>💬 <strong>4. ENVOYEZ LA CHANSON À UN AMI SUR WHATSAPP</strong><br>Vous voulez faire écouter la piste à quelqu'un ou la partager dans votre groupe de chant ? Appuyez sur le bouton vert avec écrit <strong>PARTAGER</strong>. WhatsApp s'ouvrira instantanément avec le lien déjà prêt : appuyez juste sur envoyer !</p>
-                <p>✍️ <strong>5. VOUS NE TROUVEZ PAS LA CHANSON ? JE VOUS LA PRÉPARE !</strong><br>Vous avez cherché un titre mais il n'est pas dans la liste ? Pas de panique ! Appuyez sur <strong>Contact</strong> dans le menu en haut : vous trouverez une simple case pour écrire l'artiste et le titre manquants. Appuyez sur le bouton <strong>ENVOYER LA DEMANDE</strong> et je la recevrai directement pour la préparer dans l'archive au plus vite !</p>
+                g_text: `<p>Bienvenue dans l'archive officielle de <strong>MAU•SCORPIO•EDITION</strong> ! Suivez ces étapes simples pour trouver des chansons et les chanter immédiatement sur StarMaker :</p>
+                <p>🔍 <strong>1. CHERCHEZ VOTRE CHANSON PRÉFÉRÉE</strong><br>Appuyez sur <strong>Catalogue</strong> dans le menu en haut. Vous trouverez une barre de recherche : écrivez le <strong>titre de la chanson</strong> ou le <strong>nom de l'artiste</strong> pour trouver la bonne piste.</p>
+                <p>📋 <strong>2. UN TOUCHE SUR "COPIER" ET C'EST TOUT</strong><br>Quand vous voyez la chanson que vous voulez chanter, appuyez sur le bouton jaune avec écrit <strong>COPIER</strong>. Votre appareil mémorisera le titre exact prêt à être utilisé.</p>
+                <p>🎤 <strong>3. OUVREZ STARMAKER ET COLLEZ</strong><br>Ouvrez l'application <strong>StarMaker</strong>. Touchez la barre en haut où vous cherchez d'habitude les chansons : maintenez le doigt sur l'écran et faites <strong>COLLER</strong>. La piste apparaîtra immédiatement !</p>
+                <p>✍️ <strong>4. VOUS NE TROUVEZ PAS LA CHANSON ? JE VOUS LA PRÉPARE !</strong><br>Appuyez sur <strong>Contact</strong> dans le menu en haut. Remplissez la demande et je la recevrai directement pour la préparer dans l'archive !</p>
+                <div class="box-highlight">
+                    <h4>🚀 Devenez Ambassadeur de la Qualité</h4>
+                    <p>Avez-vous remarqué le nouveau bouton avec le logo <img src="starmaker.png" alt="StarMaker" class="icon-inline"> à côté de chaque piste ? Il est pensé pour vous et votre communauté !</p>
+                    <p>En l'appuyant, vous copierez automatiquement un message professionnel prêt à l'emploi (avec le compte exact des bases dans l'archive). Il vous suffira de faire <strong>COLLER</strong> dans les chats de votre Family, vos groupes ou vos messages à vos followers.</p>
+                    <p>Faites découvrir à tous ce que signifie chanter avec un son studio. Partager la qualité élève le niveau de tout le monde !</p>
+                </div>
                 <p>✨ <em>Votre voix mérite la meilleure qualité. Bon chant et amusez-vous bien !</em></p>`,
                 contatti_testo: `<h2>Demander un Morceau</h2>
                 <p style="text-align: center; color: #ccc; margin-bottom: 20px;">Vous ne trouvez pas un playback dans le catalogue ? Envoyez votre demande directement d'ici sans ouvrir d'autres applications.</p>
@@ -1242,12 +1379,17 @@
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Weil deine Stimme dein wertvollstes Instrument ist. Behandle sie auch so.</em></p>
                 <blockquote>"Ich verlange nicht, dass du mir beim Wort glaubst. Probiere es aus. Deine Stimme wird dich überzeugen, und deine Bühne wird den Unterschied erzählen."</blockquote>`,
                 g_title: "Schriftliche Anleitung", 
-                g_text: `<p>Willkommen im offiziellen <strong>MAU•SCORPIO•EDITION</strong> Archiv! Folge diesen einfachen Schritten, um Songs zu finden, sie sofort auf StarMaker zu singen oder mit Freunden zu teilen:</p>
-                <p>🔍 <strong>1. SUCHE DEINEN LIEBLINGSSONG</strong><br>Tippe im oberen Menü auf <strong>Katalog</strong>. Du findest sofort eine Suchleiste: Tippe einfach den <strong>Songtitel</strong> oder den <strong>Künstlernamen</strong> ein. Schon während du tippst, zeigt dir die Seite das richtige Playback an.</p>
-                <p>📋 <strong>2. EIN TIPPEN AUF "KOPIEREN" UND FERTIG</strong><br>Wenn du den Song siehst, den du singen möchtest, drücke den gelben Button mit der Aufschrift <strong>KOPIEREN</strong>. Erledigt! Du musst nichts weiter tun: Das Telefon (oder der Computer, wenn du PC oder Mac nutzt) speichert automatisch den genauen Titel ab, bereit zur Nutzung.</p>
-                <p>🎤 <strong>3. ÖFFNE STARMAKER UND EINFÜGEN</strong><br>Öffne die <strong>StarMaker</strong> App auf deinem Smartphone oder Tablet. Tippe auf die obere Leiste, in der du normalerweise nach Songs suchst: Halte deinen Finger auf dem Bildschirm gedrückt, bis das Wort <strong>EINFÜGEN</strong> erscheint, und tippe darauf (am Computer Rechtsklick und auf Einfügen klicken). Das Playback erscheint sofort und ist bereit, perfekt im Takt gesungen zu werden!</p>
-                <p>💬 <strong>4. SENDE DEN SONG AN EINEN FREUND ÜBER WHATSAPP</strong><br>Du möchtest jemandem das Playback zeigen oder es in deiner Gesangsgruppe teilen? Drücke den grünen Button mit der Aufschrift <strong>TEILEN</strong>. WhatsApp öffnet sich sofort mit dem fertigen Link: Drücke nur noch auf Senden!</p>
-                <p>✍️ <strong>5. SONG NICHT GEFUNDEN? ICH BEREITE IHN FÜR DICH VOR!</strong><br>Du hast nach einem Titel gesucht, aber er ist nicht in der Liste? Keine Sorge! Tippe im oberen Menü auf <strong>Kontakt</strong>: Dort findest du ein einfaches Feld, um den fehlenden Künstler und Titel einzutragen. Drücke den Button <strong>ANFRAGE SENDEN</strong> und ich erhalte sie direkt, um sie so schnell wie möglich für das Archiv vorzubereiten!</p>
+                g_text: `<p>Willkommen im offiziellen <strong>MAU•SCORPIO•EDITION</strong> Archiv! Folge diesen einfachen Schritten, um Songs zu finden und sie sofort auf StarMaker zu singen:</p>
+                <p>🔍 <strong>1. SUCHE DEINEN LIEBLINGSSONG</strong><br>Tippe im oberen Menü auf <strong>Katalog</strong>. Du findest eine Suchleiste: Tippe den <strong>Songtitel</strong> oder den <strong>Künstlernamen</strong> ein, um das richtige Playback zu finden.</p>
+                <p>📋 <strong>2. EIN TIPPEN AUF "KOPIEREN" UND FERTIG</strong><br>Wenn du den Song siehst, drücke den gelben Button mit der Aufschrift <strong>KOPIEREN</strong>. Dein Gerät speichert automatisch den genauen Titel ab.</p>
+                <p>🎤 <strong>3. ÖFFNE STARMAKER UND EINFÜGEN</strong><br>Öffne die <strong>StarMaker</strong> App. Tippe auf die obere Suchleiste: Halte deinen Finger auf dem Bildschirm und wähle <strong>EINFÜGEN</strong>. Das Playback erscheint sofort!</p>
+                <p>✍️ <strong>4. SONG NICHT GEFUNDEN? ICH BEREITE IHN FÜR DICH VOR!</strong><br>Tippe im oberen Menü auf <strong>Kontakt</strong>. Fülle die Anfrage aus und ich erhalte sie direkt, um sie für das Archiv vorzubereiten!</p>
+                <div class="box-highlight">
+                    <h4>🚀 Werde Botschafter der Qualität</h4>
+                    <p>Hast du den neuen Button mit dem <img src="starmaker.png" alt="StarMaker" class="icon-inline"> Logo neben jedem Track bemerkt? Er ist für dich und deine Community gedacht!</p>
+                    <p>Wenn du ihn drückst, kopierst du automatisch eine professionelle, vorgefertigte Nachricht (mit der genauen Anzahl der Playbacks im Archiv). Du musst sie nur in deine Family-Chats, Gruppen oder Nachrichten an deine Follower <strong>EINFÜGEN</strong>.</p>
+                    <p>Lass alle entdecken, was es heißt, mit Studio-Audio zu singen. Qualität zu teilen, hebt das Niveau für alle!</p>
+                </div>
                 <p>✨ <em>Deine Stimme verdient die beste Qualität. Viel Spaß beim Singen!</em></p>`,
                 contatti_testo: `<h2>Song Anfragen</h2>
                 <p style="text-align: center; color: #ccc; margin-bottom: 20px;">Du findest ein Playback nicht im Katalog? Sende deine Anfrage direkt von hier, ohne andere Apps zu öffnen.</p>
