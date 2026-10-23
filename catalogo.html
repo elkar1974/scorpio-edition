@@ -463,10 +463,12 @@
                 <button id="btnCatBasiInediti" class="filter-btn" onclick="setCategory('BASI_INEDITI')">🎙️ Basi Inediti</button>
             </div>
 
+            <!-- INIZIO BANNER INEDITI -->
             <div id="bannerIneditiYouTube" style="display: none; margin: 10px 10px 0 10px; padding: 12px; background: rgba(255, 0, 0, 0.15); border: 1px solid rgba(255, 0, 0, 0.5); border-radius: 8px; text-align: center; box-sizing: border-box;">
-                <p style="color: #fff; font-size: 0.85em; margin: 0 0 8px 0; font-style: italic;">Ascolta gli inediti completi in Alta Definizione:</p>
-                <a href="https://www.youtube.com/@ScorpioEditionOfficial" target="_blank" style="display: inline-block; background-color: #FF0000; color: #FFFFFF; padding: 8px 16px; text-decoration: none; font-weight: bold; border-radius: 6px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.5px;">▶️ Canale YouTube Ufficiale</a>
+                <p id="testoBannerInediti" style="color: #fff; font-size: 0.85em; margin: 0 0 8px 0; font-style: italic;"></p>
+                <a id="btnBannerInediti" href="https://www.youtube.com/@ScorpioEditionOfficial" target="_blank" style="display: inline-block; background-color: #FF0000; color: #FFFFFF; padding: 8px 16px; text-decoration: none; font-weight: bold; border-radius: 6px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.5px;"></a>
             </div>
+            <!-- FINE BANNER INEDITI -->
             
             <div class="filter-group">
                 <button id="btnFilterAll" class="filter-btn active" onclick="setFilter(false)">📂 Mostra Tutto</button>
@@ -669,6 +671,7 @@
             document.getElementById('btnCatKaraoke').classList.toggle('active', cat === 'KARAOKE');
             document.getElementById('btnCatBasiInediti').classList.toggle('active', cat === 'BASI_INEDITI');
             
+            // Gestione Banner
             const banner = document.getElementById('bannerIneditiYouTube');
             if (cat === 'BASI_INEDITI') {
                 banner.style.display = 'block';
@@ -1002,6 +1005,8 @@
                 copy_btn: "Copia", btn_karaoke: "🎤 Karaoke", btn_inediti: "🎧 Inediti", btn_basi_inediti: "🎙️ Karaoke Inediti", btn_fav: "⭐ Preferiti",
                 b1: "Home", b2: "Video Guida", b3: "Catalogo", b5: "Contatti",
                 c_title: "Archivio Ufficiale", search_ph: "Cerca brano o artista...", count_testo: "Totale basi: ", share_btn: "Manda", btn_all: "📂 Mostra Tutto", btn_news: "🔥 Novità (5 gg)", widget_copies: "Copie:", qr_text: "Inquadra il QR Code da PC:",
+                banner_text: "Ascolta gli inediti completi in Alta Definizione:",
+                banner_btn: "▶️ Canale YouTube Ufficiale",
                 m_content: `<h2>MAU•SCORPIO•EDITION: La voce merita rispetto.</h2>
                 <blockquote>"Cantare su una base di qualità valorizza il canto. La tua voce merita rispetto."</blockquote>
                 <p>Questo è il principio su cui ho fondato <strong>MAU•SCORPIO•EDITION</strong>. Non mi limito a fornire file audio; metto a disposizione uno strumento di lavoro che eleva la performance artistica, garantendo la dignità tecnica che ogni cantante cerca.</p>
@@ -1048,6 +1053,8 @@
                 copy_btn: "Copy", btn_karaoke: "🎤 Karaoke", btn_inediti: "🎧 Originals", btn_basi_inediti: "🎙️ Karaoke Originals", btn_fav: "⭐ Favorites",
                 b1: "Home", b2: "Video Guide", b3: "Catalog", b5: "Contact",
                 c_title: "Official Catalog", search_ph: "Search song or artist...", count_testo: "Total tracks: ", share_btn: "Share", btn_all: "📂 Show All", btn_news: "🔥 New (5 days)", widget_copies: "Copies:", qr_text: "Scan the QR Code from your PC:",
+                banner_text: "Listen to the full original tracks in High Definition:",
+                banner_btn: "▶️ Official YouTube Channel",
                 m_content: `<h2>MAU•SCORPIO•EDITION: Your voice deserves respect.</h2>
                 <blockquote>"Singing to a quality backing track enhances your singing. Your voice deserves respect."</blockquote>
                 <p>This is the principle upon which I founded <strong>MAU•SCORPIO•EDITION</strong>. I don't just provide audio files; I provide a tool that elevates artistic performance, ensuring the technical dignity every singer seeks.</p>
@@ -1094,6 +1101,8 @@
                 copy_btn: "Copiar", btn_karaoke: "🎤 Karaoke", btn_inediti: "🎧 Inéditos", btn_basi_inediti: "🎙️ Karaoke Inéditos", btn_fav: "⭐ Favoritos",
                 b1: "Home", b2: "Video Guía", b3: "Catálogo", b5: "Contacto",
                 c_title: "Archivo Oficial", search_ph: "Buscar canción o artista...", count_testo: "Pistas totales: ", share_btn: "Enviar", btn_all: "📂 Mostrar Todo", btn_news: "🔥 Novedades (5 d)", widget_copies: "Copias:", qr_text: "Escanea el código QR desde tu PC:",
+                banner_text: "Escucha los temas inéditos completos en Alta Definición:",
+                banner_btn: "▶️ Canal Oficial de YouTube",
                 m_content: `<h2>MAU•SCORPIO•EDITION: Tu voz merece respeto.</h2>
                 <blockquote>"Cantar sobre una base de calidad realza el canto. Tu voz merece respeto."</blockquote>
                 <p>Este es el principio sobre el cual fundé <strong>MAU•SCORPIO•EDITION</strong>. No me limito a proporcionar archivos de audio; ofrezco una herramienta de trabajo que eleva la interpretación artística, garantizando la dignidad técnica que cada cantante busca.</p>
@@ -1140,6 +1149,8 @@
                 copy_btn: "Copier", btn_karaoke: "🎤 Karaoké", btn_inediti: "🎧 Inédits", btn_basi_inediti: "🎙️ Karaoké Inédits", btn_fav: "⭐ Favoris",
                 b1: "Home", b2: "Guide Vidéo", b3: "Catalogue", b5: "Contact",
                 c_title: "Archive Officielle", search_ph: "Rechercher une chanson ou un artiste...", count_testo: "Pistes totales : ", share_btn: "Partager", btn_all: "📂 Tout Afficher", btn_news: "🔥 Nouveautés (5 j)", widget_copies: "Copies :", qr_text: "Scannez le code QR depuis votre PC :",
+                banner_text: "Écoutez les morceaux originaux complets en Haute Définition :",
+                banner_btn: "▶️ Chaîne YouTube Officielle",
                 m_content: `<h2>MAU•SCORPIO•EDITION : Ta voix mérite le respect.</h2>
                 <blockquote>"Chanter sur une base de qualité valorise le chant. Ta voix mérite le respect."</blockquote>
                 <p>C’est le principe sur lequel j’ai fondé <strong>MAU•SCORPIO•EDITION</strong>. Je ne me limite pas à fournir des fichiers audio ; je mets à disposition un outil de travail qui élève la performance artistique, garantissant la dignité technique que chaque chanteur recherche.</p>
@@ -1186,6 +1197,8 @@
                 copy_btn: "Kopieren", btn_karaoke: "🎤 Karaoke", btn_inediti: "🎧 Originale", btn_basi_inediti: "🎙️ Karaoke Originale", btn_fav: "⭐ Favoriten",
                 b1: "Home", b2: "Video-Anleitung", b3: "Katalog", b5: "Kontakt",
                 c_title: "Offizielles Archiv", search_ph: "Song oder Künstler suchen...", count_testo: "Gesamte Playbacks: ", share_btn: "Teilen", btn_all: "📂 Alles Zeigen", btn_news: "🔥 Neuheiten (5 T)", widget_copies: "Kopien:", qr_text: "Scanne den QR-Code vom PC aus:",
+                banner_text: "Höre dir die vollständigen Originale in High Definition an:",
+                banner_btn: "▶️ Offizieller YouTube-Kanal",
                 m_content: `<h2>MAU•SCORPIO•EDITION: Deine Stimme verdient Respekt.</h2>
                 <blockquote>"Auf einem hochwertigen Playback zu singen, wertet den Gesang auf. Deine Stimme verdient Respekt."</blockquote>
                 <p>Dies ist das Prinzip, auf dem ich <strong>MAU•SCORPIO•EDITION</strong> gegründet habe. Ich liefere nicht nur Audiodateien; ich stelle ein Arbeitswerkzeug zur Verfügung, das die künstlerische Darbietung hebt und die technische Qualität garantiert, die jeder Sänger sucht.</p>
@@ -1257,6 +1270,8 @@
             
             document.getElementById('contatti-content').innerHTML = data.contatti_testo;
             document.getElementById('testo-qr').innerText = data.qr_text;
+            document.getElementById('testoBannerInediti').innerText = data.banner_text;
+            document.getElementById('btnBannerInediti').innerText = data.banner_btn;
             
             aggiornaContatoreCopie();
             if(typeof aggiornaContatoreFav === 'function') aggiornaContatoreFav();
