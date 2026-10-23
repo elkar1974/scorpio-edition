@@ -462,6 +462,11 @@
                 <button id="btnCatKaraoke" class="filter-btn active" onclick="setCategory('KARAOKE')">🎤 Karaoke</button>
                 <button id="btnCatBasiInediti" class="filter-btn" onclick="setCategory('BASI_INEDITI')">🎙️ Basi Inediti</button>
             </div>
+
+            <div id="bannerIneditiYouTube" style="display: none; margin: 10px 10px 0 10px; padding: 12px; background: rgba(255, 0, 0, 0.15); border: 1px solid rgba(255, 0, 0, 0.5); border-radius: 8px; text-align: center; box-sizing: border-box;">
+                <p style="color: #fff; font-size: 0.85em; margin: 0 0 8px 0; font-style: italic;">Ascolta gli inediti completi in Alta Definizione:</p>
+                <a href="https://www.youtube.com/@ScorpioEditionOfficial" target="_blank" style="display: inline-block; background-color: #FF0000; color: #FFFFFF; padding: 8px 16px; text-decoration: none; font-weight: bold; border-radius: 6px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.5px;">▶️ Canale YouTube Ufficiale</a>
+            </div>
             
             <div class="filter-group">
                 <button id="btnFilterAll" class="filter-btn active" onclick="setFilter(false)">📂 Mostra Tutto</button>
@@ -663,6 +668,14 @@
             currentCategory = cat;
             document.getElementById('btnCatKaraoke').classList.toggle('active', cat === 'KARAOKE');
             document.getElementById('btnCatBasiInediti').classList.toggle('active', cat === 'BASI_INEDITI');
+            
+            const banner = document.getElementById('bannerIneditiYouTube');
+            if (cat === 'BASI_INEDITI') {
+                banner.style.display = 'block';
+            } else {
+                banner.style.display = 'none';
+            }
+            
             renderTracks(document.getElementById('cerca').value);
         };
 
