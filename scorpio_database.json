@@ -103605,5 +103605,19 @@
         "copiaTesto": "Lady Marmalade [Patti Labelle * SCORPIO *]",
         "data": "2026-10-27",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Bad Times",
+        "artista": "Imael Angel",
+        "copiaTesto": "Bad Times [Imael Angel * SCORPIO EDITION *]",
+        "data": "2026-10-27",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Want A Little Sugar In My Bowl",
+        "artista": "Nina Simone",
+        "copiaTesto": "I Want A Little Sugar In My Bowl [Nina Simone]",
+        "data": "2026-10-27",
+        "categoria": "KARAOKE"
     }
 ]
