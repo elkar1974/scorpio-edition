@@ -860,6 +860,7 @@
             const artista = document.getElementById('reqArtista').value.trim();
             const titolo = document.getElementById('reqTitolo').value.trim();
             const note = document.getElementById('reqNote').value.trim();
+            const emailUser = document.getElementById('reqEmail').value.trim();
             const esito = document.getElementById('esitoRichiesta');
             const btn = document.getElementById('btnInviaRichiesta');
 
@@ -933,6 +934,7 @@
                         "Artista Richiesto": artista,
                         "Titolo Brano": titolo,
                         "Note o Richiedente": note || "Nessuna nota specificata",
+                        "Tua Email": emailUser || "Non fornita dall'utente",
                         "Data Richiesta": new Date().toLocaleString('it-IT')
                     })
                 });
@@ -949,6 +951,7 @@
                     document.getElementById('reqArtista').value = '';
                     document.getElementById('reqTitolo').value = '';
                     document.getElementById('reqNote').value = '';
+                    document.getElementById('reqEmail').value = '';
                     
                     if (window.umami) {
                         window.umami.track('Richiesta Brano In-App', { artista: artista, brano: titolo });
@@ -1194,6 +1197,9 @@ Canta al massimo livello!`;
                     <label for="reqNote">✍️ Tuo Nome / Note Aggiuntive</label>
                     <textarea id="reqNote" rows="2" placeholder="Es. Versione acustica, tonalità originale..."></textarea>
                     
+                    <label for="reqEmail">📧 Tua Email (Facoltativa)</label>
+                    <input type="email" id="reqEmail" placeholder="Inserisci la mail per ricevere l'esito...">
+                    
                     <button type="button" class="btn-invia-richiesta" id="btnInviaRichiesta" onclick="inviaRichiestaBrano()">Invia Richiesta</button>
                     <div id="esitoRichiesta" class="richiesta-esito"></div>
                 </div>
@@ -1252,6 +1258,9 @@ Canta al massimo livello!`;
                     
                     <label for="reqNote">✍️ Your Name / Additional Notes</label>
                     <textarea id="reqNote" rows="2" placeholder="E.g. Acoustic version, original key..."></textarea>
+                    
+                    <label for="reqEmail">📧 Your Email (Optional)</label>
+                    <input type="email" id="reqEmail" placeholder="Enter your email to receive the outcome...">
                     
                     <button type="button" class="btn-invia-richiesta" id="btnInviaRichiesta" onclick="inviaRichiestaBrano()">Send Request</button>
                     <div id="esitoRichiesta" class="richiesta-esito"></div>
@@ -1312,6 +1321,9 @@ Canta al massimo livello!`;
                     <label for="reqNote">✍️ Tu Nombre / Notas Adicionales</label>
                     <textarea id="reqNote" rows="2" placeholder="Ej. Versión acústica, tono original..."></textarea>
                     
+                    <label for="reqEmail">📧 Tu Email (Opcional)</label>
+                    <input type="email" id="reqEmail" placeholder="Ingresa tu correo para recibir el resultado...">
+                    
                     <button type="button" class="btn-invia-richiesta" id="btnInviaRichiesta" onclick="inviaRichiestaBrano()">Enviar Solicitud</button>
                     <div id="esitoRichiesta" class="richiesta-esito"></div>
                 </div>
@@ -1340,7 +1352,7 @@ Canta al massimo livello!`;
                 <h3>Au-delà des Covers : Mes Chansons Inédites</h3>
                 <p>Le projet évolue : en plus des bases classiques, j'ai introduit mes créations musicales originales. Chaque chanson inédite est présente dans le catalogue en deux versions : la <strong>version complète (chantée)</strong> pour l'écoute, l'étude de la ligne vocale et l'inspiration, et la <strong>base instrumentale (karaoké)</strong> correspondante avec une synchronisation millimétrée des paroles. Une opportunité unique pour ceux qui veulent interpréter des chansons nouvelles et originales sur StarMaker avec la garantie de qualité de la marque Scorpio.</p>
                 <h3>Un voyage sans retour vers la Qualité</h3>
-                <p>Je sais très bien que la différence se sent dès la première note. C’est pourquoi j’ai transformé l’expérience de ceux qui utilisent mes fichiers en un point de non-retour : quiconque choisit <strong>MAU•SCORPIO•EDITION</strong> pour ses prestations ne revient jamais en arrière. Lorsque l'on goûte à la certitude d'une piste qui ne trahit jamais, qui met en valeur chaque nuance de sa voix et qui accompagne l'écoute et la prestation avec une précision absolue, la recherche d'alternatives devient superflue.</p>
+                <p>Je sais très bien que la différence se sent dès la première note. C’est pourquoi j’ai transformé l’expérience de ceux qui utilisent mes fichiers en un point de non-retour : quiconque choisit <strong>MAU•SCORPIO•EDITION</strong> pour ses prestations ne revient jamais en arrière. Lorsque l'on goûte à la certitude d'une piste qui ne trahit jamais, qui met en valeur chaque nuance de sa voix et qui accompagne l'écoute et la prestation avec une précision absolue, la recherche d'alternatives devient superflua.</p>
                 <h3>La valeur du bouche-à-oreille</h3>
                 <p>Je crois fermement qu’un produit de qualité supérieure n’a pas besoin de poussées forcées. <strong>MAU•SCORPIO•EDITION</strong> est un projet qui vit de l'expérience directe des professionnels et passionnés. C’est la satisfaction de celui qui trouve enfin la piste parfaite, la sécurité de celui qui monte sur scène en sachant qu’il a un son impeccable derrière lui, qui génère ce bouche-à-oreille naturel qui guide d'autres chanteurs vers mon catalogue.</p>
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Parce que ta voix est ton instrument le plus précieux. Traite-la comme tel.</em></p>
@@ -1370,6 +1382,9 @@ Canta al massimo livello!`;
                     
                     <label for="reqNote">✍️ Votre Nom / Notes Additionnelles</label>
                     <textarea id="reqNote" rows="2" placeholder="Ex. Version acoustique, tonalité originale..."></textarea>
+                    
+                    <label for="reqEmail">📧 Votre Email (Facultatif)</label>
+                    <input type="email" id="reqEmail" placeholder="Entrez votre email pour recevoir le résultat...">
                     
                     <button type="button" class="btn-invia-richiesta" id="btnInviaRichiesta" onclick="inviaRichiestaBrano()">Envoyer la Demande</button>
                     <div id="esitoRichiesta" class="richiesta-esito"></div>
@@ -1429,6 +1444,9 @@ Canta al massimo livello!`;
                     
                     <label for="reqNote">✍️ Dein Name / Zusätzliche Notizen</label>
                     <textarea id="reqNote" rows="2" placeholder="Z.B. Akustikversion, Originaltonart..."></textarea>
+                    
+                    <label for="reqEmail">📧 Deine E-Mail (Optional)</label>
+                    <input type="email" id="reqEmail" placeholder="Gib deine E-Mail ein, um das Ergebnis zu erhalten...">
                     
                     <button type="button" class="btn-invia-richiesta" id="btnInviaRichiesta" onclick="inviaRichiestaBrano()">Anfrage Senden</button>
                     <div id="esitoRichiesta" class="richiesta-esito"></div>
