@@ -859,7 +859,8 @@
         window.inviaRichiestaBrano = async function() {
             const artista = document.getElementById('reqArtista').value.trim();
             const titolo = document.getElementById('reqTitolo').value.trim();
-            const paese = document.getElementById('reqPaese') ? document.getElementById('reqPaese').value.trim() : '';
+            const paeseSelect = document.getElementById('reqPaese');
+            const paese = paeseSelect ? paeseSelect.options[paeseSelect.selectedIndex].value : 'Italia 🇮🇹';
             const note = document.getElementById('reqNote').value.trim();
             const emailUser = document.getElementById('reqEmail').value.trim();
             const esito = document.getElementById('esitoRichiesta');
@@ -904,7 +905,7 @@
                         _captcha: "false",
                         "Artista Richiesto": artista,
                         "Titolo Brano": titolo,
-                        "Nazione Utente": paese || "Non specificata",
+                        "Nazione Utente": paese,
                         "Note o Richiedente": note || "Nessuna nota specificata",
                         "Tua Email": emailUser || "Non fornita dall'utente",
                         "Data Richiesta": new Date().toLocaleString('it-IT')
@@ -922,7 +923,6 @@
 
                     document.getElementById('reqArtista').value = '';
                     document.getElementById('reqTitolo').value = '';
-                    if(document.getElementById('reqPaese')) document.getElementById('reqPaese').value = '';
                     document.getElementById('reqNote').value = '';
                     document.getElementById('reqEmail').value = '';
                     
@@ -1167,8 +1167,14 @@ Canta al massimo livello!`;
                     <label for="reqTitolo">🎵 Titolo del Brano *</label>
                     <input type="text" id="reqTitolo" placeholder="Es. Sally, Grande grande grande...">
                     
-                    <label for="reqPaese">🌍 Tua Nazione / Stato</label>
-                    <input type="text" id="reqPaese" placeholder="Es. Italia, USA, España, France...">
+                    <label for="reqPaese">🌍 Seleziona la tua Nazione / Lingua *</label>
+                    <select id="reqPaese">
+                        <option value="Italia 🇮🇹">🇮🇹 Italia (Italiano)</option>
+                        <option value="United Kingdom / USA 🇬🇧">🇬🇧 English (International / USA / UK)</option>
+                        <option value="España 🇪🇸">🇪🇸 España / América Latina (Español)</option>
+                        <option value="France 🇫🇷">🇫🇷 France / Belgique (Français)</option>
+                        <option value="Deutschland 🇩🇪">🇩🇪 Deutschland / Österreich (Deutsch)</option>
+                    </select>
 
                     <label for="reqNote">✍️ Tuo Nome / Note Aggiuntive</label>
                     <textarea id="reqNote" rows="2" placeholder="Es. Versione acustica, tonalità originale..."></textarea>
@@ -1232,8 +1238,14 @@ Canta al massimo livello!`;
                     <label for="reqTitolo">🎵 Song Title *</label>
                     <input type="text" id="reqTitolo" placeholder="E.g. Bohemian Rhapsody, Hello...">
                     
-                    <label for="reqPaese">🌍 Your Country</label>
-                    <input type="text" id="reqPaese" placeholder="E.g. USA, UK, Germany, Japan...">
+                    <label for="reqPaese">🌍 Select your Country / Language *</label>
+                    <select id="reqPaese">
+                        <option value="Italia 🇮🇹">🇮🇹 Italia (Italiano)</option>
+                        <option value="United Kingdom / USA 🇬🇧" selected>🇬🇧 English (International / USA / UK)</option>
+                        <option value="España 🇪🇸">🇪🇸 España / América Latina (Español)</option>
+                        <option value="France 🇫🇷">🇫🇷 France / Belgique (Français)</option>
+                        <option value="Deutschland 🇩🇪">🇩🇪 Deutschland / Österreich (Deutsch)</option>
+                    </select>
 
                     <label for="reqNote">✍️ Your Name / Additional Notes</label>
                     <textarea id="reqNote" rows="2" placeholder="E.g. Acoustic version, original key..."></textarea>
@@ -1297,8 +1309,14 @@ Canta al massimo livello!`;
                     <label for="reqTitolo">🎵 Título de la Canción *</label>
                     <input type="text" id="reqTitolo" placeholder="Ej. Hips Don't Lie, Hey...">
                     
-                    <label for="reqPaese">🌍 Tu País</label>
-                    <input type="text" id="reqPaese" placeholder="Ej. España, México, Argentina...">
+                    <label for="reqPaese">🌍 Selecciona tu País / Idioma *</label>
+                    <select id="reqPaese">
+                        <option value="Italia 🇮🇹">🇮🇹 Italia (Italiano)</option>
+                        <option value="United Kingdom / USA 🇬🇧">🇬🇧 English (International / USA / UK)</option>
+                        <option value="España 🇪🇸" selected>🇪🇸 España / América Latina (Español)</option>
+                        <option value="France 🇫🇷">🇫🇷 France / Belgique (Français)</option>
+                        <option value="Deutschland 🇩🇪">🇩🇪 Deutschland / Österreich (Deutsch)</option>
+                    </select>
 
                     <label for="reqNote">✍️ Tu Nombre / Notas Adicionales</label>
                     <textarea id="reqNote" rows="2" placeholder="Ej. Versión acústica, tono original..."></textarea>
@@ -1362,8 +1380,14 @@ Canta al massimo livello!`;
                     <label for="reqTitolo">🎵 Titre de la Chanson *</label>
                     <input type="text" id="reqTitolo" placeholder="Ex. La Vie en rose, Tous les mêmes...">
                     
-                    <label for="reqPaese">🌍 Votre Pays</label>
-                    <input type="text" id="reqPaese" placeholder="Ex. France, Belgique, Canada...">
+                    <label for="reqPaese">🌍 Sélectionnez votre Pays / Langue *</label>
+                    <select id="reqPaese">
+                        <option value="Italia 🇮🇹">🇮🇹 Italia (Italiano)</option>
+                        <option value="United Kingdom / USA 🇬🇧">🇬🇧 English (International / USA / UK)</option>
+                        <option value="España 🇪🇸">🇪🇸 España / América Latina (Español)</option>
+                        <option value="France 🇫🇷" selected>🇫🇷 France / Belgique (Français)</option>
+                        <option value="Deutschland 🇩🇪">🇩🇪 Deutschland / Österreich (Deutsch)</option>
+                    </select>
 
                     <label for="reqNote">✍️ Votre Nom / Notes Additionnelles</label>
                     <textarea id="reqNote" rows="2" placeholder="Ex. Version acoustique, tonalité originale..."></textarea>
@@ -1427,8 +1451,14 @@ Canta al massimo livello!`;
                     <label for="reqTitolo">🎵 Songtitel *</label>
                     <input type="text" id="reqTitolo" placeholder="Z.B. 99 Luftballons, Mensch...">
                     
-                    <label for="reqPaese">🌍 Dein Land</label>
-                    <input type="text" id="reqPaese" placeholder="Z.B. Deutschland, Österreich, Schweiz...">
+                    <label for="reqPaese">🌍 Wähle dein Land / Sprache *</label>
+                    <select id="reqPaese">
+                        <option value="Italia 🇮🇹">🇮🇹 Italia (Italiano)</option>
+                        <option value="United Kingdom / USA 🇬🇧">🇬🇧 English (International / USA / UK)</option>
+                        <option value="España 🇪🇸">🇪🇸 España / América Latina (Español)</option>
+                        <option value="France 🇫🇷">🇫🇷 France / Belgique (Français)</option>
+                        <option value="Deutschland 🇩🇪" selected>🇩🇪 Deutschland / Österreich (Deutsch)</option>
+                    </select>
 
                     <label for="reqNote">✍️ Dein Name / Zusätzliche Notizen</label>
                     <textarea id="reqNote" rows="2" placeholder="Z.B. Akustikversion, Originaltonart..."></textarea>
