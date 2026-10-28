@@ -866,7 +866,7 @@
             }, 2600);
         }
 
-        window.inviaRichiestaBrano = async function() {
+        window.inviaRichiestaBrano = function() {
             const artista = document.getElementById('reqArtista').value.trim();
             const titolo = document.getElementById('reqTitolo').value.trim();
             const paeseSelect = document.getElementById('reqPaese');
@@ -874,7 +874,6 @@
             const note = document.getElementById('reqNote').value.trim();
             const emailUser = document.getElementById('reqEmail').value.trim();
             const esito = document.getElementById('esitoRichiesta');
-            const btn = document.getElementById('btnInviaRichiesta');
 
             const params = new URLSearchParams(window.location.search);
             const lang = params.get('lang') || 'it';
@@ -882,38 +881,28 @@
             const dizionarioMessaggi = {
                 it: { 
                     vuoto: "Compila sia il nome dell'artista che il titolo del brano.", 
-                    btnTesto: "Invia Richiesta", 
                     okEsito: "Richiesta inviata con successo!", 
-                    okToast: "Richiesta inviata a Maurizio!",
-                    timeoutEsito: "L'invio sta impiegando più del previsto. Controlla la richiesta o riprova."
+                    okToast: "Richiesta inviata a Maurizio!"
                 },
                 en: { 
                     vuoto: "Please fill in both the artist name and the song title.", 
-                    btnTesto: "Send Request", 
                     okEsito: "Request sent successfully!", 
-                    okToast: "Request sent to Maurizio!",
-                    timeoutEsito: "Sending is taking longer than expected. Please check or try again."
+                    okToast: "Request sent to Maurizio!"
                 },
                 es: { 
                     vuoto: "Por favor, completa el nombre del artista y el título.", 
-                    btnTesto: "Enviar Solicitud", 
                     okEsito: "¡Solicitud enviada con éxito!", 
-                    okToast: "¡Solicitud enviada a Maurizio!",
-                    timeoutEsito: "El envío está tardando más de lo previsto. Revisa o vuelve a intentarlo."
+                    okToast: "¡Solicitud enviada a Maurizio!"
                 },
                 fr: { 
                     vuoto: "Veuillez remplir le nom de l'artiste et le titre du morceau.", 
-                    btnTesto: "Envoyer la Demande", 
                     okEsito: "Demande envoyée avec succès !", 
-                    okToast: "Demande envoyée à Maurizio !",
-                    timeoutEsito: "L'envoi prend plus de temps que prévu. Vérifiez ou réessayez."
+                    okToast: "Demande envoyée à Maurizio !"
                 },
                 de: { 
                     vuoto: "Bitte fülle Künstlernamen und Songtitel aus.", 
-                    btnTesto: "Anfrage Senden", 
                     okEsito: "Anfrage erfolgreich gesendet!", 
-                    okToast: "Anfrage an Maurizio gesendet!",
-                    timeoutEsito: "Der Versand dauert länger als erwartet. Bitte prüfen oder erneut versuchen."
+                    okToast: "Anfrage an Maurizio gesendet!"
                 }
             };
 
@@ -926,81 +915,43 @@
                 return;
             }
 
-            btn.disabled = true;
-            esito.style.display = 'none';
-
-            // Gestione Countdown visivo portato a 25 secondi
-            let secondiRimasti = 25;
-            btn.innerText = `Invio in corso... (${secondiRimasti}s)`;
-            
-            const intervalloCountdown = setInterval(() => {
-                secondiRimasti--;
-                if (secondiRimasti > 0) {
-                    btn.innerText = `Invio in corso... (${secondiRimasti}s)`;
-                }
-            }, 1000);
-
-            const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), 25000); // Timeout a 25 secondi (25000 millisecondi)
-
+            // Invio immediato in background a FormSubmit
             const oggettoEmail = `🚨 [SCORPIO EDITION] RICHIESTA BRANO: ${artista} - ${titolo}`;
 
-            try {
-                const response = await fetch("https://formsubmit.co/ajax/maurizio.chiarilli.mc@gmail.com", {
-                    method: "POST",
-                    headers: { 
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    signal: controller.signal,
-                    body: JSON.stringify({
-                        _subject: oggettoEmail,
-                        _template: "table",
-                        _captcha: "false",
-                        "Artista Richiesto": artista,
-                        "Titolo Brano": titolo,
-                        "Nazione Utente": paese,
-                        "Note o Richiedente": note || "Nessuna nota specificata",
-                        "Tua Email": emailUser || "Non fornita dall'utente",
-                        "Data Richiesta": new Date().toLocaleString('it-IT')
-                    })
-                });
+            fetch("https://formsubmit.co/ajax/maurizio.chiarilli.mc@gmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    _subject: oggettoEmail,
+                    _template: "table",
+                    _captcha: "false",
+                    "Artista Richiesto": artista,
+                    "Titolo Brano": titolo,
+                    "Nazione Utente": paese,
+                    "Note o Richiedente": note || "Nessuna nota specificata",
+                    "Tua Email": emailUser || "Non fornita dall'utente",
+                    "Data Richiesta": new Date().toLocaleString('it-IT')
+                })
+            }).catch(() => {});
 
-                clearInterval(intervalloCountdown);
-                clearTimeout(timeoutId);
+            // Conferma visiva immediata
+            esito.className = 'richiesta-esito ok';
+            esito.style.display = 'block';
+            esito.innerText = testi.okEsito;
+            
+            mostraToast(testi.okToast);
 
-                const data = await response.json().catch(() => ({}));
-
-                if (response.ok && (data.success === "true" || data.success === true || response.status === 200)) {
-                    esito.className = 'richiesta-esito ok';
-                    esito.style.display = 'block';
-                    esito.innerText = testi.okEsito;
-                    
-                    mostraToast(testi.okToast);
-
-                    document.getElementById('reqArtista').value = '';
-                    document.getElementById('reqTitolo').value = '';
-                    document.getElementById('reqNote').value = '';
-                    document.getElementById('reqEmail').value = '';
-                    
-                    if (window.umami) {
-                        window.umami.track('Richiesta Brano In-App', { artista: artista, brano: titolo });
-                    }
-                } else {
-                    esito.className = 'richiesta-esito err';
-                    esito.style.display = 'block';
-                    esito.innerText = testi.timeoutEsito;
-                }
-            } catch (err) {
-                clearInterval(intervalloCountdown);
-                clearTimeout(timeoutId);
-
-                esito.className = 'richiesta-esito err';
-                esito.style.display = 'block';
-                esito.innerText = testi.timeoutEsito;
-            } finally {
-                btn.disabled = false;
-                btn.innerText = testi.btnTesto;
+            // Svuota i campi
+            document.getElementById('reqArtista').value = '';
+            document.getElementById('reqTitolo').value = '';
+            document.getElementById('reqNote').value = '';
+            document.getElementById('reqEmail').value = '';
+            
+            if (window.umami) {
+                window.umami.track('Richiesta Brano In-App', { artista: artista, brano: titolo });
             }
         };
 
