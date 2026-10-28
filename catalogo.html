@@ -929,8 +929,8 @@
             btn.disabled = true;
             esito.style.display = 'none';
 
-            // Gestione Countdown visivo di 7 secondi
-            let secondiRimasti = 7;
+            // Gestione Countdown visivo portato a 25 secondi
+            let secondiRimasti = 25;
             btn.innerText = `Invio in corso... (${secondiRimasti}s)`;
             
             const intervalloCountdown = setInterval(() => {
@@ -941,7 +941,7 @@
             }, 1000);
 
             const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), 7000); // Interrupt automatico a 7 secondi
+            const timeoutId = setTimeout(() => controller.abort(), 25000); // Timeout a 25 secondi (25000 millisecondi)
 
             const oggettoEmail = `🚨 [SCORPIO EDITION] RICHIESTA BRANO: ${artista} - ${titolo}`;
 
