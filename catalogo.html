@@ -915,10 +915,10 @@
                 return;
             }
 
-            // Invio immediato in background a FormSubmit
+            // Invio immediato in background a FormSubmit con la nuova email
             const oggettoEmail = `🚨 [SCORPIO EDITION] RICHIESTA BRANO: ${artista} - ${titolo}`;
 
-            fetch("https://formsubmit.co/ajax/maurizio.chiarilli.mc@gmail.com", {
+            fetch("https://formsubmit.co/ajax/mauscorpioedition@gmail.com", {
                 method: "POST",
                 headers: { 
                     'Content-Type': 'application/json',
@@ -998,7 +998,6 @@
             const params = new URLSearchParams(window.location.search);
             const lang = params.get('lang') || 'it';
             
-            // Calcolo automatico a scaglioni di 500 basi (es. 14.000, 14.500, 15.000...)
             const bloccoBasi = Math.floor(basi.length / 500) * 500;
             const formatoLocale = (lang === 'en') ? 'en-US' : (lang === 'de') ? 'de-DE' : (lang === 'fr') ? 'fr-FR' : 'it-IT';
             const totaleFormattato = bloccoBasi.toLocaleString(formatoLocale);
@@ -1087,7 +1086,6 @@ Singe auf höchstem Niveau!`;
                 messaggioToast = "EINFÜGEN in Family, Gruppen, Follower... Danke für die Hilfe!";
                 
             } else {
-                // Italiano (Default)
                 messaggio = `🎤 VUOI FARE IL SALTO DI QUALITÀ SU STARMAKER?
 
 La tua voce merita arrangiamenti impeccabili,
@@ -1111,7 +1109,6 @@ Canta al massimo livello!`;
             navigator.clipboard.writeText(messaggio).then(() => {
                 mostraToast(messaggioToast);
             }).catch(() => {
-                // Fallback di sicurezza
                 navigator.clipboard.writeText(messaggio);
                 mostraToast(messaggioToast);
             });
@@ -1292,7 +1289,7 @@ Canta al massimo livello!`;
                 <h3>Un viaje de ida hacia la Calidad</h3>
                 <p>Sé muy bien que la diferencia se siente desde la primera nota. Por eso he transformado la experiencia de quienes usan mis bases en un punto de no retorno: quien elige <strong>MAU•SCORPIO•EDITION</strong> para sus actuaciones, no vuelve atrás. Cuando pruebas la certeza de una pista que nunca traiciona, que resalta cada matiz de tu voz y que acompaña la escucha y la actuación con precisión absoluta, la búsqueda de alternativas se vuelve superflua.</p>
                 <h3>El valor del boca a boca</h3>
-                <p>Creo firmamente que un producto de calidad superior no necesita empujes forzados. <strong>MAU•SCORPIO•EDITION</strong> es un proyecto que vive de la experiencia directa de profesionales y entusiastas. Es la satisfaction de quien encuentra finalmente la pista perfecta, la seguridad de quien sube al escenario sabiendo que tiene un sonido impecable, lo que genera ese boca a boca natural que guía a otros cantantes hacia mi catálogo.</p>
+                <p>Creo firmemente que un producto de calidad superior no necesita empujes forzados. <strong>MAU•SCORPIO•EDITION</strong> es un proyecto que vive de la experiencia directa de profesionales y entusiastas. Es la satisfaction de quien encuentra finalmente la pista perfecta, la seguridad de quien sube al escenario sabiendo que tiene un sonido impecable, lo que genera ese boca a boca natural que guía a otros cantantes hacia mi catálogo.</p>
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Porque tu voz es tu instrumento más preciado. Trátala como tal.</em></p>
                 <blockquote>"No pido que me creas. Te pido que pruebes. Tu voz te convencerá y tu escenario contará la diferencia."</blockquote>`,
                 g_title: "Guía Escrita", 
@@ -1361,7 +1358,7 @@ Canta al massimo livello!`;
                 <h3>Au-delà des Covers : Mes Chansons Inédites</h3>
                 <p>Le projet évolue : en plus des bases classiques, j'ai introduit mes créations musicales originales. Chaque chanson inédite est présente dans le catalogue en deux versions : la <strong>version complète (chantée)</strong> pour l'écoute, l'étude de la ligne vocale et l'inspiration, et la <strong>base instrumentale (karaoké)</strong> correspondante avec une synchronisation millimétrée des paroles. Une opportunité unique pour ceux qui veulent interpréter des chansons nouvelles et originales sur StarMaker avec la garantie de qualité de la marque Scorpio.</p>
                 <h3>Un voyage sans retour vers la Qualité</h3>
-                <p>Je sais très bien que la différence se sent dès la première note. C’est pourquoi j’ai transformé l’expérience de ceux qui utilisent mes fichiers en un point de non-retour : quiconque choisit <strong>MAU•SCORPIO•EDITION</strong> pour ses prestations ne revient jamais en arrière. Lorsque l'on goûte à la certitude d'une piste qui ne trahit jamais, qui met en valeur chaque nuance de sa voix et qui accompagne l'écoute et la prestation avec une précision absolue, la recherche d'alternatives devient superflua.</p>
+                <p>Je sais très bien que la différence se sent dès la première note. C’est pourquoi j’ai transformé l’expérience de ceux qui utilisent mes fichiers en un point de non-retour : quiconque choisit <strong>MAU•SCORPIO•EDITION</strong> pour ses prestations ne revient jamais en arrière. Lorsque l'on goûte à la certitude d'une piste qui ne trahit jamais, qui met en valeur chaque nuance de sa voix et qui accompagne l'écoute et la prestation avec une précision absolue, la recherche d'alternatives devient superflue.</p>
                 <h3>La valeur du bouche-à-oreille</h3>
                 <p>Je crois fermement qu’un produit de qualité supérieure n’a pas besoin de poussées forcées. <strong>MAU•SCORPIO•EDITION</strong> est un projet qui vit de l'expérience directe des professionnels et passionnés. C’est la satisfaction de celui qui trouve enfin la piste parfaite, la sécurité de celui qui monte sur scène en sachant qu’il a un son impeccable derrière lui, qui génère ce bouche-à-oreille naturel qui guide d'autres chanteurs vers mon catalogue.</p>
                 <p><strong>MAU•SCORPIO•EDITION.</strong><br><em>Parce que ta voix est ton instrument le plus précieux. Traite-la comme tel.</em></p>
@@ -1481,7 +1478,7 @@ Canta al massimo livello!`;
 
                 <div style="text-align: center; margin-top: 30px;">
                     <p style="color: #888; font-size: 0.85em; margin-bottom: 8px;">Für Zusammenarbeit oder allgemeine Anfragen:</p>
-                    <a href="https://wa.me/393534099223?text=Hallo%20Maurizio!%20Ich%20schreibe%20aus%20dem%20Scorpio%20Edition%20Katalog%20f%C3%BCr%20allgemeine%20Anfragen." target="_blank" style="display: inline-block; background-color: transparent; border: 1px solid #25D366; color: #25D366; padding: 8px 18px; text-decoration: none; font-weight: 600; border-radius: 20px; font-size: 0.85em;">💬 Schreib mir auf WhatsApp</a>
+                    <a href="https://wa.me/393534099223?text=Hallo%20Maurizio!%20Ich%20schreibe%20aus%20dem%20Scorpio%20Edition%20Katalog%20f%C3%5C%FCr%20allgemeine%20Anfragen." target="_blank" style="display: inline-block; background-color: transparent; border: 1px solid #25D366; color: #25D366; padding: 8px 18px; text-decoration: none; font-weight: 600; border-radius: 20px; font-size: 0.85em;">💬 Schreib mir auf WhatsApp</a>
                 </div>`
             }
         };
