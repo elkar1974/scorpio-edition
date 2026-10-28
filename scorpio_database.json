@@ -103619,5 +103619,1433 @@
         "copiaTesto": "I Want A Little Sugar In My Bowl [Nina Simone]",
         "data": "2026-10-27",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mind",
+        "artista": "Jack Ü Feat. Kai",
+        "copiaTesto": "Mind [Jack Ü Feat. Kai * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Moncherie",
+        "artista": "Irama Feat. Epoque",
+        "copiaTesto": "Moncherie [Irama Feat. Epoque * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mother Popcorn",
+        "artista": "James Brown",
+        "copiaTesto": "Mother Popcorn [James Brown * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "My . Life",
+        "artista": "J. Cole Feat. 21 Savage",
+        "copiaTesto": "My . Life [J. Cole Feat. 21 Savage * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "My Love Goes On",
+        "artista": "James Morrison Feat. Joss Stone",
+        "copiaTesto": "My Love Goes On [James Morrison Feat. Joss Stone]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Never Tear Us Apart",
+        "artista": "Inxs",
+        "copiaTesto": "Never Tear Us Apart [Inxs * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Niente Da Perdere",
+        "artista": "Izi",
+        "copiaTesto": "Niente Da Perdere [Izi * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Night Train",
+        "artista": "James Brown",
+        "copiaTesto": "Night Train [James Brown * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Nimble Bastard",
+        "artista": "Incubus",
+        "copiaTesto": "Nimble Bastard [Incubus * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "No Drama",
+        "artista": "James Hype Feat. Craig David",
+        "copiaTesto": "No Drama [James Hype Feat. Craig David * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Non Ho Fatto L'Università",
+        "artista": "Irama",
+        "copiaTesto": "Non Ho Fatto L'Università [Irama * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Oh Happy Day",
+        "artista": "Irene Grandi",
+        "copiaTesto": "Oh Happy Day [Irene Grandi * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Oh Mio Dio",
+        "artista": "Izi",
+        "copiaTesto": "Oh Mio Dio [Izi * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Oh, Susannah",
+        "artista": "James Taylor",
+        "copiaTesto": "Oh, Susannah [James Taylor * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ok",
+        "artista": "Iyaz",
+        "copiaTesto": "Ok [Iyaz * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ol' Man River",
+        "artista": "James Taylor",
+        "copiaTesto": "Ol' Man River [James Taylor * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Open Bar",
+        "artista": "Il Pagante Feat. The Kolors",
+        "copiaTesto": "Open Bar [Il Pagante Feat. The Kolors * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ordinary Life",
+        "artista": "Imanbek - Kddk Feat. Kiddo - Wiz Khalifa",
+        "copiaTesto": "Ordinary Life [Imanbek - Kddk Feat. Kiddo - Wiz Khalifa]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Original Sin",
+        "artista": "Inxs",
+        "copiaTesto": "Original Sin [Inxs * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ossidiana",
+        "artista": "Holden",
+        "copiaTesto": "Ossidiana [Holden * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Out Here On My Own",
+        "artista": "Irene Cara",
+        "copiaTesto": "Out Here On My Own [Irene Cara * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "P E A C E",
+        "artista": "Free - Hillsong Young",
+        "copiaTesto": "P E A C E [Free - Hillsong Young * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Paint By Numbers",
+        "artista": "Harry Styles",
+        "copiaTesto": "Paint By Numbers [Harry Styles * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Parle À Ta Tête",
+        "artista": "Indila",
+        "copiaTesto": "Parle À Ta Tête [Indila * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Patadas De Ahogado",
+        "artista": "Hugel Feat. Latin Mafia",
+        "copiaTesto": "Patadas De Ahogado [Hugel Feat. Latin Mafia * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Peer Pressure Feat. Julia Michaels",
+        "artista": "James Bay",
+        "copiaTesto": "Peer Pressure Feat. Julia Michaels [James Bay]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "People Get Up And Drive Your Funky Soul",
+        "artista": "James Brown",
+        "copiaTesto": "People Get Up And Drive Your Funky Soul [James Brown]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Per Te Ci Sarò",
+        "artista": "Il Volo",
+        "copiaTesto": "Per Te Ci Sarò [Il Volo * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Perdere La Testa",
+        "artista": "J-Ax Feat. Giò Sada",
+        "copiaTesto": "Perdere La Testa [J-Ax Feat. Giò Sada * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Phenomena",
+        "artista": "Free - Hillsong Young",
+        "copiaTesto": "Phenomena [Free - Hillsong Young * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Please And Change",
+        "artista": "Imany",
+        "copiaTesto": "Please And Change [Imany * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Pop",
+        "artista": "Harry Styles",
+        "copiaTesto": "Pop [Harry Styles * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Portofino",
+        "artista": "Il Pagante",
+        "copiaTesto": "Portofino [Il Pagante * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Poveri Mai",
+        "artista": "Il Pagante",
+        "copiaTesto": "Poveri Mai [Il Pagante * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Pray For Help",
+        "artista": "Imany",
+        "copiaTesto": "Pray For Help [Imany * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Pull Up",
+        "artista": "J. Rey Soul Feat. Nile Rodgers",
+        "copiaTesto": "Pull Up [J. Rey Soul Feat. Nile Rodgers * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Radical Chic",
+        "artista": "Il Pagante",
+        "copiaTesto": "Radical Chic [Il Pagante * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Radioactive",
+        "artista": "Imagine Dragons",
+        "copiaTesto": "Radioactive [Imagine Dragons * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ready, Steady, Go!",
+        "artista": "Harry Styles",
+        "copiaTesto": "Ready, Steady, Go! [Harry Styles * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Remember When",
+        "artista": "Sander Kleinenberg Feat. Jamie Cullum",
+        "copiaTesto": "Remember When [Sander Kleinenberg Feat. Jamie Cullum]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Rise Up",
+        "artista": "Imagine Dragons",
+        "copiaTesto": "Rise Up [Imagine Dragons * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Roots",
+        "artista": "Imagine Dragons",
+        "copiaTesto": "Roots [Imagine Dragons * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "S.O.S",
+        "artista": "Indila",
+        "copiaTesto": "S.O.S [Indila * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "San Siro",
+        "artista": "Il Pagante Feat. Jake La Furia",
+        "copiaTesto": "San Siro [Il Pagante Feat. Jake La Furia * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Satellite",
+        "artista": "Harry Styles",
+        "copiaTesto": "Satellite [Harry Styles * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Milano Intorno",
+        "artista": "Fedez - J-Ax",
+        "copiaTesto": "Milano Intorno [Fedez - J-Ax * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Non So Dire No",
+        "artista": "Jake La Furia",
+        "copiaTesto": "Non So Dire No [Jake La Furia * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ok",
+        "artista": "Izi Feat. Speranza",
+        "copiaTesto": "Ok [Izi Feat. Speranza * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Saturno E Venere",
+        "artista": "Il Volo Feat. Irama",
+        "copiaTesto": "Saturno E Venere [Il Volo Feat. Irama * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Scusa",
+        "artista": "Izi Feat. Moses Sangare",
+        "copiaTesto": "Scusa [Izi Feat. Moses Sangare * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Se Fem",
+        "artista": "Il Pagante",
+        "copiaTesto": "Se Fem [Il Pagante * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Se Mi Vuoi",
+        "artista": "Irene Grandi Feat. Pino Daniele",
+        "copiaTesto": "Se Mi Vuoi [Irene Grandi Feat. Pino Daniele * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Sea Of Love",
+        "artista": "Israel Kamakawiwo'ole",
+        "copiaTesto": "Sea Of Love [Israel Kamakawiwo'ole * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Season 2 Weight Loss",
+        "artista": "Harry Styles",
+        "copiaTesto": "Season 2 Weight Loss [Harry Styles * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Seat With Me",
+        "artista": "Imany",
+        "copiaTesto": "Seat With Me [Imany * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Secret Ò Life",
+        "artista": "James Taylor",
+        "copiaTesto": "Secret Ò Life [James Taylor * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Shape Of A Broken Heart",
+        "artista": "Imany",
+        "copiaTesto": "Shape Of A Broken Heart [Imany * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "She",
+        "artista": "Harry Styles",
+        "copiaTesto": "She [Harry Styles * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Shine",
+        "artista": "Hugel Feat. French Montana",
+        "copiaTesto": "Shine [Hugel Feat. French Montana * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Show Yourself",
+        "artista": "Idina Menzel Feat. Evan Rachel Wood",
+        "copiaTesto": "Show Yourself [Idina Menzel Feat. Evan Rachel Wood]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Sick And Tired",
+        "artista": "Iann Dior Feat. Mgk",
+        "copiaTesto": "Sick And Tired [Iann Dior Feat. Mgk * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Signs",
+        "artista": "Hugel - Taio Cruz",
+        "copiaTesto": "Signs [Hugel - Taio Cruz * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Silver Lining",
+        "artista": "Imany",
+        "copiaTesto": "Silver Lining [Imany * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Sinking Deep",
+        "artista": "Free Feat. Aodhán King - Hillsong Young",
+        "copiaTesto": "Sinking Deep [Free Feat. Aodhán King - Hillsong Young]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Slide",
+        "artista": "James Bay",
+        "copiaTesto": "Slide [James Bay * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Small World",
+        "artista": "Idina Menzel",
+        "copiaTesto": "Small World [Idina Menzel * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Smart Working",
+        "artista": "Il Pagante",
+        "copiaTesto": "Smart Working [Il Pagante * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Sogno Fragile",
+        "artista": "Irama Feat. Mace",
+        "copiaTesto": "Sogno Fragile [Irama Feat. Mace * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Speak",
+        "artista": "Internet Money Feat. The Kid Laroi",
+        "copiaTesto": "Speak [Internet Money Feat. The Kid Laroi * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Spicy",
+        "artista": "Diplo Feat. Charli Xcx - Herve Pagez",
+        "copiaTesto": "Spicy [Diplo Feat. Charli Xcx - Herve Pagez * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Spingere",
+        "artista": "Il Pagante Feat. Villabanks",
+        "copiaTesto": "Spingere [Il Pagante Feat. Villabanks * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Spring",
+        "artista": "James Brown",
+        "copiaTesto": "Spring [James Brown * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Stile",
+        "artista": "J-Ax - The Styles",
+        "copiaTesto": "Stile [J-Ax - The Styles * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Suicide Blonde",
+        "artista": "Inxs",
+        "copiaTesto": "Suicide Blonde [Inxs * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Sulla Pelle",
+        "artista": "Irama Feat. Rkomi",
+        "copiaTesto": "Sulla Pelle [Irama Feat. Rkomi * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Sunflower, Vol. 6",
+        "artista": "Harry Styles",
+        "copiaTesto": "Sunflower, Vol. 6 [Harry Styles * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Sunny",
+        "artista": "James Brown",
+        "copiaTesto": "Sunny [James Brown * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Super Bad, Pt. 1 & 2",
+        "artista": "James Brown",
+        "copiaTesto": "Super Bad, Pt. 1 & 2 [James Brown * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Supernova Love",
+        "artista": "Ive Feat. David Guetta",
+        "copiaTesto": "Supernova Love [Ive Feat. David Guetta * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Sweet Creature",
+        "artista": "Harry Styles",
+        "copiaTesto": "Sweet Creature [Harry Styles * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Symphony",
+        "artista": "Imagine Dragons",
+        "copiaTesto": "Symphony [Imagine Dragons * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Take Care",
+        "artista": "Imany",
+        "copiaTesto": "Take Care [Imany * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Take Me Home Country Road",
+        "artista": "Israel Kamakawiwo'ole",
+        "copiaTesto": "Take Me Home Country Road [Israel Kamakawiwo'ole]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Take Me Or Leave Me",
+        "artista": "Idina Menzel Feat. Tracie Thoms",
+        "copiaTesto": "Take Me Or Leave Me [Idina Menzel Feat. Tracie Thoms]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Take Ü There",
+        "artista": "Jack Ü Feat. Kiesza",
+        "copiaTesto": "Take Ü There [Jack Ü Feat. Kiesza * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Taste Back",
+        "artista": "Harry Styles",
+        "copiaTesto": "Taste Back [Harry Styles * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tempting Fate",
+        "artista": "Jack Savoretti Feat. Kt Tunstall",
+        "copiaTesto": "Tempting Fate [Jack Savoretti Feat. Kt Tunstall]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The 3 R'S",
+        "artista": "Jack Johnson",
+        "copiaTesto": "The 3 R'S [Jack Johnson * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Boss",
+        "artista": "James Brown Feat. The J.b.'s",
+        "copiaTesto": "The Boss [James Brown Feat. The J.b.'s * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Old Landmark",
+        "artista": "James Brown Feat. Rev. James Cleveland Choir",
+        "copiaTesto": "The Old Landmark [James Brown Feat. Rev. James Cleveland Choir]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Payback",
+        "artista": "James Brown",
+        "copiaTesto": "The Payback [James Brown * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Rising Tide",
+        "artista": "Imany",
+        "copiaTesto": "The Rising Tide [Imany * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Waiting Game",
+        "artista": "Harry Styles",
+        "copiaTesto": "The Waiting Game [Harry Styles * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "There Were Tears",
+        "artista": "Imany",
+        "copiaTesto": "There Were Tears [Imany * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Think Of Me",
+        "artista": "Daecolm - David Guetta - Hugel - Kehlani",
+        "copiaTesto": "Think Of Me [Daecolm - David Guetta - Hugel - Kehlani]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "This Is Living",
+        "artista": "Free Feat. Lecrae - Hillsong Young",
+        "copiaTesto": "This Is Living [Free Feat. Lecrae - Hillsong Young]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "To Be So Lonely",
+        "artista": "Harry Styles",
+        "copiaTesto": "To Be So Lonely [Harry Styles * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "93 Million Miles",
+        "artista": "Jason Mraz",
+        "copiaTesto": "93 Million Miles [Jason Mraz * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All 4 U",
+        "artista": "Jax Jones",
+        "copiaTesto": "All 4 U [Jax Jones * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All Day And Night",
+        "artista": "Jax Jones - Martin Solveig Feat. Madison Beer",
+        "copiaTesto": "All Day And Night [Jax Jones - Martin Solveig Feat. Madison Beer]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All Day And Night",
+        "artista": "Jax Jones Feat. Madison Beer",
+        "copiaTesto": "All Day And Night [Jax Jones Feat. Madison Beer]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All I Have",
+        "artista": "Jennifer Lopez Feat. Ll Cool J",
+        "copiaTesto": "All I Have [Jennifer Lopez Feat. Ll Cool J * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Baby I Love U!",
+        "artista": "Jennifer Lopez",
+        "copiaTesto": "Baby I Love U! [Jennifer Lopez * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Baila",
+        "artista": "Jennifer Lopez",
+        "copiaTesto": "Baila [Jennifer Lopez * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Booty",
+        "artista": "Jennifer Lopez Feat. Pitbull",
+        "copiaTesto": "Booty [Jennifer Lopez Feat. Pitbull * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Breathe",
+        "artista": "Jax Jones Feat. Ina Wroldsen",
+        "copiaTesto": "Breathe [Jax Jones Feat. Ina Wroldsen * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Bubblegum",
+        "artista": "Jason Derulo Feat. Tyga",
+        "copiaTesto": "Bubblegum [Jason Derulo Feat. Tyga * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Can You Feel The Love TonightNants' Ingonyama",
+        "artista": "Jason Derulo",
+        "copiaTesto": "Can You Feel The Love TonightNants' Ingonyama [Jason Derulo]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cariño",
+        "artista": "Jennifer Lopez",
+        "copiaTesto": "Cariño [Jennifer Lopez * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cheyenne",
+        "artista": "Jason Derulo",
+        "copiaTesto": "Cheyenne [Jason Derulo * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Colors",
+        "artista": "Jason Derulo Feat. Maluma",
+        "copiaTesto": "Colors [Jason Derulo Feat. Maluma * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Colors",
+        "artista": "Jason Derulo",
+        "copiaTesto": "Colors [Jason Derulo * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Come Over",
+        "artista": "Jennifer Lopez",
+        "copiaTesto": "Come Over [Jennifer Lopez * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Contar",
+        "artista": "Jc Reyes Feat. Ozuna",
+        "copiaTesto": "Contar [Jc Reyes Feat. Ozuna * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Could This Be Love",
+        "artista": "Jennifer Lopez",
+        "copiaTesto": "Could This Be Love [Jennifer Lopez * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cruel",
+        "artista": "Jax Jones",
+        "copiaTesto": "Cruel [Jax Jones * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dame",
+        "artista": "Jennifer Lopez Feat. Chayanne",
+        "copiaTesto": "Dame [Jennifer Lopez Feat. Chayanne * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dance With Me",
+        "artista": "Jennifer Lopez",
+        "copiaTesto": "Dance With Me [Jennifer Lopez * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dinero",
+        "artista": "Jennifer Lopez Feat. Dj Khaled",
+        "copiaTesto": "Dinero [Jennifer Lopez Feat. Dj Khaled * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Do It Well",
+        "artista": "Jennifer Lopez",
+        "copiaTesto": "Do It Well [Jennifer Lopez * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Don'T Wanna Go Home",
+        "artista": "Jason Derulo",
+        "copiaTesto": "Don'T Wanna Go Home [Jason Derulo * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Down",
+        "artista": "David Guetta - Jason Derulo",
+        "copiaTesto": "Down [David Guetta - Jason Derulo * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Easy On Me",
+        "artista": "No Resolve",
+        "copiaTesto": "Easy On Me [No Resolve * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "El Anillo",
+        "artista": "Jennifer Lopez",
+        "copiaTesto": "El Anillo [Jennifer Lopez * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Feels",
+        "artista": "Jax Jones",
+        "copiaTesto": "Feels [Jax Jones * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Fight For You",
+        "artista": "Jason Derulo",
+        "copiaTesto": "Fight For You [Jason Derulo * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Get Right",
+        "artista": "Jennifer Lopez",
+        "copiaTesto": "Get Right [Jennifer Lopez * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Glad U Came",
+        "artista": "Jason Derulo",
+        "copiaTesto": "Glad U Came [Jason Derulo * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Goodbye",
+        "artista": "Jason Derulo Feat. Nicki Minaj",
+        "copiaTesto": "Goodbye [Jason Derulo Feat. Nicki Minaj * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Hands On Me",
+        "artista": "Jason Derulo Feat. Meghan Trainor",
+        "copiaTesto": "Hands On Me [Jason Derulo Feat. Meghan Trainor]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Happiest Year",
+        "artista": "Jaymes Young",
+        "copiaTesto": "Happiest Year [Jaymes Young * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Harder",
+        "artista": "Jax Jones Feat. Bebe Rexha",
+        "copiaTesto": "Harder [Jax Jones Feat. Bebe Rexha * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "House Work",
+        "artista": "Jax Jones Feat. Mike Dunn",
+        "copiaTesto": "House Work [Jax Jones Feat. Mike Dunn * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Miss U",
+        "artista": "Jax Jones Feat. Aura",
+        "copiaTesto": "I Miss U [Jax Jones Feat. Aura * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Put A Spell On You",
+        "artista": "Jeff Beck Feat. Joss Stone",
+        "copiaTesto": "I Put A Spell On You [Jeff Beck Feat. Joss Stone]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Won'T Give Up",
+        "artista": "Jason Mraz",
+        "copiaTesto": "I Won'T Give Up [Jason Mraz * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I'Ll Be Good",
+        "artista": "Jaymes Young",
+        "copiaTesto": "I'Ll Be Good [Jaymes Young * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I'M Gonna Be Alright",
+        "artista": "Jennifer Lopez",
+        "copiaTesto": "I'M Gonna Be Alright [Jennifer Lopez * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I'M Into You",
+        "artista": "Jennifer Lopez Feat. Lil Wayne",
+        "copiaTesto": "I'M Into You [Jennifer Lopez Feat. Lil Wayne * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I'M Real",
+        "artista": "Jennifer Lopez Feat. Ja Rule",
+        "copiaTesto": "I'M Real [Jennifer Lopez Feat. Ja Rule * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "If I'M Lucky",
+        "artista": "Jason Derulo",
+        "copiaTesto": "If I'M Lucky [Jason Derulo * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "If It Ain'T Love",
+        "artista": "Jason Derulo",
+        "copiaTesto": "If It Ain'T Love [Jason Derulo * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "In My Head",
+        "artista": "Jason Derulo",
+        "copiaTesto": "In My Head [Jason Derulo * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "It Girl",
+        "artista": "Jason Derulo",
+        "copiaTesto": "It Girl [Jason Derulo * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "It'S Not That Serious",
+        "artista": "Jennifer Lopez",
+        "copiaTesto": "It'S Not That Serious [Jennifer Lopez * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Desde 0",
+        "artista": "Jc Reyes Feat. Morad",
+        "copiaTesto": "Desde 0 [Jc Reyes Feat. Morad * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Fardos",
+        "artista": "Jc Reyes Feat. De La Ghetto",
+        "copiaTesto": "Fardos [Jc Reyes Feat. De La Ghetto * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "To Begin Again",
+        "artista": "Ingrid Michaelson Feat. Zayn",
+        "copiaTesto": "To Begin Again [Ingrid Michaelson Feat. Zayn * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "To Ü",
+        "artista": "Jack Ü Feat. Alunageorge",
+        "copiaTesto": "To Ü [Jack Ü Feat. Alunageorge * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tomorrowland",
+        "artista": "Il Pagante",
+        "copiaTesto": "Tomorrowland [Il Pagante * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Too Much",
+        "artista": "Il Pagante",
+        "copiaTesto": "Too Much [Il Pagante * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tornerai Da Me",
+        "artista": "Irama",
+        "copiaTesto": "Tornerai Da Me [Irama * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tourner Dans Le Vide",
+        "artista": "Indila",
+        "copiaTesto": "Tourner Dans Le Vide [Indila * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tout Le Monde Est Fou",
+        "artista": "Jain Feat. Solomun",
+        "copiaTesto": "Tout Le Monde Est Fou [Jain Feat. Solomun * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tra Tra",
+        "artista": "Hugel Feat. Blondish",
+        "copiaTesto": "Tra Tra [Hugel Feat. Blondish * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Train Wreck",
+        "artista": "James Arthur",
+        "copiaTesto": "Train Wreck [James Arthur * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Treat People With Kindness",
+        "artista": "Harry Styles",
+        "copiaTesto": "Treat People With Kindness [Harry Styles * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Try Me",
+        "artista": "James Brown",
+        "copiaTesto": "Try Me [James Brown * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tutto Apposto",
+        "artista": "Izi Feat. Sfera Ebbasta",
+        "copiaTesto": "Tutto Apposto [Izi Feat. Sfera Ebbasta * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tutto Il Mondo È Periferia",
+        "artista": "J-Ax Feat. Fedez",
+        "copiaTesto": "Tutto Il Mondo È Periferia [J-Ax Feat. Fedez * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tutto Questo Cosa C'Entra Con Il R&R",
+        "artista": "Ivan Graziani",
+        "copiaTesto": "Tutto Questo Cosa C'Entra Con Il R&R [Ivan Graziani]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tutto Tranne Questo",
+        "artista": "Irama",
+        "copiaTesto": "Tutto Tranne Questo [Irama * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Two Ghosts",
+        "artista": "Harry Styles",
+        "copiaTesto": "Two Ghosts [Harry Styles * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tú",
+        "artista": "Izybeats - Manuel Turizo Feat. Stefflon Don",
+        "copiaTesto": "Tú [Izybeats - Manuel Turizo Feat. Stefflon Don]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Uh, Che Peccato!",
+        "artista": "Izi",
+        "copiaTesto": "Uh, Che Peccato! [Izi * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Un Pacco Per Te",
+        "artista": "Il Pagante Feat. Lorella Cuccarini",
+        "copiaTesto": "Un Pacco Per Te [Il Pagante Feat. Lorella Cuccarini]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Un Respiro",
+        "artista": "Irama",
+        "copiaTesto": "Un Respiro [Irama * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Una Cosa Sola",
+        "artista": "Irama Feat. Shablo",
+        "copiaTesto": "Una Cosa Sola [Irama Feat. Shablo * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Una Lacrima",
+        "artista": "Irama Feat. Sfera Ebbasta",
+        "copiaTesto": "Una Lacrima [Irama Feat. Sfera Ebbasta * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Unchained Melody",
+        "artista": "Il Divo",
+        "copiaTesto": "Unchained Melody [Il Divo * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Up",
+        "artista": "Inna Feat. Sean Paul",
+        "copiaTesto": "Up [Inna Feat. Sean Paul * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Up",
+        "artista": "James Morrison Feat. Jessie J",
+        "copiaTesto": "Up [James Morrison Feat. Jessie J * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Us",
+        "artista": "James Bay Feat. Alicia Keys",
+        "copiaTesto": "Us [James Bay Feat. Alicia Keys * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Us",
+        "artista": "James Bay",
+        "copiaTesto": "Us [James Bay * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Voglio Solo Te",
+        "artista": "Irama",
+        "copiaTesto": "Voglio Solo Te [Irama * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Volare Ii",
+        "artista": "Izi",
+        "copiaTesto": "Volare Ii [Izi * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wake Up",
+        "artista": "Imagine Dragons",
+        "copiaTesto": "Wake Up [Imagine Dragons * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wake",
+        "artista": "Free Feat. Taya - Hillsong Young",
+        "copiaTesto": "Wake [Free Feat. Taya - Hillsong Young * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Walking The Wire",
+        "artista": "Imagine Dragons",
+        "copiaTesto": "Walking The Wire [Imagine Dragons * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Warriors",
+        "artista": "Imagine Dragons",
+        "copiaTesto": "Warriors [Imagine Dragons * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Waterfalls Feat. Sam Harper",
+        "artista": "James Hype",
+        "copiaTesto": "Waterfalls Feat. Sam Harper [James Hype * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "West Coast",
+        "artista": "Imagine Dragons",
+        "copiaTesto": "West Coast [Imagine Dragons * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "What Dreams Are Made Of",
+        "artista": "Hilary Duff",
+        "copiaTesto": "What Dreams Are Made Of [Hilary Duff * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "What The World Needs Now Is Love",
+        "artista": "James Brown",
+        "copiaTesto": "What The World Needs Now Is Love [James Brown]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "When We Were Lovers",
+        "artista": "Jack Savoretti",
+        "copiaTesto": "When We Were Lovers [Jack Savoretti * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "When We'Re Together",
+        "artista": "Idina Menzel",
+        "copiaTesto": "When We'Re Together [Idina Menzel * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Where Are Ü Now",
+        "artista": "Jack Ü Feat. Justin Bieber",
+        "copiaTesto": "Where Are Ü Now [Jack Ü Feat. Justin Bieber * SC *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Where Have You Been",
+        "artista": "Imany",
+        "copiaTesto": "Where Have You Been [Imany * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Where You Are",
+        "artista": "Free - Hillsong Young",
+        "copiaTesto": "Where You Are [Free - Hillsong Young * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "White Sandy Beach Of Hawai'I",
+        "artista": "Israel Kamakawiwo'ole",
+        "copiaTesto": "White Sandy Beach Of Hawai'I [Israel Kamakawiwo'ole]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wi-Fi",
+        "artista": "Il Pagante",
+        "copiaTesto": "Wi-Fi [Il Pagante * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wild Bandana",
+        "artista": "Izi Feat. Tedua",
+        "copiaTesto": "Wild Bandana [Izi Feat. Tedua * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wind Beneath My Wings He Hawai'I Au",
+        "artista": "Israel Kamakawiwo'ole",
+        "copiaTesto": "Wind Beneath My Wings He Hawai'I Au [Israel Kamakawiwo'ole]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wish You Were Here",
+        "artista": "Incubus",
+        "copiaTesto": "Wish You Were Here [Incubus * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Woman",
+        "artista": "Harry Styles",
+        "copiaTesto": "Woman [Harry Styles * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wonderful Life '25",
+        "artista": "Hurts Feat. Purple Disco Machine",
+        "copiaTesto": "Wonderful Life '25 [Hurts Feat. Purple Disco Machine]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wonderful Life",
+        "artista": "Imany",
+        "copiaTesto": "Wonderful Life [Imany * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Work Song",
+        "artista": "Hozier",
+        "copiaTesto": "Work Song [Hozier * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wrecked",
+        "artista": "Imagine Dragons",
+        "copiaTesto": "Wrecked [Imagine Dragons * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wrong Kind Of War",
+        "artista": "Imany",
+        "copiaTesto": "Wrong Kind Of War [Imany * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Yo Quiero Amarte",
+        "artista": "Irama",
+        "copiaTesto": "Yo Quiero Amarte [Irama * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "You Don'T Belong To Me",
+        "artista": "Imany",
+        "copiaTesto": "You Don'T Belong To Me [Imany * SCORPIO *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Zero",
+        "artista": "Imagine Dragons",
+        "copiaTesto": "Zero [Imagine Dragons * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Volare",
+        "artista": "Izi",
+        "copiaTesto": "Volare [Izi * SCORPIO EDITION *]",
+        "data": "2026-10-28",
+        "categoria": "KARAOKE"
     }
 ]
