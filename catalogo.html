@@ -880,11 +880,41 @@
             const lang = params.get('lang') || 'it';
 
             const dizionarioMessaggi = {
-                it: { vuoto: "Compila sia il nome dell'artista che il titolo del brano.", attendere: "Invio in corso...", btnTesto: "Invia Richiesta", okEsito: "Richiesta inviata con successo!", okToast: "Richiesta inviata a Maurizio!" },
-                en: { vuoto: "Please fill in both the artist name and the song title.", attendere: "Sending...", btnTesto: "Send Request", okEsito: "Request sent successfully!", okToast: "Request sent to Maurizio!" },
-                es: { vuoto: "Por favor, completa el nombre del artista y el título.", attendere: "Enviando...", btnTesto: "Enviar Solicitud", okEsito: "¡Solicitud enviada con éxito!", okToast: "¡Solicitud enviada a Maurizio!" },
-                fr: { vuoto: "Veuillez remplir le nom de l'artiste et le titre du morceau.", attendere: "Envoi en cours...", btnTesto: "Envoyer la Demande", okEsito: "Demande envoyée avec succès !", okToast: "Demande envoyée à Maurizio !" },
-                de: { vuoto: "Bitte fülle Künstlernamen und Songtitel aus.", attendere: "Wird gesendet...", btnTesto: "Anfrage Senden", okEsito: "Anfrage erfolgreich gesendet!", okToast: "Anfrage an Maurizio gesendet!" }
+                it: { 
+                    vuoto: "Compila sia il nome dell'artista che il titolo del brano.", 
+                    btnTesto: "Invia Richiesta", 
+                    okEsito: "Richiesta inviata con successo!", 
+                    okToast: "Richiesta inviata a Maurizio!",
+                    timeoutEsito: "L'invio sta impiegando più del previsto. Controlla la richiesta o riprova."
+                },
+                en: { 
+                    vuoto: "Please fill in both the artist name and the song title.", 
+                    btnTesto: "Send Request", 
+                    okEsito: "Request sent successfully!", 
+                    okToast: "Request sent to Maurizio!",
+                    timeoutEsito: "Sending is taking longer than expected. Please check or try again."
+                },
+                es: { 
+                    vuoto: "Por favor, completa el nombre del artista y el título.", 
+                    btnTesto: "Enviar Solicitud", 
+                    okEsito: "¡Solicitud enviada con éxito!", 
+                    okToast: "¡Solicitud enviada a Maurizio!",
+                    timeoutEsito: "El envío está tardando más de lo previsto. Revisa o vuelve a intentarlo."
+                },
+                fr: { 
+                    vuoto: "Veuillez remplir le nom de l'artiste et le titre du morceau.", 
+                    btnTesto: "Envoyer la Demande", 
+                    okEsito: "Demande envoyée avec succès !", 
+                    okToast: "Demande envoyée à Maurizio !",
+                    timeoutEsito: "L'envoi prend plus de temps que prévu. Vérifiez ou réessayez."
+                },
+                de: { 
+                    vuoto: "Bitte fülle Künstlernamen und Songtitel aus.", 
+                    btnTesto: "Anfrage Senden", 
+                    okEsito: "Anfrage erfolgreich gesendet!", 
+                    okToast: "Anfrage an Maurizio gesendet!",
+                    timeoutEsito: "Der Versand dauert länger als erwartet. Bitte prüfen oder erneut versuchen."
+                }
             };
 
             const testi = dizionarioMessaggi[lang] || dizionarioMessaggi['it'];
@@ -897,8 +927,21 @@
             }
 
             btn.disabled = true;
-            btn.innerText = testi.attendere;
             esito.style.display = 'none';
+
+            // Gestione Countdown visivo di 7 secondi
+            let secondiRimasti = 7;
+            btn.innerText = `Invio in corso... (${secondiRimasti}s)`;
+            
+            const intervalloCountdown = setInterval(() => {
+                secondiRimasti--;
+                if (secondiRimasti > 0) {
+                    btn.innerText = `Invio in corso... (${secondiRimasti}s)`;
+                }
+            }, 1000);
+
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 7000); // Interrupt automatico a 7 secondi
 
             const oggettoEmail = `🚨 [SCORPIO EDITION] RICHIESTA BRANO: ${artista} - ${titolo}`;
 
@@ -909,6 +952,7 @@
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'
                     },
+                    signal: controller.signal,
                     body: JSON.stringify({
                         _subject: oggettoEmail,
                         _template: "table",
@@ -921,6 +965,9 @@
                         "Data Richiesta": new Date().toLocaleString('it-IT')
                     })
                 });
+
+                clearInterval(intervalloCountdown);
+                clearTimeout(timeoutId);
 
                 const data = await response.json().catch(() => ({}));
 
@@ -940,16 +987,17 @@
                         window.umami.track('Richiesta Brano In-App', { artista: artista, brano: titolo });
                     }
                 } else {
-                    console.error("Dettaglio errore FormSubmit:", data);
                     esito.className = 'richiesta-esito err';
                     esito.style.display = 'block';
-                    esito.innerText = 'Server FormSubmit: ' + (data.message || response.statusText || ('Codice ' + response.status));
+                    esito.innerText = testi.timeoutEsito;
                 }
             } catch (err) {
-                console.error("Errore invio richiesta:", err);
+                clearInterval(intervalloCountdown);
+                clearTimeout(timeoutId);
+
                 esito.className = 'richiesta-esito err';
                 esito.style.display = 'block';
-                esito.innerText = 'Errore di connessione: ' + err.message;
+                esito.innerText = testi.timeoutEsito;
             } finally {
                 btn.disabled = false;
                 btn.innerText = testi.btnTesto;
