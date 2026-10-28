@@ -859,6 +859,7 @@
         window.inviaRichiestaBrano = async function() {
             const artista = document.getElementById('reqArtista').value.trim();
             const titolo = document.getElementById('reqTitolo').value.trim();
+            const paese = document.getElementById('reqPaese') ? document.getElementById('reqPaese').value.trim() : '';
             const note = document.getElementById('reqNote').value.trim();
             const emailUser = document.getElementById('reqEmail').value.trim();
             const esito = document.getElementById('esitoRichiesta');
@@ -868,41 +869,11 @@
             const lang = params.get('lang') || 'it';
 
             const dizionarioMessaggi = {
-                it: {
-                    vuoto: "Compila sia il nome dell'artista che il titolo del brano.",
-                    attendere: "Invio in corso...",
-                    btnTesto: "Invia Richiesta",
-                    okEsito: "Richiesta inviata con successo!",
-                    okToast: "Richiesta inviata a Maurizio!"
-                },
-                en: {
-                    vuoto: "Please fill in both the artist name and the song title.",
-                    attendere: "Sending...",
-                    btnTesto: "Send Request",
-                    okEsito: "Request sent successfully!",
-                    okToast: "Request sent to Maurizio!"
-                },
-                es: {
-                    vuoto: "Por favor, completa el nombre del artista y el título.",
-                    attendere: "Enviando...",
-                    btnTesto: "Enviar Solicitud",
-                    okEsito: "¡Solicitud enviada con éxito!",
-                    okToast: "¡Solicitud enviada a Maurizio!"
-                },
-                fr: {
-                    vuoto: "Veuillez remplir le nom de l'artiste et le titre du morceau.",
-                    attendere: "Envoi en cours...",
-                    btnTesto: "Envoyer la Demande",
-                    okEsito: "Demande envoyée avec succès !",
-                    okToast: "Demande envoyée à Maurizio !"
-                },
-                de: {
-                    vuoto: "Bitte fülle Künstlernamen und Songtitel aus.",
-                    attendere: "Wird gesendet...",
-                    btnTesto: "Anfrage Senden",
-                    okEsito: "Anfrage erfolgreich gesendet!",
-                    okToast: "Anfrage an Maurizio gesendet!"
-                }
+                it: { vuoto: "Compila sia il nome dell'artista che il titolo del brano.", attendere: "Invio in corso...", btnTesto: "Invia Richiesta", okEsito: "Richiesta inviata con successo!", okToast: "Richiesta inviata a Maurizio!" },
+                en: { vuoto: "Please fill in both the artist name and the song title.", attendere: "Sending...", btnTesto: "Send Request", okEsito: "Request sent successfully!", okToast: "Request sent to Maurizio!" },
+                es: { vuoto: "Por favor, completa el nombre del artista y el título.", attendere: "Enviando...", btnTesto: "Enviar Solicitud", okEsito: "¡Solicitud enviada con éxito!", okToast: "¡Solicitud enviada a Maurizio!" },
+                fr: { vuoto: "Veuillez remplir le nom de l'artiste et le titre du morceau.", attendere: "Envoi en cours...", btnTesto: "Envoyer la Demande", okEsito: "Demande envoyée avec succès !", okToast: "Demande envoyée à Maurizio !" },
+                de: { vuoto: "Bitte fülle Künstlernamen und Songtitel aus.", attendere: "Wird gesendet...", btnTesto: "Anfrage Senden", okEsito: "Anfrage erfolgreich gesendet!", okToast: "Anfrage an Maurizio gesendet!" }
             };
 
             const testi = dizionarioMessaggi[lang] || dizionarioMessaggi['it'];
@@ -933,6 +904,7 @@
                         _captcha: "false",
                         "Artista Richiesto": artista,
                         "Titolo Brano": titolo,
+                        "Nazione Utente": paese || "Non specificata",
                         "Note o Richiedente": note || "Nessuna nota specificata",
                         "Tua Email": emailUser || "Non fornita dall'utente",
                         "Data Richiesta": new Date().toLocaleString('it-IT')
@@ -950,6 +922,7 @@
 
                     document.getElementById('reqArtista').value = '';
                     document.getElementById('reqTitolo').value = '';
+                    if(document.getElementById('reqPaese')) document.getElementById('reqPaese').value = '';
                     document.getElementById('reqNote').value = '';
                     document.getElementById('reqEmail').value = '';
                     
@@ -1194,6 +1167,9 @@ Canta al massimo livello!`;
                     <label for="reqTitolo">🎵 Titolo del Brano *</label>
                     <input type="text" id="reqTitolo" placeholder="Es. Sally, Grande grande grande...">
                     
+                    <label for="reqPaese">🌍 Tua Nazione / Stato</label>
+                    <input type="text" id="reqPaese" placeholder="Es. Italia, USA, España, France...">
+
                     <label for="reqNote">✍️ Tuo Nome / Note Aggiuntive</label>
                     <textarea id="reqNote" rows="2" placeholder="Es. Versione acustica, tonalità originale..."></textarea>
                     
@@ -1256,6 +1232,9 @@ Canta al massimo livello!`;
                     <label for="reqTitolo">🎵 Song Title *</label>
                     <input type="text" id="reqTitolo" placeholder="E.g. Bohemian Rhapsody, Hello...">
                     
+                    <label for="reqPaese">🌍 Your Country</label>
+                    <input type="text" id="reqPaese" placeholder="E.g. USA, UK, Germany, Japan...">
+
                     <label for="reqNote">✍️ Your Name / Additional Notes</label>
                     <textarea id="reqNote" rows="2" placeholder="E.g. Acoustic version, original key..."></textarea>
                     
@@ -1318,6 +1297,9 @@ Canta al massimo livello!`;
                     <label for="reqTitolo">🎵 Título de la Canción *</label>
                     <input type="text" id="reqTitolo" placeholder="Ej. Hips Don't Lie, Hey...">
                     
+                    <label for="reqPaese">🌍 Tu País</label>
+                    <input type="text" id="reqPaese" placeholder="Ej. España, México, Argentina...">
+
                     <label for="reqNote">✍️ Tu Nombre / Notas Adicionales</label>
                     <textarea id="reqNote" rows="2" placeholder="Ej. Versión acústica, tono original..."></textarea>
                     
@@ -1380,6 +1362,9 @@ Canta al massimo livello!`;
                     <label for="reqTitolo">🎵 Titre de la Chanson *</label>
                     <input type="text" id="reqTitolo" placeholder="Ex. La Vie en rose, Tous les mêmes...">
                     
+                    <label for="reqPaese">🌍 Votre Pays</label>
+                    <input type="text" id="reqPaese" placeholder="Ex. France, Belgique, Canada...">
+
                     <label for="reqNote">✍️ Votre Nom / Notes Additionnelles</label>
                     <textarea id="reqNote" rows="2" placeholder="Ex. Version acoustique, tonalité originale..."></textarea>
                     
@@ -1442,6 +1427,9 @@ Canta al massimo livello!`;
                     <label for="reqTitolo">🎵 Songtitel *</label>
                     <input type="text" id="reqTitolo" placeholder="Z.B. 99 Luftballons, Mensch...">
                     
+                    <label for="reqPaese">🌍 Dein Land</label>
+                    <input type="text" id="reqPaese" placeholder="Z.B. Deutschland, Österreich, Schweiz...">
+
                     <label for="reqNote">✍️ Dein Name / Zusätzliche Notizen</label>
                     <textarea id="reqNote" rows="2" placeholder="Z.B. Akustikversion, Originaltonart..."></textarea>
                     
