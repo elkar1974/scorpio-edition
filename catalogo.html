@@ -915,19 +915,18 @@
                 return;
             }
 
-            // Invio immediato in background a FormSubmit con la nuova email
+            // Invio tramite Web3Forms con la tua Access Key ufficiale
             const oggettoEmail = `🚨 [SCORPIO EDITION] RICHIESTA BRANO: ${artista} - ${titolo}`;
 
-            fetch("https://formsubmit.co/ajax/mauscorpioedition@gmail.com", {
+            fetch("https://api.web3forms.com/submit", {
                 method: "POST",
                 headers: { 
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
                 },
                 body: JSON.stringify({
-                    _subject: oggettoEmail,
-                    _template: "table",
-                    _captcha: "false",
+                    access_key: "8590ed43-a3e1-44a6-b4b8-cf58b131b2d3",
+                    subject: oggettoEmail,
                     "Artista Richiesto": artista,
                     "Titolo Brano": titolo,
                     "Nazione Utente": paese,
