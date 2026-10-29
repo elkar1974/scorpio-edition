@@ -626,7 +626,7 @@
                 
                 const dataJson = await response.json();
                 
-                const pulisci = (t) => t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ');
+                const pulisci = (t) => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ');
                 
                 basi = dataJson.map(b => ({
                     ...b,
@@ -673,8 +673,8 @@
                 const testoCopia = (traduzioni[lang] && traduzioni[lang].copy_btn) ? traduzioni[lang].copy_btn : "Copia";
 
                 const htmlVetrina = basiRecenti.map(b => {
-                    const testoSicuro = b.copiaTesto.replace(/'/g, "\\'").replace(/"/g, "&quot;");
-                    const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                    const testoSicuro = b.copiaTesto.replace(/'/g, "\'").replace(/"/g, "&quot;");
+                    const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\'").replace(/"/g, "&quot;");
                     
                     return `
                         <div class="track-item">
@@ -778,7 +778,7 @@
             
             let basiFiltrate = basi.filter(b => b.categoria === currentCategory);
             
-            const queryPulita = query.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ');
+            const queryPulita = query.trim().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ');
             if (queryPulita) {
                 basiFiltrate = basiFiltrate.filter(b => b.stringaRicerca.includes(queryPulita));
             }
@@ -827,8 +827,8 @@
                     }
                 }
                 
-                const testoSicuro = b.copiaTesto.replace(/'/g, "\\'").replace(/"/g, "&quot;");
-                const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                const testoSicuro = b.copiaTesto.replace(/'/g, "\'").replace(/"/g, "&quot;");
+                const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\'").replace(/"/g, "&quot;");
                 const favClass = preferiti.includes(b.copiaTesto) ? 'attivo' : '';
                 
                 return `
@@ -915,19 +915,18 @@
                 return;
             }
 
-            // Invio immediato in background a FormSubmit con la nuova email
-            const oggettoEmail = `🚨 [SCORPIO EDITION] RICHIESTA BRANO: ${artista} - ${titolo}`;
+            // Invio immediato in background a Web3Forms
+            const oggettoEmail = `[SCORPIO EDITION] RICHIESTA BRANO: ${artista} - ${titolo}`;
 
-            fetch("https://formsubmit.co/ajax/mauscorpioedition@gmail.com", {
+            fetch("https://api.web3forms.com/submit", {
                 method: "POST",
                 headers: { 
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
                 },
                 body: JSON.stringify({
-                    _subject: oggettoEmail,
-                    _template: "table",
-                    _captcha: "false",
+                    access_key: "8590ed43-a3e1-44a6-b4b8-cf58b131b2d3",
+                    subject: oggettoEmail,
                     "Artista Richiesto": artista,
                     "Titolo Brano": titolo,
                     "Nazione Utente": paese,
@@ -1136,7 +1135,7 @@ Canta al massimo livello!`;
                 <blockquote>"Cantare su una base di qualità valorizza il canto. La tua voce merita rispetto."</blockquote>
                 <p>Questo è il principio su cui ho fondato <strong>MAU•SCORPIO•EDITION</strong>. Non mi limito a fornire file audio; metto a disposizione uno strumento di lavoro che eleva la performance artistica, garantendo la dignità tecnica che ogni cantante cerca.</p>
                 <h3>L’Eccellenza è la mia scelta</h3>
-                <p>Il panorama musicale è vasto, ma la qualità per me è una scelta imprescindibile. Copro l'intero spettro musicale, dai grandi classici alle hit contemporanee, con un unico comun denominatore: la perfezione sonora. Seleziono e processo ogni singola base presente nel mio catalogo seguendo criteri rigorosi:</p>
+                <p>Il panorama musicale è vasto, ma la qualità per me è una scelta imprescindibile. Copro l'intero spettro musicale, dai grandi classici alle hit contemporanee, con un unico comun detonatore: la perfezione sonora. Seleziono e processo ogni singola base presente nel mio catalogo seguendo criteri rigorosi:</p>
                 <ul>
                     <li><strong>Qualità Studio:</strong> Non accetto compromessi. Ogni traccia che metto a disposizione è ottimizzata per offrire una dinamica chiara, definita e pronta per l'uso professionale.</li>
                     <li><strong>Precisione e Sincronizzazione:</strong> Il rispetto del tempo per me è sacro. La mia sincronizzazione è millimetrica, pensata per chi, come me, non accetta sbavature durante l'esecuzione live.</li>
@@ -1376,7 +1375,7 @@ Canta al massimo livello!`;
                     <p>Faites découvrir à tous ce que signifie chanter avec un son studio. Partager la qualité élève le niveau de tout le monde !</p>
                 </div>
                 <p>✨ <em>Votre voix mérite la meilleure qualité. Bon chant et amusez-vous bien !</em></p>`,
-                contatti_testo: `<h2>Demander un Morceau</h2>
+                contatti_testo: `## Demander un Morceau</h2>
                 <p style="text-align: center; color: #ccc; margin-bottom: 20px;">Vous ne trouvez pas un playback dans le catalogue ? Envoyez votre demande directement d'ici sans ouvrir d'autres applications.</p>
                 
                 <div class="box-richiesta">
