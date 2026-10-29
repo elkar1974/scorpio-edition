@@ -626,7 +626,7 @@
                 
                 const dataJson = await response.json();
                 
-                const pulisci = (t) => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ');
+                const pulisci = (t) => t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ');
                 
                 basi = dataJson.map(b => ({
                     ...b,
@@ -673,8 +673,8 @@
                 const testoCopia = (traduzioni[lang] && traduzioni[lang].copy_btn) ? traduzioni[lang].copy_btn : "Copia";
 
                 const htmlVetrina = basiRecenti.map(b => {
-                    const testoSicuro = b.copiaTesto.replace(/'/g, "\'").replace(/"/g, "&quot;");
-                    const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\'").replace(/"/g, "&quot;");
+                    const testoSicuro = b.copiaTesto.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                    const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\\'").replace(/"/g, "&quot;");
                     
                     return `
                         <div class="track-item">
@@ -778,7 +778,7 @@
             
             let basiFiltrate = basi.filter(b => b.categoria === currentCategory);
             
-            const queryPulita = query.trim().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ');
+            const queryPulita = query.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ');
             if (queryPulita) {
                 basiFiltrate = basiFiltrate.filter(b => b.stringaRicerca.includes(queryPulita));
             }
@@ -827,8 +827,8 @@
                     }
                 }
                 
-                const testoSicuro = b.copiaTesto.replace(/'/g, "\'").replace(/"/g, "&quot;");
-                const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\'").replace(/"/g, "&quot;");
+                const testoSicuro = b.copiaTesto.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                const titoloCondivisione = b.titolo.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, '').trim().replace(/'/g, "\\'").replace(/"/g, "&quot;");
                 const favClass = preferiti.includes(b.copiaTesto) ? 'attivo' : '';
                 
                 return `
@@ -866,7 +866,7 @@
             }, 2600);
         }
 
-        window.inviaRichiestaBrano = async function() {
+        window.inviaRichiestaBrano = function() {
             const artista = document.getElementById('reqArtista').value.trim();
             const titolo = document.getElementById('reqTitolo').value.trim();
             const paeseSelect = document.getElementById('reqPaese');
@@ -874,17 +874,36 @@
             const note = document.getElementById('reqNote').value.trim();
             const emailUser = document.getElementById('reqEmail').value.trim();
             const esito = document.getElementById('esitoRichiesta');
-            const btn = document.getElementById('btnInviaRichiesta');
 
             const params = new URLSearchParams(window.location.search);
             const lang = params.get('lang') || 'it';
 
             const dizionarioMessaggi = {
-                it: { vuoto: "Compila sia il nome dell'artista che il titolo del brano.", okEsito: "Richiesta inviata con successo!", okToast: "Richiesta inviata a Maurizio!", errEsito: "Errore durante l'invio. Riprova." },
-                en: { vuoto: "Please fill in both the artist name and the song title.", okEsito: "Request sent successfully!", okToast: "Request sent to Maurizio!", errEsito: "Sending error. Try again." },
-                es: { vuoto: "Por favor, completa el nombre del artista y el título.", okEsito: "¡Solicitud enviada con éxito!", okToast: "¡Solicitud enviada a Maurizio!", errEsito: "Error al enviar." },
-                fr: { vuoto: "Veuillez remplir le nom de l'artiste et le titre du morceau.", okEsito: "Demande envoyée avec succès !", okToast: "Demande envoyée à Maurizio !", errEsito: "Erreur d'envoi." },
-                de: { vuoto: "Bitte fülle Künstlernamen und Songtitel aus.", okEsito: "Anfrage erfolgreich gesendet!", okToast: "Anfrage an Maurizio gesendet!", errEsito: "Fehler beim Senden." }
+                it: { 
+                    vuoto: "Compila sia il nome dell'artista che il titolo del brano.", 
+                    okEsito: "Richiesta inviata con successo!", 
+                    okToast: "Richiesta inviata a Maurizio!"
+                },
+                en: { 
+                    vuoto: "Please fill in both the artist name and the song title.", 
+                    okEsito: "Request sent successfully!", 
+                    okToast: "Request sent to Maurizio!"
+                },
+                es: { 
+                    vuoto: "Por favor, completa el nombre del artista y el título.", 
+                    okEsito: "¡Solicitud enviada con éxito!", 
+                    okToast: "¡Solicitud enviada a Maurizio!"
+                },
+                fr: { 
+                    vuoto: "Veuillez remplir le nom de l'artiste et le titre du morceau.", 
+                    okEsito: "Demande envoyée avec succès !", 
+                    okToast: "Demande envoyée à Maurizio !"
+                },
+                de: { 
+                    vuoto: "Bitte fülle Künstlernamen und Songtitel aus.", 
+                    okEsito: "Anfrage erfolgreich gesendet!", 
+                    okToast: "Anfrage an Maurizio gesendet!"
+                }
             };
 
             const testi = dizionarioMessaggi[lang] || dizionarioMessaggi['it'];
@@ -896,59 +915,43 @@
                 return;
             }
 
-            if (btn) {
-                btn.disabled = true;
-                btn.style.opacity = "0.6";
-            }
+            // Invio immediato in background a FormSubmit con la nuova email
+            const oggettoEmail = `🚨 [SCORPIO EDITION] RICHIESTA BRANO: ${artista} - ${titolo}`;
 
-            const formData = new FormData();
-            formData.append("access_key", "8590ed43-a3e1-44a6-b4b8-cf58b131b2d3");
-            formData.append("subject", `[SCORPIO EDITION] RICHIESTA BRANO: ${artista} - ${titolo}`);
-            formData.append("Artista Richiesto", artista);
-            formData.append("Titolo Brano", titolo);
-            formData.append("Nazione Utente", paese);
-            formData.append("Note o Richiedente", note || "Nessuna nota specificata");
-            formData.append("Tua Email", emailUser || "Non fornita dall'utente");
-            formData.append("Data Richiesta", new Date().toLocaleString('it-IT'));
+            fetch("https://formsubmit.co/ajax/mauscorpioedition@gmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    _subject: oggettoEmail,
+                    _template: "table",
+                    _captcha: "false",
+                    "Artista Richiesto": artista,
+                    "Titolo Brano": titolo,
+                    "Nazione Utente": paese,
+                    "Note o Richiedente": note || "Nessuna nota specificata",
+                    "Tua Email": emailUser || "Non fornita dall'utente",
+                    "Data Richiesta": new Date().toLocaleString('it-IT')
+                })
+            }).catch(() => {});
 
-            try {
-                const response = await fetch("https://api.web3forms.com/submit", {
-                    method: "POST",
-                    body: formData
-                });
+            // Conferma visiva immediata
+            esito.className = 'richiesta-esito ok';
+            esito.style.display = 'block';
+            esito.innerText = testi.okEsito;
+            
+            mostraToast(testi.okToast);
 
-                const data = await response.json();
-
-                if (data.success) {
-                    esito.className = 'richiesta-esito ok';
-                    esito.style.display = 'block';
-                    esito.innerText = testi.okEsito;
-                    mostraToast(testi.okToast);
-
-                    document.getElementById('reqArtista').value = '';
-                    document.getElementById('reqTitolo').value = '';
-                    document.getElementById('reqNote').value = '';
-                    document.getElementById('reqEmail').value = '';
-
-                    if (window.umami) {
-                        window.umami.track('Richiesta Brano In-App', { artista: artista, brano: titolo });
-                    }
-                } else {
-                    console.error("Errore Web3Forms:", data);
-                    esito.className = 'richiesta-esito err';
-                    esito.style.display = 'block';
-                    esito.innerText = "Errore: " + (data.message || testi.errEsito);
-                }
-            } catch (error) {
-                console.error("Errore di rete:", error);
-                esito.className = 'richiesta-esito err';
-                esito.style.display = 'block';
-                esito.innerText = testi.errEsito;
-            } finally {
-                if (btn) {
-                    btn.disabled = false;
-                    btn.style.opacity = "1";
-                }
+            // Svuota i campi
+            document.getElementById('reqArtista').value = '';
+            document.getElementById('reqTitolo').value = '';
+            document.getElementById('reqNote').value = '';
+            document.getElementById('reqEmail').value = '';
+            
+            if (window.umami) {
+                window.umami.track('Richiesta Brano In-App', { artista: artista, brano: titolo });
             }
         };
 
@@ -1133,7 +1136,7 @@ Canta al massimo livello!`;
                 <blockquote>"Cantare su una base di qualità valorizza il canto. La tua voce merita rispetto."</blockquote>
                 <p>Questo è il principio su cui ho fondato <strong>MAU•SCORPIO•EDITION</strong>. Non mi limito a fornire file audio; metto a disposizione uno strumento di lavoro che eleva la performance artistica, garantendo la dignità tecnica che ogni cantante cerca.</p>
                 <h3>L’Eccellenza è la mia scelta</h3>
-                <p>Il panorama musicale è vasto, ma la qualità per me è una scelta imprescindibile. Copro l'intero spettro musicale, dai grandi classici alle hit contemporanee, con un unico comun detonatore: la perfezione sonora. Seleziono e processo ogni singola base presente nel mio catalogo seguendo criteri rigorosi:</p>
+                <p>Il panorama musicale è vasto, ma la qualità per me è una scelta imprescindibile. Copro l'intero spettro musicale, dai grandi classici alle hit contemporanee, con un unico comun denominatore: la perfezione sonora. Seleziono e processo ogni singola base presente nel mio catalogo seguendo criteri rigorosi:</p>
                 <ul>
                     <li><strong>Qualità Studio:</strong> Non accetto compromessi. Ogni traccia che metto a disposizione è ottimizzata per offrire una dinamica chiara, definita e pronta per l'uso professionale.</li>
                     <li><strong>Precisione e Sincronizzazione:</strong> Il rispetto del tempo per me è sacro. La mia sincronizzazione è millimetrica, pensata per chi, come me, non accetta sbavature durante l'esecuzione live.</li>
@@ -1373,7 +1376,7 @@ Canta al massimo livello!`;
                     <p>Faites découvrir à tous ce que signifie chanter avec un son studio. Partager la qualité élève le niveau de tout le monde !</p>
                 </div>
                 <p>✨ <em>Votre voix mérite la meilleure qualité. Bon chant et amusez-vous bien !</em></p>`,
-                contatti_testo: `## Demander un Morceau</h2>
+                contatti_testo: `<h2>Demander un Morceau</h2>
                 <p style="text-align: center; color: #ccc; margin-bottom: 20px;">Vous ne trouvez pas un playback dans le catalogue ? Envoyez votre demande directement d'ici sans ouvrir d'autres applications.</p>
                 
                 <div class="box-richiesta">
