@@ -106442,17 +106442,101 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "I Can'T Stop Loving You",
-        "artista": "Martina Mcbride",
-        "copiaTesto": "I Can'T Stop Loving You [Martina Mcbride * SC *]",
-        "data": "2026-10-29",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Senza Di Te",
         "artista": "Zibba",
         "copiaTesto": "Senza Di Te [Zibba * SCORPIO EDITION *]",
         "data": "2026-10-29",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Quando L'Amore Se Ne Va",
+        "artista": "Eduardo De Crescenzo",
+        "copiaTesto": "Quando L'Amore Se Ne Va [Eduardo De Crescenzo]",
+        "data": "2026-10-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Take Me Now  (And She Said)",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Take Me Now [Justin Timberlake * SCORPIO *] (And She Said)",
+        "data": "2026-10-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "17",
+        "artista": "Julia Michaels",
+        "copiaTesto": "17 [Julia Michaels * SCORPIO EDITION *]",
+        "data": "2026-10-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "2 Much",
+        "artista": "Justin Bieber",
+        "copiaTesto": "2 Much [Justin Bieber * SCORPIO EDITION *]",
+        "data": "2026-10-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "33 Años",
+        "artista": "Julio Iglesias",
+        "copiaTesto": "33 Años [Julio Iglesias * SCORPIO EDITION *]",
+        "data": "2026-10-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ae, Ao",
+        "artista": "Julio Iglesias",
+        "copiaTesto": "Ae, Ao [Julio Iglesias * SCORPIO EDITION *]",
+        "data": "2026-10-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Aeiou",
+        "artista": "Justin Quiles Feat. Robin Schulz",
+        "copiaTesto": "Aeiou [Justin Quiles Feat. Robin Schulz * SC *]",
+        "data": "2026-10-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All Around Me",
+        "artista": "Justin Bieber",
+        "copiaTesto": "All Around Me [Justin Bieber * SCORPIO *]",
+        "data": "2026-10-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All Around The World",
+        "artista": "Justin Bieber Feat. Ludacris",
+        "copiaTesto": "All Around The World [Justin Bieber Feat. Ludacris]",
+        "data": "2026-10-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All I Can Take",
+        "artista": "Justin Bieber",
+        "copiaTesto": "All I Can Take [Justin Bieber * SCORPIO *]",
+        "data": "2026-10-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All Night",
+        "artista": "Juicy J Feat. Wiz Khalifa",
+        "copiaTesto": "All Night [Juicy J Feat. Wiz Khalifa * SCORPIO *]",
+        "data": "2026-10-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Are You There",
+        "artista": "Anathema",
+        "copiaTesto": "Are You There [Anathema * SCORPIO EDITION *]",
+        "data": "2026-10-31",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Can'T Stop Loving You",
+        "artista": "Martina McBride",
+        "copiaTesto": "I Can'T Stop Loving You [Scorpio Edition * SC *]",
+        "data": "2026-10-31",
         "categoria": "KARAOKE"
     }
 ]
