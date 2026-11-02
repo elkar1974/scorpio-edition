@@ -107896,5 +107896,957 @@
         "copiaTesto": "Island Moon Feat. Jahboy [Justin Wellington * SC *]",
         "data": "2026-11-01",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Issues",
+        "artista": "Julia Michaels",
+        "copiaTesto": "Issues [Julia Michaels * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Itself",
+        "artista": "Juicy J Feat. Wiz Khalifa",
+        "copiaTesto": "Itself [Juicy J Feat. Wiz Khalifa * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ivonny Bonita",
+        "artista": "Karol G",
+        "copiaTesto": "Ivonny Bonita [Karol G * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Just A Stranger",
+        "artista": "Kali Uchis Feat. Steve Lacy",
+        "copiaTesto": "Just A Stranger [Kali Uchis Feat. Steve Lacy * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Just Sing",
+        "artista": "Justin Timberlake Feat. Anna Kendrick",
+        "copiaTesto": "Just Sing [Justin Timberlake Feat. Anna Kendrick]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Just Sing",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Just Sing [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Kissin' In The Cold",
+        "artista": "Jp Saxe Feat. Julia Michaels",
+        "copiaTesto": "Kissin' In The Cold [Jp Saxe Feat. Julia Michaels]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Kármika",
+        "artista": "Karol G Feat. Bad Gyal",
+        "copiaTesto": "Kármika [Karol G Feat. Bad Gyal * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "L'Alba",
+        "artista": "Jovanotti",
+        "copiaTesto": "L'Alba [Jovanotti * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "L.S.F.",
+        "artista": "Kasabian",
+        "copiaTesto": "L.S.F. [Kasabian * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La Bohème",
+        "artista": "Jovanotti",
+        "copiaTesto": "La Bohème [Jovanotti * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La Camisa Negra",
+        "artista": "Juanes",
+        "copiaTesto": "La Camisa Negra [Juanes * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "La Vida Es Una",
+        "artista": "Karol G",
+        "copiaTesto": "La Vida Es Una [Karol G * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Labios Mordidos",
+        "artista": "Kali Uchis Feat. Karol G",
+        "copiaTesto": "Labios Mordidos [Kali Uchis Feat. Karol G * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Last Breath",
+        "artista": "Kanye West Feat. Peso Pluma",
+        "copiaTesto": "Last Breath [Kanye West Feat. Peso Pluma * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Last Night",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Last Night [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Le Cid, Act 3 O Souverain, Ô Juge, Ô Père",
+        "artista": "José Carreras",
+        "copiaTesto": "Le Cid, Act 3 O Souverain, Ô Juge, Ô Père [José Carreras]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Le Tasche Piene Di Sassi",
+        "artista": "Jovanotti",
+        "copiaTesto": "Le Tasche Piene Di Sassi [Jovanotti * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Let It Be",
+        "artista": "John Denver",
+        "copiaTesto": "Let It Be [John Denver * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Let It Be",
+        "artista": "Jp Cooper",
+        "copiaTesto": "Let It Be [Jp Cooper * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Let The Groove Get In",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Let The Groove Get In [Justin Timberlake * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Let'S Take A Ride",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Let'S Take A Ride [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Liar",
+        "artista": "Justin Timberlake Feat. Fireboy Dml",
+        "copiaTesto": "Liar [Justin Timberlake Feat. Fireboy Dml * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Libera",
+        "artista": "Jovanotti",
+        "copiaTesto": "Libera [Jovanotti * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Life Is Worth Living",
+        "artista": "Justin Bieber",
+        "copiaTesto": "Life Is Worth Living [Justin Bieber * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Lights",
+        "artista": "Journey",
+        "copiaTesto": "Lights [Journey * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Like I Love You",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Like I Love You [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Like It'S Christmas",
+        "artista": "Jonas Brothers",
+        "copiaTesto": "Like It'S Christmas [Jonas Brothers * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Little Bit Of Love",
+        "artista": "Jp Cooper",
+        "copiaTesto": "Little Bit Of Love [Jp Cooper * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Livin' Off The Land",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Livin' Off The Land [Justin Timberlake * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Loco",
+        "artista": "Justin Quiles Feat. Chimbala",
+        "copiaTesto": "Loco [Justin Quiles Feat. Chimbala * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "L-O-V-E",
+        "artista": "Joss Stone",
+        "copiaTesto": "L-O-V-E [Joss Stone * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Long Way Back",
+        "artista": "Justin Wellington Feat. Jokema",
+        "copiaTesto": "Long Way Back [Justin Wellington Feat. Jokema]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Looking For Space",
+        "artista": "John Denver",
+        "copiaTesto": "Looking For Space [John Denver * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Losing My Way",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Losing My Way [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Lost Boy Dreaming",
+        "artista": "Jp Cooper",
+        "copiaTesto": "Lost Boy Dreaming [Jp Cooper * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Love & War",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Love & War [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Love Between ...",
+        "artista": "Kali Uchis",
+        "copiaTesto": "Love Between ... [Kali Uchis * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Love Me Again",
+        "artista": "John Newman",
+        "copiaTesto": "Love Me Again [John Newman * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Love Me Now",
+        "artista": "John Legend",
+        "copiaTesto": "Love Me Now [John Legend * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Love Song",
+        "artista": "Justin Bieber",
+        "copiaTesto": "Love Song [Justin Bieber * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Love With A Quality",
+        "artista": "Karol G Feat. Damian Jr. Gong Marley",
+        "copiaTesto": "Love With A Quality [Karol G Feat. Damian Jr. Gong Marley]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Love You Different",
+        "artista": "Justin Bieber Feat. Beam",
+        "copiaTesto": "Love You Different [Justin Bieber Feat. Beam * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Loved By You",
+        "artista": "Justin Bieber Feat. Burna Boy",
+        "copiaTesto": "Loved By You [Justin Bieber Feat. Burna Boy * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Lovestoned I Think She Knows Interlude",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Lovestoned I Think She Knows Interlude [Justin Timberlake]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Lovestoned I Think She Knows",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Lovestoned I Think She Knows [Justin Timberlake]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Lovin', Touchin', Squeezin'",
+        "artista": "Journey",
+        "copiaTesto": "Lovin', Touchin', Squeezin' [Journey * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Luxury Flow",
+        "artista": "Juicy J - Tm88 - Wiz Khalifa",
+        "copiaTesto": "Luxury Flow [Juicy J - Tm88 - Wiz Khalifa * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Madina",
+        "artista": "Justin Wellington",
+        "copiaTesto": "Madina [Justin Wellington * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Man Of The Woods",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Man Of The Woods [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mark My Words",
+        "artista": "Justin Bieber",
+        "copiaTesto": "Mark My Words [Justin Bieber * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Masterpiece",
+        "artista": "Jp Cooper",
+        "copiaTesto": "Masterpiece [Jp Cooper * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mañana Será Bonito",
+        "artista": "Karol G Feat. Carla Morrison",
+        "copiaTesto": "Mañana Será Bonito [Karol G Feat. Carla Morrison]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Me Va, Me Va",
+        "artista": "Julio Iglesias",
+        "copiaTesto": "Me Va, Me Va [Julio Iglesias * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Me Voy",
+        "artista": "Julieta Venegas",
+        "copiaTesto": "Me Voy [Julieta Venegas * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Let Me Talk To You - My Love",
+        "artista": "Justin Timberlake Feat. T.i.",
+        "copiaTesto": "Medley Let Me Talk To You - My Love [Justin Timberlake Feat. T.i.]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Sexy Ladies - Let Me Talk To You  (Prelude)",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Medley Sexy Ladies - Let Me Talk To You [Justin Timberlake] (Prelude)",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Medley Summer Love - Set The Mood  (Prelude)",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Medley Summer Love - Set The Mood [Justin Timberlake] (Prelude)",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Melagioco",
+        "artista": "Jovanotti Feat. Antibalas",
+        "copiaTesto": "Melagioco [Jovanotti Feat. Antibalas * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mercy",
+        "artista": "Jonas Brothers",
+        "copiaTesto": "Mercy [Jonas Brothers * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mercy",
+        "artista": "Jp Cooper",
+        "copiaTesto": "Mercy [Jp Cooper * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mi Cama",
+        "artista": "Karol G",
+        "copiaTesto": "Mi Cama [Karol G * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mi Ex Tenía Razón",
+        "artista": "Karol G",
+        "copiaTesto": "Mi Ex Tenía Razón [Karol G * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mi Pc Midnight Summer Jam [Justin Timberlake]",
+        "artista": "Juan Luis Guerra",
+        "copiaTesto": "Mi Pc [Juan Luis Guerra * SCORPIO EDITION *]Midnight Summer Jam [Justin Timberlake * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mientras Me Curo Del Cora",
+        "artista": "Karol G",
+        "copiaTesto": "Mientras Me Curo Del Cora [Karol G * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mirrors",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Mirrors [Justin Timberlake * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mistletoe",
+        "artista": "Justin Bieber",
+        "copiaTesto": "Mistletoe [Justin Bieber * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Moderación",
+        "artista": "Jp Saxe Feat. Camilo",
+        "copiaTesto": "Moderación [Jp Saxe Feat. Camilo * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Momma'S Prayers",
+        "artista": "Jp Cooper Feat. Stormzy",
+        "copiaTesto": "Momma'S Prayers [Jp Cooper Feat. Stormzy * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Moonlight",
+        "artista": "Kali Uchis",
+        "copiaTesto": "Moonlight [Kali Uchis * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Moral Conscience",
+        "artista": "Kali Uchis",
+        "copiaTesto": "Moral Conscience [Kali Uchis * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Morning Light",
+        "artista": "Justin Timberlake Feat. Alicia Keys",
+        "copiaTesto": "Morning Light [Justin Timberlake Feat. Alicia Keys]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Much Love",
+        "artista": "Justin Wellington",
+        "copiaTesto": "Much Love [Justin Wellington * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Musica",
+        "artista": "Jovanotti Feat. Manu Dibango",
+        "copiaTesto": "Musica [Jovanotti Feat. Manu Dibango * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Muévelo",
+        "artista": "Kali Uchis",
+        "copiaTesto": "Muévelo [Kali Uchis * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Muñequita Linda",
+        "artista": "Juan Magán Feat. Yfn Lucci",
+        "copiaTesto": "Muñequita Linda [Juan Magán Feat. Yfn Lucci * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "My Favorite Drug",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "My Favorite Drug [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "My Love",
+        "artista": "Justin Timberlake Feat. T.i.",
+        "copiaTesto": "My Love [Justin Timberlake Feat. T.i. * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "My Sweet Lady",
+        "artista": "John Denver",
+        "copiaTesto": "My Sweet Lady [John Denver * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "My You",
+        "artista": "Jung Kook",
+        "copiaTesto": "My You [Jung Kook * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Need You Tonight",
+        "artista": "Jp Cooper Feat. Ray Blk",
+        "copiaTesto": "Need You Tonight [Jp Cooper Feat. Ray Blk * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Never Again",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Never Again [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Never Let Go",
+        "artista": "Jung Kook",
+        "copiaTesto": "Never Let Go [Jung Kook * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Never Let You Go",
+        "artista": "Justin Bieber",
+        "copiaTesto": "Never Let You Go [Justin Bieber * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Never Say Never",
+        "artista": "Justin Bieber Feat. Jaden",
+        "copiaTesto": "Never Say Never [Justin Bieber Feat. Jaden * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "No Air",
+        "artista": "Jordin Sparks Feat. Chris Brown",
+        "copiaTesto": "No Air [Jordin Sparks Feat. Chris Brown * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "No Angels",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "No Angels [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "No Hay Ley",
+        "artista": "Kali Uchis",
+        "copiaTesto": "No Hay Ley [Kali Uchis * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "No Pressure",
+        "artista": "Justin Bieber Feat. Big Sean",
+        "copiaTesto": "No Pressure [Justin Bieber Feat. Big Sean * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "No Sense",
+        "artista": "Justin Bieber Feat. Travis Scott",
+        "copiaTesto": "No Sense [Justin Bieber Feat. Travis Scott * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "No Te Hagas",
+        "artista": "Jory Boy Feat. Bad Bunny",
+        "copiaTesto": "No Te Hagas [Jory Boy Feat. Bad Bunny * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Non M'Annoio",
+        "artista": "Jovanotti",
+        "copiaTesto": "Non M'Annoio [Jovanotti * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Nothin' Else",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Nothin' Else [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Nothing Like Us",
+        "artista": "Justin Bieber",
+        "copiaTesto": "Nothing Like Us [Justin Bieber * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Odisea",
+        "artista": "Karol G Feat. Ozuna",
+        "copiaTesto": "Odisea [Karol G Feat. Ozuna * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Off My Face",
+        "artista": "Justin Bieber",
+        "copiaTesto": "Off My Face [Justin Bieber * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Oh La La Amour",
+        "artista": "Julio Iglesias",
+        "copiaTesto": "Oh La La Amour [Julio Iglesias * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Oh My Love",
+        "artista": "John Lennon",
+        "copiaTesto": "Oh My Love [John Lennon * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Oh No What You Got",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Oh No What You Got [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Oh Yoko!",
+        "artista": "John Lennon",
+        "copiaTesto": "Oh Yoko! [John Lennon * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "One Time",
+        "artista": "Justin Bieber",
+        "copiaTesto": "One Time [Justin Bieber * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Oney",
+        "artista": "Johnny Cash",
+        "copiaTesto": "Oney [Johnny Cash * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Only Human",
+        "artista": "Jonas Brothers",
+        "copiaTesto": "Only Human [Jonas Brothers * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Open Arms",
+        "artista": "Journey",
+        "copiaTesto": "Open Arms [Journey * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ordinary People",
+        "artista": "John Legend",
+        "copiaTesto": "Ordinary People [John Legend * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Overboard",
+        "artista": "Justin Bieber Feat. Jessica Jarrell",
+        "copiaTesto": "Overboard [Justin Bieber Feat. Jessica Jarrell]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Oé Oé",
+        "artista": "Jorge Ben Jor",
+        "copiaTesto": "Oé Oé [Jorge Ben Jor * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Oê Oê Faz O Carro De Boi Na Estrada",
+        "artista": "Jorge Ben Jor",
+        "copiaTesto": "Oê Oê Faz O Carro De Boi Na Estrada [Jorge Ben Jor]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "P Rreo",
+        "artista": "Kaleb Di Masi Feat. Omar Varela",
+        "copiaTesto": "P Rreo [Kaleb Di Masi Feat. Omar Varela * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "P.D.A.  (We Just Don'T Care)",
+        "artista": "John Legend",
+        "copiaTesto": "P.D.A. [John Legend * SCORPIO EDITION *] (We Just Don'T Care)",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Paradise",
+        "artista": "Justin Timberlake Feat. Nsync",
+        "copiaTesto": "Paradise [Justin Timberlake Feat. Nsync * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Party",
+        "artista": "Jp Cooper",
+        "copiaTesto": "Party [Jp Cooper * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Passport Home",
+        "artista": "Jp Cooper",
+        "copiaTesto": "Passport Home [Jp Cooper * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Paura Di Niente",
+        "artista": "Jovanotti",
+        "copiaTesto": "Paura Di Niente [Jovanotti * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Perchè Tu Ci Sei",
+        "artista": "Jovanotti",
+        "copiaTesto": "Perchè Tu Ci Sei [Jovanotti * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Perhaps Love",
+        "artista": "John Denver Feat. Plácido Domingo",
+        "copiaTesto": "Perhaps Love [John Denver Feat. Plácido Domingo]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Personal Jesus",
+        "artista": "Johnny Cash",
+        "copiaTesto": "Personal Jesus [Johnny Cash * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Piccerè",
+        "artista": "Gigi D'alessio",
+        "copiaTesto": "Piccerè [Gigi D'alessio * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Pineapple",
+        "artista": "Karol G",
+        "copiaTesto": "Pineapple [Karol G * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Piove",
+        "artista": "Jovanotti",
+        "copiaTesto": "Piove [Jovanotti * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cenerentola Innamorata",
+        "artista": "Marco Masini",
+        "copiaTesto": "Cenerentola Innamorata [Marco Masini * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Play My Music",
+        "artista": "Jonas Brothers",
+        "copiaTesto": "Play My Music [Jonas Brothers * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Play",
+        "artista": "K-391 Feat. Mangoo",
+        "copiaTesto": "Play [K-391 Feat. Mangoo * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Please Don'T Change",
+        "artista": "Jung Kook Feat. Dj Snake",
+        "copiaTesto": "Please Don'T Change [Jung Kook Feat. Dj Snake]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Poems, Prayers And Promises",
+        "artista": "John Denver",
+        "copiaTesto": "Poems, Prayers And Promises [John Denver * SC *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Polaroid",
+        "artista": "Jonas Blue Feat. Liam Payne",
+        "copiaTesto": "Polaroid [Jonas Blue Feat. Liam Payne * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Provenza",
+        "artista": "Karol G",
+        "copiaTesto": "Provenza [Karol G * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Purpose",
+        "artista": "Justin Bieber",
+        "copiaTesto": "Purpose [Justin Bieber * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Pusher Love Girl",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Pusher Love Girl [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ragazzini Per Strada",
+        "artista": "Jovanotti",
+        "copiaTesto": "Ragazzini Per Strada [Jovanotti * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Real",
+        "artista": "Justin Quiles Feat. Dalex",
+        "copiaTesto": "Real [Justin Quiles Feat. Dalex * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Red Eye",
+        "artista": "Justin Bieber Feat. Troyboi",
+        "copiaTesto": "Red Eye [Justin Bieber Feat. Troyboi * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Replay",
+        "artista": "Justin Wellington",
+        "copiaTesto": "Replay [Justin Wellington * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Rhymes And Reasons",
+        "artista": "John Denver",
+        "copiaTesto": "Rhymes And Reasons [John Denver * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Right For Me",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Right For Me [Justin Timberlake * SCORPIO *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Rápido, Brusco, Violento",
+        "artista": "Juan Magán Feat. Bnk",
+        "copiaTesto": "Rápido, Brusco, Violento [Juan Magán Feat. Bnk]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
     }
 ]
