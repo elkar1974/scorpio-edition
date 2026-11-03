@@ -205,7 +205,7 @@
     {
         "titolo": "La Signora Del Quinto Piano",
         "artista": "Carmen Consoli Ft Nada Ft Emma Ft Elisa Ft Gianna Nannini Ft Irene Grandi",
-        "copiaTesto": "La Signora Del Quinto Piano [Carmen ‍Consoli - Na‍da - Em‍ma - El‍isa - Gianna ‍Nannini - Irene ‍Gra",
+        "copiaTesto": "La Signora Del Quinto Piano [Carmen Consoli - Nada - Emma - Elisa - Gianna Nannini - Irene Grandi * SC *]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -5014,7 +5014,7 @@
     {
         "titolo": "1000 Traume Weit  (Tornerò)",
         "artista": "Zimmemann",
-        "copiaTesto": "1000 Traume Weit [Zimmemann] tornerò]",
+        "copiaTesto": "1000 Traume Weit [Zimmemann] (Tornerò)",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -6533,7 +6533,7 @@
     {
         "titolo": "Amor Eterno  (Bachata Romantica)",
         "artista": "Dani J",
-        "copiaTesto": "Amor Eterno (Bachata Romantica [Dani J]",
+        "copiaTesto": "Amor Eterno (Bachata Romantica) [Dani J]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -11125,7 +11125,7 @@
     {
         "titolo": "Bisogna Far Qualcosa",
         "artista": "Adriano Celentano",
-        "copiaTesto": "Bisogna Far Qualcosa  [Adriano Celentano]",
+        "copiaTesto": "Bisogna Far Qualcosa [Adriano Celentano]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -11559,7 +11559,7 @@
     {
         "titolo": "Crescerai",
         "artista": "Nomadi",
-        "copiaTesto": "Crescerai [Nomadi *SCORPIO EDITION*]",
+        "copiaTesto": "Crescerai [Nomadi * SCORPIO EDITION *]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -12418,9 +12418,9 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Cat-Tiva",
-        "artista": "Loredana Bertè Ft Loredana Errore",
-        "copiaTesto": "Cat-tiva [Loredan‍a Bertè - Loredan‍a Errore * SC *]",
+        "titolo": "Cattiva",
+        "artista": "Loredana Bertè Ft Boomdabash",
+        "copiaTesto": "Cat-Tiva [Loredana Bertè - Boomdabash * SCORPIO EDITION *]",
         "data": "2026-05-26",
         "categoria": "KARAOKE"
     },
@@ -74256,13 +74256,6 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Exodus",
-        "artista": "Bob Marley - The Wailers",
-        "copiaTesto": "Exodus [Bob Marley - The Wailers * SCORPIO *]",
-        "data": "2026-09-24",
-        "categoria": "KARAOKE"
-    },
-    {
         "titolo": "Farsi Male A Noi Va Bene",
         "artista": "Bnkr44",
         "copiaTesto": "Farsi Male A Noi Va Bene [Bnkr44 * SCORPIO *]",
@@ -109637,6 +109630,468 @@
         "titolo": "We Go Together",
         "artista": "John Travolta Feat. Olivia Newton-John",
         "copiaTesto": "We Go Together [John T‍ravolta Feat. Olivia‍ Newton-Jo‍hn]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "We Were Raised Under Grey Skies",
+        "artista": "Jp Cooper",
+        "copiaTesto": "We Were Raised Under Grey Skies [Jp C‍ooper * SC *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "What A Man Gotta Do",
+        "artista": "Jonas Brothers",
+        "copiaTesto": "What A Man Gotta Do [Jonas B‍rothers * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "What A Time",
+        "artista": "Julia Michaels Feat. Niall Horan",
+        "copiaTesto": "What A Time [Julia M‍ichaels Feat. Niall‍ Horan]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "What Christmas Means To Me",
+        "artista": "John Legend Feat. Stevie Wonder",
+        "copiaTesto": "What Christmas Means To Me [John ‍Legend Feat. Stevie‍ Wonder]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "What Goes Around Comes Around",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "What Goes Around Comes Around [Justin T‍imberlake]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "What I Like About You",
+        "artista": "Jonas Blue Feat. Theresa Rex",
+        "copiaTesto": "What I Like About You [Jonas‍ Blue Feat. There‍sa Rex]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wheel In The Sky",
+        "artista": "Journey",
+        "copiaTesto": "Wheel In The Sky [Jou‍rney * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "When You Look Me In The Eyes",
+        "artista": "Jonas Brothers",
+        "copiaTesto": "When You Look Me In The Eyes [Jonas B‍rothers * SC *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Who You Love",
+        "artista": "John Mayer Feat. Katy Perry",
+        "copiaTesto": "Who You Love [John ‍Mayer Feat. Katy ‍Perry * SC *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Who'S Crying Now",
+        "artista": "Journey",
+        "copiaTesto": "Who'S Crying Now [Jou‍rney * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Who'S In Your Head",
+        "artista": "Jonas Brothers",
+        "copiaTesto": "Who'S In Your Head [Jonas B‍rothers * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wild Montana Skies",
+        "artista": "John Denver Feat. Emmylou Harris",
+        "copiaTesto": "Wild Montana Skies [John ‍Denver Feat. Emmylou‍ Harris]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Wild",
+        "artista": "John Legend Feat. Gary Clark Jr.",
+        "copiaTesto": "Wild [John ‍Legend Feat. Gary Cl‍ark Jr. * SC *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Worth The Wait",
+        "artista": "Kali Uchis Feat. Omar Apollo",
+        "copiaTesto": "Worth The Wait [Kali ‍Uchis Feat. Omar ‍Apollo * SC *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "X",
+        "artista": "Jojo",
+        "copiaTesto": "X [Jo‍jo * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "X",
+        "artista": "Jonas Brothers Feat. Karol G",
+        "copiaTesto": "X [Jonas B‍rothers Feat. Kar‍ol G * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Xchetuc6",
+        "artista": "Jovanotti",
+        "copiaTesto": "Xchetuc6 [Jova‍notti * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Xo",
+        "artista": "John Mayer",
+        "copiaTesto": "Xo [John ‍Mayer * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Yes Or No",
+        "artista": "Jung Kook",
+        "copiaTesto": "Yes Or No [Jung‍ Kook * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "You Got It On",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "You Got It On [Justin T‍imberlake * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "You Raise Me Up",
+        "artista": "Josh Groban",
+        "copiaTesto": "You Raise Me Up [Josh ‍Groban * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Young Man",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Young Man [Justin T‍imberlake * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Your Love",
+        "artista": "Justin Wellington",
+        "copiaTesto": "Your Love [Justin W‍ellington * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Yukon",
+        "artista": "Justin Bieber",
+        "copiaTesto": "Yukon [Justin‍ Bieber * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Yummy",
+        "artista": "Justin Bieber",
+        "copiaTesto": "Yummy [Justin‍ Bieber * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Zé Canjica",
+        "artista": "Jorge Ben Jor Feat. Trio Mocotó",
+        "copiaTesto": "Zé Canjica [Jorge ‍Ben Jor Feat. Trio ‍Mocotó * SC *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "8Teen",
+        "artista": "Khalid",
+        "copiaTesto": "8Teen [Kha‍lid * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A Bad Dream",
+        "artista": "Keane",
+        "copiaTesto": "A Bad Dream [Ke‍ane * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All I Feel Is Rain",
+        "artista": "Khalid Feat. Jid",
+        "copiaTesto": "All I Feel Is Rain [Kha‍lid Feat. Jid * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "All The Stars",
+        "artista": "Kendrick Lamar Feat. Sza",
+        "copiaTesto": "All The Stars [Kendric‍k Lamar Feat. Sza * SC *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Army Dreamers",
+        "artista": "Kate Bush",
+        "copiaTesto": "Army Dreamers [Kate‍ Bush * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Birthday",
+        "artista": "Katy Perry",
+        "copiaTesto": "Birthday [Katy ‍Perry * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Blow",
+        "artista": "Kesha",
+        "copiaTesto": "Blow [Ke‍sha * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Brand New",
+        "artista": "Khalid Feat. Quin",
+        "copiaTesto": "Brand New [Kha‍lid Feat. Qu‍in * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Buonanotte Amore Mio",
+        "artista": "Daniele De Martino",
+        "copiaTesto": "Buonanotte Amore Mio [Daniele D‍e Martino * SC *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "C'Mon",
+        "artista": "Kesha",
+        "copiaTesto": "C'Mon [Ke‍sha * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Champagne Problems",
+        "artista": "Katy Perry",
+        "copiaTesto": "Champagne Problems [Katy ‍Perry * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Como Lo Hacia Yo",
+        "artista": "Ken-Y Feat. Nicky Jam",
+        "copiaTesto": "Como Lo Hacia Yo [Ken-Y Feat. Nick‍y Jam * SC *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cozy Little Christmas",
+        "artista": "Katy Perry",
+        "copiaTesto": "Cozy Little Christmas [Katy ‍Perry * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cry About It Later",
+        "artista": "Katy Perry",
+        "copiaTesto": "Cry About It Later [Katy ‍Perry * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Daisies",
+        "artista": "Katy Perry",
+        "copiaTesto": "Daisies [Katy ‍Perry * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Danger Zone",
+        "artista": "Kenny Loggins",
+        "copiaTesto": "Danger Zone [Kenny ‍Loggins * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dark Horse",
+        "artista": "Katy Perry Feat. Juicy J",
+        "copiaTesto": "Dark Horse [Katy ‍Perry Feat. Jui‍cy J * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Day 'N' Nite",
+        "artista": "Kid Cudi",
+        "copiaTesto": "Day 'N' Nite [Kid ‍Cudi * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Destino O Follia",
+        "artista": "Lyricflow81",
+        "copiaTesto": "Destino O Follia [Lyric‍flow81 * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dodger Blue",
+        "artista": "Kendrick Lamar",
+        "copiaTesto": "Dodger Blue [Kendric‍k Lamar * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Drown",
+        "artista": "Kid Cudi",
+        "copiaTesto": "Drown [Kid ‍Cudi * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Déjà Vu",
+        "artista": "Katy Perry",
+        "copiaTesto": "Déjà Vu [Katy ‍Perry * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "E.T.",
+        "artista": "Katy Perry",
+        "copiaTesto": "E.T. [Katy ‍Perry * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Eleven",
+        "artista": "Khalid",
+        "copiaTesto": "Eleven [Kha‍lid * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Everybody'S Changing",
+        "artista": "Keane",
+        "copiaTesto": "Everybody'S Changing [Ke‍ane * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Exodus",
+        "artista": "Cosmic - Helix - Kedalos - Lenny - Mctr - Skypierr - Sl!De - Stradeus - Throvn - Yaguru",
+        "copiaTesto": "Exodus [Cos‍mic - He‍lix - Ked‍alos - Le‍nny - Mc‍tr - Skyp‍ierr - Sl‍!de - Stra‍deus - Thr‍ovn - Yag‍uru]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ghost",
+        "artista": "Katy Perry",
+        "copiaTesto": "Ghost [Katy ‍Perry * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Gnx",
+        "artista": "Kendrick Lamar",
+        "copiaTesto": "Gnx [Kendric‍k Lamar * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Halos On Angels",
+        "artista": "Kid Cudi",
+        "copiaTesto": "Halos On Angels [Kid ‍Cudi * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Harleys In Hawaii",
+        "artista": "Katy Perry",
+        "copiaTesto": "Harleys In Hawaii [Katy ‍Perry * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "International Smile",
+        "artista": "Katy Perry",
+        "copiaTesto": "International Smile [Katy ‍Perry * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "It'S Quiet Uptown",
+        "artista": "Kelly Clarkson",
+        "copiaTesto": "It'S Quiet Uptown [Kelly C‍larkson * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Know Your Worth",
+        "artista": "Disclosure - Khalid",
+        "copiaTesto": "Know Your Worth [Discl‍osure - Kha‍lid * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Kolok Colok",
+        "artista": "Kc - Nowimyoung",
+        "copiaTesto": "Kolok Colok [Kc - Nowim‍young * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Korean Certified",
+        "artista": "Haon - Kc - Sik-K",
+        "copiaTesto": "Korean Certified [Ha‍on - Kc - Sik-K * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Learn To Let Go",
+        "artista": "Kesha",
+        "copiaTesto": "Learn To Let Go [Ke‍sha * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Legendary Lovers",
+        "artista": "Katy Perry",
+        "copiaTesto": "Legendary Lovers [Katy ‍Perry * SCORPIO *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Lifetimes",
+        "artista": "Katy Perry",
+        "copiaTesto": "Lifetimes [Katy ‍Perry * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Like This",
+        "artista": "Kelly Rowland",
+        "copiaTesto": "Like This [Kelly ‍Rowland * SCORPIO EDITION *]",
+        "data": "2026-11-03",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Location",
+        "artista": "Khalid",
+        "copiaTesto": "Location [Kha‍lid * SCORPIO EDITION *]",
         "data": "2026-11-03",
         "categoria": "KARAOKE"
     }
