@@ -110094,5 +110094,26 @@
         "copiaTesto": "Ok [Katy ‍Perry * SCORPIO EDITION *]",
         "data": "2026-11-05",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I'M In Love",
+        "artista": "Kygo",
+        "copiaTesto": "I'M In Love [Kygo * SCORPIO EDITION *]",
+        "data": "2026-11-05",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Camurrìa",
+        "artista": "Biancamare",
+        "copiaTesto": "Camurrìa [Bianc‍amare * SCORPIO EDITION *]",
+        "data": "2026-11-06",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Hymn",
+        "artista": "Cabballero",
+        "copiaTesto": "Hymn [Cabba‍llero * SCORPIO EDITION *]",
+        "data": "2026-11-06",
+        "categoria": "KARAOKE"
     }
 ]
