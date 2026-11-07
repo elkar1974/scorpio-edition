@@ -110885,5 +110885,376 @@
         "copiaTesto": "Volo Così [Paola‍ Turci * SCORPIO EDITION *]",
         "data": "2026-11-07",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "13 Beaches",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "13 Beaches [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "24",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "24 [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "33",
+        "artista": "Dillom - Lali",
+        "copiaTesto": "33 [Dil‍lom - La‍li * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "6 Km Per Marte",
+        "artista": "Laïoung",
+        "copiaTesto": "6 Km Per Marte [Laï‍oung * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A-Yo",
+        "artista": "Lady Gaga",
+        "copiaTesto": "A-Yo [Lady‍ Gaga * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Alice",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Alice [Lady‍ Gaga * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "American",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "American [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Americano",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Americano [Lady‍ Gaga * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Angel Down",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Angel Down [Lady‍ Gaga * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Arcadia",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Arcadia [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Art Deco",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Art Deco [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Babylon",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Babylon [Lady‍ Gaga * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Bartender",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Bartender [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Beautiful People Beautiful Problems",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Beautiful People Beautiful Problems [Lana D‍el Rey]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Beautiful, Dirty, Rich",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Beautiful, Dirty, Rich [Lady‍ Gaga * SCORPIO *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Before I Cry",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Before I Cry [Lady‍ Gaga * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Black Beauty",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Black Beauty [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Blue Banisters",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Blue Banisters [Lana D‍el Rey * SCORPIO *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Blue Jeans",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Blue Jeans [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Blue Velvet",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Blue Velvet [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Bluebird",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Bluebird [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Body Electric",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Body Electric [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Born To Die",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Born To Die [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Breaking Up Slowly",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Breaking Up Slowly [Lana D‍el Rey * SCORPIO *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Burning Desire",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Burning Desire [Lana D‍el Rey * SCORPIO *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "California",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "California [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Carmen",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Carmen [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Change",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Change [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Chemtrails Over The Country Club",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Chemtrails Over The Country Club [Lana D‍el Rey]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cinnamon Girl",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Cinnamon Girl [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Coachella",
+        "artista": "Lana Del Rey - Woodstock In My Mind",
+        "copiaTesto": "Coachella [Lana D‍el Rey - Woodstock ‍In My Mind]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dark Paradise",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Dark Paradise [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Diet Mountain Dew",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Diet Mountain Dew [Lana D‍el Rey * SCORPIO *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Diggin' My Grave",
+        "artista": "Bradley Cooper - Lady Gaga",
+        "copiaTesto": "Diggin' My Grave [Bradley‍ Cooper - Lady‍ Gaga * SC *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Don'T Call Tonight",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Don'T Call Tonight [Lady‍ Gaga * SCORPIO *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Don'T Let Me Be Misunderstood",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Don'T Let Me Be Misunderstood [Lana D‍el Rey * SC *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Eh, Eh",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Eh, Eh [Lady‍ Gaga * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Enigma",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Enigma [Lady‍ Gaga * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ev'Ry Time We Say Goodbye",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Ev'Ry Time We Say Goodbye [Lady‍ Gaga * SCORPIO *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Freak",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Freak [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Free Woman",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Free Woman [Lady‍ Gaga * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Fun Tonight",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Fun Tonight [Lady‍ Gaga * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Garden Of Eden",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Garden Of Eden [Lady‍ Gaga * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Get Free",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Get Free [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "God Bless America",
+        "artista": "And All The Beautiful Women In It - Lana Del Rey",
+        "copiaTesto": "God Bless America [And All The Beau‍tiful Women In It - Lana D‍el Rey]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "God Knows I Tried",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "God Knows I Tried [Lana D‍el Rey * SCORPIO *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Government Hooker",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Government Hooker [Lady‍ Gaga * SCORPIO *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Guns And Roses",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Guns And Roses [Lana D‍el Rey * SCORPIO *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Hair Body Face",
+        "artista": "Lady Gaga",
+        "copiaTesto": "Hair Body Face [Lady‍ Gaga * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Florida Kilos",
+        "artista": "Lana Del Rey",
+        "copiaTesto": "Florida Kilos [Lana D‍el Rey * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Fino Al Cielo",
+        "artista": "Syria",
+        "copiaTesto": "Fino Al Cielo [Sy‍ria * SCORPIO EDITION *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Il Passo Silenzioso Della Neve",
+        "artista": "Valentina Giovagnini",
+        "copiaTesto": "Il Passo Silenzioso Della Neve [Valentina ‍Giovagnini]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Un Inverno Da Baciare",
+        "artista": "Marina Rei",
+        "copiaTesto": "Un Inverno Da Baciare [Marin‍a Rei * SCORPIO *]",
+        "data": "2026-11-07",
+        "categoria": "KARAOKE"
     }
 ]
