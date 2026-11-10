@@ -505,7 +505,7 @@
             </div>
 
             <div class="search-wrapper">
-                <input type="search" id="cerca" class="search-box" placeholder="Cerca artista o brano..." oninput="gestisciInputRicerca()">
+                <input type="search" id="cerca" class="search-box" placeholder="Cerca artista o brano..." oninput="gestisciInputRicerca()" onfocus="spostaCursoreInFondo(this)">
                 <button type="button" id="clearSearchBtn" class="clear-search-btn" onclick="svuotaRicerca()" title="Pulisci">✕</button>
             </div>
         </div>
@@ -618,7 +618,7 @@
 
         async function caricaDatabase() {
             try {
-                const response = await fetch('scorpio_database.json?v=' + new Date().getTime(), { cache: 'no-store' });
+                const response = await fetch('scorpio_database.json');
                 
                 if (!response.ok) {
                     throw new Error("File scorpio_database.json non trovato.");
@@ -626,11 +626,9 @@
                 
                 const dataJson = await response.json();
                 
-                const pulisci = (t) => t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ');
-                
                 basi = dataJson.map(b => ({
                     ...b,
-                    stringaRicerca: pulisci((b.titolo || '') + ' ' + (b.artista || '') + ' ' + (b.copiaTesto || ''))
+                    stringaRicerca: pulisciTesto((b.titolo || '') + ' ' + (b.artista || '') + ' ' + (b.copiaTesto || ''))
                 }));
                 
                 basi.sort((a, b) => {
@@ -722,11 +720,18 @@
             renderTracks(document.getElementById('cerca').value);
         };
 
+        let typingTimer;
+        const typingDelay = 250;
+
         function gestisciInputRicerca() {
+            clearTimeout(typingTimer);
             const input = document.getElementById('cerca');
             const btnClear = document.getElementById('clearSearchBtn');
             btnClear.style.display = input.value.length > 0 ? 'flex' : 'none';
-            renderTracks(input.value);
+            
+            typingTimer = setTimeout(() => {
+                renderTracks(input.value);
+            }, typingDelay);
         }
 
         function svuotaRicerca() {
@@ -736,6 +741,13 @@
             btnClear.style.display = 'none';
             input.focus();
             renderTracks('');
+        }
+
+        function spostaCursoreInFondo(input) {
+            setTimeout(() => {
+                const lungh = input.value.length;
+                input.setSelectionRange(lungh, lungh);
+            }, 0);
         }
 
         window.setFilterFav = function() {
@@ -770,21 +782,30 @@
             if(favCountSpan) favCountSpan.innerText = `(${preferiti.length})`;
         }
 
+        let basiFiltrateGlobali = [];
+        let indiceCaricamento = 0;
+        const BRANI_PER_VOLTA = 40;
+
+        function pulisciTesto(t) {
+            if (!t) return '';
+            return t.toLowerCase().replace(/['’‘`]/g, '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ');
+        }
+
         function renderTracks(query = "") {
             const list = document.getElementById('trackList');
             const countContainer = document.getElementById('trackCount');
             const today = new Date();
             today.setHours(0, 0, 0, 0); 
             
-            let basiFiltrate = basi.filter(b => b.categoria === currentCategory);
+            let filtrate = basi.filter(b => b.categoria === currentCategory);
             
-            const queryPulita = query.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ');
+            const queryPulita = pulisciTesto(query.trim());
             if (queryPulita) {
-                basiFiltrate = basiFiltrate.filter(b => b.stringaRicerca.includes(queryPulita));
+                filtrate = filtrate.filter(b => b.stringaRicerca.includes(queryPulita));
             }
 
             if (isNewsFilterActive) {
-                basiFiltrate = basiFiltrate.filter(b => {
+                filtrate = filtrate.filter(b => {
                     const bDate = parseScorpioDate(b.data);
                     if(bDate.getTime() !== 0) {
                         const diffTime = today.getTime() - bDate.getTime();
@@ -796,27 +817,49 @@
             }
 
             if (isFavFilterActive) {
-                basiFiltrate = basiFiltrate.filter(b => preferiti.includes(b.copiaTesto));
+                filtrate = filtrate.filter(b => preferiti.includes(b.copiaTesto));
             }
 
             const params = new URLSearchParams(window.location.search);
             const lang = params.get('lang') || 'it';
             const testoContatore = (traduzioni[lang] && traduzioni[lang].count_testo) ? traduzioni[lang].count_testo : "Totale basi: ";
-            const testoCondividi = (traduzioni[lang] && traduzioni[lang].share_btn) ? traduzioni[lang].share_btn : "Manda";
-            const testoCopia = (traduzioni[lang] && traduzioni[lang].copy_btn) ? traduzioni[lang].copy_btn : "Copia";
             
-            countContainer.innerText = `${testoContatore} ${basiFiltrate.length}`;
-            
+            countContainer.innerText = `${testoContatore} ${filtrate.length}`;
             countContainer.classList.remove('pop-anim');
             void countContainer.offsetWidth; 
             countContainer.classList.add('pop-anim');
 
-            if(basiFiltrate.length === 0) {
+            if(filtrate.length === 0) {
                 list.innerHTML = "<p style='text-align:center; color:#ccc; margin-top:30px;'>Nessuna traccia trovata in questa sezione.</p>";
+                basiFiltrateGlobali = [];
+                indiceCaricamento = 0;
                 return;
             }
 
-            const htmlCompleto = basiFiltrate.map(b => {
+            basiFiltrateGlobali = filtrate;
+            indiceCaricamento = 0;
+            list.innerHTML = "";
+            mostraAltriBrani();
+            
+            if (queryPulita !== "") {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        function mostraAltriBrani() {
+            if (indiceCaricamento >= basiFiltrateGlobali.length) return;
+            
+            const list = document.getElementById('trackList');
+            const blocco = basiFiltrateGlobali.slice(indiceCaricamento, indiceCaricamento + BRANI_PER_VOLTA);
+            indiceCaricamento += blocco.length;
+
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang') || 'it';
+            const testoCopia = (traduzioni[lang] && traduzioni[lang].copy_btn) ? traduzioni[lang].copy_btn : "Copia";
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            const htmlBlocco = blocco.map(b => {
                 let isNews = '';
                 const bDate = parseScorpioDate(b.data);
                 if(bDate.getTime() !== 0) {
@@ -847,13 +890,15 @@
                     </div>
                 `;
             }).join('');
-            
-            list.innerHTML = htmlCompleto;
-            
-            if (queryPulita !== "") {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
+
+            list.insertAdjacentHTML('beforeend', htmlBlocco);
         }
+
+        window.addEventListener('scroll', () => {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 800) {
+                mostraAltriBrani();
+            }
+        });
 
         let toastTimeout = null;
         function mostraToast(messaggio) {

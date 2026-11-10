@@ -148,7 +148,7 @@
 
         async function contaBasi() {
             try {
-                const response = await fetch('scorpio_database.json?v=' + new Date().getTime(), { cache: 'no-store' });
+                const response = await fetch('scorpio_database.json');
                 if (response.ok) {
                     const data = await response.json();
                     
