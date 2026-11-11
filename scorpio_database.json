@@ -116674,5 +116674,19 @@
         "copiaTesto": "You Can'T Stop This Love Between Us [Mario ‍Biondi]",
         "data": "2026-11-11",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Don'T Want To Miss A Thing (Italiano)",
+        "artista": "Aerosmith",
+        "copiaTesto": "I Don'T Want To Miss A Thing [Aero‍smith * SC *] (Italiano)",
+        "data": "2026-11-11",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "I Don'T Want To Miss A Thing",
+        "artista": "Aerosmith",
+        "copiaTesto": "I Don'T Want To Miss A Thing [Aero‍smith * SC *]",
+        "data": "2026-11-11",
+        "categoria": "KARAOKE"
     }
 ]
