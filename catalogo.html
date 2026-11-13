@@ -463,7 +463,8 @@
         
         <div id="guida-video-container" style="max-width: 380px; margin: 0 auto 30px auto; padding: 10px;">
             <div style="padding:100% 0 0 0; position:relative; border: 2px solid #ffcc00; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(255,204,0,0.3); background: #000;">
-                <iframe src="https://player.vimeo.com/video/1200711710?badge=0&autopause=0&player_id=0&app_id=58479&muted=0&transparent=0" 
+                <iframe id="guida-video-iframe" 
+                        src="https://player.vimeo.com/video/1246649834?h=1cf36663ff&badge=0&autopause=0&player_id=0&app_id=58479&muted=0&transparent=0" 
                         frameborder="0" 
                         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
                         loading="lazy"
@@ -1532,6 +1533,17 @@ Canta al massimo livello!`;
             const lang = params.get('lang') || 'it';
             const searchParam = params.get('search') || '';
             const data = traduzioni[lang] || traduzioni['it'];
+            const videoVimeoLingue = {
+                it: "https://player.vimeo.com/video/1246649834?h=1cf36663ff&badge=0&autopause=0&player_id=0&app_id=58479&muted=0&transparent=0",
+                es: "https://player.vimeo.com/video/1246652028?h=104943b8ac&badge=0&autopause=0&player_id=0&app_id=58479&muted=0&transparent=0",
+                en: "https://player.vimeo.com/video/1246651251?h=1023196278&badge=0&autopause=0&player_id=0&app_id=58479&muted=0&transparent=0",
+                fr: "https://player.vimeo.com/video/1246651550?h=d5d84d4ae9&badge=0&autopause=0&player_id=0&app_id=58479&muted=0&transparent=0",
+                de: "https://player.vimeo.com/video/1246651805?h=72119af23c&badge=0&autopause=0&player_id=0&app_id=58479&muted=0&transparent=0"
+            };
+            const iframeGuida = document.getElementById('guida-video-iframe');
+            if (iframeGuida) {
+                iframeGuida.src = videoVimeoLingue[lang] || videoVimeoLingue['it'];
+            }
             
             document.getElementById('btn1').innerText = data.b1;
             document.getElementById('btn2').innerText = data.b2;
