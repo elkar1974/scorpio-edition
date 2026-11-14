@@ -119250,5 +119250,334 @@
         "copiaTesto": "All Of Me [Ella Fi‍tzgerald * SCORPIO EDITION *]",
         "data": "2026-11-14",
         "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "23",
+        "artista": "Morat",
+        "copiaTesto": "23 [Mo‍rat * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "48",
+        "artista": "Moss Kena",
+        "copiaTesto": "48 [Moss‍ Kena * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "7 E 40",
+        "artista": "Mina",
+        "copiaTesto": "7 E 40 [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "7 Things",
+        "artista": "Miley Cyrus",
+        "copiaTesto": "7 Things [Miley‍ Cyrus * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "98 Braves",
+        "artista": "Morgan Wallen",
+        "copiaTesto": "98 Braves [Morgan‍ Wallen * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Adore You",
+        "artista": "Miley Cyrus",
+        "copiaTesto": "Adore You [Miley‍ Cyrus * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Aftermath",
+        "artista": "Muse",
+        "copiaTesto": "Aftermath [Mu‍se * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Amanti Di Valore",
+        "artista": "Mina",
+        "copiaTesto": "Amanti Di Valore [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Animals",
+        "artista": "Muse",
+        "copiaTesto": "Animals [Mu‍se * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Apocalypse Please",
+        "artista": "Muse",
+        "copiaTesto": "Apocalypse Please [Mu‍se * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Assassin",
+        "artista": "Muse",
+        "copiaTesto": "Assassin [Mu‍se * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Así Eh",
+        "artista": "Miky Woodz Feat. Tainy",
+        "copiaTesto": "Así Eh [Miky ‍Woodz Feat. Ta‍iny * SCORPIO *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Back & Forth",
+        "artista": "Becky Hill - Jonas Blue - Mk",
+        "copiaTesto": "Back & Forth [Becky‍ Hill - Jonas‍ Blue - Mk * SC *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Be",
+        "artista": "Muse",
+        "copiaTesto": "Be [Mu‍se * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Believe",
+        "artista": "Db Boulevard - Moony",
+        "copiaTesto": "Believe [Db Bou‍levard - Mo‍ony * SCORPIO *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Big Freeze",
+        "artista": "Muse",
+        "copiaTesto": "Big Freeze [Mu‍se * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Blackout",
+        "artista": "Muse",
+        "copiaTesto": "Blackout [Mu‍se * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Blindfold",
+        "artista": "Morcheeba",
+        "copiaTesto": "Blindfold [Morc‍heeba * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Bohemian Rhapsody",
+        "artista": "Kaiak",
+        "copiaTesto": "Bohemian Rhapsody [Ka‍iak * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Bottiglie Rotte",
+        "artista": "Emis Killa - Mostro",
+        "copiaTesto": "Bottiglie Rotte [Emis ‍Killa - Mos‍tro * SCORPIO *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Can'T Be Tamed",
+        "artista": "Miley Cyrus",
+        "copiaTesto": "Can'T Be Tamed [Miley‍ Cyrus * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Can'T Take My Eyes Off Of You",
+        "artista": "Mina",
+        "copiaTesto": "Can'T Take My Eyes Off Of You [Mi‍na * SCORPIO *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Caravel",
+        "artista": "Mina",
+        "copiaTesto": "Caravel [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Che Novità",
+        "artista": "Mina",
+        "copiaTesto": "Che Novità [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cheri Cheri Lady",
+        "artista": "Modern Talking",
+        "copiaTesto": "Cheri Cheri Lady [Modern ‍Talking * SCORPIO *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ci Vuole Un Pò Di R'N'R",
+        "artista": "Mina",
+        "copiaTesto": "Ci Vuole Un Pò Di R'N'R [Mi‍na * SCORPIO *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Colpa Mia",
+        "artista": "Mina",
+        "copiaTesto": "Colpa Mia [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cooler Than Me",
+        "artista": "Mike Posner",
+        "copiaTesto": "Cooler Than Me [Mike ‍Posner * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cowboys",
+        "artista": "Mina",
+        "copiaTesto": "Cowboys [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Cuando Nadie Ve",
+        "artista": "Morat",
+        "copiaTesto": "Cuando Nadie Ve [Mo‍rat * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Da Capo",
+        "artista": "Mina",
+        "copiaTesto": "Da Capo [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Devo Tornare A Casa Mia",
+        "artista": "Mina",
+        "copiaTesto": "Devo Tornare A Casa Mia [Mi‍na * SCORPIO *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Dieci Ragazzi",
+        "artista": "Mina",
+        "copiaTesto": "Dieci Ragazzi [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Distanze",
+        "artista": "Mina",
+        "copiaTesto": "Distanze [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Domenica Sera",
+        "artista": "Mina",
+        "copiaTesto": "Domenica Sera [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Don'T You Remember",
+        "artista": "G - Machines - Morgan",
+        "copiaTesto": "Don'T You Remember [G - Mach‍ines - Mor‍gan * SC *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Duje Core",
+        "artista": "Andrea Sannino - Mr.Hyde",
+        "copiaTesto": "Duje Core [Andrea ‍Sannino - Mr.‍hyde * SCORPIO *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "E Penso A Te",
+        "artista": "Mina",
+        "copiaTesto": "E Penso A Te [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "E Poi Ci Pensi Un Pò",
+        "artista": "Motta",
+        "copiaTesto": "E Poi Ci Pensi Un Pò [Mo‍tta * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ebb Tide",
+        "artista": "Mina",
+        "copiaTesto": "Ebb Tide [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ed È Quasi Come Essere Felice",
+        "artista": "Motta",
+        "copiaTesto": "Ed È Quasi Come Essere Felice [Mo‍tta * SCORPIO *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Emozioni",
+        "artista": "Mina",
+        "copiaTesto": "Emozioni [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Everytime You Touch Me",
+        "artista": "Moby",
+        "copiaTesto": "Everytime You Touch Me [Mo‍by * SCORPIO *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Extreme Ways",
+        "artista": "Moby",
+        "copiaTesto": "Extreme Ways [Mo‍by * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Fà Qualcosa",
+        "artista": "Mina",
+        "copiaTesto": "Fà Qualcosa [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Apa",
+        "artista": "Mora - Quevedo",
+        "copiaTesto": "Apa [Mo‍ra - Que‍vedo * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Mother Told Me",
+        "artista": "Wolfskald",
+        "copiaTesto": "Mother Told Me [Wolf‍skald * SCORPIO EDITION *]",
+        "data": "2026-11-14",
+        "categoria": "KARAOKE"
     }
 ]
