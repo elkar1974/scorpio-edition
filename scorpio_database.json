@@ -108332,9 +108332,16 @@
         "categoria": "KARAOKE"
     },
     {
-        "titolo": "Mi Pc Midnight Summer Jam [Justin Timberlake]",
+        "titolo": "Mi Pc",
         "artista": "Juan Luis Guerra",
-        "copiaTesto": "Mi Pc [Juan Luis Guerra * SCORPIO EDITION *]Midnight Summer Jam [Justin Timberlake * SC *]",
+        "copiaTesto": "Mi Pc [Juan Luis Guerra * SCORPIO EDITION *]",
+        "data": "2026-11-02",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Midnight Summer Jam",
+        "artista": "Justin Timberlake",
+        "copiaTesto": "Midnight Summer Jam [Justin Timberlake * SC *]",
         "data": "2026-11-02",
         "categoria": "KARAOKE"
     },
@@ -121615,6 +121622,405 @@
         "artista": "Gio Evan",
         "copiaTesto": "Ulay [Gio ‍Evan * SCORPIO EDITION *]",
         "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Day That Never Comes",
+        "artista": "Metallica",
+        "copiaTesto": "The Day That Never Comes [Meta‍llica * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The End Of The Line",
+        "artista": "Metallica",
+        "copiaTesto": "The End Of The Line [Meta‍llica * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Four Horsemen",
+        "artista": "Metallica",
+        "copiaTesto": "The Four Horsemen [Meta‍llica * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Frayed Ends Of Sanity",
+        "artista": "Metallica",
+        "copiaTesto": "The Frayed Ends Of Sanity [Meta‍llica * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The God That Failed",
+        "artista": "Metallica",
+        "copiaTesto": "The God That Failed [Meta‍llica * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Handler",
+        "artista": "Muse",
+        "copiaTesto": "The Handler [Mu‍se * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The House Jack Built",
+        "artista": "Metallica",
+        "copiaTesto": "The House Jack Built [Meta‍llica * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Judas Kiss",
+        "artista": "Metallica",
+        "copiaTesto": "The Judas Kiss [Meta‍llica * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Memory Remains",
+        "artista": "Metallica",
+        "copiaTesto": "The Memory Remains [Meta‍llica * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Needle And The Damage Done",
+        "artista": "Neil Young",
+        "copiaTesto": "The Needle And The Damage Done [Neil ‍Young * SC *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Sea",
+        "artista": "Morcheeba",
+        "copiaTesto": "The Sea [Morc‍heeba * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Shortest Straw",
+        "artista": "Metallica",
+        "copiaTesto": "The Shortest Straw [Meta‍llica * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Struggle Within",
+        "artista": "Metallica",
+        "copiaTesto": "The Struggle Within [Meta‍llica * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Thing That Should Not Be",
+        "artista": "Metallica",
+        "copiaTesto": "The Thing That Should Not Be [Meta‍llica * SC *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Time Is Now",
+        "artista": "Moloko",
+        "copiaTesto": "The Time Is Now [Mol‍oko * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Unforgiven Ii",
+        "artista": "Metallica",
+        "copiaTesto": "The Unforgiven Ii [Meta‍llica * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Unforgiven Iii",
+        "artista": "Metallica",
+        "copiaTesto": "The Unforgiven Iii [Meta‍llica * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Unforgiven",
+        "artista": "Metallica",
+        "copiaTesto": "The Unforgiven [Meta‍llica * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Wait",
+        "artista": "Metallica",
+        "copiaTesto": "The Wait [Meta‍llica * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "The Winner Takes It All",
+        "artista": "Meryl Streep",
+        "copiaTesto": "The Winner Takes It All [Meryl ‍Streep * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "There For You",
+        "artista": "Martin Garrix - Troye Sivan",
+        "copiaTesto": "There For You [Martin‍ Garrix - Troye‍ Sivan * SC *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "These Are The Times",
+        "artista": "Martin Garrix",
+        "copiaTesto": "These Are The Times [Martin‍ Garrix * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "These Boots Are Made For Walkin'",
+        "artista": "Nancy Sinatra",
+        "copiaTesto": "These Boots Are Made For Walkin' [Nancy ‍Sinatra]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "They Don'T Care About Us",
+        "artista": "Michael Jackson",
+        "copiaTesto": "They Don'T Care About Us [Michael‍ Jackson * SC *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Thinking What I'M Thinking",
+        "artista": "Ne-Yo",
+        "copiaTesto": "Thinking What I'M Thinking [Ne-Yo * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "This Is It",
+        "artista": "Michael Jackson",
+        "copiaTesto": "This Is It [Michael‍ Jackson * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "This Will Be",
+        "artista": "Natalie Cole",
+        "copiaTesto": "This Will Be [Natali‍e Cole * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Thousand Miles",
+        "artista": "Miley Cyrus",
+        "copiaTesto": "Thousand Miles [Miley‍ Cyrus * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Threatened",
+        "artista": "Michael Jackson",
+        "copiaTesto": "Threatened [Michael‍ Jackson * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Thriller",
+        "artista": "Michael Jackson",
+        "copiaTesto": "Thriller [Michael‍ Jackson * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Through The Never",
+        "artista": "Metallica",
+        "copiaTesto": "Through The Never [Meta‍llica * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ti Sento Parte Di Me",
+        "artista": "Modà",
+        "copiaTesto": "Ti Sento Parte Di Me [Mo‍dà * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tn",
+        "artista": "Morgan Wallen",
+        "copiaTesto": "Tn [Morgan‍ Wallen * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Together",
+        "artista": "Martin Garrix - Matisse - Sadko",
+        "copiaTesto": "Together [Martin‍ Garrix - Mat‍isse - Sa‍dko * SC *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Told You So",
+        "artista": "Jex - Martin Garrix",
+        "copiaTesto": "Told You So [Jex - Martin‍ Garrix * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Too Busy Thinking About My Baby",
+        "artista": "Marvin Gaye",
+        "copiaTesto": "Too Busy Thinking About My Baby [Marvi‍n Gaye * SC *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Too Close For Comfort",
+        "artista": "Mina",
+        "copiaTesto": "Too Close For Comfort [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Too Far Gone",
+        "artista": "Metallica",
+        "copiaTesto": "Too Far Gone [Meta‍llica * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Trance",
+        "artista": "Metro Boomin - Travis Scott - Young Thug",
+        "copiaTesto": "Trance [Metro ‍Boomin - Travis‍ Scott - Young‍ Thug]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Trapped Under Ice",
+        "artista": "Metallica",
+        "copiaTesto": "Trapped Under Ice [Meta‍llica * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Trigger Hippie",
+        "artista": "Morcheeba",
+        "copiaTesto": "Trigger Hippie [Morc‍heeba * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Trouble Man",
+        "artista": "Marvin Gaye",
+        "copiaTesto": "Trouble Man [Marvi‍n Gaye * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tshikwama",
+        "artista": "Master Kg",
+        "copiaTesto": "Tshikwama [Mast‍er Kg * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tshinada",
+        "artista": "Master Kg",
+        "copiaTesto": "Tshinada [Mast‍er Kg * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tu Sarai La Mia Voce",
+        "artista": "Mina",
+        "copiaTesto": "Tu Sarai La Mia Voce [Mi‍na * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Tuesday'S Gone",
+        "artista": "Metallica",
+        "copiaTesto": "Tuesday'S Gone [Meta‍llica * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Turn The Page",
+        "artista": "Metallica",
+        "copiaTesto": "Turn The Page [Meta‍llica * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Turning Turtle",
+        "artista": "Emily Blunt",
+        "copiaTesto": "Turning Turtle [Emily‍ Blunt * SCORPIO EDITION *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "U&U",
+        "artista": "Kremont - Merk - Rêve - Tim North",
+        "copiaTesto": "U&U [Kre‍mont - Me‍rk - Rê‍ve - Tim ‍North * SC *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "U&U",
+        "artista": "Kremont - Merk - Tim North",
+        "copiaTesto": "U&U [Kre‍mont - Me‍rk - Tim ‍North * SCORPIO *]",
+        "data": "2026-11-17",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "99 Red Balloons",
+        "artista": "Nena",
+        "copiaTesto": "99 Red Balloons [Ne‍na * SCORPIO EDITION *]",
+        "data": "2026-11-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "A Mare…Oo",
+        "artista": "Nino D'Angelo",
+        "copiaTesto": "A Mare…Oo [Nino D‍'angelo * SCORPIO EDITION *]",
+        "data": "2026-11-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Acapulco",
+        "artista": "J R - Niklas Dee - Rushlow",
+        "copiaTesto": "Acapulco [J R - Nikla‍s Dee - Rus‍hlow * SCORPIO *]",
+        "data": "2026-11-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Ad Esempio A Me Piace Il Sud",
+        "artista": "Nicola Di Bari",
+        "copiaTesto": "Ad Esempio A Me Piace Il Sud [Nicola ‍Di Bari * SC *]",
+        "data": "2026-11-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "After The Rain",
+        "artista": "Nickelback",
+        "copiaTesto": "After The Rain [Nicke‍lback * SCORPIO EDITION *]",
+        "data": "2026-11-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Barbie World",
+        "artista": "Ice Spice - Nicki Minaj",
+        "copiaTesto": "Barbie World [Ice ‍Spice - Nicki‍ Minaj * SCORPIO *]",
+        "data": "2026-11-18",
+        "categoria": "KARAOKE"
+    },
+    {
+        "titolo": "Pigliate Na Pastiglia",
+        "artista": "Renzo Arbore",
+        "copiaTesto": "Pigliate Na Pastiglia [Renzo ‍Arbore * SCORPIO *]",
+        "data": "2026-11-18",
         "categoria": "KARAOKE"
     }
 ]
