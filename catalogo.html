@@ -764,16 +764,20 @@
             renderTracks(document.getElementById('cerca').value);
         };
 
-        window.toggleFav = function(idBrano) {
+        window.toggleFav = function(btn, idBrano) {
             const index = preferiti.indexOf(idBrano);
             if (index > -1) {
                 preferiti.splice(index, 1);
+                if (btn) btn.classList.remove('attivo');
             } else {
                 preferiti.push(idBrano);
+                if (btn) btn.classList.add('attivo');
             }
             localStorage.setItem('scorpio_preferiti', JSON.stringify(preferiti));
             aggiornaContatoreFav();
-            renderTracks(document.getElementById('cerca').value);
+            if (isFavFilterActive) {
+                renderTracks(document.getElementById('cerca').value);
+            }
         };
 
         function aggiornaContatoreFav() {
@@ -878,7 +882,7 @@
                         <div class="meta-col">
                             <div class="artist-col">${b.artista}</div>
                             <div class="title-col">
-                                <button class="btn-preferito ${favClass}" onclick="window.toggleFav('${testoSicuro}')">★</button> 
+                                <button class="btn-preferito ${favClass}" onclick="window.toggleFav(this, '${testoSicuro}')">★</button> 
                                 ${b.titolo} ${isNews} <span class="hq-badge">HQ</span>
                             </div>
                         </div>
