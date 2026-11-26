@@ -1,4 +1,4 @@
-const CACHE_NAME = 'scorpio-edition-cache-v64';
+const CACHE_NAME = 'scorpio-edition-cache-v65';
 const ASSETS_TO_CACHE = [
     './',
     './index.html',
